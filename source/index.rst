@@ -12,7 +12,7 @@ Where to Begin
 **************
 
 - :doc:`Quick Start Guide </basics/quick-start-guide>`
-- :doc:`HARDWARIO Playground </basics/bigclown-playground>`
+- :doc:`HARDWARIO Playground </basics/hardwario-playground>`
 - :doc:`HARDWARIO Gateway on Raspberry Pi </tutorials/raspberry-pi-installation>`
 - :doc:`Firmware Quick Start </firmware/firmware-quick-start>`
 
@@ -26,8 +26,8 @@ Where to Begin
    :hidden:
 
    basics/quick-start-guide
-   basics/bigclown-playground
-   basics/about-bigclown
+   basics/hardwario-playground
+   basics/about-hardwario
    basics/module-overview
    basics/enclosures
    basics/projects
@@ -70,11 +70,10 @@ Where to Begin
 
    integrations/grafana-for-visualization
    integrations/blynk-mobile-app-builder
-   integrations/anemone-platform
    integrations/ubidots
    integrations/homekit-and-siri
    integrations/google-assistant
-   integrations/firebase
+   integrations/google-firebase
    integrations/google-sheets
    integrations/azure-iot-central
 
@@ -119,7 +118,7 @@ Where to Begin
    hardware/about-rs-485-module
    hardware/about-sensor-module
    hardware/about-sigfox-module
-   hardware/about-soil-moisture-sensor
+   hardware/about-soil-sensor
    hardware/about-tag-module
    hardware/about-temperature-tag
    hardware/about-voc-tag
@@ -164,7 +163,7 @@ Where to Begin
    firmware/how-to-servo-motor
    firmware/how-to-sigfox-module
    firmware/how-to-smart-led-strip
-   firmware/how-to-soil-moisture-sensor
+   firmware/how-to-soil-sensor
    firmware/how-to-spi-bus
    firmware/how-to-temperature-sensor
    firmware/how-to-uart-interface
@@ -175,6 +174,6 @@ Where to Begin
    :maxdepth: 2
    :hidden:
 
-   tools/bigclown-firmware-flashing-tool
-   tools/bigclown-gateway
-   tools/bigclown-host-tool
+   tools/hardwario-firmware-flashing-tool
+   tools/hardwario-gateway
+   tools/hardwario-host-tool

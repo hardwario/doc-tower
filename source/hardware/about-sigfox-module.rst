@@ -2,7 +2,7 @@
 About Sigfox Module
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_sigfox/sigfox-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-sigfox/sigfox-module.png
     :width: 300em
     :height: 300em
 

@@ -2,7 +2,7 @@
 About LCD Module
 ################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_lcd/lcd-module-bg.png
+.. |pic1| thumbnail:: ../_static/hardware/about-lcd/lcd-module-bg.png
     :width: 300em
     :height: 300em
 

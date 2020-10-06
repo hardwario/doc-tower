@@ -5,7 +5,7 @@ Grafana for Visualization
 `Grafana <https://grafana.com>`_ is an open platform for beautiful analytics and monitoring.
 It allows you to create a nice looking dashboards that will give you quick insights into your sensor data.
 
-.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization_grafana.png
+.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-grafana.png
    :width: 60%
    :alt: Grafana Visualization
 
@@ -357,7 +357,7 @@ Select **Add data source** and then:
 Finish by clicking on the **Add** button. At this moment **Grafana** will try to connect to the **data source** and replies back with
 the message **Data source is working.**
 
-.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization_datasource.png
+.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-datasource.png
    :width: 60%
    :alt: Grafana Data Source Check
 
@@ -369,7 +369,7 @@ Download ``dashboard.json`` or copy the content of this file to clipboard
 Import the visualization dashboards, click the Grafana icon (top left button), select Dashboards in the menu, then choose Import
 ********************************************************************************************************************************
 
-.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization_menu-import-dashboard.png
+.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-menu-import-dashboard.png
    :width: 60%
    :alt: Grafana Menu Import
 
@@ -379,13 +379,13 @@ Upload the ``dashboard.json`` file or paste the JSON from clipboard
 Choose node as a data source and click on Import
 ************************************************
 
-.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization_import-dashboard-select-datasource.png
+.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-import-dashboard-select-datasource.png
    :width: 60%
    :alt: Grafana Select Datasource
 
-Result for `Wireless Climate Monitor <https://www.hackster.io/jakub-smejkal/radio-climate-monitor-96de57>`__ and `Wireless CO2 Monitor <https://www.hackster.io/jakub-smejkal/radio-co2-monitor-311d2c>`_​_
-*************************************************************************************************************************************************************************************************************
+Result for `Wireless Climate Monitor <https://www.hackster.io/jakub-smejkal/radio-climate-monitor-96de57>`_ and `Wireless CO2 Monitor <https://www.hackster.io/jakub-smejkal/radio-co2-monitor-311d2c>`_ projects
+*******************************************************************************************************************************************************************************************************************
 
-.. thumbnail:: ../_static/integrations/grafana/_integrations_grafana-for-visualization_demo-dashboard.png
+.. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-demo-dashboard.png
    :width: 60%
    :alt: Grafana Test Results

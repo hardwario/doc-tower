@@ -2,7 +2,7 @@
 About Humidity Tag
 ##################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_humidity/humidity-tag.png
+.. |pic1| thumbnail:: ../_static/hardware/about-humidity/humidity-tag.png
     :width: 300em
     :height: 300em
 

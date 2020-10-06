@@ -2,7 +2,7 @@
 About Climate Module
 ####################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_climate/climate-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-climate/climate-module.png
     :width: 300em
     :height: 300em
 

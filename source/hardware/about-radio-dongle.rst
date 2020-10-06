@@ -2,7 +2,7 @@
 About Radio Dongle
 ##################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_dongle/radio-dongle.png
+.. |pic1| thumbnail:: ../_static/hardware/about-dongle/radio-dongle.png
     :width: 300em
     :height: 300em
 

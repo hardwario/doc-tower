@@ -2,7 +2,7 @@
 About Button Module
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_button/button-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-button/button-module.png
     :width: 300em
     :height: 300em
 

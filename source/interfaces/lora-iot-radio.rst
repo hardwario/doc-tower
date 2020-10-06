@@ -10,9 +10,13 @@ Advantage of LoRa is that it's possible to build/buy your own personal gateway,
 use some community-based networks like `The Things Network <https://www.thethingsnetwork.org>`_, `LORIOT <https://www.loriot.io>`_ or many others.
 It's also possible to use commercial provider's already established LoRa network.
 
-.. thumbnail:: ../_static/interfaces/lora_iot_radio/module-overview_lora-module.png
+.. thumbnail:: ../_static/interfaces/lora-iot-radio/module-overview-lora-module.png
    :width: 10%
    :alt: HARDWARIO LoRa Module
 
 HARDWARIO TOWER - Industrial IoT Kit has `LoRa Module <https://shop.hardwario.com/lora-module/>`_ which you can use to create battery operated nodes that are sending or receiving data.
 Module supports LoRaWAN Class A and Class C.
+
+.. tip::
+
+    You can go and learn more about LoRa from `our projects on hackster.io <https://www.hackster.io/hardwario/projects?category_id=198>`__

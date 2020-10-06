@@ -57,7 +57,7 @@ Linux/Ubuntu
 ************
 
 #. Install :ref:`GCC toolchain and tools <ubuntu-setup>`. Optionally install `VSCode IDE <https://code.visualstudio.com>`__.
-#. Create a new project skeleton using :doc:`bcf <../tools/bigclown-firmware-flashing-tool>` by typing ``bcf create my_project``
+#. Create a new project skeleton using :doc:`bcf <../tools/hardwario-firmware-flashing-tool>` by typing ``bcf create my_project``
 #. Go to the new created folder by typing ``cd my_project``
 #. Run VSCode by typing ``code .`` (note the dot ".") or open project folder in VSCode.
 #. Build firmware by pressing ``Ctrl+Shift+B``
@@ -79,7 +79,7 @@ macOS
 *****
 
 #. Install :ref:`GCC toolchain and tools <macos-setup>`. Optionally install `VSCode IDE <https://code.visualstudio.com>`__.
-#. Create a new project skeleton using :doc:`bcf <../tools/bigclown-firmware-flashing-tool>` by typing ``bcf create my_project``
+#. Create a new project skeleton using :doc:`bcf <../tools/hardwario-firmware-flashing-tool>` by typing ``bcf create my_project``
 #. Go to the new created folder by typing ``cd my_project``
 #. Run VSCode by typing ``code .`` (note the dot ".") or open project folder in VSCode.
 #. Build firmware by pressing ``Ctrl+Shift+B``

@@ -2,7 +2,7 @@
 About Infra Grid Module
 #######################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_infragrid/infra-grid-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-infragrid/infra-grid-module.png
     :width: 300em
     :height: 300em
 

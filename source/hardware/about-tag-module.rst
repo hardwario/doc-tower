@@ -2,7 +2,7 @@
 About Tag Module
 ################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_tag/tag-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-tag/tag-module.png
     :width: 300em
     :height: 300em
 

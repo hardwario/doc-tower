@@ -48,8 +48,10 @@ Synology can use BTRFS filesystem which is immune to failure of one or many hard
 Installation
 ************
 
-Install `Virtual Machine Manager <https://www.synology.com/en-global/dsm/packages/Virtualization>`_​
-******************************************************************************************************
+Install Virtual Machine Manager
+********************************
+
+Visit `homepage for instructions <https://www.synology.com/en-global/dsm/packages/Virtualization>`_
 
 .. thumbnail:: ../_static/tutorials/custom-setup-on-synology/vmm-install.png
    :width: 60%

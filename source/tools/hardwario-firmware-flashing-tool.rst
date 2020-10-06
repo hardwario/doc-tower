@@ -1,5 +1,5 @@
 ################################
-HARDWARIO firmware flashing tool
+HARDWARIO Firmware Flashing Tool
 ################################
 
 This multi-platform Python tool can flash `Radio Dongle <https://shop.hardwario.com/radio-dongle/>`_

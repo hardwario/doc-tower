@@ -2,7 +2,7 @@
 About RS-485 Module
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_rs485/rs-485-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-rs485/rs-485-module.png
     :width: 300em
     :height: 300em
 

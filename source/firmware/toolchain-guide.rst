@@ -337,7 +337,7 @@ Incorrect DFU Driver
 
 In case you get ``Cannot open DFU device 0483:df11`` while running the **bcf flash --device dfu** command, you have the incorrect DFU drivers installed.
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-dfu-wrong-driver.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-dfu-wrong-driver.png
     :width: 60%
 
 
@@ -354,28 +354,28 @@ Allow admin rigths in the User Acess Control pop-up
 Select Options -> List All Devices
 ==================================
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-zadig-list-all-devices.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-list-all-devices.png
     :width: 60%
 
 
 Choose STM32 BOOTLOADER
 =======================
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-zadig-select.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-select.png
     :width: 60%
 
 
 Choose WinUSB
 =============
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-zadig-winusb.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-winusb.png
     :width: 60%
 
 
 Click on Replace Driver
 =======================
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-zadig-replace.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-replace.png
     :width: 60%
 
 
@@ -383,7 +383,7 @@ Click on Replace Driver
 
     You will get The driver was installed successfully notification.
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-zadig-installed.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-installed.png
     :width: 60%
 
 
@@ -393,7 +393,7 @@ Exit Zadig and get back to firmware flashing. The DFU driver repair procedure is
 You can check DFU readiness using the ``dfu-util -l`` command from HARDWARIO Toolchain Prompt
 =============================================================================================
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-dfu-list.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-dfu-list.png
     :width: 60%
 
 
@@ -408,7 +408,7 @@ There is not ``Cannot open DFU device 0483:df11`` between:
     A valid DFU suffix will be required in a future dfu-util release
     No DFU capable USB device available
 
-.. thumbnail:: ../_static/firmware/toolchain_guide/windows-dfu-no-device.png
+.. thumbnail:: ../_static/firmware/toolchain-guide/windows-dfu-no-device.png
     :width: 60%
 
 

@@ -2,7 +2,7 @@
 About Base Module
 #################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_base/base-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-base/base-module.png
     :width: 300em
     :height: 300em
 

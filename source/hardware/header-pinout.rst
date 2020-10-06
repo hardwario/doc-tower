@@ -33,7 +33,7 @@ software which contains **Standard Module** and **Cloony** format.
 Module Drawing & Pinout - Standard
 **********************************
 
-.. thumbnail:: ../_static/hardware/pinout/pinout_module.png
+.. thumbnail:: ../_static/hardware/pinout/pinout-module.png
    :width: 30%
    :alt: Standard Pinout
 
@@ -41,7 +41,7 @@ Module Drawing & Pinout - Standard
 Module Drawing & Pinout - Large
 *******************************
 
-.. thumbnail:: ../_static/hardware/pinout/pinout_module-large.png
+.. thumbnail:: ../_static/hardware/pinout/pinout-module-large.png
    :width: 40%
    :alt: Large Pinout
 
@@ -180,7 +180,7 @@ Format **tag** defines:
 Tag Drawing & Pinout
 ********************
 
-.. thumbnail:: ../_static/hardware/pinout/pinout_tag.png
+.. thumbnail:: ../_static/hardware/pinout/pinout-tag.png
    :width: 10%
    :alt: Tag Pinout
 

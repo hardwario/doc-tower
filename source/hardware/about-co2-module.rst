@@ -2,7 +2,7 @@
 About CO2 Module
 ################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_co2/co2-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-co2/co2-module.png
     :width: 300em
     :height: 300em
 

@@ -2,7 +2,7 @@
 About Mini Battery Module
 #########################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_mini_battery/mini-battery-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-mini-battery/mini-battery-module.png
     :width: 300em
     :height: 300em
 

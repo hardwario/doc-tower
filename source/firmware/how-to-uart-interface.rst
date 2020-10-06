@@ -1,5 +1,5 @@
 ######################
-How to: UART interface
+How to: UART Interface
 ######################
 
 Core Module has 3 UARTs you can use. The signal for each channel is named TXD**x**, RXD**x** where **x** is **0**, **1** or **2**.
@@ -32,6 +32,7 @@ Function ``bc_uart_write`` needs to know how many bytes to send. That's why you 
 
 .. code-block:: c
     :linenos:
+
 
     void application_init()
     {

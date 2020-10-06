@@ -32,7 +32,6 @@ Get Ready
 
 In our world it means to prepare a center of your IoT system - the Hub. In QUICK START GUIDE we will use your computer as a Hub. Just follow these steps:
 
-
 Delivery
 ********
 
@@ -50,7 +49,7 @@ Run the HARDWARIO Playground
 
 Go to the **Devices** tab, choose the **Radio Dongle** serial port and click **Connect**
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-devices-tab.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-devices-tab.png
     :width: 60%
 
 .. tip::
@@ -60,9 +59,8 @@ Go to the **Devices** tab, choose the **Radio Dongle** serial port and click **C
 Radio kits delivered together with your `Radio Dongle <https://shop.hardwario.com/radio-dongle/>`_ are already programmed and paired,
 please check that out in the image below.
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-devices-paired.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-devices-paired.png
     :width: 60%
-
 
 *************
 Build devices
@@ -79,7 +77,6 @@ Do not put batteries to the battery module yet.
 
 .. thumbnail:: ../_static/basics/quick-start-guide/mini-battery-module-orientation.png
     :width: 60%
-
 
 As mentioned, delivered kits are already programmed with a right firmware.
 If you would like to change it to another firmware in the Core Module, please follow this :ref:`firmware flash chapter. <flash-firmware>`
@@ -98,10 +95,8 @@ Playground's Messages
 Switch to Playground's **Messages** tab and put batteries to your kit, you should see incoming messages.
 Every kit sends different messages. Here the **Button kit** sends temperature, voltage, event-count (everytime you press the button) and other messages.
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-messages.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-messages.png
     :width: 60%
-
-
 
 3D-printed enclosure
 ********************
@@ -132,7 +127,6 @@ You can also copy any other topic that your module supports from the :doc:`MQTT 
 .. thumbnail:: ../_static/basics/quick-start-guide/playground-messages-topic.png
     :width: 60%
 
-
 Function
 ********
 
@@ -144,31 +138,26 @@ You can use the ``filter nodes`` text box to find the right block. Connect the t
     :width: 60%
 
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-connected.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-connected.png
     :width: 60%
-
-
 
 You have to modify the mqtt node and add the broker. Double click on it and then click on the little pencil on the right.
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-mqtt-edit-server.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-mqtt-edit-server.png
     :width: 60%
-
 
 After that you just have to type in the **localhost** or any of your MQTT broker addresses and then click **Add**. Finally click **Done**.
 
 .. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-mqtt-edit-server-localhost.png
     :width: 60%
 
-
 Double click on the **gauge** node. Change **Label**, **Units** and **Range** to your needs.
 Then click **Done**. Double click on the **mqtt node** and paste the previously copied topic from the clipboard.
 Make sure there are not any spaces before and after the copied text. Then click **Done** and **Deploy** button.
 You have to click on the **Deploy** everytime you make changes in your flow.
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-mqtt-node.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-mqtt-node.png
     :width: 60%
-
 
 Dashboard
 *********
@@ -179,9 +168,8 @@ Go to Playground's **Dashboard** tab and you should see a gauge with the tempera
 
     The temperature can take a while to appear. You can breathe on the module or reconnect batteries for immediate update.
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-dashboard.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-dashboard.png
     :width: 60%
-
 
 *****
 Share

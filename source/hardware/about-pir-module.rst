@@ -2,7 +2,7 @@
 About PIR Module
 ################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_pir/pir-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-pir/pir-module.png
     :width: 300em
     :height: 300em
 

@@ -58,7 +58,7 @@ Windows
 
 - Download the `PuTTY <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_ program.
 
-.. thumbnail:: ../_static/tutorials/raspberry-pi-login/putty_login.png
+.. thumbnail:: ../_static/tutorials/raspberry-pi-login/putty-login.png
    :width: 40%
 
 

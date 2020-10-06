@@ -1,5 +1,5 @@
 #####################
-How to: Sigfox module
+How to: Sigfox Module
 #####################
 
 Sigfox module provides a simple way how to connect your kit to the Sigfox network.

@@ -2,7 +2,7 @@
 About Mini Cover Module
 #######################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_mini_cover/mini-cover-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-mini-cover/mini-cover-module.png
     :width: 300em
     :height: 300em
 

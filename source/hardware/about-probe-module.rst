@@ -2,7 +2,7 @@
 About Probe Module
 ##################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_probe/probe-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-probe/probe-module.png
     :width: 300em
     :height: 300em
 

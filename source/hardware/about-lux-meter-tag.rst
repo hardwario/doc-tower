@@ -2,7 +2,7 @@
 About Lux Meter Tag
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_lux/lux-meter-tag.png
+.. |pic1| thumbnail:: ../_static/hardware/about-lux/lux-meter-tag.png
     :width: 300em
     :height: 300em
 

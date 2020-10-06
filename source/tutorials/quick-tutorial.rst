@@ -8,7 +8,7 @@ Basics
 
 .. tip::
 
-    You can follow this tutorial even without Raspberry Pi. You just have to install :doc:`HARDWARIO Playground <../basics/bigclown-playground>` on your desktop.
+    You can follow this tutorial even without Raspberry Pi. You just have to install :doc:`HARDWARIO Playground <../basics/hardwario-playground>` on your desktop.
     The Raspberry Pi approach is the easiest because you can download bc-rasbian image with pre-installed tools.
 
 This document is a practical guide of using the **HARDWARIO TOWER - Industrial IoT Kit.**
@@ -58,8 +58,8 @@ Raspberry Pi Installation
 
 The easiest way to start is to download the `HARDWARIO Raspbian image <https://github.com/hardwario/bc-raspbian/releases>`_.
 This image has already pre-installed necessary components.
-It contains :doc:`HARDWARIO Gateway <../tools/bigclown-gateway>` ``bcg``,
-**Mosquitto** MQTT broker, **Node-RED** and :doc:`HARDWARIO Firmware Tool <../tools/bigclown-firmware-flashing-tool>` ``bcf``.
+It contains :doc:`HARDWARIO Gateway <../tools/hardwario-gateway>` ``bcg``,
+**Mosquitto** MQTT broker, **Node-RED** and :doc:`HARDWARIO Firmware Tool <../tools/hardwario-firmware-flashing-tool>` ``bcf``.
 
 The downloaded **Raspberry Pi** image has to be written to a MicroSD card using the multi-platform **GUI tool** `balenaEtcher <https://www.balena.io/etcher/>`_,
 `Win32DiskImager <https://sourceforge.net/projects/win32diskimager/>`_ or command line ``dd`` tool.
@@ -100,7 +100,7 @@ HARDWARIO Playground
 Download the latest HARDWARIO Playground from :ref:`Quick Start Guide <download-playground>` and open it.
 Navigate to Firmware, connect Core Module via USB to computer and choose firmware to flash.
 
-.. thumbnail:: ../_static/tutorials/quick-tutorial/hardwario-playground.PNG
+.. thumbnail:: ../_static/tutorials/quick-tutorial/hardwario-playground.png
    :width: 60%
 
 
@@ -143,7 +143,7 @@ Radio Dongle to MQTT communication gateway
 ******************************************
 
 **Radio Dongle** or **Core Module** with the **gateway** firmware is using virtual serial port over USB to exchange the data.
-This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the :doc:`bch-gateway <../tools/bigclown-gateway>` ``bcg`` service.
+This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the :doc:`bch-gateway <../tools/hardwario-gateway>` ``bcg`` service.
 
 All the messages from modules go through the gateway to the MQTT broker.
 The MQTT is an open standard and also our back-bone system for passing the messages both ways.
@@ -451,7 +451,7 @@ Then the red LED will start blinking.
 
 Radio Dongle do not have pairing button and the pairing process needs to be started in the **Playground** or in the **Hub**.
 
-.. thumbnail:: ../_static/tutorials/quick-tutorial/playground-devices-start-pairing.PNG
+.. thumbnail:: ../_static/tutorials/quick-tutorial/playground-devices-start-pairing.png
    :width: 60%
 
 

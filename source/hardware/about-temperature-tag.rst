@@ -2,7 +2,7 @@
 About Temperature Tag
 #####################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_temperature/temperature-tag.png
+.. |pic1| thumbnail:: ../_static/hardware/about-temperature/temperature-tag.png
     :width: 300em
     :height: 300em
 

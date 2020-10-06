@@ -2,7 +2,7 @@
 About Barometer Tag
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_barometer/barometer-tag.png
+.. |pic1| thumbnail:: ../_static/hardware/about-barometer/barometer-tag.png
     :width: 300em
     :height: 300em
 

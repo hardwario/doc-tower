@@ -44,7 +44,7 @@ HARDWARIO Playground as GUI tool for MQTT messages
 **************************************************
 You can use `HARDWARIO Playground <https://www.hardwario.com/download/>`_ for subscribing and publishing MQTT messages. You can do it in Messages tab.
 
-.. thumbnail:: ../_static/interfaces/mqtt_protocol/HARDWARIO_Playground/playground_messages_tab.png
+.. thumbnail:: ../_static/interfaces/mqtt-protocol/HARDWARIO-Playground/playground-messages-tab.png
    :width: 60%
    :alt: Playground Messages Tab
 
@@ -59,7 +59,7 @@ In beginning you have already subscribed ``node/#`` topic. We can try to send MQ
 
 Now you can see test message in Playground message window.
 
-.. thumbnail:: ../_static/interfaces/mqtt_protocol/HARDWARIO_Playground/playground_messages_tab_test_message.png
+.. thumbnail:: ../_static/interfaces/mqtt-protocol/HARDWARIO-Playground/playground-messages-tab-test-message.png
    :width: 60%
    :alt: Playground Messages Tab Test Message
 
@@ -72,7 +72,7 @@ Just switch to Publish mode, type topic, payload and Publish your message.
 
     If you are subscribed to correct topics you can see your published messages appear on top of the Messages Tab
 
-.. thumbnail:: ../_static/interfaces/mqtt_protocol/HARDWARIO_Playground/playground_messages_tab_publish.png
+.. thumbnail:: ../_static/interfaces/mqtt-protocol/HARDWARIO-Playground/playground-messages-tab-publish.png
    :width: 60%
    :alt: Playground Messages Tab Publish
 

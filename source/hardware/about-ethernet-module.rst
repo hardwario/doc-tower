@@ -2,7 +2,7 @@
 About Ethernet Module
 #####################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_ethernet/ethernet-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-ethernet/ethernet-module.png
     :width: 300em
     :height: 300em
 

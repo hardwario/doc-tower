@@ -2,7 +2,7 @@
 About VOC Tag
 #############
 
-.. |pic1| thumbnail:: ../_static/hardware/about_voc/voc-lp-tag.png
+.. |pic1| thumbnail:: ../_static/hardware/about-voc/voc-lp-tag.png
     :width: 300em
     :height: 300em
 

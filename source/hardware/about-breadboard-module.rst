@@ -2,7 +2,7 @@
 About Breadboard Module
 #######################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_breadboard/breadboard-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-breadboard/breadboard-module.png
     :width: 300em
     :height: 300em
 

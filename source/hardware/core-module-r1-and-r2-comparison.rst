@@ -15,11 +15,11 @@ The most significant change is that R2 has only single button. This is the ``B``
 It has moved and you can use it for your program.
 The ``R`` reset button is not necessary anymore because communication and firmware flashing is now done automatically over **FTDI** chip.
 
-.. |core-r1| thumbnail:: ../_static/hardware/core_module_r1_and_r2_comparison/core-module-r1.png
+.. |core-r1| thumbnail:: ../_static/hardware/core-module-r1-and-r2-comparison/core-module-r1.png
     :width: 300em
     :height: 300em
 
-.. |core-r2| thumbnail:: ../_static/hardware/core_module_r1_and_r2_comparison/core-module-r2.png
+.. |core-r2| thumbnail:: ../_static/hardware/core-module-r1-and-r2-comparison/core-module-r2.png
     :width: 300em
     :height: 300em
 

@@ -2,7 +2,7 @@
 About 1-Wire Module
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_1-wire/1-wire-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-1-wire/1-wire-module.png
     :width: 300em
     :height: 300em
 

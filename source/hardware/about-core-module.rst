@@ -2,7 +2,7 @@
 About Core Module
 #################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_core/core-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-core/core-module.png
     :width: 300em
     :height: 300em
 
@@ -22,7 +22,7 @@ About Core Module
     For differences of flashing older **Core Module 1** and newer **Core Module 2**
     please read :doc:`Core Module R1 and R2 comparison <../hardware/core-module-r1-and-r2-comparison>`
 
-.. thumbnail:: ../_static/hardware/about_core/core-module-2-pinout.png
+.. thumbnail:: ../_static/hardware/about-core/core-module-2-pinout.png
    :width: 60%
    :alt: Core Module Pinout
 

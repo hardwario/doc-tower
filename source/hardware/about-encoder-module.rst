@@ -2,7 +2,7 @@
 About Encoder Module
 ####################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_encoder/encoder-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-encoder/encoder-module.png
     :width: 300em
     :height: 300em
 

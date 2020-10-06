@@ -1,5 +1,5 @@
 ###################
-How to: Servo motor
+How to: Servo Motor
 ###################
 
 .. tip::

@@ -9,7 +9,7 @@ Modules
 Radio Dongle
 ************
 
-.. |dongle| thumbnail:: ../_static/basics/module_overview/radio-dongle.png
+.. |dongle| thumbnail:: ../_static/basics/module-overview/radio-dongle.png
     :width: 300em
     :height: 300em
 
@@ -25,7 +25,7 @@ Radio Dongle
 Core Module
 ***********
 
-.. |core-module| thumbnail:: ../_static/basics/module_overview/core-module.png
+.. |core-module| thumbnail:: ../_static/basics/module-overview/core-module.png
     :width: 300em
     :height: 300em
 
@@ -40,7 +40,7 @@ Core Module
 Cloony
 ******
 
-.. |cloony| thumbnail:: ../_static/basics/module_overview/cloony.png
+.. |cloony| thumbnail:: ../_static/basics/module-overview/cloony.png
     :width: 300em
     :height: 300em
 
@@ -55,7 +55,7 @@ Cloony
 Mini Battery Module
 *******************
 
-.. |mini-battery| thumbnail:: ../_static/basics/module_overview/mini-battery-module.png
+.. |mini-battery| thumbnail:: ../_static/basics/module-overview/mini-battery-module.png
     :width: 300em
     :height: 300em
 
@@ -70,7 +70,7 @@ Mini Battery Module
 Battery Module
 **************
 
-.. |battery-module| thumbnail:: ../_static/basics/module_overview/battery-module.png
+.. |battery-module| thumbnail:: ../_static/basics/module-overview/battery-module.png
     :width: 300em
     :height: 300em
 
@@ -85,7 +85,7 @@ Battery Module
 Power Module
 ************
 
-.. |power-module| thumbnail:: ../_static/basics/module_overview/power-module.png
+.. |power-module| thumbnail:: ../_static/basics/module-overview/power-module.png
     :width: 300em
     :height: 300em
 
@@ -100,7 +100,7 @@ Power Module
 PIR Module
 **********
 
-.. |pir-module| thumbnail:: ../_static/basics/module_overview/pir-module.png
+.. |pir-module| thumbnail:: ../_static/basics/module-overview/pir-module.png
     :width: 300em
     :height: 300em
 
@@ -115,7 +115,7 @@ PIR Module
 Climate Module
 **************
 
-.. |climate-module| thumbnail:: ../_static/basics/module_overview/climate-module.png
+.. |climate-module| thumbnail:: ../_static/basics/module-overview/climate-module.png
     :width: 300em
     :height: 300em
 
@@ -130,7 +130,7 @@ Climate Module
 LCD Module
 **********
 
-.. |lcd-module| thumbnail:: ../_static/basics/module_overview/lcd-module-bg.png
+.. |lcd-module| thumbnail:: ../_static/basics/module-overview/lcd-module-bg.png
     :width: 300em
     :height: 300em
 
@@ -145,7 +145,7 @@ LCD Module
 Button Module
 *************
 
-.. |button-module| thumbnail:: ../_static/basics/module_overview/button-module.png
+.. |button-module| thumbnail:: ../_static/basics/module-overview/button-module.png
     :width: 300em
     :height: 300em
 
@@ -160,7 +160,7 @@ Button Module
 Encoder Module
 **************
 
-.. |encoder-module| thumbnail:: ../_static/basics/module_overview/encoder-module.png
+.. |encoder-module| thumbnail:: ../_static/basics/module-overview/encoder-module.png
     :width: 300em
     :height: 300em
 
@@ -175,7 +175,7 @@ Encoder Module
 Relay Module
 ************
 
-.. |relay-module| thumbnail:: ../_static/basics/module_overview/relay-module.png
+.. |relay-module| thumbnail:: ../_static/basics/module-overview/relay-module.png
     :width: 300em
     :height: 300em
 
@@ -189,7 +189,7 @@ Relay Module
 Sensor Module
 *************
 
-.. |sensor-module| thumbnail:: ../_static/basics/module_overview/sensor-module.png
+.. |sensor-module| thumbnail:: ../_static/basics/module-overview/sensor-module.png
     :width: 300em
     :height: 300em
 
@@ -207,7 +207,7 @@ Sensor Module
 Sigfox Module
 *************
 
-.. |sigfox-module| thumbnail:: ../_static/basics/module_overview/sigfox-module.png
+.. |sigfox-module| thumbnail:: ../_static/basics/module-overview/sigfox-module.png
     :width: 300em
     :height: 300em
 
@@ -222,7 +222,7 @@ Sigfox Module
 micro:bit Module
 ****************
 
-.. |microbit| thumbnail:: ../_static/basics/module_overview/microbit-module.png
+.. |microbit| thumbnail:: ../_static/basics/module-overview/microbit-module.png
 
 +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | |microbit|             | | Let's measure and influence your environment with HARDWARIO micro:bit bundle.                                                                  |
@@ -239,7 +239,7 @@ micro:bit Module
 1-Wire Module
 *************
 
-.. |1-wire-module| thumbnail:: ../_static/basics/module_overview/1-wire-module.png
+.. |1-wire-module| thumbnail:: ../_static/basics/module-overview/1-wire-module.png
     :width: 300em
     :height: 300em
 
@@ -254,7 +254,7 @@ micro:bit Module
 Cover Module
 ************
 
-.. |cover-module| thumbnail:: ../_static/basics/module_overview/cover-module.png
+.. |cover-module| thumbnail:: ../_static/basics/module-overview/cover-module.png
     :width: 300em
     :height: 300em
 
@@ -269,7 +269,7 @@ Cover Module
 Tag Module
 **********
 
-.. |tag-module| thumbnail:: ../_static/basics/module_overview/tag-module.png
+.. |tag-module| thumbnail:: ../_static/basics/module-overview/tag-module.png
     :width: 300em
     :height: 300em
 
@@ -285,7 +285,7 @@ Tag Module
 Base Module
 ***********
 
-.. |base-module| thumbnail:: ../_static/basics/module_overview/base-module.png
+.. |base-module| thumbnail:: ../_static/basics/module-overview/base-module.png
     :width: 300em
     :height: 300em
 
@@ -302,7 +302,7 @@ Base Module
 Breadboard Module
 *****************
 
-.. |breadboard-module| thumbnail:: ../_static/basics/module_overview/breadboard-module.png
+.. |breadboard-module| thumbnail:: ../_static/basics/module-overview/breadboard-module.png
     :width: 300em
     :height: 300em
 
@@ -317,7 +317,7 @@ Breadboard Module
 Probe Module
 ************
 
-.. |probe-module| thumbnail:: ../_static/basics/module_overview/probe-module.png
+.. |probe-module| thumbnail:: ../_static/basics/module-overview/probe-module.png
     :width: 300em
     :height: 300em
 
@@ -336,7 +336,7 @@ Tags
 Temperature Tag
 ***************
 
-.. |temperature-tag| thumbnail:: ../_static/basics/module_overview/temperature-tag.png
+.. |temperature-tag| thumbnail:: ../_static/basics/module-overview/temperature-tag.png
     :width: 300em
     :height: 300em
 
@@ -351,7 +351,7 @@ Temperature Tag
 Humidity Tag
 ************
 
-.. |humidity-tag| thumbnail:: ../_static/basics/module_overview/humidity-tag.png
+.. |humidity-tag| thumbnail:: ../_static/basics/module-overview/humidity-tag.png
     :width: 300em
     :height: 300em
 
@@ -366,7 +366,7 @@ Humidity Tag
 Lux Meter Tag
 *************
 
-.. |lux-meter-tag| thumbnail:: ../_static/basics/module_overview/lux-meter-tag.png
+.. |lux-meter-tag| thumbnail:: ../_static/basics/module-overview/lux-meter-tag.png
     :width: 300em
     :height: 300em
 
@@ -381,7 +381,7 @@ Lux Meter Tag
 Barometer Tag
 *************
 
-.. |barometer-tag| thumbnail:: ../_static/basics/module_overview/barometer-tag.png
+.. |barometer-tag| thumbnail:: ../_static/basics/module-overview/barometer-tag.png
     :width: 300em
     :height: 300em
 
@@ -395,7 +395,7 @@ Barometer Tag
 VOC Tag
 *******
 
-.. |voc-tag| thumbnail:: ../_static/basics/module_overview/voc-lp-tag.png
+.. |voc-tag| thumbnail:: ../_static/basics/module-overview/voc-lp-tag.png
     :width: 300em
     :height: 300em
 
@@ -410,7 +410,7 @@ VOC Tag
 NFC Tag
 *******
 
-.. |nfc-tag| thumbnail:: ../_static/basics/module_overview/nfc-tag.png
+.. |nfc-tag| thumbnail:: ../_static/basics/module-overview/nfc-tag.png
     :width: 300em
     :height: 300em
 

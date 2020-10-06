@@ -9,7 +9,7 @@ HARDWARIO Playground is free **Windows, macOS** and **Linux** software that enab
 - **Create programs** with visual programming in the **Node-RED**
 - **Visualize** measured values and control nodes with Dashboard
 
-.. thumbnail:: ../_static/basics/playground/playground_node-red.PNG
+.. thumbnail:: ../_static/basics/playground/playground-node-red.png
    :width: 60%
    :alt: Playground Functions Tab
 
@@ -19,7 +19,7 @@ Download HARDWARIO Playground
 
 Use `HARDWARIO Playground download page <https://www.hardwario.com/download/>`_ which always have the links of the latest version.
 
-.. thumbnail:: ../_static/basics/playground/download_page.png
+.. thumbnail:: ../_static/basics/playground/download-page.png
    :alt: Playground Functions Tab
 
 Builds are also in `github releases <https://github.com/hardwario/bch-playground/releases>`_.
@@ -39,7 +39,7 @@ Devices
 On this tab you connect to the Radio Dongle. Choose the Radio Dongle (``bc-usb-dongle``) from the list and click Connect
 
 
-.. thumbnail:: ../_static/basics/playground/playground_devices-connect.png
+.. thumbnail:: ../_static/basics/playground/playground-devices-connect.png
    :width: 40%
    :alt: Playground Device
 
@@ -47,7 +47,7 @@ After connecting to the Radio Dongle you could see all the paired wireless nodes
 The node alias is later used in MQTT message topic (``node/climate-monitor:0/..``),
 **so change it only when you know what are you doing.**
 
-.. thumbnail:: ../_static/basics/playground/playground_devices-paired.png
+.. thumbnail:: ../_static/basics/playground/playground-devices-paired.png
    :width: 60%
    :alt: Playground Paired Devices
 
@@ -67,7 +67,7 @@ Functions
 
 This tab is the `Node-RED <https://nodered.org/about/>`_ visual programming tool. See :doc:`Projects <projects>` how to use this visual programming tool.
 
-.. thumbnail:: ../_static/basics/playground/playground_node-red_flow.png
+.. thumbnail:: ../_static/basics/playground/playground-node-red-flow.png
    :width: 60%
    :alt: Playground Functions Flow
 
@@ -79,7 +79,7 @@ Dashboard
 
 Here you can display gauges, graphs, buttons and other widgets. See the `Projects <https://www.hackster.io/hardwario/projects>`_ how to use Dashboard.
 
-.. thumbnail:: ../_static/basics/playground/playground_dashboard.png
+.. thumbnail:: ../_static/basics/playground/playground-dashboard.png
    :width: 60%
    :alt: Playground Dashboard
 
@@ -89,7 +89,7 @@ Messages
 
 Here you can see all the messages from wireless nodes. You can copy the topics to clipboard and use them in Node-RED in the ``topic`` textbox.
 
-.. thumbnail:: ../_static/basics/playground/playground_messages.png
+.. thumbnail:: ../_static/basics/playground/playground-messages.png
    :width: 60%
    :alt: Playground Messages
 
@@ -105,7 +105,7 @@ If you would like to update Radio Dongle, disconnect it first in the Devices tab
 
 .. youtube:: https://www.youtube.com/watch?v=3IXLBQ5M6Us&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=2
 
-.. thumbnail:: ../_static/basics/playground/playground_firmware.PNG
+.. thumbnail:: ../_static/basics/playground/playground-firmware.png
    :width: 60%
    :alt: Playground Firmware
 

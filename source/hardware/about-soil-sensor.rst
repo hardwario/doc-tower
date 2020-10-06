@@ -1,8 +1,8 @@
-##########################
-About Soil Moisture Sensor
-##########################
+#################
+About Soil Sensor
+#################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_soil/soil-sensor_module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-soil/soil-sensor-module.png
     :width: 300em
     :height: 300em
 
@@ -44,7 +44,7 @@ About Soil Moisture Sensor
 
     We **do not** recommend to put the top part of the sensor under the ground. Ground planes in this area could affect the measurement electrodes and precision.
 
-.. thumbnail:: ../_static/hardware/about_soil/soil-vs-sensor-module-description.png
+.. thumbnail:: ../_static/hardware/about-soil/soil-vs-sensor-module-description.png
    :width: 45%
    :alt: Sensor Module Connection
 

@@ -7,7 +7,7 @@ or you can compile code also on **Raspberry Pi** with our
 :doc:`bc-raspbian <../tutorials/raspberry-pi-installation>` image and installing
 the `GCC package <https://forum.hardwario.com/t/how-to-compile-bigclown-firmware-on-raspberry-pi/271/10>`_
 
-Toolchain comes with many useful tools, please see the **Tools** section in the menu where tools like :doc:`bcf <../tools/bigclown-firmware-flashing-tool>` are explained.
+Toolchain comes with many useful tools, please see the **Tools** section in the menu where tools like :doc:`bcf <../tools/hardwario-firmware-flashing-tool>` are explained.
 
 Every HARDWARIO TOWER - Industrial IoT Kit Module has its own library in the `HARDWARIO SDK <https://sdk.hardwario.com>`_.
 So you just call **init** function and set the **callback** function.
@@ -22,8 +22,8 @@ Firmware flashing
 With these tools you can flash new firmware.
 Tools can automatically download pre-compiled firmware from GitHub and you can also choose your own ``*.bin`` file to flash.
 
-- :doc:`HARDWARIO Playground <../basics/bigclown-playground>` is a GUI multi-platform tool.
-- :doc:`HARWDARIO Flasher <../tools/bigclown-firmware-flashing-tool>` (``bcf``) command line tool.
+- :doc:`HARDWARIO Playground <../basics/hardwario-playground>` is a GUI multi-platform tool.
+- :doc:`HARWDARIO Flasher <../tools/hardwario-firmware-flashing-tool>` (``bcf``) command line tool.
 
 ************
 Example Code

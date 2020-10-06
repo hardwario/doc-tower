@@ -2,7 +2,7 @@
 About Battery Module
 ####################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_battery/battery-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-battery/battery-module.png
     :width: 300em
     :height: 300em
 

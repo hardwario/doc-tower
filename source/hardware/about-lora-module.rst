@@ -2,7 +2,7 @@
 About LoRa Module
 #################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_lora/lora-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-lora/lora-module.png
     :width: 300em
     :height: 300em
 

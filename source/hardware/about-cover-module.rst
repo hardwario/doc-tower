@@ -2,7 +2,7 @@
 About Cover Module
 ##################
 
-.. |pic1| thumbnail:: ../_static/hardware/about_cover/cover-module.png
+.. |pic1| thumbnail:: ../_static/hardware/about-cover/cover-module.png
     :width: 300em
     :height: 300em
 

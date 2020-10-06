@@ -29,13 +29,13 @@ In menu select functions and on top right corner click on hamburger menu. Click 
 
     node-red-contrib-homekit-bridged
 
-.. thumbnail:: ../_static/integrations/homekit_siri/node_red_pallete.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/node-red-pallete.png
    :width: 60%
    :alt: Node-Red palette install
 
 When message with title Installing **'node-red-contrib-homekit-bridged'** pops up, just click Install. After Installation you will see module in advacted group.
 
-.. thumbnail:: ../_static/integrations/homekit_siri/node_red_advanced_tab.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/node-red-advanced-tab.png
    :width: 60%
    :alt: Node-Red advanced tab
 
@@ -54,7 +54,7 @@ and battery module (`standard <https://shop.hardwario.com/battery-module/>`_ or 
 Connect Core Module to computer via microUSB cable. Click on **Firmware** tab in menu,
 use hardwario/bcf-radio-push-button and Click Flash.
 
-.. thumbnail:: ../_static/integrations/homekit_siri/playgroud_flash_firmware.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/playgroud-flash-firmware.png
    :width: 60%
    :alt: Playground Flash Firmware
 
@@ -63,7 +63,7 @@ Pair Hardware
 
 Open HARDWARIO Hub page in browser same as in chapter Instalation and select **Device** tab in menu and click on **Start pairing** button.
 
-.. thumbnail:: ../_static/integrations/homekit_siri/playgroud_pair_hardware.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/playgroud-pair-hardware.png
    :width: 60%
    :alt: Playground Pair Hardware
 
@@ -72,7 +72,7 @@ Assembly Hardware
 
 Now unplug Core Module from microUSB cable and connect it to battery module (standart or mini).
 
-.. thumbnail:: ../_static/integrations/homekit_siri/homekit-and-siri_Core-standart-battery.jpg
+.. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-Core-standart-battery.jpg
    :width: 60%
    :alt: Core Module with Battery Module
 
@@ -94,21 +94,21 @@ Open Functions tab in menu. Open Hamburger menu, select Import > Clipboard and p
 
 So flow should looks like following:
 
-.. thumbnail:: ../_static/integrations/homekit_siri/playground_flow_basic.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/playground-flow-basic.png
    :width: 60%
    :alt: Flow Basic
 
 Place Homekit node from advanced group and connect it to template node in flow
 ******************************************************************************
 
-.. thumbnail:: ../_static/integrations/homekit_siri/homekit-connected.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/homekit-connected.png
    :width: 60%
 
 
 Double-click on HomeKit node in flow, settings should popup
 ***********************************************************
 
-.. thumbnail:: ../_static/integrations/homekit_siri/homekit-settings.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/homekit-settings.png
    :width: 60%
 
 
@@ -118,14 +118,14 @@ Setup bridge
 Let's setup bridge. Bridge is basically, bridge, between our Hardware sensors and your iPhones,
 iPads, Macs, etc... So Click on little pencil icon next to the bridge chapter of setting and fill it as following and click Add:
 
-.. thumbnail:: ../_static/integrations/homekit_siri/home_kit_bridge_settings.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/home-kit-bridge-settings.png
    :width: 30%
    :alt: Bridge Settings
 
 Fill the rest of the settings according to the screenshot below. Click Done and Deploy
 **************************************************************************************
 
-.. thumbnail:: ../_static/integrations/homekit_siri/home_kit_settings.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/home-kit-settings.png
    :width: 30%
    :alt: HomeKit Settings
 
@@ -136,7 +136,7 @@ Now as you can see on your screen and screenshot bellow. Device is waiting for p
 So open Home app on your iPhone or iPad and click Add Accessory > Don't Have a Code or Can't Scan > HARDWRIO bridge.
 Add anyway on next screen. In screen where you have to input code, input just 1 to all boxes:
 
-.. thumbnail:: ../_static/integrations/homekit_siri/homekit-and-siri_iPhones-screens-1.png
+.. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-iPhones-screens-1.png
    :width: 60%
    :alt: Pairing Home Kit
 
@@ -145,7 +145,7 @@ Setup
 
 Now just setup where is your bridge and temperature sensor and your sensor is added!
 
-.. thumbnail:: ../_static/integrations/homekit_siri/homekit-and-siri_iPhones-screens-2.png
+.. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-iPhones-screens-2.png
    :width: 60%
    :alt: Setup
 
@@ -155,7 +155,7 @@ Siri
 If you have some device in Home app, you can control it or get infromation via Siri.
 So if you want to get temperature from Core Module which we just set up, just ask Siri "what's the temperature in bedroom?" (or what room you selected).
 
-.. thumbnail:: ../_static/integrations/homekit_siri/homekit-and-siri_iPhones-screens-siri.PNG
+.. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-iPhones-screens-siri.png
    :width: 60%
    :alt: Siri Test
 

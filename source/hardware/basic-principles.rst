@@ -30,7 +30,7 @@ Enclosures
 
 We also design and maintain the whole range of 3D enclosures that are optimized for 3D printing.
 
-.. thumbnail:: ../_static/hardware/basic/enclosure_showcase.png
+.. thumbnail:: ../_static/hardware/basic/enclosure-showcase.png
    :width: 60%
    :alt: Enclosure
 

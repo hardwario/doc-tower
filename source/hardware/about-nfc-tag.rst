@@ -2,7 +2,7 @@
 About NFC Tag
 #############
 
-.. |pic1| thumbnail:: ../_static/hardware/about_nfc/nfc-tag.png
+.. |pic1| thumbnail:: ../_static/hardware/about-nfc/nfc-tag.png
     :width: 300em
     :height: 300em
 
