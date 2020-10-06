@@ -1,0 +1,40 @@
+[INFO  - 2020-08-20T10:55:39.989Z] GhostDriver - Main - running on port 55700
+[INFO  - 2020-08-20T10:55:42.090Z] Session [b0d38350-e2d3-11ea-8b26-dbdf7296f695] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-08-20T10:55:42.090Z] Session [b0d38350-e2d3-11ea-8b26-dbdf7296f695] - page.customHeaders:  - {}
+[INFO  - 2020-08-20T10:55:42.090Z] Session [b0d38350-e2d3-11ea-8b26-dbdf7296f695] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-08-20T10:55:42.090Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b0d38350-e2d3-11ea-8b26-dbdf7296f695
+[ERROR - 2020-08-20T10:55:42.895Z] Session [b0d38350-e2d3-11ea-8b26-dbdf7296f695] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'Object.assign({},a("href"),{removeHash:function(){return s("hash")?o("href").split("#")[0]:o("href")}})')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-08-20T10:55:42.895Z] Session [b0d38350-e2d3-11ea-8b26-dbdf7296f695] - page.onError - stack:
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  n (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+  (anonymous function) (https://prod.hackster-cdn.online/assets/bundles/analytics.56b8d7afef06cb7f1a83.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-08-20T10:55:43.340Z] Session [b0d38350-e2d3-11ea-8b26-dbdf7296f695] - page.onError - msg: TypeError: undefined is not an object (evaluating 'Object.getOwnPropertyDescriptor(Element.prototype,"scrollWidth").get')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-08-20T10:55:43.340Z] Session [b0d38350-e2d3-11ea-8b26-dbdf7296f695] - page.onError - stack:
+  (anonymous function) (https://prod.hackster-cdn.online/assets/application-f59e9cfa44d8a30af1e5c1d795808d654aaa80268fa660846ac1e050763157d9.js:1)
+
+  phantomjs://platform/console++.js:263 in error

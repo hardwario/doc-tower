@@ -1,0 +1,18 @@
+[0820/154541.768:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154541.769:ERROR:exception_snapshot_win.cc(98)] thread ID 7432 not found in process
+[0820/154541.783:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154541.783:ERROR:exception_snapshot_win.cc(98)] thread ID 24564 not found in process
+[0820/154617.116:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154617.116:ERROR:exception_snapshot_win.cc(98)] thread ID 21080 not found in process
+[0820/154617.131:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154617.131:ERROR:exception_snapshot_win.cc(98)] thread ID 9156 not found in process
+[0820/154741.113:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154741.114:ERROR:exception_snapshot_win.cc(98)] thread ID 2144 not found in process
+[0820/154741.116:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154741.117:ERROR:exception_snapshot_win.cc(98)] thread ID 11920 not found in process
+[0820/154741.125:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154741.126:ERROR:exception_snapshot_win.cc(98)] thread ID 2060 not found in process
+[0820/154741.141:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154741.141:ERROR:exception_snapshot_win.cc(98)] thread ID 6380 not found in process
+[0820/154741.141:ERROR:process_reader_win.cc(123)] NtOpenThread: {P��stup byl odep�en} Proces po�adoval p��stup k objektu, ale nebyla mu ud�lena odpov�daj�c� p��stupov� pr�va. (0xc0000022)
+[0820/154741.141:ERROR:exception_snapshot_win.cc(98)] thread ID 27636 not found in process
