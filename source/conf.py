@@ -29,7 +29,6 @@ author = 'HARDWARIO'
 
 extensions = [
     'sphinx_copybutton',
-    'sphinxcontrib.contentui',
     'sphinxcontrib.yt',
     'sphinx_fontawesome',
     'sphinxcontrib.images',
