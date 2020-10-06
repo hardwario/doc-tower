@@ -10,8 +10,8 @@ Radio Dongle
 ************
 
 .. |dongle| thumbnail:: ../_static/basics/module-overview/radio-dongle.png
-    :width: 300em
-    :height: 300em
+    :width: 200em
+    :height: 200em
 
 +------------------------+-------------------------------------------------------------------------------------------+
 | |dongle|               | | The **Radio Dongle** is the main element of the HARDWARIO radio network.                |
@@ -26,8 +26,8 @@ Core Module
 ***********
 
 .. |core-module| thumbnail:: ../_static/basics/module-overview/core-module.png
-    :width: 300em
-    :height: 300em
+    :width: 400em
+    :height: 400em
 
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 | |core-module|          | | The **Core Module** is the key element of every HARDWARIO node.                                                                                        |
