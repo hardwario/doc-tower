@@ -4,7 +4,7 @@ This repository contains source data for the online datasheet of CHESTER. It use
 
 The documentation is hosted at [**Read The Docs**](https://readthedocs.org/) and is automatically built on commit to the master branch.
 
-Once built, the site is available at: **https://chester.hardwario.com/**
+Once built, the site is available at: **https://tower.hardwario.com/**
 
 
 ## Setup
@@ -17,11 +17,11 @@ Follow these steps:
 
 1. Clone the repository:
 
-       git clone https://github.com/hardwario/doc-chester.git
+       git clone https://github.com/hardwario/doc-tower.git
 
 1. Go to the repository:
 
-       cd doc-chester
+       cd doc-tower
 
 1. Build the Docker image:
 
