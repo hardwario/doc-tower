@@ -31,6 +31,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinxcontrib.yt',
     'sphinx_fontawesome',
+    'sphinxcontrib.contentui',
     'sphinxcontrib.images',
     'sphinx_tabs.tabs',
 ]
