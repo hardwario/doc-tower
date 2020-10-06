@@ -1,4 +1,4 @@
-# Repository: doc-chester
+# Repository: doc-tower
 
 This repository contains source data for the online datasheet of CHESTER. It uses **Sphinx** as a documentation generator altogether with **reStructuredText** as a lightweight markup language.
 
