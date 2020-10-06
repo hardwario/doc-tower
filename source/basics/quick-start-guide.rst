@@ -140,7 +140,7 @@ Switch to the **Functions** tab and from the color blocks on the left side drag 
 **gauge** block to the **flow** in the middle of the screen. The color blocks are called **nodes**.
 You can use the ``filter nodes`` text box to find the right block. Connect the two created nodes together.
 
-.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-tab.PNG
+.. thumbnail:: ../_static/basics/quick-start-guide/playground-functions-tab.png
     :width: 60%
 
 
