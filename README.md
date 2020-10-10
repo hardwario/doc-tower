@@ -1,6 +1,6 @@
 # Repository: doc-tower
 
-This repository contains source data for the online datasheet of CHESTER. It uses **Sphinx** as a documentation generator altogether with **reStructuredText** as a lightweight markup language.
+This repository contains source data for the online datasheet of TOWER. It uses **Sphinx** as a documentation generator altogether with **reStructuredText** as a lightweight markup language.
 
 The documentation is hosted at [**Read The Docs**](https://readthedocs.org/) and is automatically built on commit to the master branch.
 
@@ -66,4 +66,4 @@ This project is licensed under the [**Creative Commons Attribution-ShareAlike 4.
 
 ---
 
-Made with ❤️ by [**HARDWARIO s.r.o.**](https://www.hardwario.com/) in the heart of Europe,
+Made with ❤️ by [**HARDWARIO s.r.o.**](https://www.hardwario.com/) in the heart of Europe.
