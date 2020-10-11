@@ -31,7 +31,8 @@ Video tutorials
 If you like video tutorials, you can watch quick guide to the HARDWARIO Playground in 5 videos.
 They explain flashing, pairing, Dashboard and Node-RED
 
-.. youtube:: https://www.youtube.com/watch?v=nzFtmhLNy-I&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=1
+..
+   youtube:: https://www.youtube.com/watch?v=nzFtmhLNy-I&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=1
 
 Devices
 *******
@@ -60,7 +61,8 @@ The node alias is later used in MQTT message topic (``node/climate-monitor:0/..`
 #. Apply power to the wireless module
 #. Repeat with all the modules you want to pair
 
-.. youtube:: https://www.youtube.com/watch?v=ESrTEdV9PJQ&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=3
+..
+   youtube:: https://www.youtube.com/watch?v=ESrTEdV9PJQ&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=3
 
 Functions
 *********
@@ -71,7 +73,8 @@ This tab is the `Node-RED <https://nodered.org/about/>`_ visual programming tool
    :width: 60%
    :alt: Playground Functions Flow
 
-.. youtube:: https://www.youtube.com/watch?v=VW_-RCIZ9rY&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=4
+..
+   youtube:: https://www.youtube.com/watch?v=VW_-RCIZ9rY&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=4
 
 *********
 Dashboard
@@ -103,7 +106,8 @@ Choose the firmware or start typing to find project you like to try. You can als
 Always make sure you are flashing the right Device, usually ``bc-core-module``.
 If you would like to update Radio Dongle, disconnect it first in the Devices tab.
 
-.. youtube:: https://www.youtube.com/watch?v=3IXLBQ5M6Us&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=2
+..
+   youtube:: https://www.youtube.com/watch?v=3IXLBQ5M6Us&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=2
 
 .. thumbnail:: ../_static/basics/playground/playground-firmware.png
    :width: 60%

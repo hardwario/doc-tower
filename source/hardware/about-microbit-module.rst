@@ -29,7 +29,8 @@ You can get all of these in `our shop <https://shop.hardwario.com/micro-bit/>`_ 
 
 You can watch the video for more explaining about each thing on the list. I go over all of them one by one.
 
-.. youtube:: https://www.youtube.com/watch?v=gdahgHwgJ3E
+..
+   youtube:: https://www.youtube.com/watch?v=gdahgHwgJ3E
 
 **************************
 Setting up the environment
@@ -67,7 +68,8 @@ After all this is done you are ready to explore the extension block by block.
 
 I will again talk about all that is in this chapter in the video below.
 
-.. youtube:: https://www.youtube.com/watch?v=XAdz79VjOH4
+..
+   youtube:: https://www.youtube.com/watch?v=XAdz79VjOH4
 
 ***********************
 Exploring the extension
@@ -201,7 +203,8 @@ After you completed your code, you can just **one click download** it to your de
     :width: 60%
 
 
-.. youtube:: https://www.youtube.com/watch?v=eFh9bphTq0w
+..
+   youtube:: https://www.youtube.com/watch?v=eFh9bphTq0w
 
 *************
 Code examples

@@ -64,7 +64,8 @@ Also follow one of the project tutorials above where installation and creating a
 
 Here you can watch a video with the Blynk Example:
 
-.. youtube:: https://www.youtube.com/watch?v=cVC_tFuCYTM&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=5
+..
+   youtube:: https://www.youtube.com/watch?v=cVC_tFuCYTM&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=5
 
 **********************************
 ZeRGBA to hex RGB values - Example
