@@ -13,10 +13,10 @@ With HARDWARIO, you will not encounter things like black box magic or vendor loc
 Basic Features
 **************
 
-HARDWARIO offers a unique set of features that makes it different from other platforms...
+HARDWARIO TOWER offers a unique set of features that makes it different from other platforms...
 
-HARDWARIO is open-source
-************************
+HARDWARIO TOWER is open-source
+******************************
 
 Open-source is our passion, so we share everything what we do. We have an `organization at GitHub <https://github.com/hardwario>`_.
 
@@ -25,18 +25,18 @@ so anytime you have a chance to see the amount of care, passion and quality we p
 
 As we grow and build the community, we sincerely appreciate every single contribution from it. Why wouldn't you join us today?
 
-HARDWARIO is wireless
-*********************
+HARDWARIO TOWER is wireless
+***************************
 
-With HARDWARIO, you can build a radio network for your devices.
+With HARDWARIO TOWER, you can build a radio network for your devices.
 The radio network uses a sub-GHz communication technology (868/915 MHz),
 which is a great choice for home automation applications, security alarms, smart metering, etc.
 
 The devices in your network will be able to communicate up to 500 meters line-of-sight distance.
 Speaking the indoor range, in most cases you will be able to achieve a full house coverage from a single point.
 
-HARDWARIO is modular
-********************
+HARDWARIO TOWER is modular
+**************************
 
 Why would you constantly reinvent the wheel? We take no shortcomings when it comes down to **modularity and reusability**.
 
@@ -48,17 +48,17 @@ The equal level of modularity has been also taken on the software level.
 Either on a device side, anyone can master creating the firmware with the properly documented APIs and examples,
 or - the distributed system approach of **MQTT messages** on the side of **hub**.
 
-HARDWARIO is low-power
-**********************
+HARDWARIO TOWER is low-power
+****************************
 
-From the very beginning, HARDWARIO has been been optimized for **long service time from batteries**.
+From the very beginning, HARDWARIO TOWER has been been optimized for **long service time from batteries**.
 Most devices can operate without a need for battery replacement for **more than 2 years**.
 
 We have achieved that thanks to our long-time experience designing ultra-low-power devices and utilizing modern hardware components
 that offer very low standby and/or operation currents.
 
-HARDWARIO is secure
-*******************
+HARDWARIO TOWER is secure
+*************************
 
 HARDWARIO uses simple, yet proven security mechanisms for data **encryption and authentication** in the radio communication.
 
