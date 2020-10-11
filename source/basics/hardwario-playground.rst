@@ -31,7 +31,7 @@ Video tutorials
 If you like video tutorials, you can watch quick guide to the HARDWARIO Playground in 5 videos.
 They explain flashing, pairing, Dashboard and Node-RED
 
-..  youtube:: https://www.youtube.com/watch?v=nzFtmhLNy-I&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=1
+.. youtube:: https://www.youtube.com/watch?v=nzFtmhLNy-I&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=1
 
 Devices
 *******
