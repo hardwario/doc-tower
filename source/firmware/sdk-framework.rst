@@ -5,7 +5,7 @@ SDK Framework
 Software Development Kit or **SDK** is a package of software libraries that simplifies programming of HARDWARIO hardware.
 This libraries contains functions to easily create your application skeleton and for easy communication with the hardware.
 
-HARDWARIO SDK has clean design and unified access to the hardware, sensors and peripherals.
+HARDWARIO TOWER SDK has clean design and unified access to the hardware, sensors and peripherals.
 The complete package is tested together and therefore you wouldn't have software or peripheral resources conflicts.
 
 **********

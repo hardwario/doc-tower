@@ -23,7 +23,7 @@ About Breadboard Module
 Features
 ********
 
-- Break-out adapter between HARDWARIO modules and breadboard
+- Break-out adapter between HARDWARIO TOWER modules and breadboard
 - Precision pin headers optimized for breadboard sockets
 - Operating temperature range: -20 to 70 °C
 - Mechanical dimensions: 114 x 33 mm

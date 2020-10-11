@@ -2,7 +2,7 @@
 LoRa AT Commands Configuration
 ##############################
 
-This document describes how to configure HARDWARIO LoRa devices over USB virtual serial port and AT commands.
+This document describes how to configure HARDWARIO TOWER LoRa devices over USB virtual serial port and AT commands.
 This document does not explain project-specific firmware commands and functions. They are explained in the project itself.
 
 .. note::

@@ -9,7 +9,7 @@ About Battery Module
 +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 | |pic1|                 | | The **Battery Module** is designed as a power supply source for the battery-operated units.                                                        |
 |                        | | The integrated low-power buck converter provides an excellent efficiency from the **four AAA 1.5 V Alkaline cells**.                               |
-|                        | | It also features an extra 5-pin socket where you can connect a HARDWARIO tag.                                                                      |
+|                        | | It also features an extra 5-pin socket where you can connect a HARDWARIO TOWER tag.                                                                |
 |                        | |                                                                                                                                                    |
 |                        | | If the for AAA batteries are not suitable for your application, you can use the **external voltage input**, which can handle up to 10 V.           |
 |                        | | You can find the external input on the two pins in the middle. These pins are compatible with the popular JST connector used for Lithium batteries.|

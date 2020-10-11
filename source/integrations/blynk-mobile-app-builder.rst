@@ -34,11 +34,11 @@ The Blynk gives you two options either create account by email or use OAuth2 log
 
     If you do not want to share your email, which we would consider quite safe in this case, then just create a testing email account for this purpose.
 
-If you do not want to share your email, which I would consider quite safe in this case, then just create a testing email account for this purpose.
-**************************************************************************************************************************************************
+Step 1: If you do not want to share your email, which I would consider quite safe in this case, then just create a testing email account for this purpose.
+**********************************************************************************************************************************************************
 
-After starting the app you have to create account. No email confirmation is needed, it is up to you to be careful when filling in the email address, typos might lead to unrecoverable account. The email address is used for token distribution, thus pretty important.
-************************************************************************************************************************************************************************************************************************************************************************
+Step 2: After starting the app you have to create account. No email confirmation is needed, it is up to you to be careful when filling in the email address, typos might lead to unrecoverable account. The email address is used for token distribution, thus pretty important.
+********************************************************************************************************************************************************************************************************************************************************************************
 
 .. tip::
 
@@ -64,8 +64,9 @@ Also follow one of the project tutorials above where installation and creating a
 
 Here you can watch a video with the Blynk Example:
 
-..
-   youtube:: https://www.youtube.com/watch?v=cVC_tFuCYTM&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&index=5
+.. raw:: html
+
+    <iframe width="750" height="422" src="https://www.youtube.com/embed/cVC_tFuCYTM?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **********************************
 ZeRGBA to hex RGB values - Example

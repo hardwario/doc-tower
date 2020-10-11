@@ -18,7 +18,7 @@ About Encoder Module
 |                        | | A typical application is a wireless thermostat.                                                                                    |
 |                        | | The rotary encoder could be used as a convenient navigation control in the graphical menu.                                         |
 |                        | |                                                                                                                                    |
-|                        | | This module also features three 5-pin sockets allowing you to connect HARDWARIO tags.                                              |
+|                        | | This module also features three 5-pin sockets allowing you to connect HARDWARIO TOWER tags.                                        |
 +------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 
 .. important::

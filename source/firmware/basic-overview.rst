@@ -9,7 +9,7 @@ the `GCC package <https://forum.hardwario.com/t/how-to-compile-bigclown-firmware
 
 Toolchain comes with many useful tools, please see the **Tools** section in the menu where tools like :doc:`bcf <../tools/hardwario-firmware-flashing-tool>` are explained.
 
-Every HARDWARIO TOWER - Industrial IoT Kit Module has its own library in the `HARDWARIO SDK <https://sdk.hardwario.com>`_.
+Every HARDWARIO TOWER - Industrial IoT Kit Module has its own library in the `HARDWARIO TOWER SDK <https://sdk.hardwario.com>`_.
 So you just call **init** function and set the **callback** function.
 
 In this section you will find code examples for **Core Module** and all the other HARDWARIO Modules.

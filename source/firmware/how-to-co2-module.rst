@@ -12,7 +12,7 @@ How It Works
 
 Technically it uses infrared light for measurements. More information on `Wikipedia <https://en.wikipedia.org/wiki/Carbon_dioxide_sensor>`_
 
-And how it works within the SDK? As any other HARDWARIO module. There are init, periodical + manual measurements and calibration functions available in the SDK
+And how it works within the SDK? As any other TOWER module. There are init, periodical + manual measurements and calibration functions available in the SDK
 
 .. tip::
 

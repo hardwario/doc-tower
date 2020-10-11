@@ -9,7 +9,7 @@ About Tag Module
 +------------------------+-------------------------------------------------------------------------------------------------------+
 | |pic1|                 | | The **Tag Module** makes it possible to **connect up to six HARDWARIO tags**.                       |
 |                        | | There are two independent I²C buses (I2C0 and I2C1) - one on each side.                             |
-|                        | | This allows to connect two tags of the same I²C address to a single HARDWARIO node.                 |
+|                        | | This allows to connect two tags of the same I²C address to a single HARDWARIO TOWER node.           |
 |                        | | It also features pull-up resistors on SDA/SCL signals of I2C1 bus.                                  |
 +------------------------+-------------------------------------------------------------------------------------------------------+
 

@@ -23,7 +23,7 @@ Features
 ********
 
 - Aesthetic cover for the electronics
-- Bottom pins for the standardized HARDWARIO header
+- Bottom pins for the standardized HARDWARIO TOWER header
 - Operating temperature range: -20 to 70 °C
 - Mechanical dimensions: 88 x 55 mm
 

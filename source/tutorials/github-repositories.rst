@@ -2,7 +2,7 @@
 GitHub Repositories
 ###################
 
-The HARDWARIO system is open-source and is developed through the **GitHub** platform,
+The HARDWARIO TOWER system is open-source and is developed through the **GitHub** platform,
 where you can find source data in individual repositories or download the pre-compiled packages from the section **Releases**.
 
 The GitHub organization name is hardwario and you can find its page at https://github.com/hardwario.

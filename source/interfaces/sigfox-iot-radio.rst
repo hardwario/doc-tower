@@ -8,7 +8,7 @@ It utilizes a wide-reaching signal that passes freely through solid objects, cal
 
 .. thumbnail:: ../_static/interfaces/sigfox-iot-radio/module-overview-sigfox-module.png
    :width: 10%
-   :alt: HARDWARIO Sigfox Module
+   :alt: HARDWARIO TOWER Sigfox Module
 
 HARDWARIO has certified modem and tutorials to quickly get started.
 

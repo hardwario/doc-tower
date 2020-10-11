@@ -18,15 +18,15 @@ This guide will help you to install and configure these services:
 Installation
 ************
 
-Update the package
-******************
+Step 1: Update the package
+**************************
 
 .. code-block:: console
 
     opkg update
 
-Install the driver for the HARDWARIO Radio Dongle and HARDWARIO Core module:
-****************************************************************************
+Step 2: Install the driver for the HARDWARIO Radio Dongle and HARDWARIO Core module
+***********************************************************************************
 
 .. code-block:: console
     :linenos:
@@ -35,36 +35,36 @@ Install the driver for the HARDWARIO Radio Dongle and HARDWARIO Core module:
     insmod ftdi_sio
     insmod cdc_acm
 
-Install `Mosquitto <https://mosquitto.org>`_ server and clients:
-****************************************************************
+Step 3: Install `Mosquitto <https://mosquitto.org>`_ server and clients
+***********************************************************************
 
 .. code-block:: console
 
     opkg install mosquitto mosquitto-client
 
-Enable service for Mosquitto
-****************************
+Step 4: Enable service for Mosquitto
+************************************
 
 .. code-block:: console
 
     /etc/init.d/mosquitto enable
 
-Start Mosquitto service
-***********************
+Step 5: Start Mosquitto service
+*******************************
 
 .. code-block:: console
 
     /etc/init.d/mosquitto start
 
-Install Python 3 (required by the HARDWARIO Gateway and HARDWARIO Firmware Tool)
-********************************************************************************
+Step 6: Install Python 3 (required by the HARDWARIO Gateway and HARDWARIO Firmware Tool)
+****************************************************************************************
 
 .. code-block:: console
 
     opkg install python3 python3-pip
 
-Install the HARDWARIO Gateway, HARDWARIO Flash Tool and HARDWARIO Host Tool
-***************************************************************************
+Step 7: Install the HARDWARIO Gateway, HARDWARIO Flash Tool and HARDWARIO Host Tool
+************************************************************************************
 
 .. code-block:: console
 
@@ -84,46 +84,46 @@ Finishing for Radio Dongle as a gateway
 
 Follow these steps if you have `Radio Dongle <https://shop.hardwario.com/radio-dongle/>`_ as a gateway.
 
-Finish :ref:`installation <turris-instalation>` part
-****************************************************
+Step 1: Finish :ref:`installation <turris-instalation>` part
+************************************************************
 
-Download configuration
-**********************
+Step 2: Download configuration
+******************************
 
 .. code-block:: console
 
     wget "https://raw.githubusercontent.com/bigclownlabs/bch-gateway/master/turris/etc/config/bc-gateway-usb-dongle" -O /etc/config/bc-gateway-usb-dongle
 
-Make sure the configuration works
-*********************************
+Step 3: Make sure the configuration works
+*****************************************
 
 .. code-block:: console
 
     uci show bc-gateway-usb-dongle
 
-Download Init Script
-********************
+Step 4: Download Init Script
+****************************
 
 .. code-block:: console
 
     wget "https://raw.githubusercontent.com/bigclownlabs/bch-gateway/master/turris/etc/init.d/bc-gateway-usb-dongle" -O /etc/init.d/bc-gateway-usb-dongle
 
-Add execute permission
-**********************
+Step 5: Add execute permission
+******************************
 
 .. code-block:: console
 
     chmod u+x /etc/init.d/bc-gateway-usb-dongle
 
-Enable service for gateway
-**************************
+Step 6: Enable service for gateway
+**********************************
 
 .. code-block:: console
 
     /etc/init.d/bc-gateway-usb-dongle enable
 
-Start service
-*************
+Step 7: Start service
+*********************
 
 .. code-block:: console
 

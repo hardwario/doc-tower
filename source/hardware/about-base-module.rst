@@ -7,7 +7,7 @@ About Base Module
     :height: 300em
 
 +------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **Base Module** works as a mechanical stand for the HARDWARIO units.                                                                |
+| |pic1|                 | | The **Base Module** works as a mechanical stand for the HARDWARIO TOWER units.                                                          |
 |                        | | With the exception of the **Battery Module**,                                                                                           |
 |                        | | you can plug any other HARDWARIO TOWER - Industrial IoT Kit module into a standardized socket available on the **Base Module**.         |
 |                        | |                                                                                                                                         |

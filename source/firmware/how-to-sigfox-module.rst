@@ -3,7 +3,7 @@ How to: Sigfox Module
 #####################
 
 Sigfox module provides a simple way how to connect your kit to the Sigfox network.
-As any other HARDWARIO module, Sigfox module can be controlled with the SDK.
+As any other TOWER module, Sigfox module can be controlled with the SDK.
 Please note that if you bought this module WITH connectivity from our e-shop, you will have to use
 MySigfox.com service to get messages from Sigfox Backend to your server.
 

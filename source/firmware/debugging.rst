@@ -57,7 +57,7 @@ You need to add just two function calls into your application:
 
 .. tip::
 
-    Have a look into `HARDWARIO SDK bc_log <https://sdk.hardwario.com/group__bc__log.html>`_ for more detailed info.
+    Have a look into `HARDWARIO TOWER SDK bc_log <https://sdk.hardwario.com/group__bc__log.html>`_ for more detailed info.
 
 Example of modified ``app/application.c`` from default project code after ``bcf create``:
 

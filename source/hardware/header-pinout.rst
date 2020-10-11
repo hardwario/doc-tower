@@ -26,7 +26,7 @@ Cloony pinout
 Eagle footprint library
 ***********************
 
-You can download `HARDWARIO library for Eagle EDA <https://github.com/hardwario/bc-hardware/tree/master/lbr>`_
+You can download `HARDWARIO TOWER library for Eagle EDA <https://github.com/hardwario/bc-hardware/tree/master/lbr>`_
 software which contains **Standard Module** and **Cloony** format.
 
 **********************************

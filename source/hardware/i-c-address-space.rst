@@ -11,7 +11,7 @@ All addresses are provided in a 7-bit format.
     Addresses **0x00-0x07** and **0x78-0x7F** are I2C reserved addresses and cannot be used.
 
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| Address        | Chip           | HARDWARIO product                                                      | Remark                                     |
+| Address        | Chip           | HARDWARIO TOWER product                                                | Remark                                     |
 +================+================+===========================================================+=========================================================+
 | 0x08           | NT3H2011       | `NFC Tag <https://shop.hardwario.com/nfc-tag/>`_                       | Changed from default to avoid collision    |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+

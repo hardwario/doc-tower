@@ -38,7 +38,7 @@ Features
 - Integrated LDO with 3.3 V output voltage
 - Addressable/digital RGB(W) LED strip output (1)
 - Integrated voltage translator (3.3 V to 5 V)
-- 2x position for a HARDWARIO tag
+- 2x position for a HARDWARIO TOWER tag
 - Overvoltage, undervoltage and reverse polarity protection
 - Pluggable 3-pin terminal block for relay output
 - Pluggable 3-pin terminal block for digital LED strip

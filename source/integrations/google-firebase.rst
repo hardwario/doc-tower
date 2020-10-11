@@ -20,14 +20,14 @@ Dependencies:
 Install firebase plugin
 ***********************
 
-Open command line
-*****************
+Step 1: Open command line
+*************************
 
 - Windows – cmd, Linux and macOS – Terminal, on our Raspbian login with user
   pi and password raspberry (:doc:`more about logging on our Raspbian <../tutorials/raspberry-pi-login>`)
 
-Install firebase plugin to Node-RED via
-***************************************
+Step 2: Install firebase plugin to Node-RED via
+***********************************************
 
 .. tabs::
 
@@ -70,46 +70,41 @@ Open Node-RED
 Create Firebase project
 ***********************
 
-Create project
-**************
+Step 1: Create project
+**********************
 
 Go to `Firebase Console <https://console.firebase.google.com/>`_ and Click to **"Add project"**.
 
-
-
-Name your project
-*****************
+Step 2: Name your project
+*************************
 
 Give your project whatever name you want, we will use for our example hardwariodemo and click Create project.
 
+Step 3: Click continue after Fireabse tells you that new project is ready
+*************************************************************************
 
 
-Click continue after Fireabse tells you that new project is ready.
-******************************************************************
-
-
-Get started
-***********
+Step 4: Get started
+*******************
 
 At the bottom of your screen you will see three Cards, click **"Get started"** on third Card called Database.
 
 
-Choose Realtime Database
-************************
+Step 5: Choose Realtime Database
+********************************
 
 
 
-Database rules
-**************
+Step 6: Database rules
+**********************
 
 For our demo, we will use choice Test mode, which is totally not secure and we recommend to change
 the settings of read/write rights (you can find more about it on Firebase documentation).
 However, for our demo it is sufficient. Click Enable.
 
 
-
-Finish database setting up
-**************************
+Step 7: Finish database setting up
+**********************************
 
 Now you must see database itself. Click on “dismiss” on red bar.
 Point on name of database and then click on plus symbol right next to name of your database.
@@ -121,8 +116,8 @@ Mine is https://hardwariodemo-932c9.firebaseio.com/.
 Connect Node-RED to our Firebase project
 ****************************************
 
-Create flow
-***********
+Step 1: Create flow
+*******************
 
 Open the Node-RED, click on **"Hamburger menu" next to Deploy button > Import > Clipboard**. Paste text bellow.
 
@@ -130,15 +125,15 @@ Open the Node-RED, click on **"Hamburger menu" next to Deploy button > Import > 
 
     [{"id":"1e3fc559.61706b","type":"inject","z":"641e3ee5.52876","name":"Set 1 to Firebase","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":160,"y":220,"wires":[["e605003b.cc1a5"]]},{"id":"dcca267f.911ee8","type":"inject","z":"641e3ee5.52876","name":"Set 0 to Firebase","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":160,"y":280,"wires":[["31e96545.b948ca"]]},{"id":"e605003b.cc1a5","type":"firebase modify","z":"641e3ee5.52876","name":"Set 1 to Firebase","firebaseconfig":"","childpath":"test","method":"set","value":"1","priority":"msg.priority","x":410,"y":220,"wires":[[]]},{"id":"31e96545.b948ca","type":"firebase modify","z":"641e3ee5.52876","name":"Set 0 to Firebase","firebaseconfig":"","childpath":"test","method":"set","value":"0","priority":"msg.priority","x":410,"y":280,"wires":[[]]}]
 
-Set up test
-***********
+Step 2: Set up test
+*******************
 
 Double click on Firebase called **"Set value to 1"**, then click on pencil next to the Firebase line and fill it with your own.
 In my case I’ve just typed hardwariodemo-932c9, in Auth choose None, then click **"Add"**.
 Click Done on next page. Do the same on second Firebase named Set 0 to Firebase.
 
-Test out
-********
+Step 3: Test out
+****************
 
 Click deploy. After deploying. Click on **"Set 1 to Firebase"**. Open your Firebase Database.
 You have to see 1 in test child, do the same thing with second button and you have to see 0 in child in your database.

@@ -2,7 +2,7 @@
 How to: GFX Graphics Library
 ############################
 
-With more and more types of LCD displays types in HARDWARIO we have developed universal graphics library which can be used with many types of displays.
+With more and more types of LCD displays types in HARDWARIO TOWER we have developed universal graphics library which can be used with many types of displays.
 Starting with our LCD Module, SSD1306, ST7735, MAX7219 or even using WS2812B digital LED strip in matrix configuration as a display.
 
 You can still use LCD Module API for drawing text and primitives, but with GFX you can also draw dithered rectangles and more.

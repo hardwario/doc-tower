@@ -1,6 +1,6 @@
-################################
-HARDWARIO Firmware Flashing Tool
-################################
+######################################
+HARDWARIO TOWER Firmware Flashing Tool
+######################################
 
 This multi-platform Python tool can flash `Radio Dongle <https://shop.hardwario.com/radio-dongle/>`_
 and `Core Module <https://shop.hardwario.com/core-module/>`_ with local binary or latest released firmwares from GitHub.

@@ -44,35 +44,35 @@ Setup on Windows
 
     You will need **administrator** rights to install.
 
-Download the current version of the HARDWARIO Toolchain Windows installer
-*************************************************************************
+Step 1: Download the current version of the HARDWARIO Toolchain Windows installer
+*********************************************************************************
 
 `Releases on GitHub <https://github.com/hardwario/bch-toolchain-windows/releases>`_
 
-Launch the downloaded installer and choose the destination directory
-********************************************************************
+Step 2: Launch the downloaded installer and choose the destination directory
+****************************************************************************
 
 .. thumbnail:: ../_static/firmware/toolchain-setup/windows-location.png
    :width: 40%
    :alt: Windows location
 
 
-Now you can adjust the desired Path environment variable (we recommend to leave the default settings if in doubt) and proceed with the installation
-***************************************************************************************************************************************************
+Step 3: Now you can adjust the desired Path environment variable (we recommend to leave the default settings if in doubt) and proceed with the installation
+***********************************************************************************************************************************************************
 
 .. thumbnail:: ../_static/firmware/toolchain-setup/setup-windows-paths.png
    :width: 40%
    :alt: Windows PATH
 
-The FTDI driver setup will launch automatically during the installation - install it
-************************************************************************************
+Step 4: The FTDI driver setup will launch automatically during the installation - install it
+********************************************************************************************
 
 .. thumbnail:: ../_static/firmware/toolchain-setup/setup-windows-ftdi.png
    :width: 40%
    :alt: FTDI
 
-After finishing the installation, launch the HARDWARIO Toolchain using one these 3 ways
-***************************************************************************************
+Step 5: After finishing the installation, launch the HARDWARIO Toolchain using one these 3 ways
+***********************************************************************************************
 
 - From the **Desktop**
 - From the **Start menu**
@@ -87,8 +87,8 @@ After finishing the installation, launch the HARDWARIO Toolchain using one these
    :alt: CMD Toolchain
 
 
-Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
-***********************************************************************************
+Step 6: Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
+*******************************************************************************************
 
 - :ref:`Integration with Visual Studio Code <visual-studio-integration>`
 
@@ -120,18 +120,18 @@ Setup on macOS
 
     The following procedure has been tested on **macOS 10.12.**
 
-Open the Terminal application
-*****************************
+Step 1: Open the Terminal application
+*************************************
 
-Install `Homebrew <https://brew.sh>`_ (unless you already have it)
-******************************************************************
+Step 2: Install `Homebrew <https://brew.sh>`_ (unless you already have it)
+**************************************************************************
 
 .. note::
 
     Homebrew is the package management system and the ecosystem of packages for macOS.
 
-Install GCC ARM Embedded
-************************
+Step 3: Install GCC ARM Embedded
+********************************
 
 .. code-block:: console
 
@@ -141,43 +141,43 @@ Install GCC ARM Embedded
 
     brew install armmbed/formulae/arm-none-eabi-gcc
 
-Install Git
-***********
+Step 4: Install Git
+*******************
 
 .. code-block:: console
 
     brew install git
 
-Install dfu-util
-****************
+Step 5: Install dfu-util
+************************
 
 .. code-block:: console
 
     brew install dfu-util
 
-Install Python 3
-****************
+Step 6: Install Python 3
+************************
 
 .. code-block:: console
 
     brew install python3
 
-Update pip (Python Package Manager) to the latest version
-*********************************************************
+Step 7: Update pip (Python Package Manager) to the latest version
+*****************************************************************
 
 .. code-block:: console
 
     sudo pip3 install --upgrade --no-cache-dir pip
 
-Install HARDWARIO Firmware Tool
-*******************************
+Step 8: Install HARDWARIO Firmware Tool
+***************************************
 
 .. code-block:: console
 
     sudo pip3 install --upgrade --no-cache-dir bcf
 
-Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
-***********************************************************************************
+Step 9: Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
+*******************************************************************************************
 
 - :ref:`Integration with Visual Studio Code <visual-studio-integration>`
 
@@ -187,15 +187,15 @@ Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also 
 Update on macOS
 ***************
 
-Update of packages
-******************
+Step 1: Update of packages
+**************************
 
 .. code-block:: console
 
     brew update && brew upgrade
 
-HARDWARIO Firmware tool update
-******************************
+Step 2: HARDWARIO Firmware tool update
+**************************************
 
 .. code-block:: console
 
@@ -211,74 +211,81 @@ Setup on Ubuntu
 
     The following procedure has been tested on **Ubuntu 20.04 LTS.**
 
-Open the Terminal application
-*****************************
+Step 1: Open the Terminal application
+*************************************
 
-Download libisl15 library
-*************************
+Step 2: Download libisl15 library
+*********************************
 
 .. code-block:: console
 
     wget http://mirrors.kernel.org/ubuntu/pool/main/i/isl/libisl15_0.16.1-1_amd64.deb
 
-Install libisl15 library
-************************
+Step 3: Install libisl15 library
+********************************
 
 .. code-block:: console
 
     sudo dpkg -i libisl15_0.16.1-1_amd64.deb
 
-Add team-gcc-arm-embedded-ubuntu repository to source list
-**********************************************************
+Step 4: Add apt keys
+********************
+
+.. code-block:: console
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D1FAA6ECF64D33B0
+
+Step 5: Add team-gcc-arm-embedded-ubuntu repository to source list
+******************************************************************
 
 .. code-block:: console
 
     echo "deb http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu bionic main" | sudo tee /etc/apt/sources.list.d/team-gcc-arm-embedded-ubuntu-ppa-eoan.list
 
-Update the index of the available packages
-******************************************
+Step 6: Update the index of the available packages
+**************************************************
 
 .. code-block:: console
 
     sudo apt update
 
-Install common software properties
-**********************************
+Step 7: Install common software properties
+******************************************
 
 .. code-block:: console
 
     sudo apt-get install software-properties-common
 
-Install compiler & necessary tools
-**********************************
+Step 8: Install compiler and necessary tools
+********************************************
 
 .. code-block:: console
 
     sudo apt install gcc-arm-embedded git dfu-util python3 python3-pip python3-setuptools
 
-Update pip (Python Package Manager) to the latest version
-*********************************************************
+Step 9: Update pip (Python Package Manager) to the latest version
+*****************************************************************
 
 .. code-block:: console
 
     sudo pip3 install --upgrade --no-cache-dir pip
 
-Install HARDWARIO Firmware Tool
-*******************************
+Step 10: Install HARDWARIO Firmware Tool
+****************************************
 
 .. code-block:: console
 
     sudo pip3 install --upgrade --no-cache-dir --ignore-installed bcf
 
-Add user to dialout group
-*************************
+Step 11: Add user to dialout group
+**********************************
 
 .. code-block:: console
 
     sudo adduser $USER dialout
 
-Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
-************************************************************************************
+Step 12: Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
+********************************************************************************************
 
 - :ref:`Integration with Visual Studio Code <visual-studio-integration>`
 
@@ -288,15 +295,15 @@ Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also 
 Update on Ubuntu
 ****************
 
-Update of packages
-******************
+Step 1: Update of packages
+**************************
 
 .. code-block:: console
 
     sudo apt update && sudo apt upgrade
 
-HARDWARIO Firmware tool update
-******************************
+Step 2: HARDWARIO Firmware tool update
+**************************************
 
 .. code-block:: console
 
@@ -311,11 +318,11 @@ Setup on Generic Linux
 If you have other Linux distribution or unsupported Ubuntu version, we recommend to use official
 *GNU Embedded Toolchain for ARM* from `developer.arm.com <https://developer.arm.com/>`_ pages. This package is validated by ARM and tested by us.
 
-Go to `ARM website <https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads>`_ and download Linux 64-bit package
-******************************************************************************************************************************
+Step 3: Go to `ARM website <https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads>`_ and download Linux 64-bit package
+*************************************************************************************************************************************
 
-Extract package to filesystem, e.g. into ``/opt`` folder (available for all users, you will need root privileges) or into ``~/.local/opt`` folder (available only for you)
-**************************************************************************************************************************************************************************
+Step 4: Extract package to filesystem, e.g. into ``/opt`` folder (available for all users, you will need root privileges) or into ``~/.local/opt`` folder (available only for you)
+**********************************************************************************************************************************************************************************
 
 **Step 1: /opt version**
 
@@ -338,15 +345,15 @@ Extract package to filesystem, e.g. into ``/opt`` folder (available for all user
     cd ~/.local/opt  # go there
     tar xjf gcc-arm-none-eabi-6-*-update-linux.tar.bz2  # unpack file
 
-Create a symbolic link ``gcc-arm-none-eabi-6``
-**********************************************
+Step 5: Create a symbolic link ``gcc-arm-none-eabi-6``
+******************************************************
 
 .. code-block:: console
 
     sudo ln -s gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
 
-Update ``PATH`` variable so you can use arm-none-eabi-* binaries directly
-*************************************************************************
+Step 6: Update ``PATH`` variable so you can use arm-none-eabi-* binaries directly
+*********************************************************************************
 
 .. code-block:: console
     :linenos:
@@ -380,22 +387,22 @@ Update ``PATH`` variable so you can use arm-none-eabi-* binaries directly
 
     export PATH="$PATH:~/.local/opt/gcc-arm-none-eabi-6/bin"
 
-Use your distribution package manager and install
-*************************************************
+Step 7: Use your distribution package manager and install
+*********************************************************
 
 - **Git**
 - **Python 3**
 - **dfu-util**
 
-Install HARDWARIO Firmware Tool
-*******************************
+Step 8: Install HARDWARIO Firmware Tool
+***************************************
 
 .. code-block:: console
 
     sudo pip3 install --upgrade --no-cache-dir bcf
 
-Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
-***********************************************************************************
+Step 9: Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also try
+*******************************************************************************************
 
 - :ref:`Integration with Visual Studio Code <visual-studio-integration>`
 
@@ -405,8 +412,8 @@ Continue on the document :doc:`Toolchain Guide <toolchain-guide>`. You may also 
 Update on Generic Linux
 ***********************
 
-Update Toolchain
-****************
+Step 1: Update Toolchain
+************************
 
 - Download updated **Linux 64-bit** package from https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
 - Extract it into proper folder (``/opt``, ``~/.local/opt`` or other)
@@ -422,8 +429,8 @@ or
 
     ln -sf gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
 
-Update packages
-***************
+Step 2: Update packages
+***********************
 
 - Use your distribution package manager
 - HARDWARIO Firmware tool update:

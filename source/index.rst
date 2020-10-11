@@ -4,7 +4,7 @@ HARDWARIO TOWER - Industrial IoT Kit Developer Documentation
 
 .. important::
 
-   In this section, you will find developer documentation for the **HARDWARIO** product **Industrial IoT Kit**.
+   In this section, you will find developer documentation for the **HARDWARIO TOWER - Industrial IoT Kit**.
    If you want to get information on how to buy a kit, you can visit the `product homepage <https://www.hardwario.com/kit/>`_.
 
 **************

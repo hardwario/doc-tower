@@ -11,7 +11,7 @@ If not, `go shopping <https://shop.hardwario.com>`_ to do so :)
 
 Once again **THANK YOU** for being our supporter, we really appreciate this.
 
-HARDWARIO is not just about the hardware but it comes with full documentation, tutorials,
+HARDWARIO TOWER is not just about the hardware but it comes with full documentation, tutorials,
 software tools and most importantly - it comes with the extensive **technical support**.
 HARDWARIO doesn't hesitate to use one of these channels In case you run in troubles or if anything is not clear to you:
 

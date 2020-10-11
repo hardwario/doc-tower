@@ -58,13 +58,13 @@ Google Assistant will use Node-RED to communicate with your Hub in the backgroun
 Node-RED setup
 **************
 
-Open Node-RED
-*************
+Step 1: Open Node-RED
+*********************
 
 Open Node-RED in `HARDWARIO Playground <https://www.hardwario.com/download/>`_ in the **Functions** tab or in your web browser http://localhost:1880/
 
-Install Node-RED package
-************************
+Step 2: Install Node-RED package
+********************************
 
 Select **Manage pallete** from the right menu
 
@@ -78,8 +78,8 @@ Click on **install tab** and type *hardwario* into the search field. Confirm *@h
    :width: 60%
    :alt: Home Existing
 
-Import flow
-***********
+Step 3: Import flow
+*******************
 
 Open the right **Menu -> Import -> Examples** and select HARDWARIO Google Assistant from the package folder
 
@@ -103,8 +103,8 @@ It will look like this:
 
     This snippet prepares Node-RED to fulfill commands from Google Assistant while updating the devices states
 
-Get your Auth token
-*******************
+Step 4: Get your Auth token
+***************************
 
 Go to `HARDWARIO Auth page <https://ga.hardwario.com>`_ and sign in using a Google Account which you are using with Google Assistant.
 In your email, you will receive an **Auth token**.
@@ -115,13 +115,13 @@ In your email, you will receive an **Auth token**.
 
 Check your email address associated with the Google account you used to sign in.
 
-Configure
-*********
+Step 5: Configure
+*****************
 
 Configure the **Google Assistant node** with the correct Auth token. Use the pencil icon on the right to create a new token config with your token.
 
-Deploy
-******
+Step 6: Deploy
+**************
 
 Deploy the flow using the **Deploy** button in the top-right corner.
 
@@ -151,16 +151,16 @@ Google Assistant setup
 
     To complete Google Assistant setup, you need a mobile device.
 
-Google Home app
-***************
+Step 1: Google Home app
+***********************
 
 Open the Google Home app (`Android <https://play.google.com/store/apps/details?id=com.google.android.apps.chromecast.app&hl=en>`_,
 `iOS <https://apps.apple.com/us/app/google-home/id680819774>`_)
 
 Create a new home if needed to complete the initial setup.
 
-Add service
-***********
+Step 2: Add service
+*******************
 
 .. caution::
 
@@ -187,8 +187,8 @@ This has to be a same account/token as you used before.
    :width: 60%
 
 
-Test your devices
-*****************
+Step 3: Test your devices
+*************************
 
 After the previous step, you will see your paired modules at the end of the main screen as *Linked to you*.
 

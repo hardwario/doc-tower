@@ -3,7 +3,7 @@ How to: SPI bus
 ###############
 
 Serial Peripheral Bus (SPI) is synchronous serial bus. It's used for fast interconnection of the peripherals inside the device.
-HARDWARIO uses SPI for example in the :doc:`LCD Module <how-to-lcd-module>`.
+HARDWARIO TOWER uses SPI for example in the :doc:`LCD Module <how-to-lcd-module>`.
 
 The SPI uses these signals:
 

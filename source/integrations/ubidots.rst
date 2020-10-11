@@ -26,7 +26,7 @@ To send your data to your Ubidots account just double click on the **Ubidots out
 ****************
 The Ubidots Node
 ****************
-HARDWARIO utilizes Ubidots official Node-RED node, which connects to Ubidots' MQTT broker and expects a Node-RED message with the following format:
+HARDWARIO TOWER utilizes Ubidots official Node-RED node, which connects to Ubidots' MQTT broker and expects a Node-RED message with the following format:
 
 .. code-block::
     :linenos:

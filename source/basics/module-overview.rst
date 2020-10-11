@@ -14,7 +14,7 @@ Radio Dongle
     :height: 200em
 
 +------------------------+-------------------------------------------------------------------------------------------+
-| |dongle|               | | The **Radio Dongle** is the main element of the HARDWARIO radio network.                |
+| |dongle|               | | The **Radio Dongle** is the main element of the HARDWARIO TOWER radio network.          |
 |                        | | This product works as a **gateway for the HARWDARIO nodes**. It looks like a USB stick. |
 |                        | | You can plug it to your desktop, Raspberry Pi, or Turris Omnia.                         |
 |                        | | Also, you can look at it as an access point for up to 32 HARDWARIO nodes.               |

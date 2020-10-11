@@ -5,7 +5,7 @@ Timing and Scheduler
 Knowing how to schedule tasks is a key knowledge crucial for developing low-power hardware setup with HARDWARIO TOWERS.
 
 For this, it is important to be able to do event-driven programming easily.
-To achieve this, `HARDWARIO SDK <https://sdk.hardwario.com>`_ provides tools for your application to be fully asynchronous.
+To achieve this, `HARDWARIO TOWER SDK <https://sdk.hardwario.com>`_ provides tools for your application to be fully asynchronous.
 Key component is the *Scheduler*. Simply said, it holds pointers to functions with exact time when they should be run.
 
 *********

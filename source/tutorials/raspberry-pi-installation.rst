@@ -16,7 +16,7 @@ This document will guide you through installing Raspberry Pi. The tutorial is te
 .. note::
 
     Raspberry Pi is a small, affordable, single-board computer that is able to run Linux operating system.
-    HARDWARIO uses this system to process sensor information, actuator control,
+    HARDWARIO TOWER uses this system to process sensor information, actuator control,
     decision logic for automation, data storage, or serve as a gateway to connect cloud services.
 
 In the following procedure, we will install the **HARDWARIO Raspbian** Linux distribution.

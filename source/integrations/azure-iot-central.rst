@@ -2,7 +2,7 @@
 Azure IoT Central
 #################
 
-This guide will help you to publish data from HARDWARIO sensors to Microsoft IoT Central and IoT Hub.
+This guide will help you to publish data from HARDWARIO TOWER sensors to Microsoft IoT Central and IoT Hub.
 This guide is based on this `Azure and Node-RED official article <https://azure.microsoft.com/es-es/blog/connecting-node-red-to-azure-iot-central/>`_.
 
 In `this official Azure documentation section <https://docs.microsoft.com/cs-cz/azure/iot-central/>`_ you can find how to connect to IoT Central over C#, Python, Node.js.

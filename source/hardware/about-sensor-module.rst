@@ -12,7 +12,7 @@ About Sensor Module
 |                        | | For example you can connect various external digital, analog or resistive sensors.                                                             |
 |                        | | Also, you can communicate with other devices on a 1-Wire bus.                                                                                  |
 |                        | |                                                                                                                                                |
-|                        | | The two terminals - A on the left, B on the right - are connected to the HARDWARIO header signals P4/A4/DAC0 and P5/A5/DAC1.                   |
+|                        | | The two terminals - A on the left, B on the right - are connected to the HARDWARIO TOWER header signals P4/A4/DAC0 and P5/A5/DAC1.             |
 +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. tip::

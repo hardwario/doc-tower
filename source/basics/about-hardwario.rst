@@ -2,12 +2,13 @@
 About HARDWARIO TOWER - Industrial IoT Kit
 ##########################################
 
-HARDWARIO is a device platform, specifically designed for the Internet-of-Things.
-With HARDWARIO, you can quickly build your own electronics devices.
+TOWER is a device platform, specifically designed for the Internet-of-Things.
+With TOWER, you can quickly build your own electronics devices.
 Thanks to its open approach, you will have a total control of your devices,
 the way they communicate, or integrate with 3rd party components.
 That will give you a freedom for the future customization and extensibility.
-With HARDWARIO, you will not encounter things like black box magic or vendor lock-in.
+
+With TOWER, you will not encounter things like black box magic or vendor lock-in.
 
 **************
 Basic Features
@@ -60,9 +61,9 @@ that offer very low standby and/or operation currents.
 HARDWARIO TOWER is secure
 *************************
 
-HARDWARIO uses simple, yet proven security mechanisms for data **encryption and authentication** in the radio communication.
+TOWER uses simple, yet proven security mechanisms for data **encryption and authentication** in the radio communication.
 
-In every HARDWARIO device, you will also find a special hardware security element - the so-called **cryptochip**.
+In every TOWER device, you will also find a special hardware security element - the so-called **cryptochip**.
 This special tiny memory allows to store your security keys used in message authentication in a secure manner.
 You cannot rip the keys from the memory even if you get a physical access to the device.
 
@@ -119,7 +120,7 @@ That's a great opportunity to design your own IoT system in one, uniform, asynch
 CLI-First Approach
 ******************
 
-Command Line Interface (CLI) is the first class citizen in the HARDWARIO system.
+Command Line Interface (CLI) is the first class citizen in the TOWER system.
 This is where we differ from most other embedded IoT platforms. We emphasize CLI approach in the very first place.
 It has plenty of advantages - first of all you can do all the operations on the so-called "headless" machines - like servers,
 embedded computers, etc. Secondly, you can easily hook up continuous integration services that can automate your workflow.
@@ -136,4 +137,4 @@ Following them will get you on track quickly.
 You can always explore the parts you are most interested about,
 tweak them or write your own firmware applications, automation flows or cloud integrations from scratch.
 
-For the very first time, we recommend to walk through the :doc:`HARDWARIO Projects <projects>` and :doc:`Quick Tutorial. <quick-start-guide>`
+For the very first time, we recommend to walk through the :doc:`HARDWARIO TOWER Projects <projects>` and :doc:`Quick Tutorial. <quick-start-guide>`

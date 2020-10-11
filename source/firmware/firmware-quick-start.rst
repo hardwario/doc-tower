@@ -2,7 +2,7 @@
 Firmware Quick Start
 ####################
 
-You can easily edit or create your custom firmware for HARDWARIO Core Module on :ref:`Windows <windows-firmware>`, :ref:`Linux <linux-firmware>` or :ref:`macOS <macos-firmware>`.
+You can easily edit or create your custom firmware for HARDWARIO TOWER Core Module on :ref:`Windows <windows-firmware>`, :ref:`Linux <linux-firmware>` or :ref:`macOS <macos-firmware>`.
 
 .. note::
 

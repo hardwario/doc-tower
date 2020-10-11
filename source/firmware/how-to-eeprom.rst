@@ -21,7 +21,7 @@ Remember that those cycles are *Write/Erase*
 EEPROM Size
 ***********
 
-HARDWARIO Core module has 6 KB EEPROM included. In case you need to find this value out inside your code,
+HARDWARIO TOWER Core module has 6 KB EEPROM included. In case you need to find this value out inside your code,
 there is a function for this inside the SDK: ``size_t bc_eeprom_get_size(void)``
 
 ************

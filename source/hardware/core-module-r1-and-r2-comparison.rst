@@ -48,14 +48,14 @@ Improvements
 Flashing Core Module R1
 ***********************
 
-Connect the Micro USB cable to the Core Module and your computer.
-*****************************************************************
+Step 1: Connect the Micro USB cable to the Core Module and your computer
+************************************************************************
 
-You have to switch to :ref:`Core Module to the DFU mode. <switch-to-dfu>`
-*************************************************************************
+Step 2: You have to switch to :ref:`Core Module to the DFU mode. <switch-to-dfu>`
+*********************************************************************************
 
-Upload firmware with following command
-**************************************
+Step 3: Upload firmware with following command
+**********************************************
 
 .. code-block:: console
 
@@ -71,8 +71,8 @@ Example which flashes wireless-motion-detector firmware from `Radio Motion Detec
 Flashing Core Module R2
 ***********************
 
-Flash firmware with following command
-*************************************
+Step 1: Flash firmware with following command
+*********************************************
 
 .. code-block:: console
 
@@ -84,8 +84,8 @@ Example which flashes wireless-motion-detector firmware from `Radio Motion Detec
 
     bcf flash hardwario/bcf-radio-motion-detector:latest
 
-Print bc_log debug messages over UART2 serial to your computer with bcf
-***********************************************************************
+Step 2: Print bc_log debug messages over UART2 serial to your computer with bcf
+*******************************************************************************
 
 .. code-block:: console
 
@@ -103,8 +103,8 @@ List of connected devices
 
 You can also add the ``--device`` parameter to the ``bcf`` so you don't have to choose the serial port every time.
 
-Run following command to see connected devices
-**********************************************
+Step 1: Run following command to see connected devices
+******************************************************
 
 .. code-block:: console
 
@@ -117,8 +117,8 @@ On Windows instead of ``/dev/ttyS4`` will be for example ``COM13``. Following de
 
 ``/dev/ttyACM2``
 
-Connect the Micro USB cable to the Core Module and your computer
-****************************************************************
+Step 2: Connect the Micro USB cable to the Core Module and your computer
+************************************************************************
 
 Again run ``bcf devices`` command and you should see one added.
 

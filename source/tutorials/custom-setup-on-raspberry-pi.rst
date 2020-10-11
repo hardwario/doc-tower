@@ -50,25 +50,25 @@ Setup on Original Raspbian
     Apply the following procedure only if you are using Raspberry Pi, on which the original Raspbian distribution is running.
     This is an alternative way of installing ``bc-raspbian`` in [](/doc/tutorials/raspberry-pi-installation/).
 
-Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document :doc:`Raspberry Pi Login <raspberry-pi-login>`
-************************************************************************************************************************************
+Step 1: Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document :doc:`Raspberry Pi Login <raspberry-pi-login>`
+*******************************************************************************************************************************************
 
-Upgrade all packages
-********************
+Step 2: Upgrade all packages
+****************************
 
 .. code-block:: console
 
     sudo apt update && sudo apt upgrade
 
-Install Mosquitto server and clients
-************************************
+Step 3: Install Mosquitto server and clients
+********************************************
 
 .. code-block:: console
 
     sudo apt install mosquitto mosquitto-clients
 
-Install Node.js version 8 (required by Node-RED)
-************************************************
+Step 4: Install Node.js version 8 (required by Node-RED)
+********************************************************
 
 .. code-block:: console
 
@@ -78,22 +78,22 @@ Install Node.js version 8 (required by Node-RED)
 
     sudo apt-get install -y nodejs
 
-Install Node-RED
-****************
+Step 5: Install Node-RED
+************************
 
 .. code-block:: console
 
     sudo npm install -g --unsafe-perm node-red
 
-Install PM2
-***********
+Step 6: Install PM2
+*******************
 
 .. code-block:: console
 
     sudo npm install -g pm2
 
-Tell PM2 to run Node-RED
-************************
+Step 7: Tell PM2 to run Node-RED
+********************************
 
 Make sure you copy next command exactly with the back-tick symbol, you can use the copy button on the right
 
@@ -105,8 +105,8 @@ Make sure you copy next command exactly with the back-tick symbol, you can use t
 
     pm2 save
 
-Tell PM2 to run on boot
-***********************
+Step 8: Tell PM2 to run on boot
+*******************************
 
 .. code-block:: console
 
@@ -116,22 +116,22 @@ Tell PM2 to run on boot
 
     sudo -H chmod 644 /etc/systemd/system/pm2-$(whoami).service
 
-Install Python 3 (required by the HARDWARIO Firmware Tool and HARDWARIO Gateway)
-********************************************************************************
+Step 9: Install Python 3 (required by the HARDWARIO Firmware Tool and HARDWARIO Gateway)
+****************************************************************************************
 
 .. code-block:: console
 
     sudo apt install python3 python3-pip python3-setuptools
 
-Update pip (Python Package Manager) to the latest version
-*********************************************************
+Step 10: Update pip (Python Package Manager) to the latest version
+******************************************************************
 
 .. code-block:: console
 
     sudo pip3 install --upgrade pip
 
-Install the HARDWARIO Firmware Tools
-************************************
+Step 11: Install the HARDWARIO Firmware Tools
+*********************************************
 
 HARDWARIO Firmware Tool ``bcf``, HARDWARIO Gateway ``bcg`` and HARDWARIO Host Tool ``bch``.
 
@@ -139,8 +139,8 @@ HARDWARIO Firmware Tool ``bcf``, HARDWARIO Gateway ``bcg`` and HARDWARIO Host To
 
     sudo pip3 install --upgrade bcf bcg bch
 
-Add udev rules
-**************
+Step 12: Add udev rules
+***********************
 
 .. code-block:: console
 
@@ -150,8 +150,8 @@ Add udev rules
 
     Unplug and plug gateway.
 
-Run service for Gateway Radio Dongle
-************************************
+Step 13: Run service for Gateway Radio Dongle
+*********************************************
 
 .. code-block:: console
 

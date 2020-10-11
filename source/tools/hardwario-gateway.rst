@@ -90,15 +90,15 @@ Config files
 
 In case you would like have configuration of ``bcg`` separate and not permanent in the ``pm2``, create a config file and pass the file with ``-c`` parameter to ``bcg``.
 
-Create folder for configuration file
-************************************
+Step 1: Create folder for configuration file
+********************************************
 
 .. code-block:: console
 
     sudo mkdir -p /etc/hardwario
 
-Configuration file for Gateway Radio Dongle
-*******************************************
+Step 2: Configuration file for Gateway Radio Dongle
+***************************************************
 
 **Open file**
 
@@ -117,8 +117,8 @@ Configuration file for Gateway Radio Dongle
         host: localhost
         port: 1883
 
-Run service for Gateway Radio Dongle
-************************************
+Step 3: Run service for Gateway Radio Dongle
+********************************************
 
 .. code-block:: console
 

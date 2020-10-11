@@ -40,7 +40,7 @@ Features
 - I²C-only interface (integrated UART bridge and I/O expander)
 - Constant current source for 470 mF supercap
 - Long battery life-time
-- 3 sockets for a HARDWARIO tag
+- 3 sockets for a HARDWARIO TOWER tag
 - Low power consumption:
     - 6 µA (6 measurements per hour)
     - 61 µA (1 measurement per minute)

@@ -43,8 +43,9 @@ Optionally for establishing a wireless network, you will need:
 Video Tutorial
 **************
 
-..
-   youtube:: https://www.youtube.com/watch?v=FRRhleRNstg
+.. raw:: html
+
+    <iframe width="750" height="422" src="https://www.youtube.com/embed/FRRhleRNstg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ************
 Raspberry Pi

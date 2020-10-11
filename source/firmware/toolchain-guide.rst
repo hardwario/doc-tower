@@ -151,22 +151,22 @@ There are two bootloaders in MCU ROM:
 
 Firmware upload can be done using the ``bcf flash`` command. The firmware can be obtained from 3 different sources:
 
-Source firmware package, for instance
-*************************************
+Step 1: Source firmware package, for instance
+*********************************************
 
 .. code-block:: console
 
     bcf flash hardwario/bcf-radio-push-button:latest
 
-Source local disk file, for instance
-************************************
+Step 2: Source local disk file, for instance
+********************************************
 
 .. code-block:: console
 
     bcf flash firmware.bin
 
-Source file from the specified URL, for instance
-************************************************
+Step 3: Source file from the specified URL, for instance
+********************************************************
 
 .. code-block:: console
 
@@ -209,11 +209,11 @@ If you want to clean the cache of the firmware package list and all the download
 Create Blank Firmware Project
 *****************************
 
-Go to the directory where you want to create a firmware directory
-*****************************************************************
+Step 1: Go to the directory where you want to create a firmware directory
+*************************************************************************
 
-Create a blank project
-**********************
+Step 2: Create a blank project
+******************************
 
 .. code-block:: console
 
@@ -223,8 +223,8 @@ Create a blank project
 
     The starting point for developing your own firmware is the file app/application.c.
 
-The bcf program cloned the basic firmware skeleton, which is ready to build immediately (see description below)
-***************************************************************************************************************
+Step 3: The bcf program cloned the basic firmware skeleton, which is ready to build immediately (see description below)
+***********************************************************************************************************************
 
 **************
 Build Firmware
@@ -247,11 +247,11 @@ There are 2 target configurations to build the firmware:
 
 You can build the firmware by following these steps:
 
-Go to the firmware directory you want to build
-**********************************************
+Step 1: Go to the firmware directory you want to build
+******************************************************
 
-Run the build command
-*********************
+Step 2: Run the build command
+*****************************
 
 .. code-block:: console
 
@@ -262,8 +262,8 @@ Run the build command
     Build process can be accelerated by specifying the number of parallel compiler processes through the parameter ``-j <number>``.
     The number should match the number of cores in your processor. Example: ``make -j4``
 
-Upon successful completion of the build process, you will receive a similar listing at the end
-**********************************************************************************************
+Step 3: Upon successful completion of the build process, you will receive a similar listing at the end
+******************************************************************************************************
 
 .. code-block:: console
     :linenos:
@@ -274,8 +274,8 @@ Upon successful completion of the build process, you will receive a similar list
         74332    2776    7328   84436   149d4 out/debug/firmware.elf
     Creating out/debug/firmware.bin from out/debug/firmware.elf...
 
-The program called linker created two important files
-*****************************************************
+Step 4: The program called linker created two important files
+*************************************************************
 
 - ``out/debug/firmware.elf``
 
@@ -285,8 +285,8 @@ The program called linker created two important files
 
     This is the binary image necessary for programming (the ELF file also contains this binary image).
 
-In order to build the firmware in release configuration, use this command
-*************************************************************************
+Step 5: In order to build the firmware in release configuration, use this command
+*********************************************************************************
 
 .. code-block:: console
 
@@ -304,25 +304,25 @@ To program the **Core Module**, we must first enter the DFU mode.
 
 We can do this by following this procedure
 
-Check that the USB cable is plugged into the Core Module and your computer
-**************************************************************************
+Step 1: Check that the USB cable is plugged into the Core Module and your computer
+**********************************************************************************
 
-Press and hold the BOOT button on the Core Module
-*************************************************
+Step 2: Press and hold the BOOT button on the Core Module
+*********************************************************
 
 .. tip::
 
     The BOOT button is on the right and is marked with a letter ``B``.
 
-Press and release the RESET button on the Core Module. At this point, you still have to hold the BOOT button
-************************************************************************************************************
+Step 3: Press and release the RESET button on the Core Module. At this point, you still have to hold the BOOT button
+********************************************************************************************************************
 
 .. tip::
 
     The RESET button is on the left and is marked with a letter ``9``.
 
-Release the BOOT button
-************************
+Step 4: Release the BOOT button
+*******************************
 
 .. note::
 
@@ -341,39 +341,39 @@ In case you get ``Cannot open DFU device 0483:df11`` while running the **bcf fla
     :width: 60%
 
 
-Execute ``zadig`` from Toolchain or Playground shell (from cmd.exe HARDWARIO window)
-====================================================================================
+Step 1: Execute ``zadig`` from Toolchain or Playground shell (from cmd.exe HARDWARIO window)
+============================================================================================
 
 .. caution::
 
     Keep the **Core Module** connected with the DFU mode activated.
 
-Allow admin rigths in the User Acess Control pop-up
-===================================================
+Step 2: Allow admin rigths in the User Acess Control pop-up
+===========================================================
 
-Select Options -> List All Devices
-==================================
+Step 3: Select Options -> List All Devices
+==========================================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-list-all-devices.png
     :width: 60%
 
 
-Choose STM32 BOOTLOADER
-=======================
+Step 4: Choose STM32 BOOTLOADER
+===============================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-select.png
     :width: 60%
 
 
-Choose WinUSB
-=============
+Step 5: Choose WinUSB
+=====================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-winusb.png
     :width: 60%
 
 
-Click on Replace Driver
-=======================
+Step 6: Click on Replace Driver
+===============================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-replace.png
     :width: 60%
@@ -387,11 +387,11 @@ Click on Replace Driver
     :width: 60%
 
 
-Exit Zadig and get back to firmware flashing. The DFU driver repair procedure is finished
-=========================================================================================
+Step 7: Exit Zadig and get back to firmware flashing. The DFU driver repair procedure is finished
+=================================================================================================
 
-You can check DFU readiness using the ``dfu-util -l`` command from HARDWARIO Toolchain Prompt
-=============================================================================================
+Step 8: You can check DFU readiness using the ``dfu-util -l`` command from HARDWARIO Toolchain Prompt
+=====================================================================================================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-dfu-list.png
     :width: 60%
@@ -414,20 +414,20 @@ There is not ``Cannot open DFU device 0483:df11`` between:
 
 There can be various reasons:
 
-DFU mode is not activated on the Core Module
-============================================
+Step 1: DFU mode is not activated on the Core Module
+====================================================
 
 Follow the instructions in the chapter :ref:`Switching Core Module into DFU Mode <switch-to-dfu>`.
 
-Defective USB cable, USB hub, USB port or Core Module
-=====================================================
+Step 2: Defective USB cable, USB hub, USB port or Core Module
+=============================================================
 
 - Try different hardware.
 - Try connection without a USB hub.
 - Make sure the USB cable used has data wires (some USB cables are for powering only).
 
-Connection mismatch - the Core Module is connected to different host than where bcf is executed
-===============================================================================================
+Step 3: Connection mismatch - the Core Module is connected to different host than where bcf is executed
+=======================================================================================================
 
 - Connect the **Core Module** to the right host.
 

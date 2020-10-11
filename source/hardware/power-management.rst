@@ -9,7 +9,7 @@ Power Management
 The **HARDWARIO TOWER - Industrial IoT Kit** has been designed the way to allow connection of multiple power sources.
 
 For example, this allows the **Core Module** to be powered from a USB cable and also have batteries inserted in the **Battery Module** at the same time.
-HARDWARIO automatically solves the problem selecting the appropriate power sources.
+HARDWARIO TOWER automatically solves the problem selecting the appropriate power sources.
 
 What does it mean? For example, when an external power supply (adapter or USB) is connected, the battery is disconnected.
 It is also possible to have multiple external sources connected at the same time - for example,

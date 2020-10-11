@@ -35,7 +35,7 @@ About Soil Sensor
 
     It is also possible to use sensor to measure water level.
 
-    Sensor is already supported in HARDWARIO SDK with examples and projects.
+    Sensor is already supported in HARDWARIO TOWER SDK with examples and projects.
 
 `Arduino Library for Soil Sensor <https://github.com/hardwario/SoilSensor>`_ is also available
 (you will also need `DS28E17 library <https://github.com/hardwario/arduino-DS28E17>`_).

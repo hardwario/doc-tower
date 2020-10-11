@@ -29,8 +29,9 @@ You can get all of these in `our shop <https://shop.hardwario.com/micro-bit/>`_ 
 
 You can watch the video for more explaining about each thing on the list. I go over all of them one by one.
 
-..
-   youtube:: https://www.youtube.com/watch?v=gdahgHwgJ3E
+.. raw:: html
+
+    <iframe width="750" height="422" src="https://www.youtube.com/embed/gdahgHwgJ3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **************************
 Setting up the environment
@@ -68,8 +69,9 @@ After all this is done you are ready to explore the extension block by block.
 
 I will again talk about all that is in this chapter in the video below.
 
-..
-   youtube:: https://www.youtube.com/watch?v=XAdz79VjOH4
+.. raw:: html
+
+    <iframe width="750" height="422" src="https://www.youtube.com/embed/XAdz79VjOH4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ***********************
 Exploring the extension
@@ -82,8 +84,6 @@ On the start of each project you will see this screen that has Two blocks: **on 
 
 .. thumbnail:: ../_static/hardware/about-microbit-module/extension-basic.png
     :width: 60%
-
-
 
 This is the first type of block that we also have in the extension.
 You can put more blocks into those and they will run each time that the event occurs.
@@ -203,8 +203,9 @@ After you completed your code, you can just **one click download** it to your de
     :width: 60%
 
 
-..
-   youtube:: https://www.youtube.com/watch?v=eFh9bphTq0w
+.. raw:: html
+
+    <iframe width="750" height="422" src="https://www.youtube.com/embed/eFh9bphTq0w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *************
 Code examples

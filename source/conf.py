@@ -1,3 +1,4 @@
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -17,9 +18,10 @@
 
 # -- Project information -----------------------------------------------------
 
+
 project = 'HARDWARIO TOWER - Industrial IoT Kit'
-copyright = '2020, HARDWARIO'
-author = 'HARDWARIO'
+copyright = '2020, HARDWARIO s.r.o.'
+author = 'HARDWARIO s.r.o.'
 
 # -- General configuration ---------------------------------------------------
 
@@ -29,7 +31,6 @@ author = 'HARDWARIO'
 
 extensions = [
     'sphinx_copybutton',
-    'sphinxcontrib.yt',
     'sphinx_fontawesome',
     'sphinxcontrib.contentui',
     'sphinxcontrib.images',

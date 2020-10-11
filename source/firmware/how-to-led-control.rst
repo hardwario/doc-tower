@@ -29,7 +29,7 @@ First, an instance of led is needed. You can achieve this by adding this line:
 Now, we can decide between two options how to control the diode.
 
 #. synchronous way: "*LED ON -> wait -> LED OFF -> REPEAT*". This way is similar to using ``delay()`` functions with Arduino.
-#. **asynchronous way** (the right way). HARDWARIO SDK has been built with goal to provide simple-to-use but robust tasking mechanism,
+#. **asynchronous way** (the right way). HARDWARIO TOWER SDK has been built with goal to provide simple-to-use but robust tasking mechanism,
     which will be completely asynchronous. This is the best way to program your microcontroller,
     because you are not limited to doing one thing all the time + power consumption can be decreased (because controller sleeps most of the time).
 
