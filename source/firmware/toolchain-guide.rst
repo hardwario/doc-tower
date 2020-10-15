@@ -338,7 +338,7 @@ Incorrect DFU Driver
 In case you get ``Cannot open DFU device 0483:df11`` while running the **bcf flash --device dfu** command, you have the incorrect DFU drivers installed.
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-dfu-wrong-driver.png
-    :width: 60%
+    :width: 80%
 
 
 Step 1: Execute ``zadig`` from Toolchain or Playground shell (from cmd.exe HARDWARIO window)
@@ -355,28 +355,28 @@ Step 3: Select Options -> List All Devices
 ==========================================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-list-all-devices.png
-    :width: 60%
+    :width: 80%
 
 
 Step 4: Choose STM32 BOOTLOADER
 ===============================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-select.png
-    :width: 60%
+    :width: 80%
 
 
 Step 5: Choose WinUSB
 =====================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-winusb.png
-    :width: 60%
+    :width: 80%
 
 
 Step 6: Click on Replace Driver
 ===============================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-replace.png
-    :width: 60%
+    :width: 80%
 
 
 .. important::
@@ -384,7 +384,7 @@ Step 6: Click on Replace Driver
     You will get The driver was installed successfully notification.
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-zadig-installed.png
-    :width: 60%
+    :width: 50%
 
 
 Step 7: Exit Zadig and get back to firmware flashing. The DFU driver repair procedure is finished
@@ -394,7 +394,7 @@ Step 8: You can check DFU readiness using the ``dfu-util -l`` command from HARDW
 =====================================================================================================
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-dfu-list.png
-    :width: 60%
+    :width: 80%
 
 
 No DFU Device Found
@@ -409,7 +409,7 @@ There is not ``Cannot open DFU device 0483:df11`` between:
     No DFU capable USB device available
 
 .. thumbnail:: ../_static/firmware/toolchain-guide/windows-dfu-no-device.png
-    :width: 60%
+    :width: 80%
 
 
 There can be various reasons:

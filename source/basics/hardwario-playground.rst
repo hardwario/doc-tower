@@ -10,7 +10,7 @@ HARDWARIO Playground is free **Windows, macOS** and **Linux** software that enab
 - **Visualize** measured values and control nodes with Dashboard
 
 .. thumbnail:: ../_static/basics/playground/playground-node-red.png
-   :width: 60%
+   :width: 100%
    :alt: Playground Functions Tab
 
 *****************************
@@ -33,7 +33,7 @@ They explain flashing, pairing, Dashboard and Node-RED
 
 .. raw:: html
 
-    <iframe width="750" height="422" src="https://www.youtube.com/embed/nzFtmhLNy-I?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="700" height="422" src="https://www.youtube.com/embed/nzFtmhLNy-I?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Devices
 *******
@@ -50,7 +50,7 @@ The node alias is later used in MQTT message topic (``node/climate-monitor:0/..`
 **so change it only when you know what are you doing.**
 
 .. thumbnail:: ../_static/basics/playground/playground-devices-paired.png
-   :width: 60%
+   :width: 100%
    :alt: Playground Paired Devices
 
 .. _pairing-new-devices:
@@ -64,7 +64,7 @@ The node alias is later used in MQTT message topic (``node/climate-monitor:0/..`
 
 .. raw:: html
 
-    <iframe width="750" height="422" src="https://www.youtube.com/embed/ESrTEdV9PJQ?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="700" height="422" src="https://www.youtube.com/embed/ESrTEdV9PJQ?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Functions
 *********
@@ -72,12 +72,12 @@ Functions
 This tab is the `Node-RED <https://nodered.org/about/>`_ visual programming tool. See :doc:`Projects <projects>` how to use this visual programming tool.
 
 .. thumbnail:: ../_static/basics/playground/playground-node-red-flow.png
-   :width: 60%
+   :width: 100%
    :alt: Playground Functions Flow
 
 .. raw:: html
 
-    <iframe width="750" height="422" src="https://www.youtube.com/embed/VW_-RCIZ9rY?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="700" height="422" src="https://www.youtube.com/embed/VW_-RCIZ9rY?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *********
 Dashboard
@@ -86,7 +86,7 @@ Dashboard
 Here you can display gauges, graphs, buttons and other widgets. See the `Projects <https://www.hackster.io/hardwario/projects>`_ how to use Dashboard.
 
 .. thumbnail:: ../_static/basics/playground/playground-dashboard.png
-   :width: 60%
+   :width: 70%
    :alt: Playground Dashboard
 
 ********
@@ -96,7 +96,7 @@ Messages
 Here you can see all the messages from wireless nodes. You can copy the topics to clipboard and use them in Node-RED in the ``topic`` textbox.
 
 .. thumbnail:: ../_static/basics/playground/playground-messages.png
-   :width: 60%
+   :width: 100%
    :alt: Playground Messages
 
 Firmware
@@ -111,10 +111,10 @@ If you would like to update Radio Dongle, disconnect it first in the Devices tab
 
 .. raw:: html
 
-    <iframe width="750" height="422" src="https://www.youtube.com/embed/3IXLBQ5M6Us?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="700" height="422" src="https://www.youtube.com/embed/3IXLBQ5M6Us?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 .. thumbnail:: ../_static/basics/playground/playground-firmware.png
-   :width: 60%
+   :width: 100%
    :alt: Playground Firmware
 
 ***************

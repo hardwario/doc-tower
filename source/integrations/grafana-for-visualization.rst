@@ -6,7 +6,7 @@ Grafana for Visualization
 It allows you to create a nice looking dashboards that will give you quick insights into your sensor data.
 
 .. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-grafana.png
-   :width: 60%
+   :width: 100%
    :alt: Grafana Visualization
 
 ************
@@ -358,7 +358,7 @@ Finish by clicking on the **Add** button. At this moment **Grafana** will try to
 the message **Data source is working.**
 
 .. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-datasource.png
-   :width: 60%
+   :width: 100%
    :alt: Grafana Data Source Check
 
 Step 3: Download ``dashboard.json`` or copy the content of this file to clipboard
@@ -370,7 +370,7 @@ Step 4: Import the visualization dashboards, click the Grafana icon (top left bu
 ****************************************************************************************************************************************
 
 .. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-menu-import-dashboard.png
-   :width: 60%
+   :width: 100%
    :alt: Grafana Menu Import
 
 Step 5: Upload the ``dashboard.json`` file or paste the JSON from clipboard
@@ -380,12 +380,12 @@ Step 6: Choose node as a data source and click on Import
 ********************************************************
 
 .. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-import-dashboard-select-datasource.png
-   :width: 60%
+   :width: 100%
    :alt: Grafana Select Datasource
 
 Step 7: Result for `Wireless Climate Monitor <https://www.hackster.io/jakub-smejkal/radio-climate-monitor-96de57>`_ and `Wireless CO2 Monitor <https://www.hackster.io/jakub-smejkal/radio-co2-monitor-311d2c>`_ projects
 **************************************************************************************************************************************************************************************************************************
 
 .. thumbnail:: ../_static/integrations/grafana/grafana-for-visualization-demo-dashboard.png
-   :width: 60%
+   :width: 100%
    :alt: Grafana Test Results

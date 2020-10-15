@@ -7,7 +7,7 @@ Scientific and Medical ISM radio band which uses 868MHz in Europe and 902MHz in 
 It utilizes a wide-reaching signal that passes freely through solid objects, called "ultra narrowband" and requires little energy.
 
 .. thumbnail:: ../_static/interfaces/sigfox-iot-radio/module-overview-sigfox-module.png
-   :width: 10%
+   :width: 45%
    :alt: HARDWARIO TOWER Sigfox Module
 
 HARDWARIO has certified modem and tutorials to quickly get started.

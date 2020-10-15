@@ -76,4 +76,4 @@ HOWTO
 
 - Go to https://postb.in and press Create Bin button
 - Copy the Bin URL and use it as a Webhook URL
-- Send some testing message from you HARDWARIO setup and refresh the opened postbin page. Message should appear within 10 seconds after being sent.
+- Send some testing message from you HARDWARIO TOWER setup and refresh the opened postbin page. Message should appear within 10 seconds after being sent.

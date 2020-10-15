@@ -20,7 +20,7 @@ Blynk app
 *********
 
 .. thumbnail:: ../_static/integrations/blynk/blynk-for-mobile-applications-blynk.png
-   :width: 60%
+   :width: 100%
    :alt: Blynk App Example
 
 ***************
@@ -66,7 +66,7 @@ Here you can watch a video with the Blynk Example:
 
 .. raw:: html
 
-    <iframe width="750" height="422" src="https://www.youtube.com/embed/cVC_tFuCYTM?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="700" height="422" src="https://www.youtube.com/embed/cVC_tFuCYTM?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **********************************
 ZeRGBA to hex RGB values - Example
@@ -84,7 +84,7 @@ Paste this code to the Playground.
 You will see this node
 
 .. thumbnail:: ../_static/integrations/blynk/node-red.png
-   :width: 60%
+   :width: 100%
 
 
 Now you are ready to scan the QR code to the Blynk app
@@ -96,7 +96,7 @@ Now you are ready to scan the QR code to the Blynk app
 The Blynk project should look like this
 
 .. thumbnail:: ../_static/integrations/blynk/led-strip-blynk-3.png
-   :width: 40%
+   :width: 35%
 
 .. code-block:: javascript
     :linenos:

@@ -2,7 +2,7 @@
 Enclosures
 ##########
 
-HARDWARIO comes with a variety of 3D printed enclosures that slides together on the module stack-up and holds using the rubber bands.
+TOWER comes with a variety of 3D printed enclosures that slides together on the module stack-up and holds using the rubber bands.
 
 .. tip::
     You can browse `Enclosures in e-shop. <https://shop.hardwario.com/enclosures/>`_

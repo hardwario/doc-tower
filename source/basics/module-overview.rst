@@ -10,15 +10,16 @@ Radio Dongle
 ************
 
 .. |dongle| thumbnail:: ../_static/basics/module-overview/radio-dongle.png
-    :width: 200em
-    :height: 200em
+    :width: 100%
 
-+------------------------+-------------------------------------------------------------------------------------------+
-| |dongle|               | | The **Radio Dongle** is the main element of the HARDWARIO TOWER radio network.          |
-|                        | | This product works as a **gateway for the HARWDARIO nodes**. It looks like a USB stick. |
-|                        | | You can plug it to your desktop, Raspberry Pi, or Turris Omnia.                         |
-|                        | | Also, you can look at it as an access point for up to 32 HARDWARIO nodes.               |
-+------------------------+-------------------------------------------------------------------------------------------+
++--------------------+-----------------------------------------------------------------------------+
+| |dongle|           | | The **Radio Dongle** is the main element                                  |
+|                    | | of the HARDWARIO TOWER radio network.                                     |
+|                    | | This product works as a **gateway for the HARWDARIO nodes**.              |
+|                    | | It looks like a USB stick.                                                |
+|                    | | You can plug it to your desktop, Raspberry Pi, or Turris Omnia.           |
+|                    | | Also, you can look at it as an access point for up to 32 HARDWARIO nodes. |
++--------------------+-----------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 
@@ -29,11 +30,12 @@ Core Module
     :width: 400em
     :height: 400em
 
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-| |core-module|          | | The **Core Module** is the key element of every HARDWARIO node.                                                                                        |
-|                        | | It has a **32-bit ARM microcontroller** with 192 kB of flash memory and 20 kB of RAM.                                                                  |
-|                        | | Besides the **integrated sub-GHz radio** for the 868/915 MHz band, it also features a digital temperature sensor, 3D accelerometer, and security chip. |
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------+-------------------------------------------------------------------------------------------+
+| |core-module|      | | The **Core Module** is the key element of every HARDWARIO node.                         |
+|                    | | It has a **32-bit ARM microcontroller** with 192 kB of flash memory and 20 kB of RAM.   |
+|                    | | Besides the **integrated sub-GHz radio** for the 868/915 MHz band,                      |
+|                    | | it also features a digital temperature sensor, 3D accelerometer, and security chip.     |
++--------------------+-------------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 
@@ -44,11 +46,12 @@ Cloony
     :width: 300em
     :height: 300em
 
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| |cloony|               | | **Cloony** is compact version of the **Core Module**. The size is 23 x 23 mm.                                                        |
-|                        | | It has a **32-bit ARM microcontroller** with 192 kB of flash memory and 20 kB of RAM.                                                |
-|                        | | Besides the **integrated sub-GHz radio** for the 868/915 MHz band, it also features a digital temperature sensor, and security chip. |
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
++--------------------+-----------------------------------------------------------------------------------------+
+| |cloony|           | | **Cloony** is compact version of the **Core Module**. The size is 23 x 23 mm.         |
+|                    | | It has a **32-bit ARM microcontroller** with 192 kB of flash memory and 20 kB of RAM. |
+|                    | | Besides the **integrated sub-GHz radio** for the 868/915 MHz band,                    |
+|                    | | it also features a digital temperature sensor, and security chip.                     |
++--------------------+-----------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 
@@ -59,11 +62,12 @@ Mini Battery Module
     :width: 300em
     :height: 300em
 
-+------------------------+------------------------------------------------------------------------------------------------------------------------+
-| |mini-battery|         | | The **Mini Battery Module** is designed as a power supply source for the battery-operated units.                     |
-|                        | | The integrated low-power boost converter provides an excellent efficiency from the **two AAA 1.5 V Alkaline cells**. |
-|                        | | It features a bottom-entry socket, so the overall profile of the unit you build remains low.                         |
-+------------------------+------------------------------------------------------------------------------------------------------------------------+
++--------------------+----------------------------------------------------------------------------------------------------+
+| |mini-battery|     | | The **Mini Battery Module** is designed as a power supply source for the battery-operated units. |
+|                    | | The integrated low-power boost converter provides an                                             |
+|                    | | excellent efficiency from the **two AAA 1.5 V Alkaline cells**.                                  |
+|                    | | It features a bottom-entry socket, so the overall profile of the unit you build remains low.     |
++--------------------+----------------------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 
@@ -74,11 +78,12 @@ Battery Module
     :width: 300em
     :height: 300em
 
-+------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| |battery-module|       | | The **Battery Module** is designed as a power supply source for the battery-operated units.                         |
-|                        | | The integrated low-power buck converter provides an excellent efficiency from the **four AAA 1.5 V Alkaline cells**.|
-|                        | | It also features an extra 5-pin socket where you can connect a HARDWARIO tag.                                       |
-+------------------------+-----------------------------------------------------------------------------------------------------------------------+
++--------------------+-----------------------------------------------------------------------------------------------+
+| |battery-module|   | | The **Battery Module** is designed as a power supply source for the battery-operated units. |
+|                    | | The integrated low-power buck converter provides an                                         |
+|                    | | excellent efficiency from the **four AAA 1.5 V Alkaline cells**.                            |
+|                    | | It also features an extra 5-pin socket where you can connect a HARDWARIO tag.               |
++--------------------+-----------------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 
@@ -89,11 +94,12 @@ Power Module
     :width: 300em
     :height: 300em
 
-+------------------------+--------------------------------------------------------------------------------------------------------------+
-| |power-module|         | | The **Power Module** allows you to connect a 5 V DC power adapter via a standard 2.1 mm power jack socket. |
-|                        | | It features a **high-current relay** (230 V AC / 16 A) to control your appliances.                         |
-|                        | | Also you can drive a **digital LED strip** with it (compatible with WS2812B).                              |
-+------------------------+--------------------------------------------------------------------------------------------------------------+
++--------------------+--------------------------------------------------------------------------------------+
+| |power-module|     | | The **Power Module** allows you to connect a                                       |
+|                    | | 5 V DC power adapter via a standard 2.1 mm power jack socket.                      |
+|                    | | It features a **high-current relay** (230 V AC / 16 A) to control your appliances. |
+|                    | | Also you can drive a **digital LED strip** with it (compatible with WS2812B).      |
++--------------------+--------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 
@@ -104,11 +110,11 @@ PIR Module
     :width: 300em
     :height: 300em
 
-+------------------------+----------------------------------------------------------------------------------------------------------+
-| |pir-module|           | | The **PIR Module** works as a **motion detector** operating on a **passive infrared (PIR)** principle. |
-|                        | | Typical usage of the **PIR Module** can be a wireless motion detector located on a wall or ceiling.    |
-|                        | | The module is equipped with an **ultra-low-power digital sensor** from Excelitas' the DigiPyro® family.|
-+------------------------+----------------------------------------------------------------------------------------------------------+
++--------------------+----------------------------------------------------------------------------------------------------------+
+| |pir-module|       | | The **PIR Module** works as a **motion detector** operating on a **passive infrared (PIR)** principle. |
+|                    | | Typical usage of the **PIR Module** can be a wireless motion detector located on a wall or ceiling.    |
+|                    | | The module is equipped with an **ultra-low-power digital sensor** from Excelitas' the DigiPyro® family.|
++--------------------+----------------------------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 
@@ -340,11 +346,11 @@ Temperature Tag
     :width: 300em
     :height: 300em
 
-+------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| |temperature-tag|      | | The **Temperature Tag** uses a **high-accuracy temperature sensor TMP11** 2 with a typical accuracy of ±0.1 °C at 25 °C.   |
-|                        | | This sensor is digital and calibrated.                                                                                     |
-|                        | | It communicates using an I²C bus and features a very low power operation and shutdown mode.                                |
-+------------------------+------------------------------------------------------------------------------------------------------------------------------+
++--------------------+------------------------------------------------------------------------------------------------------------------------------+
+| |temperature-tag|  | | The **Temperature Tag** uses a **high-accuracy temperature sensor TMP11** 2 with a typical accuracy of ±0.1 °C at 25 °C.   |
+|                    | | This sensor is digital and calibrated.                                                                                     |
+|                    | | It communicates using an I²C bus and features a very low power operation and shutdown mode.                                |
++--------------------+------------------------------------------------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------
 

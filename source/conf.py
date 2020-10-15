@@ -32,7 +32,6 @@ author = 'HARDWARIO s.r.o.'
 extensions = [
     'sphinx_copybutton',
     'sphinx_fontawesome',
-    'sphinxcontrib.contentui',
     'sphinxcontrib.images',
     'sphinx_tabs.tabs',
 ]

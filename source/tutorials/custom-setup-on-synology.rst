@@ -6,7 +6,7 @@ You can have HARDWARIO Gateway running on Raspberry Pi, but if you have any kind
 why not take advantage of it? You will save a tiny bit on electricity bill and also get more durable system.
 
 .. thumbnail:: ../_static/tutorials/custom-setup-on-synology/synology.jpg
-   :width: 60%
+   :width: 100%
 
 
 If you need more permanent solution than **HARDWARIO Playground** you can install all the services yourself in your system.
@@ -54,7 +54,7 @@ Step 1: Install Virtual Machine Manager
 Visit `homepage for instructions <https://www.synology.com/en-global/dsm/packages/Virtualization>`_
 
 .. thumbnail:: ../_static/tutorials/custom-setup-on-synology/vmm-install.png
-   :width: 60%
+   :width: 100%
 
 
 Step 2: Download latest `Ubuntu Server <https://ubuntu.com/download/server>`_. The 64 bit is important because Grafana do not release 32 bit versions anymore
@@ -84,7 +84,7 @@ Step 5: If you did not already inserted Radio Dongle, do it now. Open virtual ma
     If you disconnect **Radio Dongle** from the USB then this **USB device** configuration **must be set again!**
 
 .. thumbnail:: ../_static/tutorials/custom-setup-on-synology/vmm-usb.png
-   :width: 60%
+   :width: 100%
 
 
 Step 6: Follow steps :doc:`Custom Setup on Ubuntu <custom-setup-on-ubuntu>` to install all the tools and services
@@ -94,10 +94,10 @@ Step 7: Now you have Node-RED, Grafana and all the tools running on your Synolog
 *************************************************************************************
 
 .. thumbnail:: ../_static/tutorials/custom-setup-on-synology/grafana.png
-   :width: 60%
+   :width: 100%
 
 
 .. thumbnail:: ../_static/tutorials/custom-setup-on-synology/node-red.png
-   :width: 60%
+   :width: 100%
 
 

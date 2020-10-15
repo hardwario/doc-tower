@@ -14,7 +14,7 @@ Since this frequency band is used for signal messages, you will not encounter in
     HARDWARIO TOWER - Industrial IoT Kit uses SPIRIT1 radio transceiver from STMicroelectronics.
 
 .. thumbnail:: ../_static/interfaces/sub-ghz-radio/sub-ghz-radio-SPIRIT1.jpg
-   :width: 10%
+   :width: 45%
    :alt: SPIRIT1
 
 *******************

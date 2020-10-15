@@ -29,7 +29,7 @@ It also supports macros and sequences in the left panel for most used commands.
 Type the command and press **ENTER**. Not the ASend button.
 
 .. thumbnail:: ../_static/tutorials/lora-at-commands-configuration/hterm.png
-   :width: 60%
+   :width: 75%
 
 
 *******

@@ -30,13 +30,13 @@ In menu select functions and on top right corner click on hamburger menu. Click 
     node-red-contrib-homekit-bridged
 
 .. thumbnail:: ../_static/integrations/homekit-siri/node-red-pallete.png
-   :width: 60%
+   :width: 100%
    :alt: Node-Red palette install
 
 When message with title Installing **'node-red-contrib-homekit-bridged'** pops up, just click Install. After Installation you will see module in advacted group.
 
 .. thumbnail:: ../_static/integrations/homekit-siri/node-red-advanced-tab.png
-   :width: 60%
+   :width: 100%
    :alt: Node-Red advanced tab
 
 ****************
@@ -55,7 +55,7 @@ Connect Core Module to computer via microUSB cable. Click on **Firmware** tab in
 use hardwario/bcf-radio-push-button and Click Flash.
 
 .. thumbnail:: ../_static/integrations/homekit-siri/playgroud-flash-firmware.png
-   :width: 60%
+   :width: 100%
    :alt: Playground Flash Firmware
 
 Step 2: Pair Hardware
@@ -64,7 +64,7 @@ Step 2: Pair Hardware
 Open HARDWARIO Hub page in browser same as in chapter Instalation and select **Device** tab in menu and click on **Start pairing** button.
 
 .. thumbnail:: ../_static/integrations/homekit-siri/playgroud-pair-hardware.png
-   :width: 60%
+   :width: 100%
    :alt: Playground Pair Hardware
 
 Step 3: Assembly Hardware
@@ -73,7 +73,7 @@ Step 3: Assembly Hardware
 Now unplug Core Module from microUSB cable and connect it to battery module (standart or mini).
 
 .. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-Core-standart-battery.jpg
-   :width: 60%
+   :width: 100%
    :alt: Core Module with Battery Module
 
 Step 4: Ending
@@ -95,21 +95,21 @@ Step 1: Open Functions tab in menu. Open Hamburger menu, select Import > Clipboa
 So flow should looks like following:
 
 .. thumbnail:: ../_static/integrations/homekit-siri/playground-flow-basic.png
-   :width: 60%
+   :width: 100%
    :alt: Flow Basic
 
 Step 2: Place Homekit node from advanced group and connect it to template node in flow
 **************************************************************************************
 
 .. thumbnail:: ../_static/integrations/homekit-siri/homekit-connected.png
-   :width: 60%
+   :width: 100%
 
 
 Step 3: Double-click on HomeKit node in flow, settings should popup
 *******************************************************************
 
 .. thumbnail:: ../_static/integrations/homekit-siri/homekit-settings.png
-   :width: 60%
+   :width: 100%
 
 
 Step 4: Setup bridge
@@ -119,14 +119,14 @@ Let's setup bridge. Bridge is basically, bridge, between our Hardware sensors an
 iPads, Macs, etc... So Click on little pencil icon next to the bridge chapter of setting and fill it as following and click Add:
 
 .. thumbnail:: ../_static/integrations/homekit-siri/home-kit-bridge-settings.png
-   :width: 30%
+   :width: 50%
    :alt: Bridge Settings
 
 Step 5: Fill the rest of the settings according to the screenshot below. Click Done and Deploy
 **********************************************************************************************
 
 .. thumbnail:: ../_static/integrations/homekit-siri/home-kit-settings.png
-   :width: 30%
+   :width: 50%
    :alt: HomeKit Settings
 
 Step 6: Pairing
@@ -137,7 +137,7 @@ So open Home app on your iPhone or iPad and click Add Accessory > Don't Have a C
 Add anyway on next screen. In screen where you have to input code, input just 1 to all boxes:
 
 .. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-iPhones-screens-1.png
-   :width: 60%
+   :width: 100%
    :alt: Pairing Home Kit
 
 Step 7: Setup
@@ -146,7 +146,7 @@ Step 7: Setup
 Now just setup where is your bridge and temperature sensor and your sensor is added!
 
 .. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-iPhones-screens-2.png
-   :width: 60%
+   :width: 100%
    :alt: Setup
 
 ****
@@ -156,7 +156,7 @@ If you have some device in Home app, you can control it or get infromation via S
 So if you want to get temperature from Core Module which we just set up, just ask Siri "what's the temperature in bedroom?" (or what room you selected).
 
 .. thumbnail:: ../_static/integrations/homekit-siri/homekit-and-siri-iPhones-screens-siri.png
-   :width: 60%
+   :width: 90%
    :alt: Siri Test
 
 **********

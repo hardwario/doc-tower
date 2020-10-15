@@ -45,7 +45,7 @@ Video Tutorial
 
 .. raw:: html
 
-    <iframe width="750" height="422" src="https://www.youtube.com/embed/FRRhleRNstg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="700" height="422" src="https://www.youtube.com/embed/FRRhleRNstg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ************
 Raspberry Pi
@@ -103,7 +103,7 @@ Download the latest HARDWARIO Playground from :ref:`Quick Start Guide <download-
 Navigate to Firmware, connect Core Module via USB to computer and choose firmware to flash.
 
 .. thumbnail:: ../_static/tutorials/quick-tutorial/hardwario-playground.png
-   :width: 60%
+   :width: 100%
 
 
 Command-line tool
@@ -223,7 +223,7 @@ You can run it in your web browser and display, process measured values and then
 Please type the ``hub.local:1880`` address to your web browser.
 
 .. thumbnail:: ../_static/tutorials/quick-tutorial/node-red.png
-   :width: 60%
+   :width: 100%
 
 
 On the left panel you choose the building blocks which you place by dragging and dropping to the middle to the **flow**.
@@ -255,7 +255,7 @@ Now you need to connect these blocks by the mouse.
 This way you have created your first flow.
 
 .. thumbnail:: ../_static/tutorials/quick-tutorial/mqtt-all-flow.png
-   :width: 30%
+   :width: 55%
 
 
 Now it is necessary to configure **mqtt** block. By double clicking on the block open the setting and set these parameters:
@@ -264,7 +264,7 @@ Now it is necessary to configure **mqtt** block. By double clicking on the block
 - topic: #
 
 .. thumbnail:: ../_static/tutorials/quick-tutorial/mqtt-configure.png
-   :width: 30%
+   :width: 55%
 
 
 After you save the block settings you have to apply the changes by the **deploy** button.
@@ -272,7 +272,7 @@ After deploying switch to the **debug** tab and after few moments you'll see inc
 You can also press ``B`` button on the **Core Module** and this event will also appear in the **debug** log.
 
 .. thumbnail:: ../_static/tutorials/quick-tutorial/mqtt-all-debug.png
-   :width: 30%
+   :width: 55%
 
 
 Displaying the temperature
@@ -286,7 +286,7 @@ For the graphical representation of received values you can use **Node-RED dashb
 Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
 
 .. thumbnail:: ../_static/tutorials/quick-tutorial/gauge-flow.png
-   :width: 60%
+   :width: 100%
 
 
 Double click on the **gauge** block for configuration.
@@ -454,7 +454,7 @@ Then the red LED will start blinking.
 Radio Dongle do not have pairing button and the pairing process needs to be started in the **Playground** or in the **Hub**.
 
 .. thumbnail:: ../_static/tutorials/quick-tutorial/playground-devices-start-pairing.png
-   :width: 60%
+   :width: 100%
 
 
 In command line you enable pairing by commands below.

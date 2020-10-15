@@ -43,80 +43,80 @@ Step 4: Paste this snippet to the configuration file
 .. code-block:: console
     :linenos:
 
-mqtt:
-    host: 127.0.0.1
-    port: 1883
+    mqtt:
+        host: 127.0.0.1
+        port: 1883
 
-influxdb:
-    host: 127.0.0.1
-    port: 8086
-    database: node
+    influxdb:
+        host: 127.0.0.1
+        port: 8086
+        database: node
 
-points:
-    - measurement: temperature
-        topic: node/+/thermometer/+/temperature
-        fields:
+    points:
+        - measurement: temperature
+            topic: node/+/thermometer/+/temperature
+            fields:
 
-            value: $.payload
+                value: $.payload
 
-        tags:
-            id: $.topic[1]
-            channel: $.topic[3]
+            tags:
+                id: $.topic[1]
+                channel: $.topic[3]
 
-    - measurement: relative-humidity
-        topic: node/+/hygrometer/0:4/relative-humidity
-        fields:
+        - measurement: relative-humidity
+            topic: node/+/hygrometer/0:4/relative-humidity
+            fields:
 
-            value: $.payload
+                value: $.payload
 
-        tags:
-            id: $.topic[1]
+            tags:
+                id: $.topic[1]
 
-    - measurement: illuminance
-        topic: node/+/lux-meter/0:0/illuminance
-        fields:
+        - measurement: illuminance
+            topic: node/+/lux-meter/0:0/illuminance
+            fields:
 
-            value: $.payload
+                value: $.payload
 
-        tags:
-            id: $.topic[1]
+            tags:
+                id: $.topic[1]
 
-    - measurement: pressure
-        topic: node/+/barometer/0:0/pressure
-        fields:
+        - measurement: pressure
+            topic: node/+/barometer/0:0/pressure
+            fields:
 
-            value: $.payload
+                value: $.payload
 
-        tags:
-            id: $.topic[1]
+            tags:
+                id: $.topic[1]
 
-    - measurement: co2
-        topic: node/+/co2-meter/-/concentration
-        fields:
+        - measurement: co2
+            topic: node/+/co2-meter/-/concentration
+            fields:
 
-            value: $.payload
+                value: $.payload
 
-        tags:
-            id: $.topic[1]
+            tags:
+                id: $.topic[1]
 
-    - measurement: voltage
-        topic: node/+/battery/+/voltage
-        fields:
+        - measurement: voltage
+            topic: node/+/battery/+/voltage
+            fields:
 
-            value: $.payload
+                value: $.payload
 
-        tags:
-            id: $.topic[1]
+            tags:
+                id: $.topic[1]
 
-    - measurement: button
-        topic: node/+/push-button/+/event-count
-        fields:
+        - measurement: button
+            topic: node/+/push-button/+/event-count
+            fields:
 
-            value: $.payload
+                value: $.payload
 
-        tags:
-            id: $.topic[1]
-            channel: $.topic[3]
+            tags:
+                id: $.topic[1]
+                channel: $.topic[3]
 
 .. note::
 
