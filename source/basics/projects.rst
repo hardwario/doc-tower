@@ -10,7 +10,7 @@ Projects
                 <tr>
                         <td>
                                 <div>
-                                        <p style="float: left;"><img src="../../_images/21.png" width="70%"></p>
+                                        <p style="float: left;"><img src="../_static/basics/projects/2.png" width="70%"></p>
                                         <h3><a href="https://www.hackster.io/hubmartin/low-power-lora-node-with-1-wire-temperature-sensors-4f3930">Low-Power LoRa Node with 1-Wire Temperature Sensors</a></h3>
                                         <p>Connect multiple Dallas 1-Wire temperature sensors. They are auto detected. Configure LoRa keys over USB serial port, no programming needed.</p>
                                 </div>
