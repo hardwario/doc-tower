@@ -2,6 +2,8 @@
 Projects
 ########
 
+.. |pic1| thumbnail:: ../_static/basics/projects/2.png
+
 .. raw:: html
 
         <table>
