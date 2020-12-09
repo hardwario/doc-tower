@@ -214,7 +214,7 @@ This example prints out some text and line and, which is the most important - li
         bc_button_set_event_handler(&button, button_event_handler, NULL);
 
         const bc_led_driver_t* driver = bc_module_lcd_get_led_driver();
-        bc_led_init_virtual(&lcdLed, 2, driver, 1);
+        bc_led_init_virtual(&lcdLed, BC_MODULE_LCD_LED_BLUE, driver, 1);
 
         bc_module_lcd_init();
         bc_module_lcd_set_font(&bc_font_ubuntu_15);
