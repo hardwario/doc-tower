@@ -44,6 +44,12 @@ Sensors
 | CO2 meter         | node/{id}/co2-meter/-/concentration        |
 +-------------------+--------------------------------------------+
 
+.. note::
+
+    Values like ``0:0`` or ``0:2`` in topics above describe on which I2C bus the sensor is and which revision the sensor is.
+    First value before ``:`` descibes ``I2C0`` (default) or ``I2C1`` bus. The second number after ``:`` describes the revision of the sensor.
+    These numbers are fixed and never changes. This corresponds with `firmware SDK values <https://sdk.hardwario.com/group__bc__radio.html#gga99fb83031ce9923c84392b4e92f956b5aaf5134d4153977e4b88c6e20ceccfafd>`_.
+
 Relays
 ******
 
