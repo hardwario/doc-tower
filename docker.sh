@@ -2,7 +2,7 @@
 
 set -e
 
-NAME=doc-chester
+NAME=doc-tower
 
 case "$1" in
   build)
