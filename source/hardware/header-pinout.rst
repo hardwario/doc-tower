@@ -67,47 +67,63 @@ The following table defines signal assignment on **module** header:
 +----------------+----------------+-------------------------------------+--------------+
 | Pin            | Signal         | Description                         | STM32 GPIO   |
 +================+================+=====================================+==============+
-| 1              | | P0           | | GPIO channel 0                    | PA0          |
-|                | | A0           | | ADC channel 0                     |              |
-|                | | TXD0         | | UART channel 0 - TXD signal       |              |
+| 1              |   P0           |   GPIO channel 0                    | PA0          |
+|                |                |                                     |              |
+|                |   A0           |   ADC channel 0                     |              |
+|                |                |                                     |              |
+|                |   TXD0         |   UART channel 0 - TXD signal       |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 2              | | P1           | | GPIO channel 1                    | PA1          |
-|                | | A1           | | ADC channel 1                     |              |
-|                | | RXD0         | | UART channel 0 - RXD signal       |              |
+| 2              |   P1           |   GPIO channel 1                    | PA1          |
+|                |                |                                     |              |
+|                |   A1           |   ADC channel 1                     |              |
+|                |                |                                     |              |
+|                |   RXD0         |   UART channel 0 - RXD signal       |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 3              | | P2           | | GPIO channel 2                    | PA2          |
-|                | | A2           | | ADC channel 2                     |              |
-|                | | TXD1         | | UART channel 1 - TXD signal       |              |
+| 3              |   P2           |   GPIO channel 2                    | PA2          |
+|                |                |                                     |              |
+|                |   A2           |   ADC channel 2                     |              |
+|                |                |                                     |              |
+|                |   TXD1         |   UART channel 1 - TXD signal       |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 4              | | P3           | | GPIO channel 3                    | PA3          |
-|                | | A3           | | ADC channel 3                     |              |
-|                | | RXD1         | | UART channel 1 - RXD signal       |              |
+| 4              |   P3           |   GPIO channel 3                    | PA3          |
+|                |                |                                     |              |
+|                |   A3           |   ADC channel 3                     |              |
+|                |                |                                     |              |
+|                |   RXD1         |   UART channel 1 - RXD signal       |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 5              | | P4           | | GPIO channel 4                    | PA4          |
-|                | | A4           | | ADC channel 4                     |              |
-|                | | DAC0         | | DAC channel 0                     |              |
+| 5              |   P4           |   GPIO channel 4                    | PA4          |
+|                |                |                                     |              |
+|                |   A4           |   ADC channel 4                     |              |
+|                |                |                                     |              |
+|                |   DAC0         |   DAC channel 0                     |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 6              | | P5           | | GPIO channel 5                    | PA5          |
-|                | | A5           | | ADC channel 5                     |              |
-|                | | DAC1         | | DAC channel 1                     |              |
+| 6              |   P5           |   GPIO channel 5                    | PA5          |
+|                |                |                                     |              |
+|                |   A5           |   ADC channel 5                     |              |
+|                |                |                                     |              |
+|                |   DAC1         |   DAC channel 1                     |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 7              | | P6           | | GPIO channel 6                    | PB1          |
-|                | | RTS1         | | UART channel 1 - RTS signal       |              |
+| 7              |   P6           |   GPIO channel 6                    | PB1          |
+|                |                |                                     |              |
+|                |   RTS1         |   UART channel 1 - RTS signal       |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 8              | | P7           | | GPIO channel 7                    | PA6          |
-|                | | CTS1         | | UART channel 1 - CTS signal       |              |
+| 8              |   P7           |   GPIO channel 7                    | PA6          |
+|                |                |                                     |              |
+|                |   CTS1         |   UART channel 1 - CTS signal       |              |
 +----------------+----------------+-------------------------------------+--------------+
 | 9              | P8             | GPIO channel 8                      | PB0          |
 +----------------+----------------+-------------------------------------+--------------+
 | 10             | P9             | GPIO channel 9                      | PB2          |
 +----------------+----------------+-------------------------------------+--------------+
-| 11             | | RESET        | | System reset                      | NRST         |
-|                | |              | | Also button "R" on Core Module R1 |              |
+| 11             |   RESET        |   System reset                      | NRST         |
+|                |                |                                     |              |
+|                |                |   Also button "R" on Core Module R1 |              |
 +----------------+----------------+-------------------------------------+--------------+
-| 12             | | BOOT         | Boot mode                           | BOOT0        |
+| 12             |   BOOT         | Boot mode                           | BOOT0        |
 +----------------+----------------+-------------------------------------+--------------+
-| 13             | | VDD_OFF      | | From top side: VDD_OFF_OUT        |              |
-|                | |              | | From bottom side: VDD_OFF_IN      |              |
+| 13             |   VDD_OFF      |   From top side: VDD_OFF_OUT        |              |
+|                |                |                                     |              |
+|                |                |   From bottom side: VDD_OFF_IN      |              |
 +----------------+----------------+-------------------------------------+--------------+
 | 14             | BAT_OFF        | Battery disconnect signal           |              |
 +----------------+----------------+-------------------------------------+--------------+
