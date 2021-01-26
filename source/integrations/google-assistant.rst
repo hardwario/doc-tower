@@ -2,6 +2,18 @@
 Google Assistant
 ################
 
+***********
+NOT WORKING
+***********
+
+.. warning::
+
+    This google assistant is **not functional right now**. We keep it here just for reference.
+
+***********
+NOT WORKING
+***********
+
 With the Google Assistant integration, you can control your HARDWARIO TOWER - Industrial IoT Kits with the Google Assistant.
 
 .. note::
