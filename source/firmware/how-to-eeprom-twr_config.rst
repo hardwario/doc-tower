@@ -1,8 +1,8 @@
-########################
-How to: EEPROM bc_config
-########################
+#########################
+How to: EEPROM twr_config
+#########################
 
-``bc_config`` functions helps you to easily create a variable or structure of variables that are saved in internal EEPROM memory.
+``twr_config`` functions helps you to easily create a variable or structure of variables that are saved in internal EEPROM memory.
 
 Library will automatically initialize your configuration when:
 
@@ -13,7 +13,7 @@ Library will automatically initialize your configuration when:
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__config.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__config.html>`_
 
 **************
 Initialization
@@ -32,7 +32,7 @@ The last parameter init_config can be:
     :linenos:
 
     // Load configuration
-    bc_config_init(0x12345678, &config, sizeof(config), NULL);
+    twr_config_init(0x12345678, &config, sizeof(config), NULL);
 
 ************
 Code Example
@@ -55,14 +55,14 @@ Code Example
     void application_init()
     {
         // Load configuration
-        bc_config_init(0x12345678, &config, sizeof(config), NULL);
+        twr_config_init(0x12345678, &config, sizeof(config), NULL);
 
         // Change parameter
         config.report_interval = 500;
 
         // Save config to EEPROM
-        bc_config_save();
+        twr_config_save();
 
         // Reset configuration
-        bc_config_reset();
+        twr_config_reset();
     }

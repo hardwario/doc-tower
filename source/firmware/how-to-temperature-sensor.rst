@@ -7,7 +7,7 @@ If you want to take a look how TMP112 is connected, please take a look at `schem
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__tmp112.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__tmp112.html>`_
 
 *****************
 How Does it Work?
@@ -27,12 +27,12 @@ Types of Measurements
 
 **Manual**
 
-We can make manual measurement whenever we want to. This is achieved by calling the ``bc_tmp112_measure(bc_tmp112_t *self)`` function from SDK.
+We can make manual measurement whenever we want to. This is achieved by calling the ``twr_tmp112_measure(twr_tmp112_t *self)`` function from SDK.
 
 **With Scheduler, repeatedly**
 
 Thanks to the :doc:`Scheduler <timing-and-scheduler>` you can define, when the periodic measurement should happen.
-For this, we have the ``bc_tmp112_set_update_interval(bc_tmp112_t *self, bc_tick_t interval)`` function.
+For this, we have the ``twr_tmp112_set_update_interval(twr_tmp112_t *self, twr_tick_t interval)`` function.
 
 - ``*self`` is an address to an TMP112 instance
 - ``interval`` is number of milliseconds, defining time between measurements
@@ -40,9 +40,9 @@ For this, we have the ``bc_tmp112_set_update_interval(bc_tmp112_t *self, bc_tick
 Recognizable TMP112 Events
 **************************
 
-- ``BC_TMP112_EVENT_ERROR``
+- ``TWR_TMP112_EVENT_ERROR``
     - an error occurred during a measurement
-- ``BC_TMP112_EVENT_UPDATE``
+- ``TWR_TMP112_EVENT_UPDATE``
     - a measurement was completed successfully
 
 *******
@@ -68,39 +68,39 @@ Place code below in *application.c* file and flash. Use of *application.h* file 
 .. code-block:: c
     :linenos:
 
-    #include <bcl.h>
-    #include <bc_usb_cdc.h>
+    #include <twr.h>
+    #include <twr_usb_cdc.h>
 
-    bc_tmp112_t temp;
+    twr_tmp112_t temp;
 
-    void tmp112_event_handler(bc_tmp112_t *self, bc_tmp112_event_t event, void *event_param)
+    void tmp112_event_handler(twr_tmp112_t *self, twr_tmp112_event_t event, void *event_param)
     {
         (void) self;
         (void) event_param;
 
-        if (event == BC_TMP112_EVENT_UPDATE)
+        if (event == TWR_TMP112_EVENT_UPDATE)
         {
             float temperature = 0.0;
             int16_t rawTemperature = 0;
-            bc_tmp112_get_temperature_celsius(&temp, &temperature);
-            bc_tmp112_get_temperature_raw(&temp, &rawTemperature);
+            twr_tmp112_get_temperature_celsius(&temp, &temperature);
+            twr_tmp112_get_temperature_raw(&temp, &rawTemperature);
             char buffer[30];
             sprintf(buffer, "%.4f °C\r\n%d\r\n", temperature, rawTemperature);
-            bc_usb_cdc_write(buffer, strlen(buffer));
+            twr_usb_cdc_write(buffer, strlen(buffer));
         }
     }
 
     void application_init(void)
     {
         // initialize USB communication
-        bc_usb_cdc_init();
+        twr_usb_cdc_init();
 
         // initialize TMP112 sensor
-        bc_tmp112_init(&temp, BC_I2C_I2C0, 0x49);
+        twr_tmp112_init(&temp, TWR_I2C_I2C0, 0x49);
 
         // set measurement handler (call "tmp112_event_handler()" after measurement)
-        bc_tmp112_set_event_handler(&temp, tmp112_event_handler, NULL);
+        twr_tmp112_set_event_handler(&temp, tmp112_event_handler, NULL);
 
         // automatically measure the temperature every 5 seconds
-        bc_tmp112_set_update_interval(&temp, 5000);
+        twr_tmp112_set_update_interval(&temp, 5000);
     }

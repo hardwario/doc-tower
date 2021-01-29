@@ -6,7 +6,7 @@ Quick Start Guide
 Thank You, Dear Maker!
 **********************
 
-If you are reading this QUICK START GUIDE you have probably purchased our HARDWARIO TOWER - Industrial IoT Kit.
+If you are reading this **QUICK START GUIDE** you have probably purchased our HARDWARIO TOWER - Industrial IoT Kit.
 If not, `go shopping <https://shop.hardwario.com>`_ to do so :)
 
 Once again **THANK YOU** for being our supporter, we really appreciate this.
@@ -30,7 +30,7 @@ We motivate our makers to share their work with others and you can get ideas for
 Get Ready
 *********
 
-In our world it means to prepare a center of your IoT system - the Hub. In QUICK START GUIDE we will use your computer as a Hub. Just follow these steps:
+In our world it means to prepare a center of your IoT system - the Hub. In **QUICK START GUIDE** we will use your computer as a Hub. Just follow these steps:
 
 Delivery
 ********

@@ -20,7 +20,7 @@ About Tag Module
     And that's when the Tag Module can help.
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-| |shopping-cart| `E-Shop <https://shop.hardwario.com/tag-module/>`_    | |microchip| `Schematic drawing <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-tag>`_    | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=74075>`_  |
+| |shopping-cart| `Shop <https://shop.hardwario.com/tag-module/>`_      | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-tag>`_           | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=74075>`_  |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------

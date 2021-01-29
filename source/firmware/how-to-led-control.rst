@@ -7,7 +7,7 @@ In this tutorial, we will go through available functions for controlling LED dio
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__led.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__led.html>`_
 
 ************
 Requirements
@@ -24,7 +24,7 @@ First, an instance of led is needed. You can achieve this by adding this line:
 
 .. code-block:: c
 
-    bc_led_t led;
+    twr_led_t led;
 
 Now, we can decide between two options how to control the diode.
 
@@ -39,13 +39,13 @@ Now, we can decide between two options how to control the diode.
 
 .. code-block:: c
 
-    bc_led_init(&led, BC_GPIO_LED, false, false);
+    twr_led_init(&led, TWR_GPIO_LED, false, false);
 
 2) Now we use function that will tell the Scheduler to plan toggling of LED mode periodically.
 
 .. code-block:: c
 
-    bc_led_set_mode(&led, BC_LED_MODE_BLINK);
+    twr_led_set_mode(&led, TWR_LED_MODE_BLINK);
 
 Thanks to those simple lines, our microcontroller will toggle led mode periodically and between toggling, it can do whatever you want to do - measuring, sending data, ...
 
@@ -56,12 +56,12 @@ Thanks to those simple lines, our microcontroller will toggle led mode periodica
 
     #include <application.h>
 
-    bc_led_t led;
+    twr_led_t led;
 
     void application_init(void)
     {
-        bc_led_init(&led, BC_GPIO_LED, false, false);
-        bc_led_set_mode(&led, BC_LED_MODE_BLINK);
+        twr_led_init(&led, TWR_GPIO_LED, false, false);
+        twr_led_set_mode(&led, TWR_LED_MODE_BLINK);
     }
 
 .. note::
@@ -77,9 +77,9 @@ Four blinking patterns are available in SDK. Ordered from slowest to fastest.
 .. code-block:: c
     :linenos:
 
-    BC_LED_MODE_BLINK_SLOW
-    BC_LED_MODE_BLINK_SLOW
-    BC_LED_MODE_BLINK_FAST
-    BC_LED_MODE_FLASH
+    TWR_LED_MODE_BLINK_SLOW
+    TWR_LED_MODE_BLINK_SLOW
+    TWR_LED_MODE_BLINK_FAST
+    TWR_LED_MODE_FLASH
 
 

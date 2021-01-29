@@ -19,7 +19,7 @@ About Base Module
 
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-| |shopping-cart| `E-Shop <https://shop.hardwario.com/base-module/>`_   | |microchip| `Schematic drawing <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-base>`_   | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73844>`_  |
+| |shopping-cart| `Shop <https://shop.hardwario.com/base-module/>`_    | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-base>`_           | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73844>`_  |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------

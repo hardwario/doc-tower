@@ -14,7 +14,7 @@ but little bit of training (and reading through this article) should help you.
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__module__lcd.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__module__lcd.html>`_
 
 *********************
 What you need to know
@@ -38,7 +38,7 @@ Remember to Update
 ******************
 
 Every change you make - draw a string or a line, rotate the display, etc is done internally
-and no changes are visible until you call the ``bc_module_lcd_update()`` function.
+and no changes are visible until you call the ``twr_module_lcd_update()`` function.
 
 This has a simple purpose - if every change you make would cause an update, it would increase the power consumption rapidly.
 
@@ -49,17 +49,17 @@ The module can be switched *on* and *off* for power saving (mostly used to prolo
 
 It is as simple as calling
 
-``bc_module_lcd_off()``
+``twr_module_lcd_off()``
 
 and
 
-``bc_module_lcd_on()``
+``twr_module_lcd_on()``
 
 functions.
 
 .. caution::
 
-    Remember that LCD needs to be switched ON if you want to show something and ``bc_module_lcd_off()`` was called. It is not enough to call the update function.
+    Remember that LCD needs to be switched ON if you want to show something and ``twr_module_lcd_off()`` was called. It is not enough to call the update function.
 
 Pixel State / Color
 *******************
@@ -72,18 +72,18 @@ In the *draw string* example, for this code
 .. code-block:: c
     :linenos:
 
-    bc_module_lcd_draw_string(5, 5, "false", false);
-    bc_module_lcd_draw_string(5, 20, "true", true);
-    bc_module_lcd_update();
+    twr_module_lcd_draw_string(5, 5, "false", false);
+    twr_module_lcd_draw_string(5, 20, "true", true);
+    twr_module_lcd_update();
 
 the block containing the "false" string will be black and the text itself will be white and the "true" string vice versa.
 
 Clear the LCD
 *************
 
-You can clear the LCD panel (which means set all pixels to show nothing) by calling the ``bc_module_lcd_update()`` function.
+You can clear the LCD panel (which means set all pixels to show nothing) by calling the ``twr_module_lcd_update()`` function.
 
-You have to call the update function ``bc_module_lcd_update()`` to make the clear process visible on LCD panel.
+You have to call the update function ``twr_module_lcd_update()`` to make the clear process visible on LCD panel.
 
 Rotation
 ********
@@ -91,12 +91,12 @@ Rotation
 Because the LCD is a square panel (128x128 pixels), you can
 always rotate the displayed information for 0, 90, 180 and 270 degrees without the need to re-draw anything.
 
-This is done by calling ``void bc_module_lcd_set_rotation(bc_module_lcd_rotation_t rotation)``. You can use one of these enums as the parameter:
+This is done by calling ``void twr_module_lcd_set_rotation(twr_module_lcd_rotation_t rotation)``. You can use one of these enums as the parameter:
 
-- ``BC_MODULE_LCD_ROTATION_0``
-- ``BC_MODULE_LCD_ROTATION_90``
-- ``BC_MODULE_LCD_ROTATION_180``
-- ``BC_MODULE_LCD_ROTATION_270``
+- ``TWR_MODULE_LCD_ROTATION_0``
+- ``TWR_MODULE_LCD_ROTATION_90``
+- ``TWR_MODULE_LCD_ROTATION_180``
+- ``TWR_MODULE_LCD_ROTATION_270``
 
 .. important::
 
@@ -109,16 +109,16 @@ So if you want to create function that will draw string "Hello" rotated for 90 d
 
     void helloDraw()
     {
-        bc_module_lcd_clear();
-        bc_module_lcd_draw_string(5, 5, "Hello", false);
-        bc_module_lcd_set_rotation(BC_MODULE_LCD_ROTATION_90);
-        bc_module_lcd_update();
+        twr_module_lcd_clear();
+        twr_module_lcd_draw_string(5, 5, "Hello", false);
+        twr_module_lcd_set_rotation(TWR_MODULE_LCD_ROTATION_90);
+        twr_module_lcd_update();
     }
 
 **Relative and absolute rotation**
 
 Unfortunately the SDK does not offer any function to do rotation relative to actual
-position - so if you would repeatedly call ``bc_module_lcd_set_rotation(BC_MODULE_LCD_ROTATION_90);``
+position - so if you would repeatedly call ``twr_module_lcd_set_rotation(TWR_MODULE_LCD_ROTATION_90);``
 the display would be rotated **absolutely** to the right for 90 degrees. You have to implement the relative rotation yourself.
 
 *******
@@ -146,15 +146,15 @@ To draw a string you need to use function
 
 
     ### Draw a Line
-    Drawing a line is as simple as calling function form [SDK](https://sdk.hardwario.com/group__bc__module__lcd.html#ga9eb9b7c644a7cdec4be4e97fffb6be2a). **Remember that parameters for this function are not absolute coordinates, but a relative distance from top and left edges.**
+    Drawing a line is as simple as calling function form [SDK](https://sdk.hardwario.com/group__twr__module__lcd.html#ga9eb9b7c644a7cdec4be4e97fffb6be2a). **Remember that parameters for this function are not absolute coordinates, but a relative distance from top and left edges.**
 
     **Examples**
 
     // draws a line from the bottom left to the top right corner
-    bc_module_lcd_draw_line(0, 128, 128, 0, true);
+    twr_module_lcd_draw_line(0, 128, 128, 0, true);
 
     // draws a line from the bottom left to the top right corner
-    bc_module_lcd_draw_line(0, 0, 128, 128, true);
+    twr_module_lcd_draw_line(0, 0, 128, 128, true);
 
 *******************
 LCD integrated LEDs
@@ -162,10 +162,10 @@ LCD integrated LEDs
 
 LCD includes 6 small RGB LEDs. They usually serve as a notifier for some action that happened. There is no way to use them as a backlight for the LCD panel.
 
-You can control them with standard functions from ``bc_led_*`` from SDK right after you get their driver.
+You can control them with standard functions from ``twr_led_*`` from SDK right after you get their driver.
 
-To get the driver you have to use function ``const bc_led_driver_t* bc_module_lcd_get_led_driver(void)`` which returns pointer to the driver.
-Then you have to init the virtual LED with void ``bc_led_init_virtual(bc_led_t *self, int channel, const bc_led_driver_t *driver, int idle_state)``.
+To get the driver you have to use function ``const twr_led_driver_t* twr_module_lcd_get_led_driver(void)`` which returns pointer to the driver.
+Then you have to init the virtual LED with void ``twr_led_init_virtual(twr_led_t *self, int channel, const twr_led_driver_t *driver, int idle_state)``.
 
 The ``channel`` parameter is equal to LED color:
 
@@ -185,39 +185,39 @@ This example prints out some text and line and, which is the most important - li
 .. code-block:: c
     :linenos:
 
-    #include <bcl.h>
-    #include <bc_led.h>
+    #include <twr.h>
+    #include <twr_led.h>
 
-    bc_button_t button;
-    bc_led_t lcdLed;
+    twr_button_t button;
+    twr_led_t lcdLed;
 
-    void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+    void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
     {
         (void) self;
         (void) event_param;
 
-        if (event == BC_BUTTON_EVENT_PRESS)
+        if (event == TWR_BUTTON_EVENT_PRESS)
         {
-            bc_led_pulse(&lcdLed, 1500);
+            twr_led_pulse(&lcdLed, 1500);
 
             char hello[6] = "Hello";
-            bc_module_lcd_draw_string(10, 5, hello, true);
-            bc_module_lcd_draw_line(0, 21, 128, 23, true);
+            twr_module_lcd_draw_string(10, 5, hello, true);
+            twr_module_lcd_draw_line(0, 21, 128, 23, true);
 
-            bc_module_lcd_update();
+            twr_module_lcd_update();
         }
     }
 
     void application_init(void)
     {
-        bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-        bc_button_set_event_handler(&button, button_event_handler, NULL);
+        twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN, false);
+        twr_button_set_event_handler(&button, button_event_handler, NULL);
 
-        const bc_led_driver_t* driver = bc_module_lcd_get_led_driver();
-        bc_led_init_virtual(&lcdLed, BC_MODULE_LCD_LED_BLUE, driver, 1);
+        const twr_led_driver_t* driver = twr_module_lcd_get_led_driver();
+        twr_led_init_virtual(&lcdLed, TWR_MODULE_LCD_LED_BLUE, driver, 1);
 
-        bc_module_lcd_init();
-        bc_module_lcd_set_font(&bc_font_ubuntu_15);
+        twr_module_lcd_init();
+        twr_module_lcd_set_font(&twr_font_ubuntu_15);
     }
 
 ***********
@@ -226,11 +226,11 @@ LCD Buttons
 
 LCD module gives you two separate buttons you can use for controlling your application.
 Usage is similar to LED mentioned above: first you need to get a driver and make an initialization of "virtual button".
-Then you are free to use any ``bc_button_*`` functions from the SDK.
+Then you are free to use any ``twr_button_*`` functions from the SDK.
 
-To get the button driver you can use ``const bc_button_driver_t* bc_module_lcd_get_button_driver(void)`` which returns pointer to the driver.
+To get the button driver you can use ``const twr_button_driver_t* twr_module_lcd_get_button_driver(void)`` which returns pointer to the driver.
 
-The initialization is achieved by calling ``void bc_button_init_virtual(bc_button_t *self, int channel, const bc_button_driver_t *driver, int idle_state)`` function.
+The initialization is achieved by calling ``void twr_button_init_virtual(twr_button_t *self, int channel, const twr_button_driver_t *driver, int idle_state)`` function.
 
 The ``channel`` parameter tells which button you want to assign:
 
@@ -245,38 +245,38 @@ You can switch then on by pressing the left button and switch them of by pressin
 .. code-block:: c
     :linenos:
 
-    #include <bcl.h>
-    #include <bc_led.h>
-    #include <bc_button.h>
+    #include <twr.h>
+    #include <twr_led.h>
+    #include <twr_button.h>
 
-    bc_button_t button_left;
-    bc_button_t button_right;
-    bc_led_t lcdLed;
+    twr_button_t button_left;
+    twr_button_t button_right;
+    twr_led_t lcdLed;
 
-    void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+    void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
     {
         (void) self;
 
-        if (event == BC_BUTTON_EVENT_PRESS && (int) event_param == 0) {
-            bc_led_set_mode(&lcdLed, BC_LED_MODE_ON);
-        } else if (event == BC_BUTTON_EVENT_PRESS && (int) event_param == 1) {
-            bc_led_set_mode(&lcdLed, BC_LED_MODE_OFF);
+        if (event == TWR_BUTTON_EVENT_PRESS && (int) event_param == 0) {
+            twr_led_set_mode(&lcdLed, TWR_LED_MODE_ON);
+        } else if (event == TWR_BUTTON_EVENT_PRESS && (int) event_param == 1) {
+            twr_led_set_mode(&lcdLed, TWR_LED_MODE_OFF);
         }
 
     }
 
     void application_init(void)
     {
-        const bc_led_driver_t* driver = bc_module_lcd_get_led_driver();
-        bc_led_init_virtual(&lcdLed, 2, driver, 1);
+        const twr_led_driver_t* driver = twr_module_lcd_get_led_driver();
+        twr_led_init_virtual(&lcdLed, 2, driver, 1);
 
-        const bc_button_driver_t* lcdButtonDriver =  bc_module_lcd_get_button_driver();
-        bc_button_init_virtual(&button_left, 0, lcdButtonDriver, 0);
-        bc_button_init_virtual(&button_right, 1, lcdButtonDriver, 0);
+        const twr_button_driver_t* lcdButtonDriver =  twr_module_lcd_get_button_driver();
+        twr_button_init_virtual(&button_left, 0, lcdButtonDriver, 0);
+        twr_button_init_virtual(&button_right, 1, lcdButtonDriver, 0);
 
-        bc_button_set_event_handler(&button_left, button_event_handler, (int*)0);
-        bc_button_set_event_handler(&button_right, button_event_handler, (int*)1);
+        twr_button_set_event_handler(&button_left, button_event_handler, (int*)0);
+        twr_button_set_event_handler(&button_right, button_event_handler, (int*)1);
 
-        bc_module_lcd_init();
-        bc_module_lcd_set_font(&bc_font_ubuntu_15);
+        twr_module_lcd_init();
+        twr_module_lcd_set_font(&twr_font_ubuntu_15);
     }

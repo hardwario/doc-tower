@@ -3,22 +3,22 @@ How to: GPIO Pins
 #################
 
 You can use many GPIOs (General Purpose Input/Output pins) to connect the Core Module with the outside world.
-The pins are described in the :doc:`Header Pinout <../../hardware/header-pinout>`. The pins in SDK has names ``BC_GPIO_P0`` to ``BC_GPIO_P17``.
-There are also two special pins dedicated to ``BC_GPIO_LED`` and ``BC_GPIO_BUTTON``.
+The pins are described in the :doc:`Header Pinout <../../hardware/header-pinout>`. The pins in SDK has names ``TWR_GPIO_P0`` to ``TWR_GPIO_P17``.
+There are also two special pins dedicated to ``TWR_GPIO_LED`` and ``TWR_GPIO_BUTTON``.
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__gpio.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__gpio.html>`_
 
 ******************
 GPIO Configuration
 ******************
 
-First important task is to enable clock to the GPIO peripheral by calling ``bc_gpio_init``.
+First important task is to enable clock to the GPIO peripheral by calling ``twr_gpio_init``.
 ARM Cortex micros have **clock gating** which disables the peripheral clock and saves more power.
-Then you need to configure the pin mode by calling ``bc_gpio_set_mode``.
+Then you need to configure the pin mode by calling ``twr_gpio_set_mode``.
 The Mode can be input, output, analog, open-drain or alternate mode which is used when configuring UART or SPI peripheral.
-Then it is possible to configure internal **pull-up** or **pull-down** resistor by calling ``bc_gpio_set_pull`` so can define the default logic
+Then it is possible to configure internal **pull-up** or **pull-down** resistor by calling ``twr_gpio_set_pull`` so can define the default logic
 level when there's nothing connected to the GPIO pin.
 
 **************
@@ -26,8 +26,8 @@ GPIO as output
 **************
 
 This example will turn on the LED on the Core Module.
-The usual and more comfort way to control LED is to use ``bc_led`` code,
-but we use the ``bc_gpio`` for now to explain the GPIO basics.
+The usual and more comfort way to control LED is to use ``twr_led`` code,
+but we use the ``twr_gpio`` for now to explain the GPIO basics.
 
 .. code-block:: c
     :linenos:
@@ -36,9 +36,9 @@ but we use the ``bc_gpio`` for now to explain the GPIO basics.
 
     void application_init(void)
     {
-        bc_gpio_init(BC_GPIO_LED);
-        bc_gpio_set_mode(BC_GPIO_LED, BC_GPIO_MODE_OUTPUT);
-        bc_gpio_set_output(BC_GPIO_LED, 1);
+        twr_gpio_init(TWR_GPIO_LED);
+        twr_gpio_set_mode(TWR_GPIO_LED, TWR_GPIO_MODE_OUTPUT);
+        twr_gpio_set_output(TWR_GPIO_LED, 1);
     }
 
 *************
@@ -54,20 +54,20 @@ This example will read the button state and the read value will be written to th
 
     void application_init(void)
     {
-        bc_gpio_init(BC_GPIO_LED);
-        bc_gpio_set_mode(BC_GPIO_LED, BC_GPIO_MODE_OUTPUT);
+        twr_gpio_init(TWR_GPIO_LED);
+        twr_gpio_set_mode(TWR_GPIO_LED, TWR_GPIO_MODE_OUTPUT);
 
-        bc_gpio_init(BC_GPIO_BUTTON);
-        bc_gpio_set_mode(BC_GPIO_BUTTON, BC_GPIO_MODE_INPUT);
+        twr_gpio_init(TWR_GPIO_BUTTON);
+        twr_gpio_set_mode(TWR_GPIO_BUTTON, TWR_GPIO_MODE_INPUT);
         // The Core Module has hardware pull-down so next call is commented
-        // bc_gpio_set_pull(BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN);
+        // twr_gpio_set_pull(TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN);
     }
 
     void application_task()
     {
-        uint8_t button_state = bc_gpio_get_input(BC_GPIO_BUTTON);
-        bc_gpio_set_output(BC_GPIO_LED, button_state);
+        uint8_t button_state = twr_gpio_get_input(TWR_GPIO_BUTTON);
+        twr_gpio_set_output(TWR_GPIO_LED, button_state);
 
         // Repeat this task again after 10 ms
-        bc_scheduler_plan_current_relative(10);
+        twr_scheduler_plan_current_relative(10);
     }

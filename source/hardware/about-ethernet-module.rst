@@ -20,7 +20,7 @@ It is using WizNet W5500 chip that is using SPI to communicate with Core Module.
 Optionally this module can have active PoE module that fully supports IEEE 802.3af standard.
 
 +----------------------------------------------------------------------------------------------------------------+
-| |microchip| `Schematic drawing <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-ethernet>`_ |
+| |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-ethernet>`_        |
 +----------------------------------------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------

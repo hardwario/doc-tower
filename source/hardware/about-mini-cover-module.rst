@@ -13,6 +13,6 @@ About Mini Cover Module
 +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +---------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| |shopping-cart| `E-Shop <https://shop.hardwario.com/mini-cover-module/>`_ | |microchip| `Schematic drawing <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-cover-mini>`_ |
+| |shopping-cart| `Shop <https://shop.hardwario.com/mini-cover-module/>`_   | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-cover-mini>`_        |
 +---------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 

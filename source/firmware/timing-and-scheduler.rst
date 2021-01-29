@@ -23,14 +23,14 @@ In case you need to create some delay, then the one solution is to create for ex
 Get Time Since Start of the Program
 ***********************************
 
-Time since program started (timestamp, number of millisecond since start) can be retrieved by using ``bc_tick_t bc_tick_get()`` function.
+Time since program started (timestamp, number of millisecond since start) can be retrieved by using ``twr_tick_t twr_tick_get()`` function.
 
 
 .. note::
 
     **As you can see in SDK**
 
-    ``bc_tick_t`` is a custom type based on *uint64_t*
+    ``twr_tick_t`` is a custom type based on *uint64_t*
 
 ******************
 Registering a Task
@@ -44,18 +44,18 @@ Let's say, you have a function that will disable LCD display and do some other t
 
     static void disableLCD(void* param) {
         (void) param;
-        bc_module_lcd_off();
+        twr_module_lcd_off();
         // other things to do
     }
 
 Inside your code you will decide that you want to run this function in 5 second from now.
-This can be simply achieved by registering this function with ``bc_scheduler_register()``:
+This can be simply achieved by registering this function with ``twr_scheduler_register()``:
 
 .. code-block:: c
 
-    bc_scheduler_register(disableLCD, NULL, bc_tick_get() + 5000);
+    twr_scheduler_register(disableLCD, NULL, twr_tick_get() + 5000);
 
-This function has a return type ``bc_scheduler_task_id_t``. It returns ID of the task that had been registered by Scheduler.
+This function has a return type ``twr_scheduler_task_id_t``. It returns ID of the task that had been registered by Scheduler.
 This ID can be used for unregistering from Scheduler.
 
 ********************
@@ -63,7 +63,7 @@ Unregistering a Task
 ********************
 
 To unregister task from scheduler (for example when it is not needed to be run anymore) you have to use
-the ``void bc_scheduler_unregister(bc_scheduler_task_id_t task_id)`` function. This takes ID of the to-be-unregistered task as a parameter.
+the ``void twr_scheduler_unregister(twr_scheduler_task_id_t task_id)`` function. This takes ID of the to-be-unregistered task as a parameter.
 
 *******************************
 Planning to Run Registered Task
@@ -74,13 +74,13 @@ One time
 
 To run registered task one more time in the future, you have to use one of these functions (taking task ID and number of milliseconds(ticks)) as parameters:
 
-- ``void bc_scheduler_plan_absolute``
-- ``void bc_scheduler_plan_relative``
-- ``void bc_scheduler_plan_from_now``
+- ``void twr_scheduler_plan_absolute``
+- ``void twr_scheduler_plan_relative``
+- ``void twr_scheduler_plan_from_now``
 
 .. tip::
 
-    To see full list of available functions, please see `SDK documentation <https://sdk.hardwario.com/group__bc__scheduler.html>`_
+    To see full list of available functions, please see `SDK documentation <https://sdk.hardwario.com/group__twr__scheduler.html>`_
 
 **Example**
 
@@ -88,7 +88,7 @@ To run task with ID 31415 in 5 seconds from now, you would simply call:
 
 .. code-block:: c
 
-    bc_scheduler_plan_from_now(31415, 5000);
+    twr_scheduler_plan_from_now(31415, 5000);
 
 Repeatedly
 **********
@@ -107,7 +107,7 @@ In this example, *disableLCD* will be always called exactly 2000 milliseconds af
 
     static void disableLCD(void* param) {
         (void) param;
-        bc_module_lcd_off();
+        twr_module_lcd_off();
         // other things to do
-        bc_scheduler_plan_current_from_now(2000);
+        twr_scheduler_plan_current_from_now(2000);
     }

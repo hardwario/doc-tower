@@ -11,7 +11,7 @@ LCD
 
 **My LCD module shows random dots/nothing**
 
-You probably forgot to call the ``bc_module_lcd_update(void)`` function.
+You probably forgot to call the ``twr_module_lcd_update(void)`` function.
 Every draw or rotation you make in your code is done internally within the SDK and those changes needs to be sent to LCD by this function.
 
 ***********

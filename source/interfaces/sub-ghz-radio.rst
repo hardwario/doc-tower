@@ -97,19 +97,19 @@ There are a few solutions for this functionality:
 
 **Using power adapter**
 
-By using Power Module or micro USB cable to power Core Module constantly you can enable radio mode BC_RADIO_MODE_NODE_LISTENING in your firmware.
+By using Power Module or micro USB cable to power Core Module constantly you can enable radio mode TWR_RADIO_MODE_NODE_LISTENING in your firmware.
 
 .. code-block:: c
 
     void application_init(void)
     {
-        bc_radio_init(BC_RADIO_MODE_NODE_LISTENING);
+        twr_radio_init(TWR_RADIO_MODE_NODE_LISTENING);
     }
 
 **Set listening timeout for sleeping node**
 
 In the firmware you can set the time that the sleeping node will listen after every send message from Node to the Gateway.
-You set it by calling bc_radio_set_rx_timeout_for_sleeping_node API.
+You set it by calling twr_radio_set_rx_timeout_for_sleeping_node API.
 
 This way let's say you send the measured temperature every 10 minutes and in your Node-RED or server code you will react to this
 MQTT temperature message and immediately response with MQTT message to toggle the relay.
@@ -121,14 +121,14 @@ This solution adds to the power consumption and you have to find right balance b
 
     /* Temperature event handler, this will just send the value through the radio *
      * and allow the Core Module to switch to Listening mode for 400ms            */
-    void tmp112_event_handler(bc_tmp112_t *self, bc_tmp112_event_t event, void *event_param)
+    void tmp112_event_handler(twr_tmp112_t *self, twr_tmp112_event_t event, void *event_param)
     {
         float value;
         event_param_t *param = (event_param_t *)event_param;
 
-        if (event == BC_TMP112_EVENT_UPDATE)
+        if (event == TWR_TMP112_EVENT_UPDATE)
         {
-            bc_radio_pub_temperature(param->channel, &value);
+            twr_radio_pub_temperature(param->channel, &value);
             param->value = value;
             values.temperature = value;
         }
@@ -137,19 +137,19 @@ This solution adds to the power consumption and you have to find right balance b
     void application_init(void)
     {
 
-        static bc_tmp112_t temperature;
-        bc_tmp112_init(&temperature, BC_I2C_I2C0, 0x49);
-        bc_tmp112_set_event_handler(&temperature, tmp112_event_handler, NULL);
-        bc_tmp112_set_update_interval(&temperature, 60 * 1000);               // Update every 10 minutes
+        static twr_tmp112_t temperature;
+        twr_tmp112_init(&temperature, TWR_I2C_I2C0, 0x49);
+        twr_tmp112_set_event_handler(&temperature, tmp112_event_handler, NULL);
+        twr_tmp112_set_update_interval(&temperature, 60 * 1000);               // Update every 10 minutes
 
-        bc_radio_init(BC_RADIO_MODE_NODE_SLEEPING);
-        bc_radio_pairing_request("relay", VERSION);
-        bc_radio_set_rx_timeout_for_sleeping_node(400);
+        twr_radio_init(TWR_RADIO_MODE_NODE_SLEEPING);
+        twr_radio_pairing_request("relay", VERSION);
+        twr_radio_set_rx_timeout_for_sleeping_node(400);
     }
 
 **Synchronized clock of nodes**
 
-With `RTC support in SDK <https://sdk.hardwario.com/group__bc__rtc.html>`_ it is possible to synchronize the clock of the nodes and create
+With `RTC support in SDK <https://sdk.hardwario.com/group__twr__rtc.html>`_ it is possible to synchronize the clock of the nodes and create
 a firmware that will for example listen for 1 second in every 10 minutes.
 This way the node does not need to send packet like in previous solution, but it needs to be perfectly time-synchronized with the gateway and Node-RED.
 

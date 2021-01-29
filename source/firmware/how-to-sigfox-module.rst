@@ -9,7 +9,7 @@ MySigfox.com service to get messages from Sigfox Backend to your server.
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__module__sigfox.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__module__sigfox.html>`_
 
 ********************
 MySigfox.com Service
@@ -41,20 +41,20 @@ This serves mainly for testing out that Sigfox module is working or that mysigfo
 
     #include <application.h>
 
-    bc_led_t led;
-    bc_button_t button;
-    bc_module_sigfox_t sigfox;
+    twr_led_t led;
+    twr_button_t button;
+    twr_module_sigfox_t sigfox;
 
     static void disableLCD(void* param) {
         (void) param;
-        bc_led_set_mode(&led, BC_LED_MODE_OFF);
+        twr_led_set_mode(&led, TWR_LED_MODE_OFF);
     }
 
-    void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+    void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
     {
-        if (event == BC_BUTTON_EVENT_PRESS)
+        if (event == TWR_BUTTON_EVENT_PRESS)
         {
-            if (bc_module_sigfox_is_ready(&sigfox)) {
+            if (twr_module_sigfox_is_ready(&sigfox)) {
                 uint8_t buffer[6];
                 buffer[0] = 0x00;
                 buffer[1] = 0x01;
@@ -63,16 +63,16 @@ This serves mainly for testing out that Sigfox module is working or that mysigfo
                 buffer[4] = 0x04;
                 buffer[5] = 0x05;
 
-                if (bc_module_sigfox_send_rf_frame(&sigfox, buffer, sizeof(buffer))) {
-                    bc_led_set_mode(&led, BC_LED_MODE_ON);
-                    bc_scheduler_register(disableLCD, NULL, bc_tick_get() + 3000);
+                if (twr_module_sigfox_send_rf_frame(&sigfox, buffer, sizeof(buffer))) {
+                    twr_led_set_mode(&led, TWR_LED_MODE_ON);
+                    twr_scheduler_register(disableLCD, NULL, twr_tick_get() + 3000);
                 } else {
-                    bc_led_set_mode(&led, BC_LED_MODE_BLINK);
-                    bc_scheduler_register(disableLCD, NULL, bc_tick_get() + 2000);
+                    twr_led_set_mode(&led, TWR_LED_MODE_BLINK);
+                    twr_scheduler_register(disableLCD, NULL, twr_tick_get() + 2000);
                 }
             } else {
-                bc_led_set_mode(&led, BC_LED_MODE_BLINK);
-                bc_scheduler_register(disableLCD, NULL, bc_tick_get() + 2000);
+                twr_led_set_mode(&led, TWR_LED_MODE_BLINK);
+                twr_scheduler_register(disableLCD, NULL, twr_tick_get() + 2000);
             }
         }
     }
@@ -80,11 +80,11 @@ This serves mainly for testing out that Sigfox module is working or that mysigfo
     void application_init(void)
     {
 
-        bc_led_init(&led, BC_GPIO_LED, false, false);
-        bc_led_set_mode(&led, BC_LED_MODE_OFF);
+        twr_led_init(&led, TWR_GPIO_LED, false, false);
+        twr_led_set_mode(&led, TWR_LED_MODE_OFF);
 
-        bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-        bc_button_set_event_handler(&button, button_event_handler, NULL);
+        twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN, false);
+        twr_button_set_event_handler(&button, button_event_handler, NULL);
 
-        bc_module_sigfox_init(&sigfox, BC_MODULE_SIGFOX_REVISION_R2);
+        twr_module_sigfox_init(&sigfox, TWR_MODULE_SIGFOX_REVISION_R2);
     }

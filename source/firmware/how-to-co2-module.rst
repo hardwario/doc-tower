@@ -16,7 +16,7 @@ And how it works within the SDK? As any other TOWER module. There are init, peri
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__module__co2.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__module__co2.html>`_
 
 ******************************
 Recognizable CO2 Module Events
@@ -24,8 +24,8 @@ Recognizable CO2 Module Events
 
 For now there are just two events - *error* and *update*.
 
-- BC_MODULE_CO2_EVENT_ERROR
-- BC_MODULE_CO2_EVENT_UPDATE
+- TWR_MODULE_CO2_EVENT_ERROR
+- TWR_MODULE_CO2_EVENT_UPDATE
 
 *****
 Usage
@@ -33,12 +33,12 @@ Usage
 
 You can measure the CO2 level manually or periodically. Every measure can trigger function within event handler.
 
-To set periodic measurements, just use this function in your *application_init*: ``bc_module_co2_set_update_interval (bc_tick_t interval)``.
+To set periodic measurements, just use this function in your *application_init*: ``twr_module_co2_set_update_interval (twr_tick_t interval)``.
 interval is time between measurements, in milliseconds.
 
-To make a manual measurement, just use ``bc_module_co2_measure(void)``.
+To make a manual measurement, just use ``twr_module_co2_measure(void)``.
 
-To get CO2 concentration from last measurement you have to use this function: ``bc_module_co2_get_concentration_ppm (float *ppm)``.
+To get CO2 concentration from last measurement you have to use this function: ``twr_module_co2_get_concentration_ppm (float *ppm)``.
 
 *******
 Example
@@ -49,35 +49,35 @@ In this example, CO2 levels will be measured and sent to computer every time but
 .. code-block:: c
     :linenos:
 
-    #include "bcl.h"
-    #include "bc_usb_cdc.h"
+    #include "twr.h"
+    #include "twr_usb_cdc.h"
 
-    bc_button_t button;
+    twr_button_t button;
 
-    void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+    void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
     {
         (void) self;
         (void) event_param;
 
         float ppm = 0.0;
 
-        if (event == BC_BUTTON_EVENT_PRESS)
+        if (event == TWR_BUTTON_EVENT_PRESS)
         {
-            bc_module_co2_measure();
-            bc_module_co2_get_concentration_ppm(&ppm);
+            twr_module_co2_measure();
+            twr_module_co2_get_concentration_ppm(&ppm);
 
             char buffer[50];
             sprintf(buffer, "CO2 level: %.4fppm\r\n", ppm);
-            bc_usb_cdc_write(buffer, strlen(buffer));
+            twr_usb_cdc_write(buffer, strlen(buffer));
         }
     }
 
     void application_init(void)
     {
-        bc_usb_cdc_init();
-        bc_module_co2_init();
+        twr_usb_cdc_init();
+        twr_module_co2_init();
 
-        bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-        bc_button_set_event_handler(&button, button_event_handler, NULL);
+        twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN, false);
+        twr_button_set_event_handler(&button, button_event_handler, NULL);
     }
 

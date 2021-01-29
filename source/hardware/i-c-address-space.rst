@@ -12,8 +12,10 @@ All addresses are provided in a 7-bit format.
 
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | Address        | Chip           | HARDWARIO TOWER product                                                | Remark                                     |
-+================+================+===========================================================+=========================================================+
-| 0x08           | NT3H2011       | `NFC Tag <https://shop.hardwario.com/nfc-tag/>`_                       | Changed from default to avoid collision    |
++================+================+========================================================================+============================================+
+| 0x08           | NT3H2011       | `NFC Tag <https://shop.hardwario.com/nfc-tag/>`_                       | Changed from default                       |
+|                |                |                                                                        |                                            |
+|                |                |                                                                        | to avoid collision                         |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x19           | LIS2DH12       | `Core Module <https://shop.hardwario.com/core-module/>`__              | Channel I2C0                               |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
@@ -49,30 +51,35 @@ All addresses are provided in a 7-bit format.
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x3f           | TCA9534A       | `Relay Module <https://shop.hardwario.com/relay-module/>`_             | Alternate address                          |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| 0x40           | SHT20          | | `Humidity Tag (R3.x+) <https://shop.hardwario.com/humidity-tag/>`_   |                                            |
-|                |                | | `Climate Module <https://shop.hardwario.com/climate-module/>`_       |                                            |
+| 0x40           | SHT20          | `Humidity Tag (R3.x+) <https://shop.hardwario.com/humidity-tag/>`_     |                                            |
+|                |                |                                                                        |                                            |
+|                |                | `Climate Module <https://shop.hardwario.com/climate-module/>`_         |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x40           | HDC2080        | `Humidity Tag (R2.x) <https://shop.hardwario.com/humidity-tag/>`_      | Default address                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x41           | HDC2080        | `Humidity Tag (R2.x) <https://shop.hardwario.com/humidity-tag/>`_      | Alternate address                          |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| 0x44           | OPT3001        | | `Lux Meter Tag <https://shop.hardwario.com/lux-meter-tag/>`_         | Default address                            |
-|                |                | | `Climate Module <https://shop.hardwario.com/climate-module/>`_       |                                            |
+| 0x44           | OPT3001        | `Lux Meter Tag <https://shop.hardwario.com/lux-meter-tag/>`_           | Default address                            |
+|                |                |                                                                        |                                            |
+|                |                | `Climate Module <https://shop.hardwario.com/climate-module/>`_         |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x45           | OPT3001        | `Lux Meter Tag <https://shop.hardwario.com/lux-meter-tag/>`_           | Alternate address                          |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| 0x48           | TMP112         | | `Temperature Tag <https://shop.hardwario.com/temperature-tag/>`_     | Default address                            |
-|                |                | | `Climate Module <https://shop.hardwario.com/climate-module/>`_       |                                            |
+| 0x48           | TMP112         | `Temperature Tag <https://shop.hardwario.com/temperature-tag/>`_       | Default address                            |
+|                |                |                                                                        |                                            |
+|                |                | `Climate Module <https://shop.hardwario.com/climate-module/>`_         |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x49           | TMP112         | `Temperature Tag <https://shop.hardwario.com/temperature-tag/>`_       | Alternate address                          |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| 0x49           | TMP112         | | `Core Module <https://shop.hardwario.com/core-module//>`__           | Channel I2C0                               |
-|                |                | | `Cloony <https://shop.hardwario.com/cloony/>`_                       |                                            |
+| 0x49           | TMP112         | `Core Module <https://shop.hardwario.com/core-module//>`__             | Channel I2C0                               |
+|                |                |                                                                        |                                            |
+|                |                | `Cloony <https://shop.hardwario.com/cloony/>`_                         |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x4b           | TLA2021        | RS-485 Module ADC                                                      | Channel I2C0                               |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| 0x4d           | SC16IS740      | | `CO2 Module <https://shop.hardwario.com/co2-module/>`_               | Channel I2C0                               |
-|                |                | | I2C to UART bridge                                                   |                                            |
+| 0x4d           | SC16IS740      | `CO2 Module <https://shop.hardwario.com/co2-module/>`_                 | Channel I2C0                               |
+|                |                |                                                                        |                                            |
+|                |                | I2C to UART bridge                                                     |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x4e           | SC16IS750      | RS-485 Module I2C to UART bridge                                       | Channel I2C0                               |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
@@ -82,12 +89,15 @@ All addresses are provided in a 7-bit format.
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x5f           | HTS221         | `Humidity Tag (R1.x) <https://shop.hardwario.com/humidity-tag/>`_      |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| 0x60           | MPL3115A2      | | `Barometer Tag <https://shop.hardwario.com/barometer-tag/>`_         |                                            |
-|                |                | | `Climate Module <https://shop.hardwario.com/climate-module/>`_       |                                            |
+| 0x60           | MPL3115A2      | `Barometer Tag <https://shop.hardwario.com/barometer-tag/>`_           |                                            |
+|                |                |                                                                        |                                            |
+|                |                | `Climate Module <https://shop.hardwario.com/climate-module/>`_         |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
-| 0x64           | ATSHA204A      | | `Core Module <https://shop.hardwario.com/core-module//>`__           | Channel I2C0                               |
-|                |                | | `Radio Dongle <https://shop.hardwario.com/radio-dongle/>`_           |                                            |
-|                |                | | `Cloony <https://shop.hardwario.com/cloony/>`_                       |                                            |
+| 0x64           | ATSHA204A      | `Core Module <https://shop.hardwario.com/core-module//>`__             | Channel I2C0                               |
+|                |                |                                                                        |                                            |
+|                |                | `Radio Dongle <https://shop.hardwario.com/radio-dongle/>`_             |                                            |
+|                |                |                                                                        |                                            |
+|                |                | `Cloony <https://shop.hardwario.com/cloony/>`_                         |                                            |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+
 | 0x64           | ATSHA204A      | `Radio Dongle <https://shop.hardwario.com/radio-dongle/>`_             | Channel I2C1                               |
 +----------------+----------------+------------------------------------------------------------------------+--------------------------------------------+

@@ -61,7 +61,7 @@ Repositories with the prefix `bcf <https://github.com/hardwario?q=bcf>`_ contain
 +---------------------------------------------------------------------+--------------------------------------------------------------------------+
 | `bcf‑generic‑node <https://github.com/hardwario/bcf-generic-node>`_ | Universal firmware for the wireless nodes                                |
 +---------------------------------------------------------------------+--------------------------------------------------------------------------+
-| `bcf‑sdk <https://github.com/hardwario/bcf-sdk>`_                   | SDK for the firmware development - part of the projects as Git submodule |
+| `bcf‑sdk <https://github.com/hardwario/twr-sdk>`_                   | SDK for the firmware development - part of the projects as Git submodule |
 +---------------------------------------------------------------------+--------------------------------------------------------------------------+
 | `bcf-skeleton <https://github.com/hardwario/bcf-skeleton>`_         | Empty firmware skeleton for your new project                             |
 +---------------------------------------------------------------------+--------------------------------------------------------------------------+

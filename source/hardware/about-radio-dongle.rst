@@ -22,7 +22,7 @@ About Radio Dongle
     You can upload firmware into it over USB using the HARDWARIO Firmware Tool (works on Windows, macOS, and Linux). Or by using HARDWARIO Playground.
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-| |shopping-cart| `E-Shop <https://shop.hardwario.com/radio-dongle/>`_  | |microchip| `Schematic drawing <https://github.com/hardwario/bc-hardware/tree/master/out/bc-usb-dongle>`_    | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73696>`_  |
+| |shopping-cart| `Shop <https://shop.hardwario.com/radio-dongle/>`_    | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-usb-dongle>`_           | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73696>`_  |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------

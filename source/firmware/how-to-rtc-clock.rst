@@ -12,7 +12,7 @@ Core Module has 32 768 Hz crystal which is connected to the RTC peripheral.
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__rtc.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__rtc.html>`_
 
 *************
 RTC Structure
@@ -36,7 +36,7 @@ If you read the RTC then the ``timestamp`` is fileld with proper UNIX timestamp.
         uint8_t month;       //!< Month in a year, 1 to 12
         uint8_t year;        //!< Year parameter, 00 to 99, 00 is 2000 and 99 is 2099
         uint32_t timestamp;  //!< Seconds from 01.01.1970 00:00:00
-    } bc_rtc_t;
+    } twr_rtc_t;
 
 **************
 Initialization
@@ -59,7 +59,7 @@ Set date and time
 .. code-block:: c
     :linenos:
 
-    bc_rtc_t rtc;
+    twr_rtc_t rtc;
 
     rtc.hours = 11;
     rtc.minutes = 26;
@@ -69,7 +69,7 @@ Set date and time
     rtc.month = 5;
     rtc.date = 16;
 
-    bc_rtc_set_date_time(&rtc);
+    twr_rtc_set_date_time(&rtc);
 
 ******************
 Read date and time
@@ -78,6 +78,6 @@ Read date and time
 .. code-block:: c
     :linenos:
 
-    bc_rtc_t datetime;
-    bc_rtc_get_date_time(&datetime);
-    bc_log_debug("$DATE: \"%d-%02d-%02dT%02d:%02d:%02dZ\"", datetime.year, datetime.month, datetime.date, datetime.hours, datetime.minutes, datetime.seconds);
+    twr_rtc_t datetime;
+    twr_rtc_get_date_time(&datetime);
+    twr_log_debug("$DATE: \"%d-%02d-%02dT%02d:%02d:%02dZ\"", datetime.year, datetime.month, datetime.date, datetime.hours, datetime.minutes, datetime.seconds);

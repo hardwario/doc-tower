@@ -15,7 +15,7 @@ The SPI uses these signals:
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__spi.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__spi.html>`_
 
 **************
 Initialization
@@ -25,7 +25,7 @@ SPI on HARDWARIO Core Module has fixed pins, so initialization is simple
 
 .. code-block:: c
 
-    bc_spi_init(BC_SPI_SPEED_1_MHZ, BC_SPI_MODE_0);
+    twr_spi_init(TWR_SPI_SPEED_1_MHZ, TWR_SPI_MODE_0);
 
 *****
 Speed
@@ -38,11 +38,11 @@ the length of the wires, noise, current consumption or electromagnetic radiation
 .. code-block:: console
     :linenos:
 
-    BC_SPI_SPEED_1_MHZ
-    BC_SPI_SPEED_2_MHZ
-    BC_SPI_SPEED_4_MHZ
-    BC_SPI_SPEED_8_MHZ
-    BC_SPI_SPEED_16_MHZ
+    TWR_SPI_SPEED_1_MHZ
+    TWR_SPI_SPEED_2_MHZ
+    TWR_SPI_SPEED_4_MHZ
+    TWR_SPI_SPEED_8_MHZ
+    TWR_SPI_SPEED_16_MHZ
 
 ********
 SPI Mode
@@ -54,10 +54,10 @@ This information can be found in the datasheet of the slave device.
 .. code-block:: console
     :linenos:
 
-    BC_SPI_MODE_0 // SPI mode of operation is 0 (CPOL = 0, CPHA = 0)
-    BC_SPI_MODE_1 // SPI mode of operation is 1 (CPOL = 0, CPHA = 1)
-    BC_SPI_MODE_2 // SPI mode of operation is 2 (CPOL = 1, CPHA = 0)
-    BC_SPI_MODE_3 // SPI mode of operation is 3 (CPOL = 1, CPHA = 1)
+    TWR_SPI_MODE_0 // SPI mode of operation is 0 (CPOL = 0, CPHA = 0)
+    TWR_SPI_MODE_1 // SPI mode of operation is 1 (CPOL = 0, CPHA = 1)
+    TWR_SPI_MODE_2 // SPI mode of operation is 2 (CPOL = 1, CPHA = 0)
+    TWR_SPI_MODE_3 // SPI mode of operation is 3 (CPOL = 1, CPHA = 1)
 
 ******************************
 Transmiting and receiving data
@@ -69,7 +69,7 @@ With asynchronous transmition it is neccessary to first check if the previous op
 .. code-block:: c
     :linenos:
 
-    if (bc_spi_is_ready())
+    if (twr_spi_is_ready())
     {
         // Start new stransfer
     }
@@ -89,7 +89,7 @@ You need to create transmit and receive buffer. Then you start the blocking tran
     uint8_t tx_buffer[2] = { 0x20, 0x00 };
     uint8_t rx_buffer[2];
 
-    bc_spi_transfer(tx_buffer, rx_buffer, sizeof(rx_buffer));
+    twr_spi_transfer(tx_buffer, rx_buffer, sizeof(rx_buffer));
 
 If you are just transmitting data, then replace the ``rx_buffer`` by ``NULL`` and vice-versa for just receiving.
 The function returns ``false`` if the previous asynchronous transfer has not ended yet.
@@ -110,18 +110,18 @@ This is non-blocking transfer where the callback function is called when the tra
     void send_data(void)
     {
         // Check if previous asynchronous transfer is not running
-        if (bc_spi_is_ready())
+        if (twr_spi_is_ready())
         {
             // Set event handler and optional parameter (NULL for now)
-            bc_spi_async_transfer(tx_buffer, rx_buffer, sizeof(tx_buffer), _bc_spi_event_handler, NULL)
+            twr_spi_async_transfer(tx_buffer, rx_buffer, sizeof(tx_buffer), _twr_spi_event_handler, NULL)
         }
     }
 
-    void _bc_spi_event_handler(bc_spi_event_t event, void *event_param)
+    void _twr_spi_event_handler(twr_spi_event_t event, void *event_param)
     {
         (void) event_param;
 
-        if (event == BC_SPI_EVENT_DONE)
+        if (event == TWR_SPI_EVENT_DONE)
         {
             // Transfer done, you can for example handle received data or initiate a new transfer
         }

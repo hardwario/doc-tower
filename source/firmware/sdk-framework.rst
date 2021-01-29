@@ -12,6 +12,6 @@ The complete package is tested together and therefore you wouldn't have software
 References
 **********
 
-- `SDK repository on GitHub <https://github.com/hardwario/bcf-sdk>`_
+- `SDK repository on GitHub <https://github.com/hardwario/twr-sdk>`_
 - `Generated Doxygen documentation <https://sdk.hardwario.com>`_
-- `Examples of using the SDK <https://github.com/hardwario/bcf-sdk/tree/master/_examples>`_
+- `Examples of using the SDK <https://github.com/hardwario/twr-sdk/tree/master/_examples>`_

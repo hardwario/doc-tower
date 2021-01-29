@@ -6,7 +6,7 @@ Core Module contains two analog outputs: ``DAC0`` and ``DAC1``. These are real a
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__dac.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__dac.html>`_
 
 *******
 Example
@@ -14,7 +14,7 @@ Example
 
 Both channels can run completely separately with different samplerate.
 First you need to prepare the output buffer. In this example there's a sine wave lookup table.
-The sampling is set on ``BC_DAC_SAMPLE_RATE_16K``. This together generates on ``DAC0`` ouput 125 Hz sine-wave.
+The sampling is set on ``TWR_DAC_SAMPLE_RATE_16K``. This together generates on ``DAC0`` ouput 125 Hz sine-wave.
 
 .. code-block:: c
     :linenos:
@@ -58,17 +58,17 @@ The sampling is set on ``BC_DAC_SAMPLE_RATE_16K``. This together generates on ``
 
     void application_init(void)
     {
-        bc_dac_init(BC_DAC_DAC0);
+        twr_dac_init(TWR_DAC_DAC0);
 
-        bc_dac_config_t dac_config;
+        twr_dac_config_t dac_config;
 
         dac_config.buffer = (uint8_t*)sine_wave;
         dac_config.length = sizeof(sine_wave);
-        dac_config.data_size = BC_DAC_DATA_SIZE_8;
-        dac_config.mode = BC_DAC_MODE_CIRCULAR;
-        dac_config.sample_rate = BC_DAC_SAMPLE_RATE_16K;
+        dac_config.data_size = TWR_DAC_DATA_SIZE_8;
+        dac_config.mode = TWR_DAC_MODE_CIRCULAR;
+        dac_config.sample_rate = TWR_DAC_SAMPLE_RATE_16K;
 
-        bc_dac_async_config(BC_DAC_DAC0, &dac_config);
+        twr_dac_async_config(TWR_DAC_DAC0, &dac_config);
 
-        bc_dac_async_run(BC_DAC_DAC0);
+        twr_dac_async_run(TWR_DAC_DAC0);
     }

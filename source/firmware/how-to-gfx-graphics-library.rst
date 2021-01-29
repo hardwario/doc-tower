@@ -9,7 +9,7 @@ You can still use LCD Module API for drawing text and primitives, but with GFX y
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__gfx.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__gfx.html>`_
 
 GFX is universal and needs to be initialized with a GFX driver.
 The driver is a `function that returns structure <https://github.com/hubmartin/bcf-led-matrix-max7219/blob/master/app/application.c#L144>`_
@@ -20,7 +20,7 @@ with function pointers for different drawing methods.
     You always need to set the font first before printing any text. Otherwise nothing is displayed.
     This is because only the used fonts are linked to the binary and other are removed by optimizer.
 
-    bc_gfx_set_font(pgfx, &bc_font_ubuntu_13);
+    twr_gfx_set_font(pgfx, &twr_font_ubuntu_13);
 
 *************************
 Using GFX with LCD Module
@@ -28,28 +28,28 @@ Using GFX with LCD Module
 
 `Example project <https://github.com/hardwario/bcf-infra-grid-lcd-mirror/tree/master/app>`__
 
-In the latest SDK the LCD Module is now using GFX under the hood, but you can still use old ``bc_lcd_module_draw_..`` functions.
+In the latest SDK the LCD Module is now using GFX under the hood, but you can still use old ``twr_lcd_module_draw_..`` functions.
 You can get the LCD Module driver and use the GFX API.
 
-Because ``bc_module_lcd_get_gfx()`` returns already the created GFX instance,
+Because ``twr_module_lcd_get_gfx()`` returns already the created GFX instance,
 in this example we create just the pointer ``pgfx`` and then we don't need to add an ampersand in the GFX functions in the first parameter.
-In other custom drivers you have to create the instance, not just the pointer of ``bc_gfx_t``.
+In other custom drivers you have to create the instance, not just the pointer of ``twr_gfx_t``.
 
 .. code-block:: c
     :linenos:
 
     // Pointer to GFX instance
-    bc_gfx_t *pgfx;
+    twr_gfx_t *pgfx;
 
     void application_init(void)
     {
         // LCD Module
-        bc_module_lcd_init();
-        pgfx = bc_module_lcd_get_gfx();
+        twr_module_lcd_init();
+        pgfx = twr_module_lcd_get_gfx();
 
-        bc_gfx_set_font(pgfx, &bc_font_ubuntu_13);
-        bc_gfx_draw_string(pgfx, 50, 50, "Hello world", true);
-        bc_gfx_update(pgfx);
+        twr_gfx_set_font(pgfx, &twr_font_ubuntu_13);
+        twr_gfx_draw_string(pgfx, 50, 50, "Hello world", true);
+        twr_gfx_update(pgfx);
     }
 
 ***************************
@@ -61,18 +61,18 @@ Using GFX with SSD1303 OLED
 .. code-block:: c
     :linenos:
 
-    bc_gfx_t gfx;
-    bc_ssd1306_t ssd1306;
-    BC_SSD1306_FRAMEBUFFER(ssd1306_framebuffer, 128, 64)
+    twr_gfx_t gfx;
+    twr_ssd1306_t ssd1306;
+    TWR_SSD1306_FRAMEBUFFER(ssd1306_framebuffer, 128, 64)
 
     void application_init(void)
     {
-        bc_ssd1306_init(&ssd1306, BC_I2C_I2C0, BC_SSD1306_ADDRESS_I2C_ADDRESS_DEFAULT, &ssd1306_framebuffer);
-        bc_gfx_init(&gfx, &ssd1306, bc_ssd1306_get_driver());
+        twr_ssd1306_init(&ssd1306, TWR_I2C_I2C0, TWR_SSD1306_ADDRESS_I2C_ADDRESS_DEFAULT, &ssd1306_framebuffer);
+        twr_gfx_init(&gfx, &ssd1306, twr_ssd1306_get_driver());
 
-        bc_gfx_set_font(&gfx, &bc_font_ubuntu_13);
-        bc_gfx_draw_string(&gfx, 50, 50, "Hello world", true);
-        bc_gfx_update(&gfx);
+        twr_gfx_set_font(&gfx, &twr_font_ubuntu_13);
+        twr_gfx_draw_string(&gfx, 50, 50, "Hello world", true);
+        twr_gfx_update(&gfx);
     }
 
 *****************
@@ -86,13 +86,13 @@ The driver needs to implement at least these 5 functions.
 .. code-block:: c
     :linenos:
 
-    static const bc_gfx_driver_t driver =
+    static const twr_gfx_driver_t driver =
     {
         .is_ready = (bool (*)(void *)) led_matrix_is_ready,
         .clear = (void (*)(void *)) led_matrix_clear,
         .draw_pixel = (void (*)(void *, int, int, uint32_t)) led_matrix_draw_pixel,
         .update = (bool (*)(void *)) led_matrix_update,
-        .get_caps = (bc_gfx_caps_t (*)(void *)) led_matrix_get_caps
+        .get_caps = (twr_gfx_caps_t (*)(void *)) led_matrix_get_caps
     };
 
 The function ``led_matrix_get_caps`` returns the capabilities of the display. Right now it is only width and height.
@@ -124,22 +124,22 @@ The function ``led_matrix_get_caps`` returns the capabilities of the display. Ri
         }
     }
 
-    bc_gfx_caps_t led_matrix_get_caps(bc_ls013b7dh03_t *self)
+    twr_gfx_caps_t led_matrix_get_caps(twr_ls013b7dh03_t *self)
     {
         (void) self;
-        static const bc_gfx_caps_t caps = { .width = 32, .height = 8 };
+        static const twr_gfx_caps_t caps = { .width = 32, .height = 8 };
         return caps;
     }
 
-    const bc_gfx_driver_t *led_matrix_get_driver(void)
+    const twr_gfx_driver_t *led_matrix_get_driver(void)
     {
-        static const bc_gfx_driver_t driver =
+        static const twr_gfx_driver_t driver =
         {
             .is_ready = (bool (*)(void *)) led_matrix_is_ready,
             .clear = (void (*)(void *)) led_matrix_clear,
             .draw_pixel = (void (*)(void *, int, int, uint32_t)) led_matrix_draw_pixel,
             .update = (bool (*)(void *)) led_matrix_update,
-            .get_caps = (bc_gfx_caps_t (*)(void *)) led_matrix_get_caps
+            .get_caps = (twr_gfx_caps_t (*)(void *)) led_matrix_get_caps
         };
 
         return &driver;

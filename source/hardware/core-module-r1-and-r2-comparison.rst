@@ -41,7 +41,7 @@ Improvements
 - No need to press any button to start firmware update.
 - Faster firmware uploads over **FTDI** chip
 - Smaller firmware because USB stack is now handled by **FTDI** chip.
-- Simple debugging over serial port. The UART2 is connected to the FTDI so you can use `bc_log_* <https://sdk.hardwario.com/group__bc__log.html>`_ functions.
+- Simple debugging over serial port. The UART2 is connected to the FTDI so you can use `twr_log_* <https://sdk.hardwario.com/group__twr__log.html>`_ functions.
 - No issues with DFU drivers on Windows.
 
 ***********************
@@ -84,8 +84,8 @@ Example which flashes wireless-motion-detector firmware from `Radio Motion Detec
 
     bcf flash hardwario/bcf-radio-motion-detector:latest
 
-Step 2: Print bc_log debug messages over UART2 serial to your computer with bcf
-*******************************************************************************
+Step 2: Print twr_log debug messages over UART2 serial to your computer with bcf
+********************************************************************************
 
 .. code-block:: console
 

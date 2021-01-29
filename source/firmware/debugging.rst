@@ -10,38 +10,12 @@ The easiest way to debug and also the way how all the things started was just pr
 Wait the embedded system does not have any screen or printer connected. Well you are right, but there used to be a serial port.
 And if it is hopefully free to use and can be connected to real PC then you have your first **poor man's debugger**.
 
-To be able to receive UART data from Core Module you need USB UART and terminal emulator on PC
-(e.g. `PuTTY <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_) on Microsoft Windows or picocom on Linux).
-
-*****************
-Core Module Rev 1
-*****************
-
-Core Module revision 1 does not have FTDI serial to USB converter.
-You need to connect your own converter to the UART2 to the pins TX2 and RXD2.
-**You can skip to the next chapter if you have newer Core Module Rev 2 with FTDI**.
-
-For example USB UART from SparkFun:
-
-- `FTDI Basic Breakout - 3.3V <https://www.sparkfun.com/products/9873>`_
-- `Jumper Wires <https://www.sparkfun.com/products/11709>`__
-
-Or another example USB UART from Mouser:
-
-- `FTDI cable TTL-232R-3V3 <https://eu.mouser.com/search/ProductDetail.aspx?qs=Xb8IjHhkxj627GFcejHp0Q%3d%3d>`_
-- `Jumper Wires <https://eu.mouser.com/search/ProductDetail.aspx?R=0virtualkey0virtualkeyMIKROE-513>`__
-
-Connect USB UART and Core Module into one PC's USB host sockets and interconnect Core Module with USB UART by single wire
-USB UART RX (YELLOW wire on cable) and Core Module TXD2 (header pin 22) -
-have a look at `Core Module Header drawing <https://developers.hardwario.com/hardware/header-pinout>`_.
-
-.. warning::
-
-    Beware of groud loop and ground voltage difference in case you do not use same PC to power Core Module and to connect USB UART.
-
 *****************
 Core Module Rev 2
 *****************
+
+.. note::
+    If you have older version of Core Module you can visit :ref:`Windows <rev1-debug>` :ref:`another chapter to see how to connect it with UART <rev1-debug>`.
 
 Core Module Rev 2 have integrated FTDI chip connected to the UART2.
 You do not need to use separate serial converter, just connect USB cable to your computer.
@@ -52,12 +26,12 @@ Example code
 
 You need to add just two function calls into your application:
 
-- ``bc_log_init`` into ``application_init``
-- ``bc_log_debug`` or ``bc_log_info`` or ``bc_log_warning`` or ``bc_log_error`` into handlers
+- ``twr_log_init`` into ``application_init``
+- ``twr_log_debug`` or ``twr_log_info`` or ``twr_log_warning`` or ``twr_log_error`` into handlers
 
 .. tip::
 
-    Have a look into `HARDWARIO TOWER SDK bc_log <https://sdk.hardwario.com/group__bc__log.html>`_ for more detailed info.
+    Have a look into `HARDWARIO TOWER SDK twr_log <https://sdk.hardwario.com/group__twr__log.html>`_ for more detailed info.
 
 Example of modified ``app/application.c`` from default project code after ``bcf create``:
 
@@ -67,36 +41,36 @@ Example of modified ``app/application.c`` from default project code after ``bcf 
     #include <application.h>
 
     // LED instance
-    bc_led_t led;
+    twr_led_t led;
 
     // Button instance
-    bc_button_t button;
+    twr_button_t button;
 
-    void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+    void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
     {
         (void) self;
         (void) event_param;
 
-        if (event == BC_BUTTON_EVENT_PRESS)
+        if (event == TWR_BUTTON_EVENT_PRESS)
         {
-            bc_led_set_mode(&led, BC_LED_MODE_TOGGLE);
+            twr_led_set_mode(&led, TWR_LED_MODE_TOGGLE);
         }
         // Logging in action
-        bc_log_info("Button event handler - event: %i", event);
+        twr_log_info("Button event handler - event: %i", event);
     }
 
     void application_init(void)
     {
         // Initialize logging
-        bc_log_init(BC_LOG_LEVEL_DEBUG, BC_LOG_TIMESTAMP_ABS);
+        twr_log_init(TWR_LOG_LEVEL_DEBUG, TWR_LOG_TIMESTAMP_ABS);
 
         // Initialize LED
-        bc_led_init(&led, BC_GPIO_LED, false, false);
-        bc_led_set_mode(&led, BC_LED_MODE_ON);
+        twr_led_init(&led, TWR_GPIO_LED, false, false);
+        twr_led_set_mode(&led, TWR_LED_MODE_ON);
 
         // Initialize button
-        bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-        bc_button_set_event_handler(&button, button_event_handler, NULL);
+        twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN, false);
+        twr_button_set_event_handler(&button, button_event_handler, NULL);
     }
 
 After flashing of Core Module execute terminal emulator, open serial port with USB UART and set communication parameters:
@@ -116,7 +90,7 @@ Example of output:
         # 12.24 <I> Button event handler - event: 3
         # 13.64 <I> Button event handler - event: 1
 
-For mapping number to event type have a look into `HARDWARIO SDK documentation for bc_button <https://sdk.hardwario.com/bc__button_8h_source.html#l00013>`_
+For mapping number to event type have a look into `HARDWARIO SDK documentation for twr_button <https://sdk.hardwario.com/twr__button_8h_source.html#l00013>`_
 
 **********************
 Read logs with ``bcf``
@@ -162,7 +136,7 @@ As you did debugging in previous chapter by command
 
 .. code-block:: console
 
-    bc_log_info("Log");
+    twr_log_info("Log");
 
 You can colorized logs to 4 different colors as following commands down below. All colors you can see on screenshot in the beginning of this chapter.
 
@@ -170,25 +144,55 @@ You can colorized logs to 4 different colors as following commands down below. A
 
 .. code-block:: console
 
-    bc_log_debug("Log");
+    twr_log_debug("Log");
 
 **Info (green)**
 
 .. code-block:: console
 
-    bc_log_info("Log");
+    twr_log_info("Log");
 
 **Warning (orange)**
 
 .. code-block:: console
 
-    bc_log_warning("Log");
+    twr_log_warning("Log");
 
 **Error (red)**
 
 .. code-block:: console
 
-    bc_log_error("Log");
+    twr_log_error("Log");
+
+.. _rev1-debug:
+
+*****************
+Core Module Rev 1
+*****************
+
+.. note::
+    You can skip to the next chapter if you don't have Core Module Rev 1.
+
+Core Module revision 1 does not have FTDI serial to USB converter.
+You need to connect your own converter to the UART2 to the pins TX2 and RXD2.
+
+For example USB UART from SparkFun:
+
+- `FTDI Basic Breakout - 3.3V <https://www.sparkfun.com/products/9873>`_
+- `Jumper Wires <https://www.sparkfun.com/products/11709>`__
+
+Or another example USB UART from Mouser:
+
+- `FTDI cable TTL-232R-3V3 <https://eu.mouser.com/search/ProductDetail.aspx?qs=Xb8IjHhkxj627GFcejHp0Q%3d%3d>`_
+- `Jumper Wires <https://eu.mouser.com/search/ProductDetail.aspx?R=0virtualkey0virtualkeyMIKROE-513>`__
+
+Connect USB UART and Core Module into one PC's USB host sockets and interconnect Core Module with USB UART by single wire
+USB UART RX (YELLOW wire on cable) and Core Module TXD2 (header pin 22) -
+have a look at `Core Module Header drawing <https://developers.hardwario.com/hardware/header-pinout>`_.
+
+.. warning::
+
+    Beware of groud loop and ground voltage difference in case you do not use same PC to power Core Module and to connect USB UART.
 
 ************
 Getting more

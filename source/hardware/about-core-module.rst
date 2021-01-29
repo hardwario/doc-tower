@@ -13,7 +13,7 @@ About Core Module
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-| |shopping-cart| `E-Shop <https://shop.hardwario.com/core-module/>`_   | |microchip| `Schematic drawing <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-core>`_   | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73681>`_  |
+| |shopping-cart| `Shop <https://shop.hardwario.com/core-module/>`_     | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-core>`_          | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73681>`_  |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 
 .. caution::
@@ -29,7 +29,7 @@ About Core Module
 Core Module **R2** is the new revision.
 It has added **FTDI FT231XQ** chip which allows faster flashing and no need to press buttons for DFU mode.
 This **FTDI** chip is acting as a USB to UART bridge and is connected to UART2.
-This way you can use it during debugging or logging using the **bc_log_** functions.
+This way you can use it during debugging or logging using the **twr_log_** functions.
 
 You can upload firmware by a Micro USB cable using the **HARDWARIO Firmware Tool** (works on Windows, macOS, and Linux).
 It is easy to start development on this platform using the **HARDWARIO Firmware SDK** (Software Development Kit).

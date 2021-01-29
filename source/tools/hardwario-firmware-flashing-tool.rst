@@ -81,7 +81,7 @@ Flash **Radio Dongle** with latest firmware
 bcf logging
 ***********
 
-It is possible to use ``bcf`` as a serial console to see log messages which are printed with ``bc_log_`` APIs.
+It is possible to use ``bcf`` as a serial console to see log messages which are printed with ``twr_log_`` APIs.
 It is using serial port in the parameter and 115200 baud speed with 8N1 uart format.
 
 .. code-block:: console

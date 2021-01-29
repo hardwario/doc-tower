@@ -38,7 +38,7 @@ They explain flashing, pairing, Dashboard and Node-RED
 Devices
 *******
 
-On this tab you connect to the Radio Dongle. Choose the Radio Dongle (``bc-usb-dongle``) from the list and click Connect
+On this tab you connect to the Radio Dongle. Choose the Radio Dongle (``twr-usb-dongle``) from the list and click Connect
 
 
 .. thumbnail:: ../_static/basics/playground/playground-devices-connect.png
@@ -106,7 +106,7 @@ This tab allows you to flash pre-compiled firmware for all HARDWARIO projects fr
 List of firmware is downloaded automatically.
 Choose the firmware or start typing to find project you like to try. You can also flash binary or HEX file from your computer.
 
-Always make sure you are flashing the right Device, usually ``bc-core-module``.
+Always make sure you are flashing the right Device, usually ``twr-core-module``.
 If you would like to update Radio Dongle, disconnect it first in the Devices tab.
 
 .. raw:: html

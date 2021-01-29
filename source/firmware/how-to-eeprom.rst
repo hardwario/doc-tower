@@ -15,20 +15,20 @@ Remember that those cycles are *Write/Erase*
 
 .. tip::
 
-    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__bc__eeprom.html>`_
+    Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__eeprom.html>`_
 
 ***********
 EEPROM Size
 ***********
 
 HARDWARIO TOWER Core module has 6 KB EEPROM included. In case you need to find this value out inside your code,
-there is a function for this inside the SDK: ``size_t bc_eeprom_get_size(void)``
+there is a function for this inside the SDK: ``size_t twr_eeprom_get_size(void)``
 
 ************
 EEPROM Write
 ************
 
-Writing to EEPROM is very easy. It takes only one call to this function: ``bool bc_eeprom_write(uint32_t address, const void *buffer, size_t length)``
+Writing to EEPROM is very easy. It takes only one call to this function: ``bool twr_eeprom_write(uint32_t address, const void *buffer, size_t length)``
 
 **Parameters taken:**
 
@@ -43,7 +43,7 @@ You can start from 0, 42, 666,... all the way up to circa 6000.
 
 .. note::
 
-    Please note that some of our modules (currently bc_radio_* module only) use few last dozens of bytes in EEPROM.
+    Please note that some of our modules (currently twr_radio_* module only) use few last dozens of bytes in EEPROM.
     If you use those modules, remember to use the memory addresses from 0 up to 6000. This makes sure that no data will be overwritten.
 
 Always make sure that you have correctly chosen the ``length`` parameter.
@@ -54,7 +54,7 @@ Let's say that you have a *float* variable and you want to write this number to 
     :linenos:
 
     float var = 3.14159;
-    bc_eeprom_write(0, &var, sizeof(var));
+    twr_eeprom_write(0, &var, sizeof(var));
 
 ***********
 EEPROM Read
@@ -70,7 +70,7 @@ Let's say that now you want to read previously saved value and store it inside v
     :linenos:
 
     float buf;
-    bc_eeprom_read(0, &buf, 4);
+    twr_eeprom_read(0, &buf, 4);
 
 ***********
 R/W Example
@@ -78,7 +78,7 @@ R/W Example
 
 In this example we will write float value and string to EEPROM immediately after Core boot.
 On every press of a button the data will be retrieved from EEPROM and sent to computer.
-To test that the memory is really persistent you can try to comment both ``bc_eeprom_write*`` lines out (after running the original example once, of course).
+To test that the memory is really persistent you can try to comment both ``twr_eeprom_write*`` lines out (after running the original example once, of course).
 It will still work.
 
 The output in serial console will look like this:
@@ -96,30 +96,30 @@ Example
 .. code-block:: c
     :linenos:
 
-    #include "bcl.h"
-    #include "bc_usb_cdc.h"
+    #include "twr.h"
+    #include "twr_usb_cdc.h"
 
-    bc_button_t button;
+    twr_button_t button;
 
-    void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+    void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
     {
         (void) self;
         (void) event_param;
 
-        if (event == BC_BUTTON_EVENT_PRESS)
+        if (event == TWR_BUTTON_EVENT_PRESS)
         {
-            size_t eeprom = bc_eeprom_get_size();
+            size_t eeprom = twr_eeprom_get_size();
             char buffer[100];
             char readEeprom[13];
             float readFloat;
 
-            bc_eeprom_read(0, &readFloat, 4);
-            bc_eeprom_read(4, readEeprom, 12);
+            twr_eeprom_read(0, &readFloat, 4);
+            twr_eeprom_read(4, readEeprom, 12);
             readEeprom[12] = '\0';
 
             sprintf(buffer, "EEPROM size: %d\r\nData:\r\n%f\r\n%s\r\n", eeprom, readFloat, readEeprom);
 
-            bc_usb_cdc_write(buffer, strlen(buffer));
+            twr_usb_cdc_write(buffer, strlen(buffer));
         }
     }
 
@@ -127,13 +127,13 @@ Example
     {
         float toWriteFloat = 3.14159;
         char toWrite[] = "hello world!";
-        bc_eeprom_write(0, &toWriteFloat, sizeof(toWriteFloat));
-        bc_eeprom_write(sizeof(toWriteFloat), toWrite, sizeof(toWrite));
+        twr_eeprom_write(0, &toWriteFloat, sizeof(toWriteFloat));
+        twr_eeprom_write(sizeof(toWriteFloat), toWrite, sizeof(toWrite));
 
         // Initialize button
-        bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-        bc_button_set_event_handler(&button, button_event_handler, NULL);
+        twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN, false);
+        twr_button_set_event_handler(&button, button_event_handler, NULL);
 
-        bc_usb_cdc_init();
+        twr_usb_cdc_init();
     }
 

@@ -145,7 +145,7 @@ Where to Begin
    firmware/how-to-co2-module
    firmware/how-to-d-a-converter
    firmware/how-to-eeprom
-   firmware/how-to-eeprom-bc_config
+   firmware/how-to-eeprom-twr_config
    firmware/how-to-gfx-graphics-library
    firmware/how-to-gpio-pins
    firmware/how-to-gps-module

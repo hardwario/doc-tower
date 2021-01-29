@@ -14,13 +14,13 @@ You need to use a `Power Module <https://shop.hardwario.com/power-module/>`_ whi
 
 There are some functions available in SDK which can "do things" with your LED strip - changing color to imitate rainbow,
 representing temperate or some score, etc... But they are not yet commented which means you can not find them in the SDK documentation.
-You can find them directly in `SDK on Github <https://github.com/hardwario/bcf-sdk/blob/master/bcl/inc/bc_led_strip.h>`_ or in this article (some of them).
+You can find them directly in `SDK on Github <https://github.com/hardwario/twr-sdk/blob/master/bcl/inc/twr_led_strip.h>`_ or in this article (some of them).
 
 *************
 Prerequisites
 *************
 
-- In examples bellow we expect that the variable ``bc_led_strip_t led_strip;`` is instantiated and available for all code.
+- In examples bellow we expect that the variable ``twr_led_strip_t led_strip;`` is instantiated and available for all code.
 - Remember that single LED is called a *pixel* in this document an so as in the SDK
 
 ***********
@@ -39,16 +39,16 @@ LEDs featured on our strip are **RGBW**. Which means they include separate light
 Initialization
 **************
 
-First you have to instantiate a variables with type ``bc_led_strip_t`` and ``bc_led_strip_buffer_t`` somewhere in your code.
+First you have to instantiate a variables with type ``twr_led_strip_t`` and ``twr_led_strip_buffer_t`` somewhere in your code.
 
 The buffer is de facto a place where you tell the SDK how your LED strip looks like. This is an example for our 144 LEDs strip:
 
 .. code-block:: c
     :linenos:
 
-    const bc_led_strip_buffer_t _led_strip_buffer =
+    const twr_led_strip_buffer_t _led_strip_buffer =
             {
-                    .type = BC_LED_STRIP_TYPE_RGBW,
+                    .type = TWR_LED_STRIP_TYPE_RGBW,
                     .count = 144,
                     .buffer = _dma_buffer
             };
@@ -58,17 +58,17 @@ Initialization of power module WITH LED strip connected is achieved by calling t
 .. code-block:: c
     :linenos:
 
-    bc_module_power_init();
-    bc_led_strip_init(&led_strip, bc_module_power_get_led_strip_driver(), &_led_strip_buffer);
+    twr_module_power_init();
+    twr_led_strip_init(&led_strip, twr_module_power_get_led_strip_driver(), &_led_strip_buffer);
 
 Writing Changes and Reading the State
 *************************************
 
 Like with the LCD module you have to write every change you make (change color of one led, change brightness, ...).
-You can write changes by calling ``bc_led_strip_write(&led_strip)``
+You can write changes by calling ``twr_led_strip_write(&led_strip)``
 
 You can also find out if the LED strip is ready for making changes/going to next step of programmed process.
-Just call this function, which returns bool: ``bc_led_strip_is_ready(&led_strip)``.
+Just call this function, which returns bool: ``twr_led_strip_is_ready(&led_strip)``.
 
 Number of Pixels
 ****************
@@ -77,14 +77,14 @@ If you are not sure how many pixels your LED strip has, there is no need to coun
 
 .. code-block:: c
 
-    int pixels = bc_led_strip_get_pixel_count(&led_strip);
+    int pixels = twr_led_strip_get_pixel_count(&led_strip);
 
 Set One Pixel at a Time
 ***********************
 
 The most basic thing you can do is to set the color for every pixel at a time. To do this, you need to use function
 
-``bc_led_strip_set_pixel_rgbw(bc_led_strip_t *self, int position, uint8_t r, uint8_t g, uint8_t b, uint8_t w)``
+``twr_led_strip_set_pixel_rgbw(twr_led_strip_t *self, int position, uint8_t r, uint8_t g, uint8_t b, uint8_t w)``
 
 **Parameters**:
 
@@ -100,35 +100,35 @@ This code will switch on 35 LEDs, making them brighter 5 points per LED (0 to 17
 .. code-block:: c
     :linenos:
 
-    #include <bcl.h>
+    #include <twr.h>
 
-    bc_led_strip_t led_strip;
+    twr_led_strip_t led_strip;
     static uint32_t _dma_buffer[144 * 4 * 2]; // count * type * 2
-    const bc_led_strip_buffer_t _led_strip_buffer =
+    const twr_led_strip_buffer_t _led_strip_buffer =
             {
-                    .type = BC_LED_STRIP_TYPE_RGBW,
+                    .type = TWR_LED_STRIP_TYPE_RGBW,
                     .count = 144,
                     .buffer = _dma_buffer
             };
 
     void application_init(void)
     {
-        bc_module_power_init();
-        bc_led_strip_init(&led_strip, bc_module_power_get_led_strip_driver(), &_led_strip_buffer);
+        twr_module_power_init();
+        twr_led_strip_init(&led_strip, twr_module_power_get_led_strip_driver(), &_led_strip_buffer);
 
         uint8_t blue = 0;
         for (int i = 0; i < 35; ++i) {
-            bc_led_strip_set_pixel_rgbw(&led_strip, i, 0, 0, blue, 0);
+            twr_led_strip_set_pixel_rgbw(&led_strip, i, 0, 0, blue, 0);
             blue += 5;
         }
 
-        bc_led_strip_write(&led_strip);
+        twr_led_strip_write(&led_strip);
     }
 
 LED Brightness
 **************
 
-You can limit maximum brightness of the entire led strip with function ``bc_led_strip_set_brightness(bc_led_strip_t *self, uint8_t brightness)``.
+You can limit maximum brightness of the entire led strip with function ``twr_led_strip_set_brightness(twr_led_strip_t *self, uint8_t brightness)``.
 
 Always remember that the brightness needs to be set before lighting up any LEDs. If you set it after making any changes, nothing will happen.
 
@@ -144,21 +144,21 @@ You can copy every single example at the end of application_init function from t
 .. code-block:: c
     :linenos:
 
-    #include <bcl.h>
+    #include <twr.h>
 
-    bc_led_strip_t led_strip;
+    twr_led_strip_t led_strip;
     static uint32_t _dma_buffer[144 * 4 * 2]; // count * type * 2
-    const bc_led_strip_buffer_t _led_strip_buffer =
+    const twr_led_strip_buffer_t _led_strip_buffer =
             {
-                    .type = BC_LED_STRIP_TYPE_RGBW,
+                    .type = TWR_LED_STRIP_TYPE_RGBW,
                     .count = 144,
                     .buffer = _dma_buffer
             };
 
     void application_init(void)
     {
-        bc_module_power_init();
-        bc_led_strip_init(&led_strip, bc_module_power_get_led_strip_driver(), &_led_strip_buffer);
+        twr_module_power_init();
+        twr_led_strip_init(&led_strip, twr_module_power_get_led_strip_driver(), &_led_strip_buffer);
 
         // place examples here
 
@@ -171,13 +171,13 @@ LED strip will light up in color of a rainbow and will fluently change these col
 
 .. code-block:: c
 
-    bc_led_strip_effect_rainbow_cycle(&led_strip, 100);
+    twr_led_strip_effect_rainbow_cycle(&led_strip, 100);
 
 .. note::
 
     The second parameter represents speed of changes. Lower number = quicker changes
 
-There is also a function ``bc_led_strip_effect_rainbow`` which acts almost the same, but it takes a while
+There is also a function ``twr_led_strip_effect_rainbow`` which acts almost the same, but it takes a while
 before color appears on one end of a strip after disappearing from another.
 
 Color Wipe Effect
@@ -187,7 +187,7 @@ Fills the entire strip pixel by pixel with one color. Just use this function:
 
 .. code-block:: c
 
-    bc_led_strip_effect_color_wipe(&led_strip, 0x10000000, 20);
+    twr_led_strip_effect_color_wipe(&led_strip, 0x10000000, 20);
 
 The first parameter takes a color in hex format (this particular is red color) and the second parameter is speed. The lower, the quicker.
 
@@ -207,7 +207,7 @@ To trigger this effect, just call a function:
 
 .. code-block:: c
 
-    bc_led_strip_effect_theater_chase(&led_strip, 0x10000000, 100);
+    twr_led_strip_effect_theater_chase(&led_strip, 0x10000000, 100);
 
 The first parameter is a color in HEX format (stored in ``uint32_t``), the second one is a speed of changes.
 
@@ -218,20 +218,20 @@ You can easily stop the effect (before starting another one, for example) with t
 
 .. code-block:: c
 
-    bc_led_strip_effect_stop(&led_strip);
+    twr_led_strip_effect_stop(&led_strip);
 
 Here is a full code example of stopping the effect three seconds after starting it.
 
 .. code-block:: c
     :linenos:
 
-    #include <bcl.h>
+    #include <twr.h>
 
-    bc_led_strip_t led_strip;
+    twr_led_strip_t led_strip;
     static uint32_t _dma_buffer[144 * 4 * 2]; // count * type * 2
-    const bc_led_strip_buffer_t _led_strip_buffer =
+    const twr_led_strip_buffer_t _led_strip_buffer =
             {
-                    .type = BC_LED_STRIP_TYPE_RGBW,
+                    .type = TWR_LED_STRIP_TYPE_RGBW,
                     .count = 144,
                     .buffer = _dma_buffer
             };
@@ -239,15 +239,15 @@ Here is a full code example of stopping the effect three seconds after starting 
 
     void stopEffect(void* param) {
         (void) param;
-        bc_led_strip_effect_stop(&led_strip);
+        twr_led_strip_effect_stop(&led_strip);
     }
 
     void application_init(void)
     {
-        bc_module_power_init();
-        bc_led_strip_init(&led_strip, bc_module_power_get_led_strip_driver(), &_led_strip_buffer);
+        twr_module_power_init();
+        twr_led_strip_init(&led_strip, twr_module_power_get_led_strip_driver(), &_led_strip_buffer);
 
-        bc_led_strip_effect_theater_chase_rainbow(&led_strip, 100);
-        bc_scheduler_register(stopEffect, NULL, bc_tick_get() + 3000);
+        twr_led_strip_effect_theater_chase_rainbow(&led_strip, 100);
+        twr_scheduler_register(stopEffect, NULL, twr_tick_get() + 3000);
     }
 
