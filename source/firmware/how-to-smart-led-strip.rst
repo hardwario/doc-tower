@@ -14,7 +14,7 @@ You need to use a `Power Module <https://shop.hardwario.com/power-module/>`_ whi
 
 There are some functions available in SDK which can "do things" with your LED strip - changing color to imitate rainbow,
 representing temperate or some score, etc... But they are not yet commented which means you can not find them in the SDK documentation.
-You can find them directly in `SDK on Github <https://github.com/hardwario/twr-sdk/blob/master/bcl/inc/twr_led_strip.h>`_ or in this article (some of them).
+You can find them directly in `SDK on Github <https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_led_strip.h>`_ or in this article (some of them).
 
 *************
 Prerequisites

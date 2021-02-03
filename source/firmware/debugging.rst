@@ -15,7 +15,7 @@ Core Module Rev 2
 *****************
 
 .. note::
-    If you have older version of Core Module you can visit :ref:`Windows <rev1-debug>` :ref:`another chapter to see how to connect it with UART <rev1-debug>`.
+    If you have older version of Core Module you can visit :ref:`another chapter to see how to connect it with UART <rev1-debug>`.
 
 Core Module Rev 2 have integrated FTDI chip connected to the UART2.
 You do not need to use separate serial converter, just connect USB cable to your computer.
