@@ -2,15 +2,37 @@
 About 1-Wire Module
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-1-wire/1-wire-module.png
-    :width: 300em
-    :height: 300em
+.. container:: twocol
 
-+------------------------+-------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **1-Wire** Module allow you to connect I²C devices over a distance of several meters.           |
-|                        | | The I²C protocol is encapsulated to a 1-Wire protocol. The data are protected using **16-bit CRC**. |
-|                        | | You can use the **Sensor Module** to create a 1-Wire bus master.                                    |
-+------------------------+-------------------------------------------------------------------------------------------------------+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-1-wire/1-wire-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **1-Wire** Module allow you to connect I²C devices
+        over a distance of several meters.
+        The I²C protocol is encapsulated to a 1-Wire protocol.
+        The data are protected using **16-bit CRC**.
+        You can use the **Sensor Module** to create a 1-Wire bus master.
+
+|
+|
+|
+|
+|
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-1-wire/1-wire-module.png
+..     :width: 100%
+..
+.. +------------------------+---------------------------------------------------------------------+
+.. | |pic1|                 | | The **1-Wire** Module allow you to connect I²C devices            |
+.. |                        | | over a distance of several meters.                                |
+.. |                        | | The I²C protocol is encapsulated to a 1-Wire protocol.            |
+.. |                        | | The data are protected using **16-bit CRC**.                      |
+.. |                        | | You can use the **Sensor Module** to create a 1-Wire bus master.  |
+.. +------------------------+---------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+

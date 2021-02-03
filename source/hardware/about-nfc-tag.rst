@@ -2,16 +2,32 @@
 About NFC Tag
 #############
 
-.. |pic1| thumbnail:: ../_static/hardware/about-nfc/nfc-tag.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+-------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **NFC Tag** operates as a **dual port memory**.                                                 |
-|                        | | You have the the NFC protocol from one side and the I²C bus interface from the other side.          |
-|                        | | It features a 1 kB EEPROM memory.                                                                   |
-|                        | | The chip does not have to be powered when being accessed from the NFC side.                         |
-+------------------------+-------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-nfc/nfc-tag.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **NFC Tag** operates as a **dual port memory**.
+        You have the the NFC protocol from one side and the I²C bus interface from the other side.
+        It features a 1 kB EEPROM memory.
+        The chip does not have to be powered when being accessed from the NFC side.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-nfc/nfc-tag.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+-------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **NFC Tag** operates as a **dual port memory**.                                                 |
+.. |                        | | You have the the NFC protocol from one side and the I²C bus interface from the other side.          |
+.. |                        | | It features a 1 kB EEPROM memory.                                                                   |
+.. |                        | | The chip does not have to be powered when being accessed from the NFC side.                         |
+.. +------------------------+-------------------------------------------------------------------------------------------------------+
 
 .. note::
 

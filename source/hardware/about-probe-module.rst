@@ -2,15 +2,35 @@
 About Probe Module
 ##################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-probe/probe-module.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **Probe Module** allows you to easily hook up an **oscilloscope** or **logic analyzer** on any signal of the HARDWARIO TOWER - Industrial IoT Kit header.  |
-|                        | | Sometimes during the development, you need to analyze the signals and see what's going on.                                                                     |
-|                        | | And this module makes the task fast and convenient.                                                                                                            |
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-probe/probe-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **Probe Module** allows you to easily hook up an **oscilloscope** or **logic analyzer** on any signal of the HARDWARIO TOWER - Industrial IoT Kit header.
+        Sometimes during the development, you need to analyze the signals and see what's going on.
+        And this module makes the task fast and convenient.
+
+|
+|
+|
+|
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-probe/probe-module.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **Probe Module** allows you to easily hook up an **oscilloscope** or **logic analyzer** on any signal of the HARDWARIO TOWER - Industrial IoT Kit header.  |
+.. |                        | | Sometimes during the development, you need to analyze the signals and see what's going on.                                                                     |
+.. |                        | | And this module makes the task fast and convenient.                                                                                                            |
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 | |shopping-cart| `Shop <https://shop.hardwario.com/probe-module/>`_    | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-probe>`_         | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73701>`_  |

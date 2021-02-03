@@ -2,24 +2,49 @@
 About Base Module
 #################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-base/base-module.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **Base Module** works as a mechanical stand for the HARDWARIO TOWER units.                                                          |
-|                        | | With the exception of the **Battery Module**,                                                                                           |
-|                        | | you can plug any other HARDWARIO TOWER - Industrial IoT Kit module into a standardized socket available on the **Base Module**.         |
-|                        | |                                                                                                                                         |
-|                        | | It also features a **prototyping area** for soldering your circuits.                                                                    |
-|                        | |                                                                                                                                         |
-|                        | | This module can be used as a stand on a desk (four rubber feet assure stable position on a surface),                                    |
-|                        | | mounted on a **DIN rail** using special plastic clips, or it can be put on a wall or other vertical surfaces using a double-sided tape. |
-+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-base/base-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **Base Module** works as a mechanical stand for the HARDWARIO TOWER units.
+        With the exception of the **Battery Module**,
+        you can plug any other HARDWARIO TOWER - Industrial IoT Kit
+        module into a standardized socket available on the **Base Module**.
+
+        It also features a **prototyping area** for soldering your circuits.
+
+        This module can be used as a stand on a desk
+        (four rubber feet assure stable position on a surface),
+        mounted on a **DIN rail** using special plastic clips,
+        or it can be put on a wall or other vertical surfaces using a double-sided tape.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-base/base-module.png
+..     :width: 100%
+..
+.. +------------------------+-----------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **Base Module** works as a mechanical stand for the HARDWARIO TOWER units.        |
+.. |                        | | With the exception of the **Battery Module**,                                         |
+.. |                        | | you can plug any other HARDWARIO TOWER - Industrial IoT Kit                           |
+.. |                        | | module into a standardized socket available on the **Base Module**.                   |
+.. |                        | |                                                                                       |
+.. |                        | | It also features a **prototyping area** for soldering your circuits.                  |
+.. |                        | |                                                                                       |
+.. |                        | | This module can be used as a stand on a desk                                          |
+.. |                        | | (four rubber feet assure stable position on a surface),                               |
+.. |                        | | mounted on a **DIN rail** using special plastic clips,                                |
+.. |                        | | or it can be put on a wall or other vertical surfaces using a double-sided tape.      |
+.. +------------------------+-----------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-| |shopping-cart| `Shop <https://shop.hardwario.com/base-module/>`_    | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-base>`_           | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73844>`_  |
+| |shopping-cart| `Shop <https://shop.hardwario.com/base-module/>`_     | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-base>`_          | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73844>`_  |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 
 ----------------------------------------------------------------------------------------------

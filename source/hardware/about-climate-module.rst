@@ -2,17 +2,36 @@
 About Climate Module
 ####################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-climate/climate-module.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **Climate Module** integrates 4 environmental sensors - **temperature, humidity, light intensity and atmospheric pressure.**                               |
-|                        | | All sensors are digital, feature low-power operating modes and connected by using the I²C bus.                                                                 |
-|                        | | It is a great product for environmental monitoring, weather stations, etc.                                                                                     |
-|                        | |                                                                                                                                                                |
-|                        | | You can use the **Climate Module** altogether with the **Mini Battery Module** and the **Core Module** to create a very compact wireless environmental sensor. |
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-climate/climate-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **Climate Module** integrates 4 environmental sensors - **temperature, humidity, light intensity and atmospheric pressure.**
+        All sensors are digital, feature low-power operating modes and connected by using the I²C bus.
+        It is a great product for environmental monitoring, weather stations, etc.
+
+        You can use the **Climate Module** altogether with the **Mini Battery Module** and the **Core Module** to create a very compact wireless environmental sensor.
+
+|
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-climate/climate-module.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | The **Climate Module** integrates 4 environmental sensors - **temperature, humidity, light intensity and atmospheric pressure.**                                 |
+.. |                        | All sensors are digital, feature low-power operating modes and connected by using the I²C bus.                                                                   |
+.. |                        | It is a great product for environmental monitoring, weather stations, etc.                                                                                       |
+.. |                        |                                                                                                                                                                  |
+.. |                        | You can use the **Climate Module** altogether with the **Mini Battery Module** and the **Core Module** to create a very compact wireless environmental sensor.   |
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 | |shopping-cart| `Shop <https://shop.hardwario.com/climate-module/>`_   | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-climate>`_        | |folder-open| `SDK Library <https://sdk.hardwario.com/group__twr__module__climate>`_ | |code| `Header File <https://github.com/hardwario/twr-sdk/blob/master/bcl/inc/twr_module_climate.h>`_ | |code| `Source File <https://github.com/hardwario/twr-sdk/blob/master/bcl/src/twr_module_climate.c>`_ | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=73735>`_  |

@@ -2,20 +2,40 @@
 About LCD Module
 ################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-lcd/lcd-module-bg.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **LCD Module** uses a unique technology - the so-called **memory display** developed by Sharp.                                         |
-|                        | | It provides a resolution of 128 x 128 pixels in 1.28 inch size.                                                                            |
-|                        | | It implements an **ultra-low-power display controller**, so you can have active graphical display with a long service time from batteries. |
-|                        | |                                                                                                                                            |
-|                        | | You can control your application using the **two buttons** located below the LCD screen.                                                   |
-|                        | | The module is also equipped with a **gesture sensor** (Avago APDS-9960).                                                                   |
-|                        | | This circuit, composed of the infrared transmitter and four directional photodiodes responding to different wavelengths,                   |
-|                        | | can also be used to measure the light intensity and color or as a proximity sensor.                                                        |
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-lcd/lcd-module-bg.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **LCD Module** uses a unique technology - the so-called **memory display** developed by Sharp.
+        It provides a resolution of 128 x 128 pixels in 1.28 inch size.
+        It implements an **ultra-low-power display controller**, so you can have active graphical display with a long service time from batteries.
+
+        You can control your application using the **two buttons** located below the LCD screen.
+        The module is also equipped with a **gesture sensor** (Avago APDS-9960).
+        This circuit, composed of the infrared transmitter and four directional photodiodes responding to different wavelengths,
+        can also be used to measure the light intensity and color or as a proximity sensor.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-lcd/lcd-module-bg.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **LCD Module** uses a unique technology - the so-called **memory display** developed by Sharp.                                         |
+.. |                        | | It provides a resolution of 128 x 128 pixels in 1.28 inch size.                                                                            |
+.. |                        | | It implements an **ultra-low-power display controller**, so you can have active graphical display with a long service time from batteries. |
+.. |                        | |                                                                                                                                            |
+.. |                        | | You can control your application using the **two buttons** located below the LCD screen.                                                   |
+.. |                        | | The module is also equipped with a **gesture sensor** (Avago APDS-9960).                                                                   |
+.. |                        | | This circuit, composed of the infrared transmitter and four directional photodiodes responding to different wavelengths,                   |
+.. |                        | | can also be used to measure the light intensity and color or as a proximity sensor.                                                        |
+.. +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. tip::
 

@@ -2,15 +2,30 @@
 About Lux Meter Tag
 ###################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-lux/lux-meter-tag.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **Lux Meter Tag** uses a high dynamic range **light intensity sensor OPT3001** that can measure illuminance from 0.01 to 83,000 lux. |
-|                        | | This sensor is digital and calibrated.                                                                                                   |
-|                        | | It communicates using an I²C bus and features a very low power operation and shutdown mode.                                              |
-+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-lux/lux-meter-tag.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **Lux Meter Tag** uses a high dynamic range **light intensity sensor OPT3001** that can measure illuminance from 0.01 to 83,000 lux.
+        This sensor is digital and calibrated.
+        It communicates using an I²C bus and features a very low power operation and shutdown mode.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-lux/lux-meter-tag.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **Lux Meter Tag** uses a high dynamic range **light intensity sensor OPT3001** that can measure illuminance from 0.01 to 83,000 lux. |
+.. |                        | | This sensor is digital and calibrated.                                                                                                   |
+.. |                        | | It communicates using an I²C bus and features a very low power operation and shutdown mode.                                              |
+.. +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. tip::
 

@@ -2,20 +2,47 @@
 About VOC Tag
 #############
 
-.. |pic1| thumbnail:: ../_static/hardware/about-voc/voc-lp-tag.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **VOC Tag** is a gas sensor for measuring **volatile organic compounds (VOC) concentration**.                                                                              |
-|                        | | This is useful for indoor air quality monitoring applications.                                                                                                                 |
-|                        | | This module uses a metal-oxide multi-pixel sensor SGP30 from Sensirion measuring total VOC level.                                                                              |
-|                        | |                                                                                                                                                                                |
-|                        | | VOC (Volatile Organic Compounds) sensor is a great technology for indoor air quality measurement applications.                                                                 |
-|                        | | Elevated VOC levels can have a negative impact on well being, comfort, and cognitive abilities.                                                                                |
-|                        | | Typical VOC sources are cosmetics, detergents containing alcohols or aldehydes, carpets and flooring, paints, human and animal occupants.                                      |
-|                        | | Measuring Total VOC (TVOC) level can helps to increase the efficiency of ventilation and air purification, and increases awareness of VOC sources and indoor air pollution.    |
-+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-voc/voc-lp-tag.png
+            :width: 100%
+
+
+   .. container:: rightside
+
+        The **VOC Tag** is a gas sensor for measuring **volatile organic compounds (VOC) concentration**.
+        This is useful for indoor air quality monitoring applications.
+        This module uses a metal-oxide multi-pixel sensor SGP30 from Sensirion measuring total VOC level.
+
+        VOC (Volatile Organic Compounds) sensor is a great technology for indoor air quality measurement applications.
+        Elevated VOC levels can have a negative impact on well being, comfort, and cognitive abilities.
+        Typical VOC sources are cosmetics, detergents containing alcohols or aldehydes, carpets and flooring, paints, human and animal occupants.
+        Measuring Total VOC (TVOC) level can helps to increase the efficiency of ventilation and air purification, and increases awareness of VOC sources and indoor air pollution.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-voc/voc-lp-tag.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **VOC Tag** is a gas sensor for measuring **volatile organic compounds (VOC) concentration**.                                                                              |
+.. |                        | | This is useful for indoor air quality monitoring applications.                                                                                                                 |
+.. |                        | | This module uses a metal-oxide multi-pixel sensor SGP30 from Sensirion measuring total VOC level.                                                                              |
+.. |                        | |                                                                                                                                                                                |
+.. |                        | | VOC (Volatile Organic Compounds) sensor is a great technology for indoor air quality measurement applications.                                                                 |
+.. |                        | | Elevated VOC levels can have a negative impact on well being, comfort, and cognitive abilities.                                                                                |
+.. |                        | | Typical VOC sources are cosmetics, detergents containing alcohols or aldehydes, carpets and flooring, paints, human and animal occupants.                                      |
+.. |                        | | Measuring Total VOC (TVOC) level can helps to increase the efficiency of ventilation and air purification, and increases awareness of VOC sources and indoor air pollution.    |
+.. +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| |shopping-cart| `Shop <https://shop.hardwario.com/voc-tag/>`_         | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-voc>`_              | |folder-open| `SDK Library <https://sdk.hardwario.com/group__twr__sgp30>`_   | |code| `Header File <https://github.com/hardwario/twr-sdk/blob/master/bcl/inc/twr_sgp30.h>`_   | |code| `Source File <https://github.com/hardwario/twr-sdk/blob/master/bcl/src/twr_sgp30.c>`_   | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=108578>`_ |
++-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+
+----------------------------------------------------------------------------------------------
 
 +------------------+--------------------+-------------------------------+-------------------------------------------------+------------------------+
 | Level            | TVOC (ppb)         | Hygienic Rating               | Recommendation                                  | Exposure Limit         |
@@ -35,12 +62,6 @@ About VOC Tag
 | 5 - Excellent    | 0 - 65             | No objections                 | | Target value                                  | No limit               |
 |                  |                    |                               | |                                               |                        |
 +------------------+--------------------+-------------------------------+-------------------------------------------------+------------------------+
-
-+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-| |shopping-cart| `Shop <https://shop.hardwario.com/voc-tag/>`_         | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-voc>`_              | |folder-open| `SDK Library <https://sdk.hardwario.com/group__twr__sgp30>`_   | |code| `Header File <https://github.com/hardwario/twr-sdk/blob/master/bcl/inc/twr_sgp30.h>`_   | |code| `Source File <https://github.com/hardwario/twr-sdk/blob/master/bcl/src/twr_sgp30.c>`_   | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=108578>`_ |
-+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-
-----------------------------------------------------------------------------------------------
 
 ********
 Features

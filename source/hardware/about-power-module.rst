@@ -2,21 +2,42 @@
 About Power Module
 ##################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-power/power-module.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The Power Module allows you to connect a 5 V DC power adapter via a standard 2.1 mm power jack socket.                                                         |
-|                        | | It features a high-current relay (230 V AC / 16 A) to control your appliances.                                                                                 |
-|                        | | Also you can drive a digital LED strip with it (compatible with WS2812B).                                                                                      |
-|                        | |                                                                                                                                                                |
-|                        | | This module can power a HARDWARIO TOWER - Industrial IoT Kit node thanks to its integrated LDO regulator.                                                      |
-|                        | | The LDO generates 3.3 V output from the 5 V input.                                                                                                             |
-|                        | |                                                                                                                                                                |
-|                        | | Reliability is important - that's why we have implemented a **smart** overvoltage, undervoltage and **reverse polarity protection** on the power jack input.   |
-|                        | | This feature guarantees the input voltage range to always stay within the proper limits.                                                                       |
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-power/power-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The Power Module allows you to connect a 5 V DC power adapter via a standard 2.1 mm power jack socket.
+        It features a high-current relay (230 V AC / 16 A) to control your appliances.
+        Also you can drive a digital LED strip with it (compatible with WS2812B).
+
+        This module can power a HARDWARIO TOWER - Industrial IoT Kit node thanks to its integrated LDO regulator.
+        The LDO generates 3.3 V output from the 5 V input.
+
+        Reliability is important - that's why we have implemented a **smart** overvoltage, undervoltage and **reverse polarity protection** on the power jack input.
+        This feature guarantees the input voltage range to always stay within the proper limits.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-power/power-module.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The Power Module allows you to connect a 5 V DC power adapter via a standard 2.1 mm power jack socket.                                                         |
+.. |                        | | It features a high-current relay (230 V AC / 16 A) to control your appliances.                                                                                 |
+.. |                        | | Also you can drive a digital LED strip with it (compatible with WS2812B).                                                                                      |
+.. |                        | |                                                                                                                                                                |
+.. |                        | | This module can power a HARDWARIO TOWER - Industrial IoT Kit node thanks to its integrated LDO regulator.                                                      |
+.. |                        | | The LDO generates 3.3 V output from the 5 V input.                                                                                                             |
+.. |                        | |                                                                                                                                                                |
+.. |                        | | Reliability is important - that's why we have implemented a **smart** overvoltage, undervoltage and **reverse polarity protection** on the power jack input.   |
+.. |                        | | This feature guarantees the input voltage range to always stay within the proper limits.                                                                       |
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. warning::
 

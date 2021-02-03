@@ -2,22 +2,44 @@
 About CO2 Module
 ################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-co2/co2-module.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **CO2 Module** is a gas sensor for measuring the **carbon dioxide (CO₂) concentration**.                           |
-|                        | | This module achieves ±50 ppm accuracy. It uses a non-dispersive infrared (NDIR) sensor manufactured in Sweden.         |
-|                        | | Thanks to its **low-power operation** it can be powered from batteries for years.                                      |
-|                        | |                                                                                                                        |
-|                        | |  Carbon dioxide (or CO₂) is a colorless and odorless gas that is vital to life on Earth.                               |
-|                        | |  Its nominal concentration is about 400 ppm (0.04 %).                                                                  |
-|                        | |  There are many occurrences of CO₂ in nature. For example humans produce CO₂ when exhaling.                            |
-|                        | |                                                                                                                        |
-|                        | |  We have equipped the LP8 sensor with additional circuitry for efficient power management and I²C-only interfacing.    |
-|                        | |  This module also features three 5-pin sockets allowing you to connect HARDWARIO tags.                                 |
-+------------------------+--------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-co2/co2-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **CO2 Module** is a gas sensor for measuring the **carbon dioxide (CO₂) concentration**.
+        This module achieves ±50 ppm accuracy. It uses a non-dispersive infrared (NDIR) sensor manufactured in Sweden.
+        Thanks to its **low-power operation** it can be powered from batteries for years.
+
+        Carbon dioxide (or CO₂) is a colorless and odorless gas that is vital to life on Earth.
+        Its nominal concentration is about 400 ppm (0.04 %).
+        There are many occurrences of CO₂ in nature. For example humans produce CO₂ when exhaling.
+
+        We have equipped the LP8 sensor with additional circuitry for efficient power management and I²C-only interfacing.
+        This module also features three 5-pin sockets allowing you to connect HARDWARIO tags.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-co2/co2-module.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+--------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | The **CO2 Module** is a gas sensor for measuring the **carbon dioxide (CO₂) concentration**.                             |
+.. |                        | This module achieves ±50 ppm accuracy. It uses a non-dispersive infrared (NDIR) sensor manufactured in Sweden.           |
+.. |                        | Thanks to its **low-power operation** it can be powered from batteries for years.                                        |
+.. |                        |                                                                                                                          |
+.. |                        | Carbon dioxide (or CO₂) is a colorless and odorless gas that is vital to life on Earth.                                  |
+.. |                        | Its nominal concentration is about 400 ppm (0.04 %).                                                                     |
+.. |                        | There are many occurrences of CO₂ in nature. For example humans produce CO₂ when exhaling.                               |
+.. |                        |                                                                                                                          |
+.. |                        | We have equipped the LP8 sensor with additional circuitry for efficient power management and I²C-only interfacing.       |
+.. |                        | This module also features three 5-pin sockets allowing you to connect HARDWARIO tags.                                    |
+.. +------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 .. important::
 

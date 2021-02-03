@@ -2,15 +2,30 @@
 About Humidity Tag
 ##################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-humidity/humidity-tag.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **Humidity Tag** uses a high-accuracy **humidity sensor** SHT20 with a typical accuracy of ±3 % from 20 % to 80 %. |
-|                        | | This sensor is digital and calibrated.                                                                                 |
-|                        | | It communicates using an I²C bus and features a very low power operation and shutdown mode.                            |
-+------------------------+--------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-humidity/humidity-tag.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **Humidity Tag** uses a high-accuracy **humidity sensor** SHT20 with a typical accuracy of ±3 % from 20 % to 80 %.
+        This sensor is digital and calibrated.
+        It communicates using an I²C bus and features a very low power operation and shutdown mode.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-humidity/humidity-tag.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+--------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **Humidity Tag** uses a high-accuracy **humidity sensor** SHT20 with a typical accuracy of ±3 % from 20 % to 80 %. |
+.. |                        | | This sensor is digital and calibrated.                                                                                 |
+.. |                        | | It communicates using an I²C bus and features a very low power operation and shutdown mode.                            |
+.. +------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 .. tip::
 

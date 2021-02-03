@@ -2,22 +2,44 @@
 About Soil Sensor
 #################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-soil/soil-sensor-module.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **Soil Moisture Sensor** is a modern, completely sealed capacitive moisture sensor with a temperature sensor.                      |
-|                        | | It is using 1-Wire communication protocol and has 3 wire cable that is 2 meters long.                                                  |
-|                        | | Many sensors can be connected to a single 1-Wire Master.                                                                               |
-|                        | | The temperature sensor is located in the top part above the soil.                                                                      |
-|                        | | The electronics is completely potted in a sealing compound to withstand all kind of weather.                                           |
-|                        | |                                                                                                                                        |
-|                        | | The sensor returns soil moisture humidity using relative values.                                                                       |
-|                        | | Sensor is very sensitive and you can get range from 6500 when sensor is dry and 13000 when sensor is fully submerged into the water.   |
-|                        | | Measuring is done by two copper strips inside the inner layers of the 4 layer PCB.                                                     |
-|                        | | This way the contacts are not exposed to direct humidity and do not oxidize.                                                           |
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-soil/soil-sensor-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **Soil Moisture Sensor** is a modern, completely sealed capacitive moisture sensor with a temperature sensor.
+        It is using 1-Wire communication protocol and has 3 wire cable that is 2 meters long.
+        Many sensors can be connected to a single 1-Wire Master.
+        The temperature sensor is located in the top part above the soil.
+        The electronics is completely potted in a sealing compound to withstand all kind of weather.
+
+        The sensor returns soil moisture humidity using relative values.
+        Sensor is very sensitive and you can get range from 6500 when sensor is dry and 13000 when sensor is fully submerged into the water.
+        Measuring is done by two copper strips inside the inner layers of the 4 layer PCB.
+        This way the contacts are not exposed to direct humidity and do not oxidize.
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-soil/soil-sensor-module.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **Soil Moisture Sensor** is a modern, completely sealed capacitive moisture sensor with a temperature sensor.                      |
+.. |                        | | It is using 1-Wire communication protocol and has 3 wire cable that is 2 meters long.                                                  |
+.. |                        | | Many sensors can be connected to a single 1-Wire Master.                                                                               |
+.. |                        | | The temperature sensor is located in the top part above the soil.                                                                      |
+.. |                        | | The electronics is completely potted in a sealing compound to withstand all kind of weather.                                           |
+.. |                        | |                                                                                                                                        |
+.. |                        | | The sensor returns soil moisture humidity using relative values.                                                                       |
+.. |                        | | Sensor is very sensitive and you can get range from 6500 when sensor is dry and 13000 when sensor is fully submerged into the water.   |
+.. |                        | | Measuring is done by two copper strips inside the inner layers of the 4 layer PCB.                                                     |
+.. |                        | | This way the contacts are not exposed to direct humidity and do not oxidize.                                                           |
+.. +------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 | |shopping-cart| `Shop <https://shop.hardwario.com/soil-sensor/>`_     | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-soil-sensor>`_          | |folder-open| `SDK Library <https://sdk.hardwario.com/group__twr__soil__sensor.html>`_ | |code| `Header File <https://github.com/hardwario/twr-sdk/blob/master/bcl/inc/twr_soil_sensor.h>`_ | |code| `Source File <https://github.com/hardwario/twr-sdk/blob/master/bcl/src/twr_soil_sensor.c>`_ | |book| `Projects <https://www.hackster.io/hardwario/projects?part_id=117389>`_ |

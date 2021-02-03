@@ -2,16 +2,39 @@
 About GPS Module
 ################
 
-.. |pic1| thumbnail:: ../_static/hardware/about-gps/gps-module.png
-    :width: 300em
-    :height: 300em
 
-+------------------------+-----------------------------------------------------------------------------------------------------------+
-| |pic1|                 | | The **GPS Module** allows you to know the exact position of your device.                                |
-|                        | | It is using **SAM-M8Q** module from **ublox**.                                                          |
-|                        | | It understands 3 global positioning standards GPS, Galileo and GLONASS.                                 |
-|                        | | The 2.5 m position accuracy is possible thanks to combining position from all three standards together. |
-+------------------------+-----------------------------------------------------------------------------------------------------------+
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/hardware/about-gps/gps-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **GPS Module** allows you to know the exact position of your device.
+        It is using **SAM-M8Q** module from **ublox**.
+        It understands 3 global positioning standards GPS, Galileo and GLONASS.
+        The 2.5 m position accuracy is possible thanks to combining position from all three standards together.
+
+|
+|
+|
+|
+|
+|
+
+.. .. |pic1| thumbnail:: ../_static/hardware/about-gps/gps-module.png
+..     :width: 300em
+..     :height: 300em
+..
+.. +------------------------+-----------------------------------------------------------------------------------------------------------+
+.. | |pic1|                 | | The **GPS Module** allows you to know the exact position of your device.                                |
+.. |                        | | It is using **SAM-M8Q** module from **ublox**.                                                          |
+.. |                        | | It understands 3 global positioning standards GPS, Galileo and GLONASS.                                 |
+.. |                        | | The 2.5 m position accuracy is possible thanks to combining position from all three standards together. |
+.. +------------------------+-----------------------------------------------------------------------------------------------------------+
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+
 | |shopping-cart| `Shop <https://shop.hardwario.com/gps-module/>`_      | |microchip| `Schematics <https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-gps>`_           | |folder-open| `SDK Library <https://sdk.hardwario.com/group__twr__module__gps.html>`_ | |code| `Header File <https://github.com/hardwario/twr-sdk/blob/master/bcl/inc/twr_module_gps.h>`_ | |code| `Source File <https://github.com/hardwario/twr-sdk/blob/master/bcl/src/twr_module_gps.c>`_ |
