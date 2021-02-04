@@ -128,10 +128,8 @@ Where to Begin
    :maxdepth: 2
    :hidden:
 
-   firmware/firmware-quick-start
    firmware/basic-overview
-   firmware/toolchain-setup
-   firmware/toolchain-guide
+   firmware/firmware-quick-start
    firmware/blank-start
    firmware/debugging
    firmware/low-power-measurements-and-radio

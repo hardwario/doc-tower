@@ -14,11 +14,3 @@ LCD
 You probably forgot to call the ``twr_module_lcd_update(void)`` function.
 Every draw or rotation you make in your code is done internally within the SDK and those changes needs to be sent to LCD by this function.
 
-***********
-Core module
-***********
-
-**USB_CDC: \n behaves incorrectly.**
-
-Try to use ``\r\n`` as if you would use Windows.
-
