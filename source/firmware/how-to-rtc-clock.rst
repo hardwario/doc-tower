@@ -69,7 +69,7 @@ Set date and time
     rtc.month = 5;
     rtc.date = 16;
 
-    twr_rtc_set_date_time(&rtc);
+    twr_rtc_set_datetime(&rtc);
 
 ******************
 Read date and time
@@ -79,5 +79,5 @@ Read date and time
     :linenos:
 
     twr_rtc_t datetime;
-    twr_rtc_get_date_time(&datetime);
+    twr_rtc_get_datetime(&datetime);
     twr_log_debug("$DATE: \"%d-%02d-%02dT%02d:%02d:%02dZ\"", datetime.year, datetime.month, datetime.date, datetime.hours, datetime.minutes, datetime.seconds);

@@ -78,8 +78,8 @@ R/W Example
 
 In this example we will write float value and string to EEPROM immediately after Core boot.
 On every press of a button the data will be retrieved from EEPROM and sent to computer.
-To test that the memory is really persistent you can try to comment both ``twr_eeprom_write*`` lines out (after running the original example once, of course).
-It will still work.
+To test that the memory is really persistent you can try to comment both ``twr_eeprom_write`` lines out (after running the original example once, of course).
+It should still work.
 
 The output in serial console will look like this:
 
@@ -96,8 +96,7 @@ Example
 .. code-block:: c
     :linenos:
 
-    #include "twr.h"
-    #include "twr_usb_cdc.h"
+    #include <application.h>
 
     twr_button_t button;
 
@@ -109,7 +108,6 @@ Example
         if (event == TWR_BUTTON_EVENT_PRESS)
         {
             size_t eeprom = twr_eeprom_get_size();
-            char buffer[100];
             char readEeprom[13];
             float readFloat;
 
@@ -117,14 +115,14 @@ Example
             twr_eeprom_read(4, readEeprom, 12);
             readEeprom[12] = '\0';
 
-            sprintf(buffer, "EEPROM size: %d\r\nData:\r\n%f\r\n%s\r\n", eeprom, readFloat, readEeprom);
-
-            twr_usb_cdc_write(buffer, strlen(buffer));
+            twr_log_debug("EEPROM size: %d\r\nData:\r\n%f\r\n%s", eeprom, readFloat, readEeprom);
         }
     }
 
     void application_init(void)
     {
+        twr_log_init(TWR_LOG_LEVEL_DEBUG, TWR_LOG_TIMESTAMP_ABS);
+
         float toWriteFloat = 3.14159;
         char toWrite[] = "hello world!";
         twr_eeprom_write(0, &toWriteFloat, sizeof(toWriteFloat));
@@ -133,7 +131,6 @@ Example
         // Initialize button
         twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN, false);
         twr_button_set_event_handler(&button, button_event_handler, NULL);
-
-        twr_usb_cdc_init();
     }
+
 

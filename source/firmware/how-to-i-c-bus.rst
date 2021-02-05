@@ -16,7 +16,7 @@ You will need I²C APIs in case you implement your own I²C sensor or chip.
 I²C buses on the Core Module
 ****************************
 
-There are two busses on the `Core Module <https://shop.hardwario.com/core-module/>`. They are called:
+There are two busses on the `Core Module <https://shop.hardwario.com/core-module/>`_. They are called:
 
 - ``TWR_I2C_I2C0`` - Using ``SDA0`` and ``SCL0`` (17, 18) pins in the bottom right corner of the Core Module
 - ``TWR_I2C_I2C1`` - Using SDA1 and SCL1 (27, 28) pins in the top right corner of the Core Module
@@ -26,7 +26,7 @@ If you use `Tag Module <https://shop.hardwario.com/tag-module/>`_ then the right
 
 .. note::
 
-    There's even a another **virtual** I2C bus ``TWR_I2C_I2C_1W`` which is encapsulated in 1-Wire protocol and can be used with
+    There's even another **virtual** I2C bus ``TWR_I2C_I2C_1W`` which is encapsulated in 1-Wire protocol and can be used with
     Sensor Module and 1-Wire Module to extend the communication distance.
 
 ********

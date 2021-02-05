@@ -59,8 +59,9 @@ Example code
         twr_servo_set_microseconds(&servo, 1500);
     }
 
-*****************************************************************************************************
-`Example project on Github <https://github.com/blavka/bcf-test-servo/blob/master/app/application.c>`_
-*****************************************************************************************************
+.. tip::
+
+    You can check `example project on Github <https://github.com/blavka/bcf-test-servo/blob/master/app/application.c>`_ for full code example.
+
 
 

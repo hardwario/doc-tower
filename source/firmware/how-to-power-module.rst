@@ -13,13 +13,13 @@ How to: Power Module
 Relay Control
 *************
 
-Controlling the relay is very simple. First you have to initialize the power module in your application_init function by calling ``twr_module_power_init()``.
-It is always good to set initial state immediately after the initialization, like ``twr_module_power_relay_set_state(false)``.
+Controlling the relay is very simple. First you have to initialize the power module in your *application_init* function by calling ``twr_module_power_init()``.
+It is always good to set an initial state immediately after the initialization, like ``twr_module_power_relay_set_state(false)``.
 
-When the relay is switched on, you will see a small green LED light near to the relay.
+When the relay is switched on, you will see a small green LED light on the Power module.
 
 You can set the relay state anywhere in your code by calling ``twr_module_power_relay_set_state(bool state)``.
-The SDK holds actual state internally, you can always retrieve it by calling ``twr_module_power_relay_get_state()``.
+The SDK holds an actual state internally, you can always retrieve it by calling ``twr_module_power_relay_get_state()``.
 So if you are going to switch relay state, you don't have to create any variable,
 just use this function within function: ``twr_module_power_relay_set_state(!twr_module_power_relay_get_state())``
 
@@ -28,7 +28,7 @@ In the example below we set the relay to off state after initialization. To swit
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
+    #include <application.h>
 
     twr_button_t button;
 
@@ -56,6 +56,6 @@ In the example below we set the relay to off state after initialization. To swit
 LED / LED Strip Control
 ***********************
 
-We have :doc:`separate tutorial <how-to-smart-led-strip>` how to control our LED strip.
+We have :doc:`separate tutorial <how-to-smart-led-strip>` on how to control our LED strip.
 
 

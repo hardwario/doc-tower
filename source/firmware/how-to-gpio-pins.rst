@@ -18,7 +18,7 @@ First important task is to enable clock to the GPIO peripheral by calling ``twr_
 ARM Cortex micros have **clock gating** which disables the peripheral clock and saves more power.
 Then you need to configure the pin mode by calling ``twr_gpio_set_mode``.
 The Mode can be input, output, analog, open-drain or alternate mode which is used when configuring UART or SPI peripheral.
-Then it is possible to configure internal **pull-up** or **pull-down** resistor by calling ``twr_gpio_set_pull`` so can define the default logic
+Then it is possible to configure `internal **pull-up** or **pull-down** resistor <https://www.electronics-tutorials.ws/logic/pull-up-resistor.html>`_ by calling ``twr_gpio_set_pull`` so can define the default logic
 level when there's nothing connected to the GPIO pin.
 
 **************
@@ -26,7 +26,7 @@ GPIO as output
 **************
 
 This example will turn on the LED on the Core Module.
-The usual and more comfort way to control LED is to use ``twr_led`` code,
+The usual and more comfortable way to control LED is to use ``twr_led`` code,
 but we use the ``twr_gpio`` for now to explain the GPIO basics.
 
 .. code-block:: c
@@ -45,7 +45,7 @@ but we use the ``twr_gpio`` for now to explain the GPIO basics.
 GPIO as Input
 *************
 
-This example will read the button state and the read value will be written to the LED.
+This example will read the button state and then the value will be written to the LED.
 
 .. code-block:: c
     :linenos:
@@ -59,7 +59,8 @@ This example will read the button state and the read value will be written to th
 
         twr_gpio_init(TWR_GPIO_BUTTON);
         twr_gpio_set_mode(TWR_GPIO_BUTTON, TWR_GPIO_MODE_INPUT);
-        // The Core Module has hardware pull-down so next call is commented
+
+        // The Core Module has hardware pull-down so next call is commented out
         // twr_gpio_set_pull(TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN);
     }
 

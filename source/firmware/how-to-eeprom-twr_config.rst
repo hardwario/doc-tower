@@ -19,9 +19,9 @@ Library will automatically initialize your configuration when:
 Initialization
 **************
 
-The first parameter, ``signature`` , is unique number for your firmware.
+The first parameter, ``signature``, is unique number for your firmware.
 This way if you load a different firmware to the Core Module that is using configuration structure with the same length,
-the library will see that and initialize the confguration properly again.
+the library will see that and initialize the configuration properly again.
 
 The last parameter init_config can be:
 
@@ -40,6 +40,8 @@ Code Example
 
 .. code-block:: c
     :linenos:
+
+    #include <application.h>
 
     // Example structure that save configuration of PIR detector
     typedef struct config_t

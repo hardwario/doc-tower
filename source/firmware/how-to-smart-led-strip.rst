@@ -100,7 +100,7 @@ This code will switch on 35 LEDs, making them brighter 5 points per LED (0 to 17
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
+    #include <application.h>
 
     twr_led_strip_t led_strip;
     static uint32_t _dma_buffer[144 * 4 * 2]; // count * type * 2
@@ -138,13 +138,13 @@ Effects
 
 There are several effect functions available. Let's see them in action.
 
-Every effect bellow has an example of use. This will work for our 144 LEDs strip (other may need slight changes in the skeleton app below).
+Every effect below has an example of use. This will work for our 144 LEDs strip (others may need slight changes in the skeleton app below).
 You can copy every single example at the end of application_init function from this skeleton:
 
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
+    #include <application.h>
 
     twr_led_strip_t led_strip;
     static uint32_t _dma_buffer[144 * 4 * 2]; // count * type * 2
@@ -225,7 +225,7 @@ Here is a full code example of stopping the effect three seconds after starting 
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
+    #include <application.h>
 
     twr_led_strip_t led_strip;
     static uint32_t _dma_buffer[144 * 4 * 2]; // count * type * 2
@@ -237,7 +237,7 @@ Here is a full code example of stopping the effect three seconds after starting 
             };
 
 
-    void stopEffect(void* param) {
+    void stop_effect(void* param) {
         (void) param;
         twr_led_strip_effect_stop(&led_strip);
     }
@@ -248,6 +248,6 @@ Here is a full code example of stopping the effect three seconds after starting 
         twr_led_strip_init(&led_strip, twr_module_power_get_led_strip_driver(), &_led_strip_buffer);
 
         twr_led_strip_effect_theater_chase_rainbow(&led_strip, 100);
-        twr_scheduler_register(stopEffect, NULL, twr_tick_get() + 3000);
+        twr_scheduler_register(stop_effect, NULL, twr_tick_get() + 3000);
     }
 

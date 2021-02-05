@@ -4,7 +4,7 @@ How to: USB Console
 
 .. warning::
 
-    For Core Module R2 with FTDI chip please follow **How to: UART interface** tutorial and use UART2 for communication over FTDI to your computer.
+    For Core Module R2 with FTDI chip please follow :doc:`Debugging <debugging>` tutorial and use UART2 for communication over FTDI to your computer.
     USB CDC console works only on older Core Module R1 where chip talks directly to the computer.
 
 `Core Module <https://shop.hardwario.com/core-module/>`_ **REV 1** can handle two-way communication with USB-connected device (computer, router, ...)
@@ -18,13 +18,7 @@ over Virtual Com Port VCP.
 Prerequisites
 *************
 
-First you have to include the USB CDC library
-
-.. code-block:: c
-
-    #include <twr_usb_cdc.h>
-
-and use the library's *init* function (in your *application_init* function):
+You have to use library's *init* function (in your *application_init* function):
 
 .. code-block:: c
 

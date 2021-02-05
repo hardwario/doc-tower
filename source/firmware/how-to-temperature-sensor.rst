@@ -57,7 +57,7 @@ In this example we make measurement every 5 seconds and send data over USB in fo
     12.3456 °C
     123
 
-Place code below in *application.c* file and flash. Use of *application.h* file is not required here.
+Place code below in *application.c* file and flash.
 
 .. warning::
 
@@ -68,8 +68,7 @@ Place code below in *application.c* file and flash. Use of *application.h* file 
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
-    #include <twr_usb_cdc.h>
+    #include <application.h>
 
     twr_tmp112_t temp;
 
@@ -84,16 +83,14 @@ Place code below in *application.c* file and flash. Use of *application.h* file 
             int16_t rawTemperature = 0;
             twr_tmp112_get_temperature_celsius(&temp, &temperature);
             twr_tmp112_get_temperature_raw(&temp, &rawTemperature);
-            char buffer[30];
-            sprintf(buffer, "%.4f °C\r\n%d\r\n", temperature, rawTemperature);
-            twr_usb_cdc_write(buffer, strlen(buffer));
+            twr_log_debug("%.4f °C\r\n%d", temperature, rawTemperature);
         }
     }
 
     void application_init(void)
     {
-        // initialize USB communication
-        twr_usb_cdc_init();
+        // initialize logging
+        twr_log_init(TWR_LOG_LEVEL_DEBUG, TWR_LOG_TIMESTAMP_ABS);
 
         // initialize TMP112 sensor
         twr_tmp112_init(&temp, TWR_I2C_I2C0, 0x49);
@@ -104,3 +101,4 @@ Place code below in *application.c* file and flash. Use of *application.h* file 
         // automatically measure the temperature every 5 seconds
         twr_tmp112_set_update_interval(&temp, 5000);
     }
+

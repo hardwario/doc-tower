@@ -4,6 +4,7 @@ How to: Battery Module
 
 Battery Module and Mini Battery Module allows you to power your product with four or two AAA batteries.
 It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit.
+
 With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
 
 .. tip::
@@ -14,9 +15,10 @@ With this module you can check battery voltage (manually or periodically with Sc
 How Does it Work?
 *****************
 
-This module uses high efficiency buck converter which provides 3.1 V output voltage. Voltage level is measured on the analog input.
+This module uses high efficiency `buck converter <https://en.wikipedia.org/wiki/Buck_converter>`_ which provides 3.1 V output voltage.
+Voltage level is measured on the analog input.
 
-SDK provides function to
+SDK provides functions to:
 
 - Manually and periodically (with Scheduler) trigger battery voltage measurement
 - Get exact battery voltage (*float* value)
@@ -71,8 +73,7 @@ In this example, voltage and charge levels will be sent to your computer over US
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
-    #include "twr_usb_cdc.h"
+    #include <application.h>
 
     twr_button_t button;
 
@@ -87,27 +88,25 @@ In this example, voltage and charge levels will be sent to your computer over US
 
             float voltage = 0.0;
             twr_module_battery_get_voltage(&voltage);
-            char volt[25];
-            sprintf(volt, "Voltage: %.3f\r\n", voltage);
 
             int chargePercentage = -1;
             twr_module_battery_get_charge_level(&chargePercentage);
-            char charge[25];
-            sprintf(charge, "Charge: %d\r\n", chargePercentage);
 
-            twr_usb_cdc_write(volt, strlen(volt));
-            twr_usb_cdc_write(charge, strlen(charge));
+            twr_log_debug("Voltage %.3f", voltage);
+            twr_log_debug("Charge: %d", chargePercentage);
         }
     }
 
     void application_init(void)
     {
-        twr_usb_cdc_init();
+        twr_log_init(TWR_LOG_LEVEL_DEBUG, TWR_LOG_TIMESTAMP_ABS);
+
         twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN, false);
         twr_button_set_event_handler(&button, button_event_handler, NULL);
 
         twr_module_battery_init();
     }
+
 
 **********************
 Voltage on LCD example

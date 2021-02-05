@@ -9,7 +9,7 @@ Soil Moisture sensor measures moisture and temperature. See also :doc:`About Soi
     Visit `documentation for this SDK module <https://sdk.hardwario.com/group__twr__soil__sensor.html>`_
 
 *********************************************
-Reading a single sensor values to the console
+Writing a single sensor values to the console
 *********************************************
 
 This is the simplest example with single connected sensor to the Sensor Module.
@@ -45,18 +45,13 @@ This is the simplest example with single connected sensor to the Sensor Module.
         twr_soil_sensor_set_update_interval(&soil_sensor, 1000);
     }
 
-When you run ``bcf flash --log`` then the firmware is flashed and you immediatelly see the log output:
-
-.. code-block:: console
-
-    112.47 <D> Moisture: 7250 Temperature 34.44
-
 **************************
 Multiple connected sensors
 **************************
 
 When you connect multiple sensors, you need to initialize them with ``twr_soil_sensor_init_multiple``.
-In the event handler you then get the ``device_address`` in the callback parameter, or you can get sensor index by calling ``twr_soil_sensor_get_index_by_device_address()``.
+In the event handler you then get the ``device_address`` in the callback parameter,
+or you can get sensor index by calling ``twr_soil_sensor_get_index_by_device_address()``.
 
 .. code-block:: c
     :linenos:

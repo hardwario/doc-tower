@@ -4,6 +4,7 @@ How to: Accelerometer
 
 Core module comes with three-axis ultra-low-power linear accelerometer connected via :doc:`I2C bus <../../hardware/i-c-address-space>`.
 It is capable of motion detection and a free-fall based on interrupts.
+
 Basically you have **two options how to use the accelerometer - continuous measurement of acceleration or as an alarm**,
 which triggers event handler if defined conditions occurs.
 
@@ -26,14 +27,13 @@ Continuous Measurement
 This can be achieved by setting the update interval in your code with function ``twr_lis2dh12_set_update_interval``,
 which takes pointer to instantiated accelerometer and time before measurements in milliseconds as parameters.
 
-You also have to instantiate a struct ``twr_lis2dh12_result_g_t`` to store results of measurements.
+You also have to instantiate a struct ``twr_lis2dh12_result_g_t`` to store the results of measurements.
 Those values can be retrieved by calling ``twr_lis2dh12_get_result_g`` function.
-In simple example below, we measure exact values of acceleration in g every second and send them over USB.
+In the simple example below, we measure exact values of acceleration in g every second and send them over USB.
 
 .. code-block:: c
 
-    #include <twr.h>
-    #include <twr_usb_cdc.h>
+    #include <application.h>
 
     twr_led_t led;
 
@@ -47,22 +47,21 @@ In simple example below, we measure exact values of acceleration in g every seco
 
         if (event == TWR_LIS2DH12_EVENT_UPDATE) {
             twr_lis2dh12_get_result_g(&a, &a_result);
-            char message[100];
-            sprintf(message, "X: %f\r\nY: %f\r\nZ: %f\r\n", a_result.x_axis, a_result.y_axis, a_result.z_axis);
-            twr_usb_cdc_write(message, strlen(message));
+            twr_log_debug("X: %f\r\nY: %f\r\nZ: %f\r\n", a_result.x_axis, a_result.y_axis, a_result.z_axis);
         } else {
-            twr_usb_cdc_write("error\r\n", strlen("error\r\n"));
+            twr_log_debug("error");
         }
     }
 
     void application_init(void)
     {
+        twr_log_init(TWR_LOG_LEVEL_DEBUG, TWR_LOG_TIMESTAMP_OFF);
+
         twr_lis2dh12_init(&a, TWR_I2C_I2C0, 0x19);
         twr_lis2dh12_set_event_handler(&a, lis2_event_handler, NULL);
         twr_lis2dh12_set_update_interval(&a, 1000);
-
-        twr_usb_cdc_init();
     }
+
 
 *****
 Alarm
@@ -88,7 +87,7 @@ Now try to make a quick move in X-axis and the LED should light up.
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
+    #include <application.h>
 
     twr_led_t led;
 
@@ -98,7 +97,9 @@ Now try to make a quick move in X-axis and the LED should light up.
     // alarm settings
     twr_lis2dh12_alarm_t alarm1;
 
-    void disableLed(void* params)
+    twr_scheduler_task_id_t disable_led_task;
+
+    void disable_led(void* params)
     {
         (void) params;
         twr_led_set_mode(&led, TWR_LED_MODE_OFF);
@@ -111,7 +112,7 @@ Now try to make a quick move in X-axis and the LED should light up.
 
         if (event == TWR_LIS2DH12_EVENT_ALARM) {
             twr_led_set_mode(&led, TWR_LED_MODE_ON);
-            twr_scheduler_register(disableLed, NULL, twr_tick_get() + 1000);
+            twr_scheduler_plan_from_now(disable_led_task, 1000);
         }
     }
 
@@ -127,5 +128,7 @@ Now try to make a quick move in X-axis and the LED should light up.
         twr_lis2dh12_init(&a, TWR_I2C_I2C0, 0x19);
         twr_lis2dh12_set_alarm(&a, &alarm1);
         twr_lis2dh12_set_event_handler(&a, lis2_event_handler, NULL);
+
+        disable_led_task = twr_scheduler_register(disable_led, NULL, TWR_TICK_INFINITY);
     }
 

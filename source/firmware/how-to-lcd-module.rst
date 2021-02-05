@@ -2,8 +2,13 @@
 How to: LCD Module
 ##################
 
+.. important::
+
+    We have an :doc:`advanced and universal GFX library <how-to-gfx-graphics-library>` in SDK now for the displays.
+    It is advised to use that instead of the twr_module_lcd_* functions from this document
+
 Our `LCD Module <https://shop.hardwario.com/lcd-module-bg/>`_ provides simple way to show needed information without connecting to computer or any network.
-It is *ultra-low-power device* - its using should not bring you much trouble when powered with batteries.
+It is *ultra-low-power device* - its usage should not bring you much trouble when powered with batteries.
 
 It may be a bit hard to get used to draw things or show text at the beginning,
 but little bit of training (and reading through this article) should help you.
@@ -185,8 +190,7 @@ This example prints out some text and line and, which is the most important - li
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
-    #include <twr_led.h>
+    #include <application.h>
 
     twr_button_t button;
     twr_led_t lcdLed;
@@ -245,9 +249,7 @@ You can switch then on by pressing the left button and switch them of by pressin
 .. code-block:: c
     :linenos:
 
-    #include <twr.h>
-    #include <twr_led.h>
-    #include <twr_button.h>
+    #include <application.h>
 
     twr_button_t button_left;
     twr_button_t button_right;

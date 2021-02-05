@@ -13,7 +13,10 @@ How It Works
 ************
 
 Thanks to the SDK, setting up and using the PIR module is very simple.
-You have to do only two things: - initialize the PIR module and set its sensitivity - program the event handler (what should happen when PIR senses movement)
+You have to do only two things:
+
+- initialize the PIR module and set its sensitivity
+- program the event handler (what should happen when PIR senses movement)
 
 Initialization is as simple as for other modules from HARDWARIO TOWER ecosystem.
 You have to instantiate variable with type ``twr_module_pir_t`` which represents the PIR module for SDK.
@@ -24,6 +27,8 @@ Example of initialization:
 
 .. code-block:: c
     :linenos:
+
+    #include <application.h>
 
     twr_module_pir_t pir;
 
@@ -46,7 +51,7 @@ SDK offers you four types of sensitivity defined as enum type, so you can use si
 - ``TWR_MODULE_PIR_SENSITIVITY_VERY_HIGH``
 
 It is very hard to predict how exactly the PIR sensor will act in your particular use case,
-it is always a good idea to testy every type of sensitivity to find out which one to use for best results.
+it is always a good idea to test every type of sensitivity to find out which one to use for the best results.
 
 ******************************
 Recognizable PIR Module Events
@@ -63,15 +68,13 @@ Example
 
 This example uses **medium** sensitivity. When movement is detected, message ``Movement``! is sent to your computer.
 
-#include "twr.h"
-#include "twr_usb_cdc.h"
-
-twr_module_pir_t pir;
-twr_button_t button;
-
-
 .. code-block:: c
     :linenos:
+
+    #include <application.h>
+
+    twr_module_pir_t pir;
+    twr_button_t button;
 
     void pir_event_handler(twr_module_pir_t *self, twr_module_pir_event_t event, void *event_param)
     {
@@ -80,13 +83,13 @@ twr_button_t button;
 
         if (event == TWR_MODULE_PIR_EVENT_MOTION)
         {
-            twr_usb_cdc_write("Movement!\r\n", strlen("Movement!\r\n"));
+            twr_log_debug("Movement detected!");
         }
     }
 
     void application_init(void)
     {
-        twr_usb_cdc_init();
+        twr_log_init(TWR_LOG_LEVEL_DEBUG, TWR_LOG_TIMESTAMP_ABS);
 
         twr_module_pir_init(&pir);
         twr_module_pir_set_sensitivity(&pir, TWR_MODULE_PIR_SENSITIVITY_MEDIUM);

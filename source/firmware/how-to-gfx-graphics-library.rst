@@ -5,7 +5,10 @@ How to: GFX Graphics Library
 With more and more types of LCD displays types in HARDWARIO TOWER we have developed universal graphics library which can be used with many types of displays.
 Starting with our LCD Module, SSD1306, ST7735, MAX7219 or even using WS2812B digital LED strip in matrix configuration as a display.
 
-You can still use LCD Module API for drawing text and primitives, but with GFX you can also draw dithered rectangles and more.
+
+.. note::
+
+    You can still use :doc:`LCD Module API <how-to-lcd-module>` for drawing text and primitives, but with GFX you can also draw dithered rectangles and more.
 
 .. tip::
 
@@ -20,7 +23,7 @@ with function pointers for different drawing methods.
     You always need to set the font first before printing any text. Otherwise nothing is displayed.
     This is because only the used fonts are linked to the binary and other are removed by optimizer.
 
-    twr_gfx_set_font(pgfx, &twr_font_ubuntu_13);
+    Example: **twr_gfx_set_font(pgfx, &twr_font_ubuntu_13);**
 
 *************************
 Using GFX with LCD Module
@@ -38,6 +41,8 @@ In other custom drivers you have to create the instance, not just the pointer of
 .. code-block:: c
     :linenos:
 
+    #include <application.h>
+
     // Pointer to GFX instance
     twr_gfx_t *pgfx;
 
@@ -52,6 +57,7 @@ In other custom drivers you have to create the instance, not just the pointer of
         twr_gfx_update(pgfx);
     }
 
+
 ***************************
 Using GFX with SSD1303 OLED
 ***************************
@@ -60,6 +66,8 @@ Using GFX with SSD1303 OLED
 
 .. code-block:: c
     :linenos:
+
+    #include <application.h>
 
     twr_gfx_t gfx;
     twr_ssd1306_t ssd1306;

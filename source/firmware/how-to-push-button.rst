@@ -21,9 +21,7 @@ Requirements
 Integrated Buttons
 ******************
 
-Core module comes with two buttons - Reset and Boot. You can take a look at schematics.
-Reset (R) button is used for resetting the Core module - which is de facto equal to unplugging and replugging the power/USB cable.
-Boot (B) button can be used as you wish.
+Core module comes with one button that can be used when there is no other module on top of the Core module, otherwise it is pretty hard to reach.
 
 This tutorial shows how to work with integrated button, but it can be used for your own buttons or switches.
 
@@ -34,9 +32,9 @@ Recognizable Button Events
 *TWR_BUTTON_EVENT_PRESS* and *TWR_BUTTON_EVENT_RELEASE* are pretty straightforward - the first one stands for pressing the button and the second one for releasing the button.
 
 *TWR_BUTTON_EVENT_CLICK* event is recognized, when button is **pressed and held** for period of time **shorter than defined**
-(can be defined by `twr_button_set_click_timeout <https://sdk.hardwario.com/group__twr__button.html#ga88fd3c911e2feb4f5ea8e1eb511ad8e5>`_)
+(can be defined by ``twr_button_set_click_timeout``)
 
-*TWR_BUTTON_EVENT_HOLD* event is recognized, when button is **pressed and held** for period of time **longer than defined** (can be defined by twr_button_set_hold_timeout)
+*TWR_BUTTON_EVENT_HOLD* event is recognized, when button is **pressed and held** for period of time **longer than defined** (can be defined by ``twr_button_set_hold_timeout``)
 
 *******
 Example
@@ -81,22 +79,37 @@ Everything else is defined in the *button_event_handler* function.
 .. code-block:: c
     :linenos:
 
-        void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
+    #include <application.h>
+
+    twr_led_t led;
+    twr_button_t button;
+
+    void button_event_handler(twr_button_t *self, twr_button_event_t event, void *event_param)
+    {
+        (void) self;
+        (void) event_param;
+
+        if (event == TWR_BUTTON_EVENT_PRESS)
         {
-            (void) self;
-            (void) event_param;
-
-            if (event == TWR_BUTTON_EVENT_PRESS)
-            {
-                twr_led_set_mode(&led, TWR_LED_MODE_OFF);
-            }
-
-            else if (event == TWR_BUTTON_EVENT_HOLD )
-            {
-                twr_led_set_mode(&led,  TWR_LED_MODE_BLINK_FAST);
-            }
+            twr_led_set_mode(&led, TWR_LED_MODE_OFF);
+        } else if (event == TWR_BUTTON_EVENT_HOLD ) {
+            twr_led_set_mode(&led,  TWR_LED_MODE_BLINK_FAST);
         }
+    }
 
+    void application_init(void)
+    {
+        // Initialize LED
+        twr_led_init(&led, TWR_GPIO_LED, false, false);
+        twr_led_set_mode(&led, TWR_LED_MODE_OFF);
+
+        // Initialize button
+        twr_button_init(&button, TWR_GPIO_BUTTON, TWR_GPIO_PULL_DOWN,0);
+        twr_button_set_event_handler(&button, button_event_handler, NULL);
+
+        // Set HOLD time
+        twr_button_set_hold_time(&button, 1500);
+    }
 
 Full *ready-to-flash* code for this example can be found on `Github <https://github.com/hardwario/twr-sdk/tree/master/_examples/button>`_.
 

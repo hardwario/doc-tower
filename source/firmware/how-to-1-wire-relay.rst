@@ -26,7 +26,7 @@ SDK
 There is very simple workflow for controlling the relay:
 
 - you have to instantiate a variable representing the relay ``twr_onewire_relay_t relay``;
-- relay connection has to be initiated in *application_init()* function by calling ``twr_onewire_relay_init(&relay, TWR_GPIO_P4, 0x00)``;
+- relay connection has to be initiated in ``application_init()`` function by calling ``twr_onewire_relay_init(&relay, TWR_GPIO_P4, 0x00)``;
     - the second parameter represents ports **A** and **B** on the Sensor module. Use _P4 for A and _P5 for B.
     - the third parameter represents number of connected device represented as *uint64_t* value
 - now you only have to use the ``twr_onewire_relay_set_state()`` function to set desired state of every relay

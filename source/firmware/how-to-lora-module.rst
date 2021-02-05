@@ -28,5 +28,5 @@ Some parts of the code is commented out for different configuration like OTAA ke
 
 Also there is a example how to read the modem parameters when the device is ready in the ``TWR_CMWX1ZZABZ_EVENT_READY`` event handler.
 
-You can also receive data in **Class A** or **Class C** mode which you can set by calling **twr_cmwx1zzabz_set_class**.
-The received data are handled in the **TWR_CMWX1ZZABZ_EVENT_MESSAGE_RECEIVED** event handler.
+You can also receive data in **Class A** or **Class C** mode which you can set by calling ``twr_cmwx1zzabz_set_class``.
+The received data are handled in the ``TWR_CMWX1ZZABZ_EVENT_MESSAGE_RECEIVED`` event handler.
