@@ -48,10 +48,10 @@ Setup on Original Raspbian
 .. caution::
 
     Apply the following procedure only if you are using Raspberry Pi, on which the original Raspbian distribution is running.
-    This is an alternative way of installing ``bc-raspbian`` in [](/doc/tutorials/raspberry-pi-installation/).
+    This is an alternative way of installing ``twr-raspbian`` in that you can find in :doc:`another chapter <raspberry-pi-installation>`.
 
-Step 1: Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document :doc:`Raspberry Pi Login <raspberry-pi-login>`
-*******************************************************************************************************************************************
+Step 1: Log in to the Raspberry Pi using SSH. Detailed procedure provided in the document :doc:`Raspberry Pi Login <raspberry-pi-login>`
+****************************************************************************************************************************************
 
 Step 2: Upgrade all packages
 ****************************

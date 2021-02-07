@@ -14,7 +14,7 @@ This document describes how to log in to Raspberry Pi using a remote terminal vi
 
     The SSH stands for **"Secure Shell"**. In a simple way, this can be seen as a secure connection to the Raspberry Pi command line over the network.
 
-If you do not already have Raspberry Pi installed, first go to the document Raspberry Pi Installation.
+If you do not already have Raspberry Pi installed, first go to the :doc:`Raspberry Pi Installation <raspberry-pi-installation>`.
 
 You can log in two ways:
 
@@ -72,7 +72,7 @@ Linux and macOS
 
 - Open Terminal application and enter following command:
     - ``ssh pi@hub.local``
-    - Or with IP adress instead of DNS name ``ssh pi@IP_ADRESS`` instead of IP_ADRESS fill ip adress from finder in :ref:`Introduction chapter <introduction-chapter>`
+    - Or with IP adress instead of DNS name ``ssh pi@IP_ADRESS`` instead of IP_ADRESS fill ip adress from finder in :ref:`Introduction chapter <ip-adress-login>`
 - Log in with following login:
     - username: ``pi``
     - password: ``raspberry``

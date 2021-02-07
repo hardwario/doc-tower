@@ -6,8 +6,11 @@ Debugging
 Starting simple
 ***************
 
-The easiest way to debug and also the way how all the things started was just print out what ever you consider important to know.
-Wait the embedded system does not have any screen or printer connected. Well you are right, but there used to be a serial port.
+The easiest way to debug and also the way how all the things started was just print out whatever you consider important to know.
+
+Wait the embedded system does not have any screen or printer connected.
+
+Well you are right, but there used to be a serial port.
 And if it is hopefully free to use and can be connected to real PC then you have your first **poor man's debugger**.
 
 *****************
@@ -33,7 +36,7 @@ You need to add just two function calls into your application:
 
     Have a look into `HARDWARIO TOWER SDK twr_log <https://sdk.hardwario.com/group__twr__log.html>`_ for more detailed info.
 
-Example of modified ``app/application.c`` from default project code after ``bcf create``:
+Example of modified ``src/application.c`` from default project ``twr-skeleton`` `available at github <https://github.com/hardwario/twr-skeleton>`_:
 
 .. code-block:: c
     :linenos:
@@ -92,107 +95,68 @@ Example of output:
 
 For mapping number to event type have a look into `HARDWARIO SDK documentation for twr_button <https://sdk.hardwario.com/twr__button_8h_source.html#l00013>`_
 
-**********************
-Read logs with ``bcf``
-**********************
+*************************
+Read logs with PlatformIO
+*************************
 
-Read log with connected device and following command:
+If you want to easily read the logs from the device, you dont have to install any additional program.
+You should read the :doc:`Firmware quick start <firmware-quick-start>` to know how to install PlatformIO.
 
-.. code-block:: console
+After you installed the PlatformIO you can use it for reading the logs from the device.
 
-    bcf log --device [device]
+There are two ways to do it:
 
-[device] port can be founded by command:
+* PlatformIO IDE
 
-.. code-block:: console
+    .. thumbnail:: ../_static/firmware/debugging/platformioIDE-serial-monitor.png
+* PlatformIO Core CLI
 
-    bcf devices
+    * ``pio device monitor`` in your favourite terminal if you have Platformio Core (CLI) installed
 
-Example of outuput:
+.. thumbnail:: ../_static/firmware/debugging/output-example.png
 
-.. code-block:: console
+.. caution::
 
-    /dev/ttyUSB0
+    The serial monitor button does not **build** nor **flash** the firmware into the device so keep that in mind.
 
-***********************************
-Flash and immediately start logging
-***********************************
-
-You can force ``bcf`` tool to start logging right after the code is uploaded.
-This way you do not miss a single debug output and you do not need any other application or terminal.
-
-.. code-block:: console
-
-    bcf flash firmware.bin --device [device] --log
-
-************
-Colored logs
-************
-
-You can colorized your log output to highlight errors or warnings as you can see below:
-
-
-As you did debugging in previous chapter by command
-
-.. code-block:: console
-
-    twr_log_info("Log");
-
-You can colorized logs to 4 different colors as following commands down below. All colors you can see on screenshot in the beginning of this chapter.
-
-**Debug (purple)**
-
-.. code-block:: console
-
-    twr_log_debug("Log");
-
-**Info (green)**
-
-.. code-block:: console
-
-    twr_log_info("Log");
-
-**Warning (orange)**
-
-.. code-block:: console
-
-    twr_log_warning("Log");
-
-**Error (red)**
-
-.. code-block:: console
-
-    twr_log_error("Log");
-
-.. _rev1-debug:
-
-*****************
-Core Module Rev 1
-*****************
-
-.. note::
-    You can skip to the next chapter if you don't have Core Module Rev 1.
-
-Core Module revision 1 does not have FTDI serial to USB converter.
-You need to connect your own converter to the UART2 to the pins TX2 and RXD2.
-
-For example USB UART from SparkFun:
-
-- `FTDI Basic Breakout - 3.3V <https://www.sparkfun.com/products/9873>`_
-- `Jumper Wires <https://www.sparkfun.com/products/11709>`__
-
-Or another example USB UART from Mouser:
-
-- `FTDI cable TTL-232R-3V3 <https://eu.mouser.com/search/ProductDetail.aspx?qs=Xb8IjHhkxj627GFcejHp0Q%3d%3d>`_
-- `Jumper Wires <https://eu.mouser.com/search/ProductDetail.aspx?R=0virtualkey0virtualkeyMIKROE-513>`__
-
-Connect USB UART and Core Module into one PC's USB host sockets and interconnect Core Module with USB UART by single wire
-USB UART RX (YELLOW wire on cable) and Core Module TXD2 (header pin 22) -
-have a look at `Core Module Header drawing <https://developers.hardwario.com/hardware/header-pinout>`_.
-
-.. warning::
-
-    Beware of groud loop and ground voltage difference in case you do not use same PC to power Core Module and to connect USB UART.
+.. ************
+.. Colored logs
+.. ************
+..
+.. You can colorized your log output to highlight errors or warnings as you can see below:
+..
+..
+.. As you did debugging in previous chapter by command
+..
+.. .. code-block:: console
+..
+..     twr_log_info("Log");
+..
+.. You can colorized logs to 4 different colors as following commands down below. All colors you can see on screenshot in the beginning of this chapter.
+..
+.. **Debug (purple)**
+..
+.. .. code-block:: console
+..
+..     twr_log_debug("Log");
+..
+.. **Info (green)**
+..
+.. .. code-block:: console
+..
+..     twr_log_info("Log");
+..
+.. **Warning (orange)**
+..
+.. .. code-block:: console
+..
+..     twr_log_warning("Log");
+..
+.. **Error (red)**
+..
+.. .. code-block:: console
+..
+..     twr_log_error("Log");
 
 ************
 Getting more
@@ -211,7 +175,6 @@ But not to overwhelm you with unnecessary details it gives you exactly that key 
 Last but not least point to mention, that even JTAG has undergone evolution and ARM architecture has adopted the
 JTAG in "less wires* option named Single Wire Debug (aka `SWD <https://www.pls-mc.com/products/serial-wire-debug-swd-support/>`_)
 which available in ARM based architectures including ARM Cortex M4 ~ STM32L series of MCUs.
-
 
 From the developer's point of view you should have working USB adapter that is recognized by your debugger
 (PC software like OpenOCD/Gdb/DDD or `Segger's Ozone <https://www.segger.com/products/development-tools/ozone-j-link-debugger/>`_).

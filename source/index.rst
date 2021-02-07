@@ -84,7 +84,6 @@ Where to Begin
 
    hardware/basic-principles
    hardware/header-pinout
-   hardware/core-module-r1-and-r2-comparison
    hardware/power-management
    hardware/i-c-address-space
    hardware/about-1-wire-module
@@ -165,7 +164,6 @@ Where to Begin
    firmware/how-to-spi-bus
    firmware/how-to-temperature-sensor
    firmware/how-to-uart-interface
-   firmware/how-to-usb-console
 
 .. toctree::
    :caption: Tools
@@ -175,3 +173,12 @@ Where to Begin
    tools/hardwario-firmware-flashing-tool
    tools/hardwario-gateway
    tools/hardwario-host-tool
+
+.. toctree::
+   :caption: Troubleshooting (Legacy)
+   :maxdepth: 2
+   :hidden:
+
+   troubleshooting/how-to-usb-console
+   troubleshooting/core-moule-r1-debugging
+   troubleshooting/core-module-r1-and-r2-comparison

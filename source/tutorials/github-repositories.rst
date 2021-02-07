@@ -95,7 +95,9 @@ Repositories with the prefix `bch <https://github.com/hardwario?q=bch>`_ contain
 +===================================================================================+========================================================================+
 | `bch‑firmware‑tool <https://github.com/hardwario/bch-firmware-tool>`_             | CLI tool for easy fimware operations - creation, flashing, etc.        |
 +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+
-| `bch‑gateway <https://github.com/hardwario/bch-gateway>`_                         | Gateway as a background service connecting USB gateway device and MQTT |
+| `bch‑gateway <https://github.com/hardwario/bch-gateway>`_                         | Gateway as a background service connecting                             |
+|                                                                                   |                                                                        |
+|                                                                                   | USB gateway device and MQTT                                            |
 +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+
 | `bch‑toolchain‑windows <https://github.com/hardwario/bch-toolchain-windows>`_     | Toolchain setup for the Windows platform                               |
 +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+

@@ -51,7 +51,8 @@ This is the file structure of your ``hello-world`` project. It is a Git-initiali
 
 
 This project can be imediately compiled and flashed to the **Core Module**, **Radio Dongle** or **Cloony**.
-The place where you should edit your code is in the ``src`` directory or if you need to edit something in the header file you can do it in the ``include`` directory
+The place where you should edit your code is in the ``src`` directory or if you need to edit something in the header file you can do it in the ``include`` directory.
+
 Usually you will not need to modify other files than those in there.
 
 Therefore your first step most likely will be to open the ``src/application.c``
@@ -72,9 +73,6 @@ Normally, the development cycle is the repetition of the following 4 steps:
 - Upload the code into the **Core Module** or **Radio Dongle**.
 - Test your firmware
 
-.. caution::
+.. tip::
 
-    | **Flashing Core Module R1 & R2**
-    | For differences of flashing older **Core Module 1** and newer **Core Module 2** please read :doc:`Core Module R1 and R2 comparison <../hardware/core-module-r1-and-r2-comparison>`
-
-If you need to debug your application, please follow the document :doc:`Debugging <debugging>`.
+    If you need to debug your application, please follow the document :doc:`Debugging <debugging>`.

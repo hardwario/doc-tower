@@ -125,4 +125,4 @@ Cannot find the Radio Dongle or Core Module in the device list
 
 - On Windows 7 and macOS please install the `FTDI VCP drivers <https://www.ftdichip.com/Drivers/VCP.htm>`_
 - On Ubuntu you need to be in ``dialout`` user group. Please use command ``sudo usermod -a -G dialout $USER`` and restart computer
-- HARDWARIO Playground cannot flash older Core Module Revision 1. Please use the ``bcf`` tool. :doc:`See version comparison <../hardware/core-module-r1-and-r2-comparison>`
+- HARDWARIO Playground cannot flash older Core Module Revision 1. Please use the ``bcf`` tool. :doc:`See version comparison <../troubleshooting/core-module-r1-and-r2-comparison>`

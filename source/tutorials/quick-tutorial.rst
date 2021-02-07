@@ -9,7 +9,7 @@ Basics
 .. tip::
 
     You can follow this tutorial even without Raspberry Pi. You just have to install :doc:`HARDWARIO Playground <../basics/hardwario-playground>` on your desktop.
-    The Raspberry Pi approach is the easiest because you can download bc-rasbian image with pre-installed tools.
+    The Raspberry Pi approach is the easiest because you can download twr-rasbian image with pre-installed tools.
 
 This document is a practical guide of using the **HARDWARIO TOWER - Industrial IoT Kit.**
 It will guide you how **Raspberry Pi** can read the temperature from **Core Module**, control the LED, measure the relative air humidity from **Humidity Tag**,
@@ -23,7 +23,7 @@ This application allows intuitive graphical automation flow editing directly in 
 
     Do you have **Radio Dongle** and **wireless kit**? If you would like to start creating you wireless network,
     you can later jump directly to the :ref:`Creation of the wireless network chapter <wireles-network>` when you get the basic knowledge of **Gateway**,
-    ``bcf`` **firmware flashing tool** and **Node-RED** in the chapters below.
+    **PlatformIO** and **Node-RED** in the chapters below.
 
 First we will demonstrate basic functionality without a wireless network. We use just a single **Core Module** connected to the **Raspberry Pi** by a USB cable.
 
@@ -121,7 +121,7 @@ Then by typing ``bcf list`` you get the list of pre-compiled firmwares.
 
     **Flashing Core Module R1 & R2**
 
-    For differences of flashing older **Core Module 1** and newer **Core Module 2** please read :doc:`Core Module R1 and R2 comparison <../hardware/core-module-r1-and-r2-comparison>`
+    For differences of flashing older **Core Module 1** and newer **Core Module 2** please read :doc:`Core Module R1 and R2 comparison <../troubleshooting/core-module-r1-and-r2-comparison>`
 
 .. code-block:: console
 
@@ -425,7 +425,7 @@ After start-up all the connected devices are automatically detected and their va
 
     **Flashing Core Module R1 & R2**
 
-    For differences of flashing older **Core Module 1** and newer **Core Module 2** please read :doc:`Core Module R1 and R2 comparison <../hardware/core-module-r1-and-r2-comparison>`
+    For differences of flashing older **Core Module 1** and newer **Core Module 2** please read :doc:`Core Module R1 and R2 comparison <../troubleshootingy/core-module-r1-and-r2-comparison>`
 
 Connect the **Core Module** to the **Raspberry Pi**. Upload the ``generic-node`` with ``firmware-battery-mini`` option.
 

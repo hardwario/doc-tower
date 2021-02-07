@@ -30,7 +30,7 @@ You can install ``Python``, HARDWARIO gateway ``bcg`` and ``mosquitto`` very eas
 
 .. tip::
 
-    **Virtalization which is used in this tutorial is not necessary.**
+    **Virtualization which is used in this tutorial is not necessary.**
     You can install MQTT broker, Python 3 and bcg gateway directly on Linux which already runs on your NAS of any brand.
     The virtualization step is optional and it was choosed because my NAS supported it and has plenty of resources.
     On Synology just SSH to the NAS IP and use your name and password which you use to login to the web management.
@@ -76,8 +76,8 @@ Step 3: Open Virtual Machine Manager and create a new virtual machine. The param
 Step 4: Confirm virtual machine creation, turn on the virtual machine and press Connectso noVNC virtual console is opened in your browser, follow the installation steps to install the Ubuntu
 **********************************************************************************************************************************************************************************************
 
-Step 5: If you did not already inserted Radio Dongle, do it now. Open virtual machine configuration on the Other tab and in the USB device list select Future Technology Devices International
-**********************************************************************************************************************************************************************************************
+Step 5: If you did not already insert Radio Dongle, do it now. Open virtual machine configuration on the Other tab and in the USB device list select Future Technology Devices International
+********************************************************************************************************************************************************************************************
 
 .. caution::
 

@@ -41,7 +41,7 @@ About Core Module
 
     **Flashing Core Module R1 & R2**
     For differences of flashing older **Core Module 1** and newer **Core Module 2**
-    please read :doc:`Core Module R1 and R2 comparison <../hardware/core-module-r1-and-r2-comparison>`
+    please read :doc:`Core Module R1 and R2 comparison <../troubleshooting/core-module-r1-and-r2-comparison>`
 
 .. thumbnail:: ../_static/hardware/about-core/core-module-2-pinout.png
    :width: 60%
