@@ -128,6 +128,7 @@ Where to Begin
    :hidden:
 
    firmware/basic-overview
+   firmware/platformio-installation
    firmware/firmware-quick-start
    firmware/blank-start
    firmware/debugging

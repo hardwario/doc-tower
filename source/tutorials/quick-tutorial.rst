@@ -425,7 +425,7 @@ After start-up all the connected devices are automatically detected and their va
 
     **Flashing Core Module R1 & R2**
 
-    For differences of flashing older **Core Module 1** and newer **Core Module 2** please read :doc:`Core Module R1 and R2 comparison <../troubleshootingy/core-module-r1-and-r2-comparison>`
+    For differences of flashing older **Core Module 1** and newer **Core Module 2** please read :doc:`Core Module R1 and R2 comparison <../troubleshooting/core-module-r1-and-r2-comparison>`
 
 Connect the **Core Module** to the **Raspberry Pi**. Upload the ``generic-node`` with ``firmware-battery-mini`` option.
 

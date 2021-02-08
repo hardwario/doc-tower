@@ -7,22 +7,17 @@ explains the structure of the created project and the typical development cycle.
 
 .. warning::
 
-    This document assumes that you have necessary tools installed according to the document :doc:`Firmware quick start <firmware-quick-start>`.
+    This document assumes that you have necessary tools installed according to the chapter :doc:`PlatformIO installation <platformio-installation>`.
 
 ***********
 Hello World
 ***********
 
-If you did follow the :doc:`Firmware quick start <firmware-quick-start>` you should have twr-skeleton cloned from the github.
-Otherwise you should clone it from github.
+If you did follow the :doc:`Firmware quick start <firmware-quick-start>` you should have **twr-skeleton** cloned from the github.
 
-.. code-block:: console
+This repository serves as a blank project with some of our structures.
 
-    git clone --recursive https://github.com/hardwario/twr-skeleton.git
-
-.. note::
-
-    Now you have your example firmware project ready to be built.
+It is a good idea to clone this repository every time you are starting a new project. It has a correct file structure and all files needed to start from scratch.
 
 *****************
 Project Structure
@@ -50,7 +45,8 @@ This is the file structure of your ``hello-world`` project. It is a Git-initiali
     └── README.md
 
 
-This project can be imediately compiled and flashed to the **Core Module**, **Radio Dongle** or **Cloony**.
+This project can be immediately compiled and flashed to the **Core Module**, **Radio Dongle** or **Cloony**.
+
 The place where you should edit your code is in the ``src`` directory or if you need to edit something in the header file you can do it in the ``include`` directory.
 
 Usually you will not need to modify other files than those in there.
@@ -58,9 +54,14 @@ Usually you will not need to modify other files than those in there.
 Therefore your first step most likely will be to open the ``src/application.c``
 file in your favorite editor - for instance **Atom, Visual Studio Code, Sublime Text, etc.**
 
-.. tip::
+.. note::
 
     The Visual Studio Code is advised because of the PlatformIO extension that is available for it, but you can always use the CLI version.
+
+.. tip::
+
+    If you want to see some firmware examples, you can visit `our github repository <https://github.com/hardwario/twr-sdk/tree/master/_examples>`_
+    or some of the **How to:** chapters in the Firmware group.
 
 *****************
 Development Cycle
@@ -73,6 +74,7 @@ Normally, the development cycle is the repetition of the following 4 steps:
 - Upload the code into the **Core Module** or **Radio Dongle**.
 - Test your firmware
 
-.. tip::
+    .. tip::
 
-    If you need to debug your application, please follow the document :doc:`Debugging <debugging>`.
+        If you need to debug your application, please follow the chapter :doc:`Debugging <debugging>`.
+
