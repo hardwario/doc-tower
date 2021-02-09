@@ -14,6 +14,9 @@ This guide will help you to install and configure these services:
 
 - HARDWARIO Gateway ``bcg``
 - HARDWARIO Firmware Tool ``bcf``
+
+    - If you want to develop firmware please visit the :doc:`Firmware section <../firmware/basic-overview>`.
+
 - HARDWARIO Host Tool ``bch``
 - Mosquitto MQTT broker
 - Node-RED

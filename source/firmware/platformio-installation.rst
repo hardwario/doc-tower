@@ -1,5 +1,5 @@
 #######################
-PlatformIO installation
+PlatformIO Installation
 #######################
 
 If you want to create your custom firmware or update some existing one to your needs you will need to install PlatformIO.
@@ -40,6 +40,8 @@ HARDWARIO TOWER with PlatformIO IDE (GUI installation)
 .. tip::
 
     After these few steps you can follow the :doc:`next chapter <firmware-quick-start>` and start creating your firmware.
+
+---------------------------------------------------------------------------------------------------
 
 ******************************************
 HARDWARIO TOWER with PlatformIO Core (CLI)

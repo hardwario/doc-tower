@@ -1,5 +1,5 @@
 ################################
-Core Module R1 and R2 comparison
+Core Module R1 and R2 Comparison
 ################################
 
 We have released the new Core Module 2. Everything is the same, only the flash process is now easier and faster.
@@ -71,67 +71,72 @@ Example which flashes wireless-motion-detector firmware from `Radio Motion Detec
 Flashing Core Module R2
 ***********************
 
-Step 1: Flash firmware with following command
-*********************************************
+To flash this version of Core module we are using PlatformÏO or HARDWARIO Playground.
 
-.. code-block:: console
+- :doc:`HARDWARIO Playground <../basics/hardwario-playground>`.
+- :doc:`PlatformIO installation <../firmware/platformio-installation>`.
 
-    bcf flash [firmware]:[version]
-
-Example which flashes wireless-motion-detector firmware from `Radio Motion Detector project <https://www.hackster.io/filip-hanel/smart-photo-trap-with-climate-data-in-terrarium-7e4e8f>`_:
-
-.. code-block:: console
-
-    bcf flash hardwario/bcf-radio-motion-detector:latest
-
-Step 2: Print twr_log debug messages over UART2 serial to your computer with bcf
-********************************************************************************
-
-.. code-block:: console
-
-    bcf log
-
-Flash firmware and immediatelly start logging after upload
-
-.. code-block:: console
-
-    bcf flash [firmware]:[version] --log
-
-*************************
-List of connected devices
-*************************
-
-You can also add the ``--device`` parameter to the ``bcf`` so you don't have to choose the serial port every time.
-
-Step 1: Run following command to see connected devices
-******************************************************
-
-.. code-block:: console
-
-    bcf devices
-
-You should see as output something as following.
-On Windows instead of ``/dev/ttyS4`` will be for example ``COM13``. Following device list is same on macOS and Linux.
-
-``/dev/ttyS4``
-
-``/dev/ttyACM2``
-
-Step 2: Connect the Micro USB cable to the Core Module and your computer
-************************************************************************
-
-Again run ``bcf devices`` command and you should see one added.
-
-``/dev/ttyS4``
-
-``/dev/ttyUSB0``
-
-``/dev/ttyACM2``
-
-Newly connected module is the ``/dev/ttyUSB0``
-
-Now you can force to use that serial port during flashing:
-
-.. code-block:: console
-
-    bcf flash --device /dev/ttyUSB0 hardwario/bcf-radio-motion-detector:latest
+.. Step 1: Flash firmware with following command
+.. *********************************************
+..
+.. .. code-block:: console
+..
+..     bcf flash [firmware]:[version]
+..
+.. Example which flashes wireless-motion-detector firmware from `Radio Motion Detector project <https://www.hackster.io/filip-hanel/smart-photo-trap-with-climate-data-in-terrarium-7e4e8f>`_:
+..
+.. .. code-block:: console
+..
+..     bcf flash hardwario/bcf-radio-motion-detector:latest
+..
+.. Step 2: Print twr_log debug messages over UART2 serial to your computer with bcf
+.. ********************************************************************************
+..
+.. .. code-block:: console
+..
+..     bcf log
+..
+.. Flash firmware and immediatelly start logging after upload
+..
+.. .. code-block:: console
+..
+..     bcf flash [firmware]:[version] --log
+..
+.. *************************
+.. List of connected devices
+.. *************************
+..
+.. You can also add the ``--device`` parameter to the ``bcf`` so you don't have to choose the serial port every time.
+..
+.. Step 1: Run following command to see connected devices
+.. ******************************************************
+..
+.. .. code-block:: console
+..
+..     bcf devices
+..
+.. You should see as output something as following.
+.. On Windows instead of ``/dev/ttyS4`` will be for example ``COM13``. Following device list is same on macOS and Linux.
+..
+.. ``/dev/ttyS4``
+..
+.. ``/dev/ttyACM2``
+..
+.. Step 2: Connect the Micro USB cable to the Core Module and your computer
+.. ************************************************************************
+..
+.. Again run ``bcf devices`` command and you should see one added.
+..
+.. ``/dev/ttyS4``
+..
+.. ``/dev/ttyUSB0``
+..
+.. ``/dev/ttyACM2``
+..
+.. Newly connected module is the ``/dev/ttyUSB0``
+..
+.. Now you can force to use that serial port during flashing:
+..
+.. .. code-block:: console
+..
+..     bcf flash --device /dev/ttyUSB0 hardwario/bcf-radio-motion-detector:latest

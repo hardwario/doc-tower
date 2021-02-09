@@ -1,8 +1,9 @@
 ***************************
-Core Module Rev 1 debugging
+Core Module Rev 1 Debugging
 ***************************
 
 .. note::
+
     You can skip to the next chapter if you don't have Core Module Rev 1.
 
 Core Module revision 1 does not have FTDI serial to USB converter.

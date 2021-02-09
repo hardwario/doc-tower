@@ -21,6 +21,7 @@ This document will guide you through installing Raspberry Pi. The tutorial is te
 
 In the following procedure, we will install the **HARDWARIO Raspbian** Linux distribution.
 Raspbian is the official and most widely distributed Linux distribution for Raspberry Pi.
+
 HARDWARIO maintains a modified version of this distribution that facilitates some steps and includes pre-installed packages that are key to **HARDWARIO**.
 
 .. important::
@@ -58,10 +59,10 @@ Flash
 #. Insert microSD card to reader in you computer
 #. Open balenaEtcher you've downloaded
 #. Select HARDWARIO Raspian which you also downloaded
-#. Select insered SD card
+#. Select inserted SD card
 #. Click flash
-#. After flash insert microSD card to Raspberry Pi, **you have to connect Radio Dongle before applying power**.
-   Then connect microUSB power adapter and Ethernet cable or use Wifi setup in next chapter
+#. | After flash insert microSD card to Raspberry Pi, **you have to connect Radio Dongle before applying power**.
+   | Then connect microUSB power adapter and Ethernet cable or use Wifi setup in next chapter
 
 *********************
 WiFi Setup (optional)

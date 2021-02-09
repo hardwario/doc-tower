@@ -18,7 +18,7 @@ Core Module Rev 2
 *****************
 
 .. note::
-    If you have older version of Core Module you can visit :ref:`another chapter to see how to connect it with UART <rev1-debug>`.
+    If you have older version of Core Module you can visit :doc:`another chapter to see how to connect it with UART <../troubleshooting/core-module-r1-debugging>`.
 
 Core Module Rev 2 have integrated FTDI chip connected to the UART2.
 You do not need to use separate serial converter, just connect USB cable to your computer.
@@ -36,7 +36,7 @@ You need to add just two function calls into your application:
 
     Have a look into `HARDWARIO TOWER SDK twr_log <https://sdk.hardwario.com/group__twr__log.html>`_ for more detailed info.
 
-Example of modified ``src/application.c`` from default project ``twr-skeleton`` `available at github <https://github.com/hardwario/twr-skeleton>`_:
+Example of modified ``src/application.c`` from default project ``twr-skeleton`` `available at GitHub <https://github.com/hardwario/twr-skeleton>`_:
 
 .. code-block:: c
     :linenos:
@@ -100,7 +100,7 @@ Read logs with PlatformIO
 *************************
 
 If you want to easily read the logs from the device, you dont have to install any additional program.
-You should read the :doc:`Firmware quick start <firmware-quick-start>` to know how to install PlatformIO.
+You should read the :doc:`PlatformIO installation <platformio-installation>` to know how to install PlatformIO.
 
 After you installed the PlatformIO you can use it for reading the logs from the device.
 

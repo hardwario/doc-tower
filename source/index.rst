@@ -14,7 +14,7 @@ Where to Begin
 - :doc:`Quick Start Guide </basics/quick-start-guide>`
 - :doc:`HARDWARIO Playground </basics/hardwario-playground>`
 - :doc:`HARDWARIO Gateway on Raspberry Pi </tutorials/raspberry-pi-installation>`
-- :doc:`Firmware Quick Start </firmware/firmware-quick-start>`
+- :doc:`Firmware Basic Overview </firmware/basic-overview>`
 
 .. tip::
 
@@ -132,8 +132,8 @@ Where to Begin
    firmware/firmware-quick-start
    firmware/blank-start
    firmware/debugging
+   firmware/advanced-firmware-information
    firmware/low-power-measurements-and-radio
-   firmware/sdk-framework
    firmware/common-problems
    firmware/timing-and-scheduler
    firmware/how-to-1-wire-relay
@@ -181,5 +181,5 @@ Where to Begin
    :hidden:
 
    troubleshooting/how-to-usb-console
-   troubleshooting/core-moule-r1-debugging
+   troubleshooting/core-module-r1-debugging
    troubleshooting/core-module-r1-and-r2-comparison

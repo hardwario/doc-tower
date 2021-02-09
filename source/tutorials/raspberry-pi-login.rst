@@ -16,8 +16,6 @@ This document describes how to log in to Raspberry Pi using a remote terminal vi
 
 If you do not already have Raspberry Pi installed, first go to the :doc:`Raspberry Pi Installation <raspberry-pi-installation>`.
 
-You can log in two ways:
-
 ***********
 Log in via:
 ***********
@@ -28,7 +26,6 @@ IP adress
 *********
 
 In this case, you need to find out what address the DHCP server assigned to your Raspberry Pi.
-
 
 .. tip::
 
