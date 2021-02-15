@@ -1,10 +1,10 @@
 ***************************
-Core Module Rev 1 Debugging
+Core Module R1 Debugging
 ***************************
 
 .. note::
 
-    You can skip to the next chapter if you don't have Core Module Rev 1.
+    You can skip to the next chapter if you don't have Core Module R1.
 
 Core Module revision 1 does not have FTDI serial to USB converter.
 You need to connect your own converter to the UART2 to the pins TX2 and RXD2.
