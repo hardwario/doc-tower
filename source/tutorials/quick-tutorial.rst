@@ -109,9 +109,9 @@ Navigate to Firmware, connect Core Module via USB to computer and choose firmwar
 Command-line tool
 *****************
 
-.. tip::
-
-    Detailed instructions can be found in the document :doc:`Toolchain Guide <../firmware/toolchain-guide>`.
+.. .. tip::
+..
+..     Detailed instructions can be found in the document :doc:`Toolchain Guide <../firmware/toolchain-guide>`.
 
 For quick start we've create a Python command-line utility **bcf**, which automatically downloads latest released firmwares from **GitHub** and will flash the modules.
 On the Raspberry Pi you need first to update the list of releases by typing ``bcf update``.
@@ -441,7 +441,7 @@ Moreover it is possible to display custom texts on the display with various size
 
 `List of bcf-generic-node released firmwares <https://github.com/hardwario/bcf-generic-node/releases>`_
 
-:doc:`Detailed flashing instructions <../firmware/toolchain-guide>`
+.. :doc:`Detailed flashing instructions <../firmware/toolchain-guide>`
 
 ***************
 Pairing process
