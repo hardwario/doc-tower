@@ -6,6 +6,15 @@ The documentation is hosted at [**Read The Docs**](https://readthedocs.org/) and
 
 Once built, the site is available at: **https://tower.hardwario.com/**
 
+---
+**WARNING**
+
+You should always do ``./docker.sh serve`` before pushing to the master branch and check for any warnings and errors.
+
+Even if the build will succeed it will not show in most major internet browsers.
+
+---
+
 
 ## Setup
 
