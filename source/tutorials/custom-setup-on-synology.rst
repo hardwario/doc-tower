@@ -1,13 +1,12 @@
-########################
-Custom Setup on Synology
-########################
+############
+Synology NAS
+############
 
 You can have HARDWARIO Gateway running on Raspberry Pi, but if you have any kind of NAS already running 24/7 in your network,
 why not take advantage of it? You will save a tiny bit on electricity bill and also get more durable system.
 
 .. thumbnail:: ../_static/tutorials/custom-setup-on-synology/synology.jpg
    :width: 100%
-
 
 If you need more permanent solution than **HARDWARIO Playground** you can install all the services yourself in your system.
 This guide will help you to install and configure these services:

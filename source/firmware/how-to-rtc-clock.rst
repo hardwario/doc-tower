@@ -2,6 +2,10 @@
 How to: RTC clock
 #################
 
+.. caution::
+
+    If you are using the sdk that still uses ``bc_*`` prefixes for the function please visit :doc:`legacy document <../troubleshooting/how-to-rtc-clock>`
+
 Real Time Clock (RTC) is a hardware peripheral in STM32 microcontroller. It is used in scheduler for task planning and also can measure real time.
 You can save date and time into its hardware registers and the clock is running even if you reflash or reset the processor.
 
@@ -18,25 +22,25 @@ Core Module has 32 768 Hz crystal which is connected to the RTC peripheral.
 RTC Structure
 *************
 
-RTC structure contains year, month, date, day of the week. For time there are hours, minutes, seconds.
+RTC library uses standard `C language structure for time <https://www.tutorialspoint.com/c_standard_library/time_h.htm>`_.
+
+It contains seconds, minutes, hours, day, month, year.
 If you read the RTC then the ``timestamp`` is fileld with proper UNIX timestamp.
 
 .. code-block:: c
     :linenos:
 
-    //! @brief RTC date and time structure
-    typedef struct
-    {
-        uint8_t seconds;     //!< Seconds parameter, from 00 to 59
-        uint16_t subseconds; //!< Subsecond downcounter. When it reaches zero, it's reload value is the same as @ref RTC_SYNC_PREDIV
-        uint8_t minutes;     //!< Minutes parameter, from 00 to 59
-        uint8_t hours;       //!< Hours parameter, 24Hour mode, 00 to 23
-        uint8_t week_day;    //!< Day in a week, from 1 to 7
-        uint8_t date;        //!< Date in a month, 1 to 31
-        uint8_t month;       //!< Month in a year, 1 to 12
-        uint8_t year;        //!< Year parameter, 00 to 99, 00 is 2000 and 99 is 2099
-        uint32_t timestamp;  //!< Seconds from 01.01.1970 00:00:00
-    } twr_rtc_t;
+    struct tm {
+        int tm_sec;         /* seconds,  range 0 to 59          */
+        int tm_min;         /* minutes, range 0 to 59           */
+        int tm_hour;        /* hours, range 0 to 23             */
+        int tm_mday;        /* day of the month, range 1 to 31  */
+        int tm_mon;         /* month, range 0 to 11             */
+        int tm_year;        /* The number of years since 1900   */
+        int tm_wday;        /* day of the week, range 0 to 6    */
+        int tm_yday;        /* day in the year, range 0 to 365  */
+        int tm_isdst;       /* daylight saving time             */
+    };
 
 **************
 Initialization
@@ -50,26 +54,32 @@ This way the RTC is not reinitialized after reset which has a side-effect of sto
 Year register
 *************
 
-Year register can hold values **2000** to **2099**.
+.. important::
+
+    The year register counts from year 1900 so if you want to set year 2020 you should write the value 120 to the tm_year variable.
+
+Year register value **0** stands for 1900 and value **199** stands for 2099.
 
 *****************
 Set date and time
 *****************
 
+This example sets up the RTC to **10.5.2020 18:26:10**
+
 .. code-block:: c
     :linenos:
 
-    twr_rtc_t rtc;
+    struct tm datetime;
 
-    rtc.hours = 11;
-    rtc.minutes = 26;
-    rtc.seconds = 00;
+    datetime.tm_hour = 18;
+    datetime.tm_min = 26;
+    datetime.tm_sec = 10;
 
-    rtc.year = 2019;
-    rtc.month = 5;
-    rtc.date = 16;
+    datetime.tm_mon = 10;
+    datetime.tm_mday = 5;
+    datetime.tm_year = 120;
 
-    twr_rtc_set_datetime(&rtc);
+    twr_rtc_set_datetime(&datetime, 0);
 
 ******************
 Read date and time
@@ -78,6 +88,10 @@ Read date and time
 .. code-block:: c
     :linenos:
 
-    twr_rtc_t datetime;
+    struct tm datetime;
     twr_rtc_get_datetime(&datetime);
-    twr_log_debug("$DATE: \"%d-%02d-%02dT%02d:%02d:%02dZ\"", datetime.year, datetime.month, datetime.date, datetime.hours, datetime.minutes, datetime.seconds);
+    twr_log_debug("$DATE: \"%d-%02d-%02dT%02d:%02d:%02dZ\"", datetime.tm_year, datetime.tm_mon, datetime.tm_mday, datetime.tm_hour, datetime.tm_min, datetime.tm_sec);
+
+.. tip::
+
+    To get the exact year in normal format you can just add **1900** to the value in ``datetime.tm_year``.

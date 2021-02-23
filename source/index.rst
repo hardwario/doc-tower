@@ -26,11 +26,12 @@ Where to Begin
    :hidden:
 
    basics/quick-start-guide
-   basics/hardwario-playground
    basics/about-hardwario
+   basics/hardwario-playground
    basics/module-overview
    basics/enclosures
    basics/projects
+   basics/github-repositories
 
 .. toctree::
     :caption: Tutorials
@@ -40,15 +41,20 @@ Where to Begin
     tutorials/quick-tutorial
     tutorials/raspberry-pi-installation
     tutorials/raspberry-pi-login
+    tutorials/mysigfox.com-service
+    tutorials/lora-at-commands-configuration
+    tutorials/mqtt-to-influxdb
+
+.. toctree::
+    :caption: Installation
+    :maxdepth: 2
+    :hidden:
+
     tutorials/custom-setup-on-ubuntu
     tutorials/custom-setup-on-macos
     tutorials/custom-setup-on-raspberry-pi
     tutorials/custom-setup-on-synology
     tutorials/custom-setup-on-turris
-    tutorials/mysigfox.com-service
-    tutorials/lora-at-commands-configuration
-    tutorials/mqtt-to-influxdb
-    tutorials/github-repositories
 
 .. toctree::
    :caption: Interfaces
@@ -134,7 +140,6 @@ Where to Begin
    firmware/debugging
    firmware/advanced-firmware-information
    firmware/low-power-measurements-and-radio
-   firmware/common-problems
    firmware/timing-and-scheduler
    firmware/how-to-1-wire-relay
    firmware/how-to-a-d-converter
@@ -183,3 +188,5 @@ Where to Begin
    troubleshooting/how-to-usb-console
    troubleshooting/core-module-r1-debugging
    troubleshooting/core-module-r1-and-r2-comparison
+   troubleshooting/how-to-rtc-clock
+

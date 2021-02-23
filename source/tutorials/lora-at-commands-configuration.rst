@@ -97,7 +97,7 @@ To write the parameter:
 
 .. tip::
 
-    You can use online key generators for testing purporses https://www.loratools.nl/#/keys
+    You can use `online key generators <https://www.loratools.nl/#/keys>`_ for testing purposes
 
 ******************************
 OTAA - Over-the-Air Activation

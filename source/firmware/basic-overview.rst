@@ -27,6 +27,6 @@ In case you want to develop or update some existing firmware you can do it after
 Examples
 ********
 
-In this section there is  also a lot of examples located in the chapters with prefix **How to:**.
+In this section there is also a lot of examples located in the chapters with prefix **How to:**.
 
 For more examples feel free to visit the `GitHub repository <https://github.com/hardwario/twr-sdk/tree/master/_examples>`_

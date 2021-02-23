@@ -13,14 +13,14 @@ Wait the embedded system does not have any screen or printer connected.
 Well you are right, but there used to be a serial port.
 And if it is hopefully free to use and can be connected to real PC then you have your first **poor man's debugger**.
 
-*****************
-Core Module Rev 2
-*****************
+**************
+Core Module R2
+**************
 
 .. note::
     If you have older version of Core Module you can visit :doc:`another chapter to see how to connect it with UART <../troubleshooting/core-module-r1-debugging>`.
 
-Core Module Rev 2 have integrated FTDI chip connected to the UART2.
+Core Module R2 have integrated FTDI chip connected to the UART2.
 You do not need to use separate serial converter, just connect USB cable to your computer.
 
 ************

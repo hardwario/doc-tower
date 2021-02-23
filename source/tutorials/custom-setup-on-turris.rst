@@ -1,5 +1,5 @@
 ######################
-Custom Setup on Turris
+Turris Network Devices
 ######################
 
 If you need more permanent solution than **HARDWARIO Playground** you can install all the services yourself in your system.

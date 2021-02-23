@@ -43,8 +43,6 @@ When message with title Installing **'node-red-contrib-homekit-bridged'** pops u
 Connect hardware
 ****************
 
-.. _flash-firmware:
-
 Step 1: Flash firmware
 **********************
 

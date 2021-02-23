@@ -46,8 +46,11 @@ On this tab you connect to the Radio Dongle. Choose the Radio Dongle (``twr-usb-
    :alt: Playground Device
 
 After connecting to the Radio Dongle you could see all the paired wireless nodes.
-The node alias is later used in MQTT message topic (``node/climate-monitor:0/..``),
-**so change it only when you know what are you doing.**
+
+.. caution::
+
+    The node alias is later used in MQTT message topic (``node/climate-monitor:0/..``),
+    **so change it only when you know what are you doing.**
 
 .. thumbnail:: ../_static/basics/playground/playground-devices-paired.png
    :width: 100%
@@ -98,6 +101,8 @@ Here you can see all the messages from wireless nodes. You can copy the topics t
 .. thumbnail:: ../_static/basics/playground/playground-messages.png
    :width: 100%
    :alt: Playground Messages
+
+.. _flash-firmware:
 
 Firmware
 ********

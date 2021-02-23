@@ -7,7 +7,7 @@ How to: USB Console
     For Core Module R2 with FTDI chip please follow :doc:`Debugging <../firmware/debugging>` tutorial and use UART2 for communication over FTDI to your computer.
     USB CDC console works only on older Core Module R1 where chip talks directly to the computer.
 
-`Core Module <https://shop.hardwario.com/core-module/>`_ **REV 1** can handle two-way communication with USB-connected device (computer, router, ...)
+`Core Module <https://shop.hardwario.com/core-module/>`_ **R1** can handle two-way communication with USB-connected device (computer, router, ...)
 over Virtual Com Port VCP.
 
 .. tip::

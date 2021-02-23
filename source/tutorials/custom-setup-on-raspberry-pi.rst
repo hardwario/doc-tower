@@ -1,6 +1,6 @@
-############################
-Custom Setup on Raspberry Pi
-############################
+############
+Raspberry Pi
+############
 
 If you need more permanent solution than **HARDWARIO Playground** you can install all the services yourself in your system.
 This guide will help you to install and configure these services:

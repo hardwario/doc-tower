@@ -43,6 +43,10 @@ But if you need to, the **SDK** can be updated to most recent version by simple 
 References
 **********
 
+.. tip::
+
+    If you encounter some issues with the SDK you can suggest new problem to be added on `Github Issues <https://github.com/hardwario/bc-website/issues>`_
+
 - `SDK repository on GitHub <https://github.com/hardwario/twr-sdk>`_
 - `Generated Doxygen documentation <https://sdk.hardwario.com>`_
 - `Examples of using the SDK <https://github.com/hardwario/twr-sdk/tree/master/_examples>`_

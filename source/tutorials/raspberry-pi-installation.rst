@@ -6,12 +6,15 @@ Raspberry Pi Installation
 Introduction
 ************
 
+In the following procedure, we will install the **HARDWARIO Raspbian** Linux distribution.
+Raspbian is the official and most widely distributed Linux distribution for Raspberry Pi.
+
+HARDWARIO maintains a modified version of this distribution that facilitates some steps and includes pre-installed packages that are key to **HARDWARIO**.
+
 .. caution::
 
     If you already have Raspberry Pi with the original Raspbian distribution, go to the section :ref:`Setup on Original Raspbian <setup-original-raspbian>`.
     Or if you have OSMC, go to section Setup on OSMC
-
-This document will guide you through installing Raspberry Pi. The tutorial is tested for Raspberry Pi 3 (Model B) but should also work for older Raspberry Pi 2.
 
 .. note::
 
@@ -19,20 +22,12 @@ This document will guide you through installing Raspberry Pi. The tutorial is te
     HARDWARIO TOWER uses this system to process sensor information, actuator control,
     decision logic for automation, data storage, or serve as a gateway to connect cloud services.
 
-In the following procedure, we will install the **HARDWARIO Raspbian** Linux distribution.
-Raspbian is the official and most widely distributed Linux distribution for Raspberry Pi.
-
-HARDWARIO maintains a modified version of this distribution that facilitates some steps and includes pre-installed packages that are key to **HARDWARIO**.
-
-.. important::
-
-    After you flash SD card, connect Ethernet, Radio Dongle and only after that apply the power to Raspberry Pi.
 
 ************
 Requirements
 ************
 
-- Raspberry Pi 3 (Model B)
+- Raspberry Pi 3b or better
 - MicroSD card with a minimum capacity of 4 GB
 - MicroSD Card Reader (+ optional SD Card Adapter)
 - Ethernet cable
@@ -46,6 +41,10 @@ Requirements
 ***************************
 Instructions for Installing
 ***************************
+
+.. important::
+
+    After you flash SD card, connect Ethernet, Radio Dongle and only after that apply the power to Raspberry Pi.
 
 Download
 ********
@@ -93,7 +92,7 @@ Connecting to HARDWARIO HUB
 After Raspberry Pi boots up, use your computer's web browser and enter the Raspberry Pi ``IP`` address to open the HARDWARIO HUB webpage.
 On Linux/macOS you can use ``hub.local`` address.
 
-To find out Raspberry Pi IP you can follow :doc:`these instructions <raspberry-pi-login>`.
+To find out Raspberry Pi IP you can follow the :doc:`next chapter <raspberry-pi-login>`.
 
 .. important::
 

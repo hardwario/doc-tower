@@ -1,6 +1,6 @@
-##########################################
-About HARDWARIO TOWER - Industrial IoT Kit
-##########################################
+#############
+System Basics
+#############
 
 TOWER is a device platform, specifically designed for the Internet-of-Things.
 With TOWER, you can quickly build your own electronics devices.
@@ -47,7 +47,7 @@ We use a standardized pin header format, which is compatible across the whole ec
 
 The equal level of modularity has been also taken on the software level.
 Either on a device side, anyone can master creating the firmware with the properly documented APIs and examples,
-or - the distributed system approach of **MQTT messages** on the side of **hub**.
+or the distributed system approach of **MQTT messages** on the side of **hub**.
 
 HARDWARIO TOWER is low-power
 ****************************
@@ -72,6 +72,7 @@ We all know that the "security by obscurity" approach does not work in long-term
 **************
 System Concept
 **************
+
 .. thumbnail:: ../_static/basics/about-hardwario-kit/system-concept.png
    :width: 100%
    :alt: System Concept
@@ -87,7 +88,9 @@ Radio Frequency
 
 We use the 868/915 MHz frequency for radio communication.
 This is a license-free band designated for short signal messages.
+
 Abusing your IoT devices with a 2.4 GHz band and fighting streaming WiFi, Bluetooth, ZigBee and other protocols will not help your system reliability.
+
 It is also about basic rules from physics - with higher frequency, you get worse penetration through the walls and other obstacles.
 Also the power consumption efficiency is better at lower frequency. As stated earlier - low-power designs are our goal!
 
