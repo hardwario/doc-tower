@@ -51,6 +51,9 @@ It's always hard to build something without an inspiration.
 We motivate our makers to share their work with others
 and you can get ideas for your projects by visiting `our hackster.io page <https://www.hackster.io/hardwario/projects>`_.
 
+.. thumbnail:: ../_static/basics/quick-start-guide/hackster-showcase.png
+   :alt: hackster.io showcase
+
 .. _learn-more:
 
 **********

@@ -5,11 +5,16 @@ Serial Port JSON
 This article explains communication with Radio Dongle or Core Module over USB virtual serial port.
 This JSON messages are passed between microcontroller and ``bcg`` gateway.
 The ``bcg`` is passing these messages between MQTT broker and connected microcontroller.
-These informations are necessary in case you create your own gateway or integrate HARDWARIO TOWER hardware to some other systems without the MQTT broker as a message bus.
+
+.. note::
+
+    These informations are necessary in case you create your own gateway or integrate HARDWARIO TOWER
+    hardware to some other systems without the MQTT broker as a message bus.
 
 ***********
 JSON format
 ***********
+
 Every command over USB is an JSON array of length two.
 The first item contains **topic**, the second item contains **payload**.
 The JSON on UART needs to be confirmed by ``\n`` newline.
@@ -23,6 +28,7 @@ The JSON on UART needs to be confirmed by ``\n`` newline.
 **************
 MQTT <=> JSONs
 **************
+
 HARDWARIO gateway bcg can manage multiple gateways.
 But what gateway basically does is removing or adding device name prefix to the topic.
 
@@ -49,6 +55,7 @@ And gateway converts this JSON to the MQTT message:
 
 Incoming data
 *************
+
 After pairing, the incoming data from remote nodes are send over the serial port.
 
 Here are the values from node with ID ``836d1983718a``, but you can set the name

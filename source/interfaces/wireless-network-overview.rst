@@ -5,13 +5,14 @@ Wireless Network Overview
 *******************************************
 HARDWARIO TOWER radio, LoRa, Sigfox, NB-IoT
 *******************************************
+
 This article compares the wireless technologies you can use with HARDWARIO TOWER - Industrial IoT Kit.
 The Kit supports not just generic 868 MHz communication, bud can communicate also by other Low Power Wide Area Networks (LPWAN):
 
-- HARDWARIO 868/915 MHz FSK radio
-- LoRa
-- Sigfox
-- NB-IoT
+- :doc:`HARDWARIO 868/915 MHz FSK radio <sub-ghz-radio>`
+- :doc:`LoRa <lora-iot-radio>`
+- :doc:`Sigfox <sigfox-iot-radio>`
+- `NB-IoT (CHESTER Platform) <https://chester.hardwario.com/en/latest/overview.html?highlight=NB-IoT#optional-features>`_
 
 .. tip::
 
@@ -19,7 +20,6 @@ The Kit supports not just generic 868 MHz communication, bud can communicate als
 
 HARDWARIO 868/915 MHz FSK radio
 *******************************
-:doc:`HARDWARIO 868/915 MHz radio article <sub-ghz-radio>`
 
 Every Core Module has a SPIRIT1 radio module on it. This radio works up to 400 meters in open area or convers regular family house.
 
@@ -28,13 +28,12 @@ Every Core Module has a SPIRIT1 radio module on it. This radio works up to 400 m
 - Range in open area: 400 m
 - Packet size: 50 bytes
 
-**References:**
+.. tip::
 
-- `HARDWARIO Radio Projects on GitHub <https://www.github.com/hardwario?q=radio>`_
+    For some examples visit `Radio Projects on GitHub <https://www.github.com/hardwario?q=radio>`_
 
 LoRa Network
 ************
-:doc:`HARDWARIO LoRa Module article <../hardware/about-lora-module>`
 
 This is a network build by companies, municipalities and public.
 You can try to google if some company in your country/area provides this network (`CRA <https://www.cra.cz/iot-services>`_, `Starnet <https://www.starnet.cz/iot/>`_).
@@ -52,13 +51,12 @@ or use the community `The Things Network <https://www.thethingsnetwork.org>`_ (`
 - Range in open area: 10 km
 - Packet size: 50 - 200 bytes
 
-**References:**
+.. tip::
 
-- `HARDWARIO LoRa Projects on GitHub <https://www.github.com/hardwario?q=lora>`_
+    For some examples visit `LoRa Projects on GitHub <https://www.github.com/hardwario?q=lora>`_
 
 Sigfox Network
 **************
-:doc:`HARDWARIO Sigfox Module article <../hardware/about-sigfox-module>`
 
 .. warning::
 
@@ -74,12 +72,13 @@ Check `Sigfox coverage map <https://www.sigfox.com/en/coverage>`_ to see if your
 - Range in open area: 10 km
 - Packet size: 12 bytes
 
-**References:**
+.. tip::
 
-- `Sigfox Projects on GitHub <https://www.github.com/hardwario?q=sigfox>`_
+    For some examples visit `Sigfox Projects on GitHub <https://www.github.com/hardwario?q=sigfox>`_
 
 NB-IoT network
 **************
+
 For this network you can use our platform `CHESTER <https://www.hardwario.com/chester>`_.
 
 NB-IoT Module for HARDWARIO TOWER - Industrial IoT Kit is in the development.

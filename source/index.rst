@@ -2,23 +2,24 @@
 HARDWARIO TOWER - Industrial IoT Kit Developer Documentation
 ############################################################
 
-.. important::
+.. thumbnail:: _static/index/logo.png
+   :width: 100%
+   :alt: HARDWARIO logo
 
-   In this section, you will find developer documentation for the **HARDWARIO TOWER - Industrial IoT Kit**.
-   If you want to get information on how to buy a kit, you can visit the `product homepage <https://www.hardwario.com/kit/>`_.
+Welcome to our developer documentation where you will find all the needed information about `our IoT Kit <https://www.hardwario.com/kit/>`_.
 
 **************
 Where to Begin
 **************
 
-- :doc:`Quick Start Guide </basics/quick-start-guide>`
-- :doc:`HARDWARIO Playground </basics/hardwario-playground>`
-- :doc:`HARDWARIO Gateway on Raspberry Pi </tutorials/raspberry-pi-installation>`
-- :doc:`Firmware Basic Overview </firmware/basic-overview>`
+- To start with the kit itself visit :doc:`Quick Start Guide </basics/quick-start-guide>`
+- If you want to know more about our desktop GUI tool go to :doc:`HARDWARIO Playground </basics/hardwario-playground>`
+- If you want to upgrade and start your own server make your own :doc:`HARDWARIO Gateway on Raspberry Pi </tutorials/raspberry-pi-installation>`
+- For the developers that want to create their own firmware there is :doc:`Firmware Basic Overview </firmware/basic-overview>`
 
 .. tip::
 
-    For even more support and help also visit https://forum.hardwario.com/
+    For even more support and help also visit `our forum <https://forum.hardwario.com/>`_.
 
 .. toctree::
    :caption: Basics

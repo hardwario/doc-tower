@@ -208,7 +208,7 @@ Scan wireless
 
 .. hint::
 
-    All these commands are build into the Playground and you can do all this in the **Devices** Tab
+    All these commands are build into the Playground and you can do all this in the :doc:`Devices Tab <../basics/playground-tabs/devices>`.
 
 **************************
 Mosquitto command examples

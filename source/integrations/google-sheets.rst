@@ -149,7 +149,7 @@ Your URL now should look like this:
     ?value={{{payload}}}
 
 
-..code-block::
+.. code-block::
 
     https://script.google.com/macros/s/AKfycbxHZXypk24YVRKZMzJkau46fd6PF7ytmaiYSlTN1DT/exec?value={{{payload}}}
 
