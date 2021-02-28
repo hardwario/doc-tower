@@ -60,8 +60,8 @@ Flash
 #. Select HARDWARIO Raspian which you also downloaded
 #. Select inserted SD card
 #. Click flash
-#. | After flash insert microSD card to Raspberry Pi, **you have to connect Radio Dongle before applying power**.
-   | Then connect microUSB power adapter and Ethernet cable or use Wifi setup in next chapter
+#. After flashing is done, insert microSD card to Raspberry Pi, **you have to connect Radio Dongle before applying power**.
+#. Connect microUSB power adapter and Ethernet cable or use Wifi setup in next part
 
 *********************
 WiFi Setup (optional)
@@ -90,11 +90,20 @@ Connecting to HARDWARIO HUB
 ***************************
 
 After Raspberry Pi boots up, use your computer's web browser and enter the Raspberry Pi ``IP`` address to open the HARDWARIO HUB webpage.
-On Linux/macOS you can use ``hub.local`` address.
 
-To find out Raspberry Pi IP you can follow the :doc:`next chapter <raspberry-pi-login>`.
+.. tip::
 
-.. important::
+    You can also use the hostname `hub.local <http://hub.local>`_
+
+.. note::
+
+    To find out Raspberry Pi IP you can follow the :doc:`next chapter <raspberry-pi-login>`.
+
+.. thumbnail:: ../_static/tutorials/raspberry-pi-installation/hub-example.png
+    :width: 90%
+
+
+.. caution::
 
     If Start pairing button is disabled and you cannot press it. Please make sure you first connect Radio Dongle and then apply the power to Rasberry Pi.
 

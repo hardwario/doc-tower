@@ -6,10 +6,6 @@ You can easily edit or create your custom firmware for HARDWARIO TOWER Core Modu
 
 HARDARIO TOWER uses `PlatformIO <https://platformio.org>`_ for **building**, **uploading** and **debugging** firmware so it is easy for all the users.
 
-.. note::
-
-    In the :doc:`next chapter in Firmware group <basic-overview>` you can find more details for each step explained here.
-
 ****************************************************
 Getting your first HARDWARIO TOWER firmware skeleton
 ****************************************************

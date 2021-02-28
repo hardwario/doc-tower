@@ -4,7 +4,9 @@ Functions Tab
 
 This tab is the `Node-RED <https://nodered.org/about/>`_ visual programming tool.
 
-See :doc:`Projects <../projects>` to see more examples on how to work with this tool.
+.. tip::
+
+    See :doc:`Projects <../projects>` to see more examples on how to work with this tool.
 
 .. thumbnail:: ../../_static/basics/playground/playground-node-red-flow.png
    :width: 100%

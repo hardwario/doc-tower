@@ -51,7 +51,8 @@ Setup on Original Raspbian
 .. caution::
 
     Apply the following procedure only if you are using Raspberry Pi, on which the original Raspbian distribution is running.
-    This is an alternative way of installing ``twr-raspbian`` in that you can find in :doc:`another chapter <raspberry-pi-installation>`.
+
+    This is an alternative way of installing ``twr-raspbian`` that you can find in :doc:`another chapter <raspberry-pi-installation>`.
 
 Step 1: Log in to the Raspberry Pi using SSH. Detailed procedure provided in the document :doc:`Raspberry Pi Login <raspberry-pi-login>`
 ****************************************************************************************************************************************
@@ -151,7 +152,7 @@ Step 12: Add udev rules
 
 .. important::
 
-    Unplug and plug gateway.
+    Unplug and plug radio dongle.
 
 Step 13: Run service for Gateway Radio Dongle
 *********************************************

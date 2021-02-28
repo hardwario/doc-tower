@@ -43,8 +43,8 @@ In this case, you need to find out what address the DHCP server assigned to your
 DNS name
 ********
 
-- For our HARDWARIO Raspbian we are using ``hub.local``
-- Original Raspbian using ``raspberry.local``
+- For our HARDWARIO Raspbian we are using `hub.local <http://hub.local>`_
+- Original Raspbian using `raspberry.local <raspberry.local>`_
 
 *******
 Connect

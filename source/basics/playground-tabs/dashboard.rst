@@ -2,7 +2,11 @@
 Dashboard Tab
 #############
 
-Here you can display gauges, graphs, buttons and other widgets. See the `Projects <https://www.hackster.io/hardwario/projects>`_ how to use Dashboard.
+Here you can display gauges, graphs, buttons and other widgets.
+
+.. note::
+
+    See the `Projects <https://www.hackster.io/hardwario/projects>`_ how to use Dashboard.
 
 .. thumbnail:: ../../_static/basics/playground/playground-dashboard.png
    :width: 70%

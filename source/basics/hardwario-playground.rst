@@ -13,19 +13,17 @@ First we will start with the download.
 
 Use `HARDWARIO Playground download page <https://www.hardwario.com/download/>`_ which always have the links to the latest version.
 
+.. tip::
+
+    Builds are also in `github releases <https://github.com/hardwario/bch-playground/releases>`_.
+
 .. thumbnail:: ../_static/basics/playground/download-page.png
    :alt: Playground Functions Tab
-
-Builds are also in `github releases <https://github.com/hardwario/bch-playground/releases>`_.
 
 .. - **Flash firmware** to Core Module
 .. - **Manage wireless network** with Radio Dongle and nodes
 .. - **Create programs** with visual programming in the **Node-RED**
 .. - **Visualize** measured values and control nodes with Dashboard
-
-.. thumbnail:: ../_static/basics/playground/playground-node-red.png
-   :width: 100%
-   :alt: Playground Functions Tab
 
 ***************
 Playground tabs
