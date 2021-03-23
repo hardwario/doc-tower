@@ -39,11 +39,9 @@ Where to Begin
     :maxdepth: 2
     :hidden:
 
-    tutorials/quick-tutorial
     tutorials/raspberry-pi-installation
     tutorials/raspberry-pi-login
-    tutorials/mysigfox.com-service
-    tutorials/lora-at-commands-configuration
+
     tutorials/mqtt-to-influxdb
 
 .. toctree::
@@ -180,6 +178,15 @@ Where to Begin
    tools/hardwario-firmware-flashing-tool
    tools/hardwario-gateway
    tools/hardwario-host-tool
+
+.. toctree::
+   :caption: LPWAN
+   :maxdepth: 2
+   :hidden:
+
+   tutorials/mysigfox.com-service
+   tutorials/lora-at-commands-configuration
+
 
 .. toctree::
    :caption: Troubleshooting (Legacy)

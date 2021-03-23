@@ -102,8 +102,11 @@ After Raspberry Pi boots up, use your computer's web browser and enter the Raspb
 .. thumbnail:: ../_static/tutorials/raspberry-pi-installation/hub-example.png
     :width: 90%
 
-
 .. caution::
 
     If Start pairing button is disabled and you cannot press it. Please make sure you first connect Radio Dongle and then apply the power to Rasberry Pi.
 
+    If you are still having trouble with connecting to Radio Dongle it can be because you did ``apt update`` and ``apt upgrade``.
+    There is an issue with mosquitto that anonymous connections are not allowed.
+
+    To fix this issue just run the following command: ``echo 'allow_anonymous true' | sudo tee /etc/mosquitto/conf.d/auth.conf``
