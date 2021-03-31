@@ -23,7 +23,7 @@ Getting your first HARDWARIO TOWER firmware skeleton
 
 #. Open VSCode
 #. Open the Command Palette by pressing ``Ctrl + Shift + P`` or ``F1`` (``Cmd + Shift + P`` on Mac)
-#. Type ``Git: Clone (Recursive)``, press Enter, paste following URL and hit Enter again
+#. Type ``Git: Clone``, press Enter, paste following URL and hit Enter again
 
     .. code-block:: console
 
@@ -32,9 +32,13 @@ Getting your first HARDWARIO TOWER firmware skeleton
     .. thumbnail:: ../_static/firmware/firmware-quick-start/git-clone-recursive.png
         :width: 100%
 
-    .. caution::
+    .. tip::
 
-        Keep in mind the ``recursive`` option. If you don't include it, then you will not be able to build or flash the project
+        You can also import the twr-skeleton by going into the PlatformIO extension in VSCode. In the extensions menu go to the
+
+        ``Platforms -> Installed -> HARDWARIO TOWER - Industrial IoT Kit -> Examples -> twr-skeleton`` and then hit import.
+
+        Your project will be opened after importing. It will put some numbers to the name, you can rename it later.
 
 #. | Click open in the down right corner of VSCode after the cloning is done
    | If you are returning to the project use **Open folder** option in VSCode.
@@ -59,3 +63,9 @@ Now that you know that everything is set up correctly, you can start developing.
 
 If you are not sure how to do that, keep your **twr-skeleton** project open and go to see how to work with your :doc:`First firmware <blank-start>`.
 
+.. tip::
+
+    You can get even more examples by going to the installed platform.
+    How to get there is mentioned in the green tip bubble. You can find this tip in the third step of the list on this page.
+
+    All the examples are verified and should work without issues.

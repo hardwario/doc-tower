@@ -35,8 +35,6 @@ This is the file structure of your ``hello-world`` project. It is a Git-initiali
     │   └── ...skipped
     ├── .pio
     │   └── ...skipped
-    ├── lib
-    │   └── twr-sdk
     ├── src
     │   └── application.c
     ├── include
