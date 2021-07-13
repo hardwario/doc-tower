@@ -50,11 +50,20 @@ This signal is physically split into two parts:
 
 - Signal **VDD_OFF_IN**
 
-    This signal is on the bottom side of the module **(the side with the pins)** and it disconnects the power supply output of the given module.
+    - This signal is on the bottom side of the module **(the side with the pins)** and it disconnects the power supply output of the given module.
+    - Each power source module (except battery) uses **VDD_OFF_IN** from bottom side, telling it to disconnect power as there is another active power source (logic "1" = disconnect power),
 
 - Signal **VDD_OFF_OUT**
 
-    This signal is on the top side of the module **(the side with the sockets)** and it is chained to the VDD_OFF_IN signal of the module above the given one.
+    - This signal is on the top side of the module **(the side with the sockets)** and it is chained to the VDD_OFF_IN signal of the module above the given one.
+    - Each power source module (except battery) provides **VDD_OFF_OUT** signal on top side of the module, indicating to other modules it does provide power.
+
+**Example**
+
+Possible power source modules at this moment are Power Module and Core Module (when connected to USB). If stacked, lowest one takes priority and by this logic there are two posibilities:
+
+- When you put Core Module on top of Power Module, TOWER is powered from Power Module.
+- If for some reason you put Core Module below Power Module, it will be powered from USB (speaking about 3.3V VDD).
 
 .. note::
 
