@@ -69,6 +69,7 @@ To list all possible commands use ``AT$HELP``. You will get:
     AT$APPEUI
     AT$BAND 0:AS923, 1:AU915, 5:EU868, 6:KR920, 7:IN865, 8:US915
     AT$MODE 0:ABP, 1:OTAA
+    AT$NWK Network type 0:private, 1:public (TTN, your own)
     AT$JOIN Send OTAA Join packet
     AT$SEND Immediately send packet
     AT$STATUS Show status
