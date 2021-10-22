@@ -146,8 +146,10 @@ Type:
 .. code-block:: console
     :linenos:
 
-    AT$MODE=1
+    AT$MODE=1  // Set OTAA(1)
     OK
+    AT$NWK=1   // Public(1) or private(0) network config (TTN is public)
+    OK    
     AT$JOIN
     OK
     $JOIN_OK
