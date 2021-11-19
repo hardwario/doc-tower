@@ -2,7 +2,7 @@
 LoRa AT Commands Configuration
 ##############################
 
-This document describes how to configure HARDWARIO TOWER LoRa devices over USB virtual serial port and AT commands.
+This document describes how to configure HARDWARIO TOWER LoRa devices with AT commands over a USB virtual serial port.
 
 This document does not explain project-specific firmware commands and functions. They are explained in the project itself.
 
@@ -14,12 +14,13 @@ This document does not explain project-specific firmware commands and functions.
 LoRa Configuration
 ******************
 
-For configuration you can use ``AT`` commands over a USB virtual serial port. Use your serial
-terminal application (`Hterm <http://der-hammer.info/pages/terminal.html>`_, putty, minicom).
+The LoRa module can be configured with ``AT`` commands sent to the Core module over a USB virtual serial port.
+You will need a terminal emulator application such as `Hterm <http://der-hammer.info/pages/terminal.html>`_, putty, minicom, picocom, or screen.
+Configure the emulator with the following serial port parameters:
 
 - Baudrate 115200
 - 8 data bits, 1 stop bit, no parity
-- End of line sequence is ``CR+LF`` (both transmit and receive)
+- ``CR+LF`` as the "end of line" sequence for both transmit and receive
 
 *****
 HTerm
@@ -49,18 +50,19 @@ To exit the program press ``CTRL+A`` followed by ``CTRL+Q``.
 Putty
 *****
 
-The configuration option "Implicit LF every CR" in Putty only works with received data.
-To send ``CR+LF`` to the device, press ``CTRL+J`` followed by Enter.
+The configuration option "Implicit LF every CR" in Putty is only effective on received data.
+To send ``CR+LF`` to the device, press ``CTRL+J`` followed by the Enter key.
 
 ***********
 AT Commands
 ***********
 
-To list all possible commands use ``AT$HELP``. You will get:
+To list all possible commands use ``AT$HELP``. The set of supported commands will depend on your firmware version. You will get something like this:
 
 .. code-block:: console
     :linenos:
 
+    AT$HELP
     AT$DEVEUI
     AT$DEVADDR
     AT$NWKSKEY
@@ -69,22 +71,32 @@ To list all possible commands use ``AT$HELP``. You will get:
     AT$APPEUI
     AT$BAND 0:AS923, 1:AU915, 5:EU868, 6:KR920, 7:IN865, 8:US915
     AT$MODE 0:ABP, 1:OTAA
-    AT$NWK Network type 0:private, 1:public (TTN, your own)
+    AT$NWK Network type 0:private, 1:public
+    AT$ADR Automatic data rate 0:disabled, 1:enabled
+    AT$DR Data rate 0-15
+    AT$REPU Repeat of unconfirmed transmissions 1-15
+    AT$REPC Repeat of confirmed transmissions 1-8
     AT$JOIN Send OTAA Join packet
+    AT$FRMCNT Get frame counters
+    AT$LNCHECK MAC Link Check
+    AT$RFQ Get RSSI/SNR of last RX packet
+    AT$DEBUG Show debug UART communication
+    AT$REBOOT Firmware reboot
+    AT$FRESET LoRa Module factory reset
     AT$SEND Immediately send packet
     AT$STATUS Show status
     AT$BLINK LED blink 3 times
     AT$LED LED on/off
-    AT+CLAC
+    AT+CLAC List all available AT commands
     AT$HELP This help
 
-To read the value, append a question mark at the end of the AT command:
+To read a value, append the question mark character at the end of the corresponding AT command:
 
 .. code-block:: console
 
     AT$APPSKEY?
 
-You receive the key:
+The current value will be shown in the terminal as follows:
 
 .. code-block:: console
 
@@ -105,11 +117,11 @@ OTAA - Over-the-Air Activation
 ******************************
 
 OTAA means that the session keys (the ones with **S** in the name) are generated in the LoRa network during **JOIN**.
-The keys are then automatically transferred to your LoRa Module.
+The keys are then automatically transferred to your LoRa module.
 If your LoRa network does not support the OTAA activation method, read the **ABP** section below.
 If you are not sure which activation type to use, start with ``OTAA``.
 
-For the OTAA activation method, the LoRa network needs to know the ``DevEUI`` of your LoRa Module.
+For the OTAA activation method, the LoRa network needs to know the ``DevEUI`` of your LoRa module.
 You can read the value with the command ``AT$DEVEUI?``:
 
 .. code-block:: console
@@ -120,8 +132,8 @@ You can read the value with the command ``AT$DEVEUI?``:
 
     OK
 
-The network also needs to know the ``APPKEY`` and ``APPEUI`` values.
-You can either read the values from your LoRa Module and transfer them into your LoRa network, or you can let the LoRa
+The LoRa network also needs to know the ``APPKEY`` and ``APPEUI`` values.
+You can either read the values from your LoRa module and transfer them into your LoRa network, or you can let the LoRa
 network generate new values for you to set in your module, for example:
 
 .. code-block:: console
@@ -132,7 +144,7 @@ network generate new values for you to set in your module, for example:
     AT$APPKEY=44D4A5DA7A9507F036C5A2750211F052
     OK
 
-Each time you get an ``OK``, the value has been saved in the LoRa Module's internal flash memory.
+Each time you get an ``OK``, the value has been saved in the LoRa module's internal flash memory.
 
 .. tip::
 
@@ -156,13 +168,13 @@ Enter:
 
 Note that the ``OK`` response to ``JOIN`` command does not mean that the join was sucessful.
 Wait for a few seconds to get either ``$JOIN_OK`` (join was successful) or ``$JOIN_ERROR`` (join failed).
-If the join was successful, the LoRa Module is ready to communicate.
+If the join was successful, the LoRa module is ready to communicate.
 
 ***********************************
 ABP - Activation by Personalization
 ***********************************
 
-ABP means that you set up session keys manually. ``AT$MODE`` has to be set to ``0`` (ABP), which is the default setting after a LoRa Module power reset.
+ABP means that you set up session keys manually. ``AT$MODE`` has to be set to ``0`` (ABP), which is the default setting after a LoRa module power reset.
 
 If you use the **ABP** mode, you need to set the ``APPSKEY`` and ``NWKSKEY`` values manually via the corresponding AT commands.
 For example:
@@ -175,9 +187,9 @@ For example:
     AT$NWKSKEY=44D4A5DA7A9507F036C5A2750211F050
     OK
 
-Each time you get an ``OK``, the value has been saved in the LoRa Module's internal flash memory.
+Each time you get an ``OK``, the value has been saved in the LoRa module's internal flash memory.
 
-Also, the LoRa network will need to know the ``DEVEUI`` and ``DEVADDR`` values from your LoRa Module.
+Also, the LoRa network will need to know the ``DEVEUI`` and ``DEVADDR`` values from your LoRa module.
 Use the commands ``AT$DEVEUI?`` and ``AT$DEVADDR?` to read the values, for example:
 
 .. code-block:: console
