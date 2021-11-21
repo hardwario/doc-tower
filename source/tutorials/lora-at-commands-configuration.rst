@@ -161,7 +161,7 @@ Enter:
     AT$MODE=1  // Set OTAA(1)
     OK
     AT$NWK=1   // Public(1) or private(0) network config (TTN is public)
-    OK    
+    OK
     AT$JOIN
     OK
     $JOIN_OK
@@ -190,7 +190,7 @@ For example:
 Each time you get an ``OK``, the value has been saved in the LoRa module's internal flash memory.
 
 Also, the LoRa network will need to know the ``DEVEUI`` and ``DEVADDR`` values from your LoRa module.
-Use the commands ``AT$DEVEUI?`` and ``AT$DEVADDR?` to read the values, for example:
+Use the commands ``AT$DEVEUI?`` and ``AT$DEVADDR?`` to read the values, for example:
 
 .. code-block:: console
     :linenos:
@@ -200,9 +200,9 @@ Use the commands ``AT$DEVEUI?`` and ``AT$DEVADDR?` to read the values, for examp
     $DEVADDR: 26012C39
     OK
 
-****************
+******************
 Read Sensor Values
-****************
+******************
 
 You can use the command ``AT$STATUS`` to obtain the curent values from all available sensors.
 This command only prints the values to the terminal.
