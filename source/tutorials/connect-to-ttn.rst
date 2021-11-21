@@ -305,9 +305,8 @@ region. Most likely, this will be one of the plans marked with "(used by TTN)".
 The frequency plan must match the frequency plan that you configured in the
 Hardwario LoRa module with the command ``AT$BAND``.
 
-In the dropdown "LoRaWAN version" select "MAC V1.0.1". This is the MAC version
-supported by the Hardwario LoRa module. The field "Regional Parameters version"
-should be deactivated.
+In the dropdown "LoRaWAN version" select "MAC V1.0.2" regional parameter revision "B". This is the MAC version
+supported by the Hardwario LoRa module.
 
 Paste the DevEUI, AppEUI, and AppKey values obtained through the AT command
 interface earlier into the corresponding form fields. The completely filled out
