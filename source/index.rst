@@ -186,6 +186,7 @@ Where to Begin
 
    tutorials/mysigfox.com-service
    tutorials/lora-at-commands-configuration
+   tutorials/connect-to-ttn
 
 
 .. toctree::
