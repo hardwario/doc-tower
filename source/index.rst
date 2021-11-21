@@ -41,7 +41,6 @@ Where to Begin
 
     tutorials/raspberry-pi-installation
     tutorials/raspberry-pi-login
-
     tutorials/mqtt-to-influxdb
 
 .. toctree::
@@ -67,6 +66,24 @@ Where to Begin
    interfaces/sigfox-iot-radio
    interfaces/lora-iot-radio
    interfaces/serial-port-json
+
+.. toctree::
+   :caption: Tools
+   :maxdepth: 2
+   :hidden:
+
+   tools/hardwario-firmware-flashing-tool
+   tools/hardwario-gateway
+   tools/hardwario-host-tool
+
+.. toctree::
+   :caption: LPWAN
+   :maxdepth: 2
+   :hidden:
+
+   tutorials/mysigfox.com-service
+   tutorials/lora-at-commands-configuration
+   tutorials/connect-to-ttn
 
 .. toctree::
    :caption: Integrations
@@ -169,25 +186,6 @@ Where to Begin
    firmware/how-to-spi-bus
    firmware/how-to-temperature-sensor
    firmware/how-to-uart-interface
-
-.. toctree::
-   :caption: Tools
-   :maxdepth: 2
-   :hidden:
-
-   tools/hardwario-firmware-flashing-tool
-   tools/hardwario-gateway
-   tools/hardwario-host-tool
-
-.. toctree::
-   :caption: LPWAN
-   :maxdepth: 2
-   :hidden:
-
-   tutorials/mysigfox.com-service
-   tutorials/lora-at-commands-configuration
-   tutorials/connect-to-ttn
-
 
 .. toctree::
    :caption: Troubleshooting (Legacy)
