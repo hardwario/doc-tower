@@ -340,6 +340,22 @@ incorrect LoRa module settings, e.g., mismatched DevEUI, AppEui, or AppKey. If
 your joins fail repeatedly, try resetting the LoRa modem to factory defaults,
 reboot the device, and follow the configuration steps mentioned earlier.
 
+.. warning::
+
+    All LoRa module settings, as well as the keys generated during OTAA join are
+    stored in the internal flash memory **of the LoRa module**. If you replace
+    the LoRa module, you will have to configure and join the device to TTN again.
+    
+    Also, connecting a previously joined LoRa module to a new Core module with
+    different firmware can be problematic if the firmware uses different payload
+    format. Since the identity of the device (from TTN point of view) is in the
+    LoRa module and not in the Core module, TTN may apply old payload formatters
+    to the new device.
+    
+    For the above reasons, we recommend to always reset the LoRa module to
+    factory defaults with ``AT$FRESET`` if the module is being replaced or
+    reconnected to another Core module.
+
 Upload Payload Formatter
 ------------------------
 
