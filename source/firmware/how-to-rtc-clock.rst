@@ -4,7 +4,8 @@ How to: RTC clock
 
 .. caution::
 
-    If you are using the sdk that still uses ``bc_*`` prefixes for the function please visit :doc:`legacy document <../troubleshooting/how-to-rtc-clock>`
+    If you are using the sdk that still uses ``bc_*`` prefixes for the function please visit :doc:`legacy document <../troubleshooting/how-to-rtc-clock>`.
+    The older SDK API with ``bc_*`` is using its own RTC structure, the ``twr_*`` is using standard ``tm`` C structure.
 
 Real Time Clock (RTC) is a hardware peripheral in STM32 microcontroller. It is used in scheduler for task planning and also can measure real time.
 You can save date and time into its hardware registers and the clock is running even if you reflash or reset the processor.
