@@ -20,7 +20,7 @@
 
 
 project = 'HARDWARIO TOWER - Industrial IoT Kit'
-copyright = '2020, HARDWARIO s.r.o.'
+copyright = '2022, HARDWARIO s.r.o.'
 author = 'HARDWARIO s.r.o.'
 
 # -- General configuration ---------------------------------------------------
