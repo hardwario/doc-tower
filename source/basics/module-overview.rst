@@ -478,6 +478,41 @@ Sensor Module
 
 ----------------------------------------------------------------------------------------------
 
+LoRa Module
+***********
+
+.. container:: twocol
+
+   .. container:: leftside
+
+        .. thumbnail:: ../_static/basics/module-overview/lora-module.png
+            :width: 100%
+
+   .. container:: rightside
+
+        The **LoRa Module** allows you to communicate to the **LoRaWAN wireless network**, a network made for the IoT.
+        This technology makes it possible to communicate from a battery-powered device directly to server, even for several years.
+        The **LoRa Module** uses radio frequency 868 MHz.
+
+|
+|
+|
+|
+|
+
+.. .. |sigfox-module| thumbnail:: ../_static/basics/module-overview/sigfox-module.png
+..     :width: 100%
+..
+.. +------------------------+-----------------------------------------------------------------------------+
+.. | |sigfox-module|        | | The **Sigfox Module** allows you to communicate to                        |
+.. |                        | | the **Sigfox wireless network**, a global network made for the IoT.       |
+.. |                        | | This technology makes it possible to communicate                          |
+.. |                        | | from a battery-powered device directly to server, even for several years. |
+.. |                        | | The **Sigfox Module** uses radio frequency 868 MHz.                       |
+.. +------------------------+-----------------------------------------------------------------------------+
+
+----------------------------------------------------------------------------------------------
+
 Sigfox Module
 *************
 
