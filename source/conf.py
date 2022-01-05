@@ -70,3 +70,5 @@ html_css_files = [
 html_favicon = '_static/general/favicon.png'
 
 highlight_language = 'none'
+
+html_theme_options = {'sticky_navigation': False}
