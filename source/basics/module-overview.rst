@@ -25,8 +25,8 @@ Radio Dongle
         You can plug it to your desktop, Raspberry Pi, or Turris Omnia.
         Also, you can look at it as an access point for up to 32 HARDWARIO nodes.
 
-|
-|
+        :doc:`More about Radio Dongle <../hardware/about-radio-dongle>`
+
 |
 |
 
@@ -63,7 +63,8 @@ Core Module
         it also features a digital temperature sensor,
         3D accelerometer, and security chip.
 
-|
+        :doc:`More about Core Module <../hardware/about-core-module>`
+
 |
 |
 
@@ -98,8 +99,8 @@ Cloony
         Besides the **integrated sub-GHz radio** for the 868/915 MHz band,
         it also features a digital temperature sensor and security chip.
 
-|
-|
+        :doc:`More about Cloony <../hardware/about-cloony>`
+
 |
 |
 
@@ -134,7 +135,8 @@ Mini Battery Module
         It features a bottom-entry socket,
         so the overall profile of the unit you build remains low.
 
-|
+        :doc:`More about Mini Battery Module <../hardware/about-mini-battery-module>`
+
 |
 |
 |
@@ -172,7 +174,8 @@ Battery Module
         It also features an extra 5-pin socket
         where you can connect a HARDWARIO tag.
 
-|
+        :doc:`More about Battery Module <../hardware/about-battery-module>`
+
 |
 |
 |
@@ -208,7 +211,8 @@ Power Module
         It features a **high-current relay** (230 V AC / 16 A) to control your appliances.
         Also you can drive a **digital LED strip** with it (compatible with WS2812B).
 
-|
+        :doc:`More about Power Module <../hardware/about-power-module>`
+
 |
 |
 |
@@ -245,7 +249,8 @@ PIR Module
         The module is equipped with an **ultra-low-power digital sensor**
         from Excelitas' the DigiPyro® family.
 
-|
+        :doc:`More about PIR Module <../hardware/about-pir-module>`
+
 |
 |
 |
@@ -282,7 +287,8 @@ Climate Module
         and connected by using the I²C bus.
         It is a great product for environmental monitoring, weather stations, etc.
 
-|
+        :doc:`More about Climate Module <../hardware/about-climate-module>`
+
 |
 |
 |
@@ -318,7 +324,8 @@ LCD Module
         It implements an **ultra-low-power display controller**,
         so you can have active graphical display with a long service time from batteries.
 
-|
+        :doc:`More about LCD Module <../hardware/about-lcd-module>`
+
 |
 |
 |
@@ -354,7 +361,8 @@ Button Module
         e.g. turn on the light, send a push notification, or control an appliance.
         It is connected to the BOOT signal on the **Core Module**.
 
-|
+        :doc:`More about Button Module <../hardware/about-button-module>`
+
 |
 |
 |
@@ -390,7 +398,8 @@ Encoder Module
         Bourns and features high reliability and durability.
         The rotary encoder is also equipped with a **push-button switch.**
 
-|
+        :doc:`More about Encoder Module <../hardware/about-encoder-module>`
+
 |
 |
 |
@@ -424,7 +433,8 @@ Relay Module
         It features a **bistable (or latching) relay** and that makes it suitable
         for battery-operated applications - the relay simply remembers its state.
 
-|
+        :doc:`More about Relay Module <../hardware/about-relay-module>`
+
 |
 |
 |
@@ -459,8 +469,10 @@ Sensor Module
         For example you can connect various external digital, analog or resistive sensors.
         Also, you can communicate with other devices on a 1-Wire bus.
 
-        The two terminals - A on the left, B on the right
-        are connected to the HARDWARIO header signals P4/A4/DAC0 and P5/A5/DAC1.
+        :doc:`More about Sensor Module <../hardware/about-sensor-module>`
+
+|
+|
 
 .. .. |sensor-module| thumbnail:: ../_static/basics/module-overview/sensor-module.png
 ..     :width: 100%
@@ -494,7 +506,8 @@ LoRa Module
         This technology makes it possible to communicate from a battery-powered device directly to server, even for several years.
         The **LoRa Module** uses radio frequency 868 MHz.
 
-|
+        :doc:`More about Lora Module <../hardware/about-lora-module>`
+
 |
 |
 |
@@ -531,7 +544,8 @@ Sigfox Module
         from a battery-powered device directly to server, even for several years.
         The **Sigfox Module** uses radio frequency 868 MHz.
 
-|
+        :doc:`More about Sigfox Module <../hardware/about-sigfox-module>`
+
 |
 |
 |
@@ -570,7 +584,7 @@ micro:bit Module
         volatile organic compounds (VOCs), motion or
         control other devices using a Relay Module.
 
-        The bundle also includes a 1-hour STEM webinar.
+        :doc:`More about micro:bit Module <../hardware/about-microbit-module>`
 
 |
 |
@@ -594,8 +608,8 @@ micro:bit Module
 
 ----------------------------------------------------------------------------------------------
 
-1-Wire Module
-*************
+1-Wire Slave Module
+*******************
 
 .. container:: twocol
 
@@ -606,13 +620,14 @@ micro:bit Module
 
    .. container:: rightside
 
-        The **1-Wire** Module allow you to connect I²C devices
+        The **1-Wire Slave** Module allow you to connect I²C devices
         over a distance of several meters.
         The I²C protocol is encapsulated to a 1-Wire protocol.
         The data are protected using **16-bit CRC**.
         You can use the **Sensor Module** to create a 1-Wire bus master.
 
-|
+        :doc:`More about 1-Wire Slave Module <../hardware/about-1-wire-module>`
+
 |
 |
 |
@@ -649,7 +664,8 @@ Cover Module
         It looks great when combined with one of our 3D-printed enclosure.
         You simple snap it in the HARDWARIO socket header using the bottom pins.
 
-|
+        :doc:`More about Cover Module <../hardware/about-cover-module>`
+
 |
 |
 |
@@ -683,7 +699,8 @@ Tag Module
         This allows to connect two tags of the same I²C address to a single HARDWARIO node.
         It also features pull-up resistors on SDA/SCL signals of I2C1 bus.
 
-|
+        :doc:`More about Tag Module <../hardware/about-tag-module>`
+
 |
 |
 |
@@ -719,7 +736,8 @@ Base Module
 
         It also features a **prototyping area** for soldering your circuits.
 
-|
+        :doc:`More about Base Module <../hardware/about-base-module>`
+
 |
 |
 |
@@ -756,7 +774,8 @@ Breadboard Module
         The precision pin headers from the bottom side allow smooth
         insertion to your breadboard and do not stress the breadboard's sockets.
 
-|
+        :doc:`More about Breadboard Module <../hardware/about-breadboard-module>`
+
 |
 |
 |
@@ -792,7 +811,8 @@ Probe Module
         you need to analyze the signals and see what's going on.
         And this module makes the task fast and convenient.
 
-|
+        :doc:`More about Probe Module <../hardware/about-probe-module>`
+
 |
 |
 |
@@ -832,7 +852,8 @@ Temperature Tag
         It communicates using an I²C bus
         and features a very low power operation and shutdown mode.
 
-|
+        :doc:`More about Temperature Tag <../hardware/about-temperature-tag>`
+
 |
 |
 |
@@ -868,7 +889,8 @@ Humidity Tag
         It communicates using an I²C bus
         and features a very low power operation and shutdown mode.
 
-|
+        :doc:`More about Humidity Tag <../hardware/about-humidity-tag>`
+
 |
 |
 |
@@ -905,7 +927,8 @@ Lux Meter Tag
         It communicates using an I²C bus
         and features a very low power operation and shutdown mode.
 
-|
+        :doc:`More about Lux Meter Tag <../hardware/about-lux-meter-tag>`
+
 |
 |
 |
@@ -942,7 +965,8 @@ Barometer Tag
         with an absolute accuracy of ±0.4 kPa.
         It features a very low active and standby current.
 
-|
+        :doc:`More about Barometer Tag <../hardware/about-barometer-tag>`
+
 |
 |
 |
@@ -978,7 +1002,8 @@ VOC Tag
         This module uses a metal-oxide multi-pixel sensor SGP30
         from Sensirion measuring total VOC level.
 
-|
+        :doc:`More about VOC Tag <../hardware/about-voc-tag>`
+
 |
 |
 |
@@ -1012,6 +1037,8 @@ NFC Tag
         You have the the NFC protocol from one side and the I²C bus interface from the other side.
         It features a 1 kB EEPROM memory.
         The chip does not have to be powered when being accessed from the NFC side.
+
+        :doc:`More about NFC Tag <../hardware/about-nfc-tag>`
 
 .. .. |nfc-tag| thumbnail:: ../_static/basics/module-overview/nfc-tag.png
 ..     :width: 100%
