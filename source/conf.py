@@ -14,13 +14,13 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+from datetime import date
 
 # -- Project information -----------------------------------------------------
 
 
 project = 'HARDWARIO TOWER - Industrial IoT Kit'
-copyright = '2022, HARDWARIO s.r.o.'
+copyright = str(date.today().year) + ', HARDWARIO s.r.o.'
 author = 'HARDWARIO s.r.o.'
 
 # -- General configuration ---------------------------------------------------
