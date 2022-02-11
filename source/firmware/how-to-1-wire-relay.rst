@@ -13,7 +13,7 @@ For this tutorial you will need:
 
 - `Core Module <https://shop.hardwario.com/core-module/>`_
 - `Sensor Module <https://shop.hardwario.com/sensor-module/>`_
-- `Relay Module controlled over 1-Wire bus <https://shop.hardwario.com/1-wire-8-channel-relay-module-with-din-rail-box/>`_
+- Relay Card controlled over 1-Wire bus (`bare PCB <http://denkovi.com/1-wire-eight-channel-relay-board-for-home-automation>`_ or `DIN module <http://denkovi.com/1-wire-eight-channel-relay-module-for-home-automation-with-din-box>`_)
 
 ***
 SDK
