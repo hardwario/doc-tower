@@ -72,8 +72,19 @@ Planning to Run Registered Task
 One time
 ********
 
-To run registered task one more time in the future, you have to use one of these functions (taking task ID and number of milliseconds(ticks)) as parameters:
+To run registered task one more time in the future, you have to use one of these functions.
 
+Functions with ``current`` in the name controls the current task from the function is called. This way you don't need to know or pass the task ID value and the only parameter is ``twr_tick_t`` value:
+
+- ``void twr_scheduler_plan_current_now``
+- ``void twr_scheduler_plan_current_absolute``
+- ``void twr_scheduler_plan_current_relative``
+- ``void twr_scheduler_plan_current_from_now``
+
+
+If you need to control another task, you can use functions without ``current`` in the name (taking task ID and number of milliseconds(ticks) as parameters):
+
+- ``void twr_scheduler_plan_now``
 - ``void twr_scheduler_plan_absolute``
 - ``void twr_scheduler_plan_relative``
 - ``void twr_scheduler_plan_from_now``
