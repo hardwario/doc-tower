@@ -84,6 +84,8 @@ Where to Begin
    tutorials/mysigfox.com-service
    tutorials/lora-at-commands-configuration
    tutorials/connect-to-ttn
+   tutorials/lora-tester-tutorial
+
 
 .. toctree::
    :caption: Integrations
