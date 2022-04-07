@@ -96,12 +96,16 @@ The following table defines signal assignment on **module** header:
 |                |   A4           |   ADC channel 4                     |              |
 |                |                |                                     |              |
 |                |   DAC0         |   DAC channel 0                     |              |
+|                |                |                                     |              |
+|                |   A            |   Sensor Module Channel A           |              |
 +----------------+----------------+-------------------------------------+--------------+
 | 6              |   P5           |   GPIO channel 5                    | PA5          |
 |                |                |                                     |              |
 |                |   A5           |   ADC channel 5                     |              |
 |                |                |                                     |              |
 |                |   DAC1         |   DAC channel 1                     |              |
+|                |                |                                     |              |
+|                |   B            |   Sensor Module Channel B           |              |
 +----------------+----------------+-------------------------------------+--------------+
 | 7              |   P6           |   GPIO channel 6                    | PB1          |
 |                |                |                                     |              |
@@ -109,7 +113,11 @@ The following table defines signal assignment on **module** header:
 +----------------+----------------+-------------------------------------+--------------+
 | 8              |   P7           |   GPIO channel 7                    | PA6          |
 |                |                |                                     |              |
+|                |   A6           |   ADC channel 6                     |              |
+|                |                |                                     |              |
 |                |   CTS1         |   UART channel 1 - CTS signal       |              |
+|                |                |                                     |              |
+|                |   C            |   Sensor Module Channel C           |              |
 +----------------+----------------+-------------------------------------+--------------+
 | 9              | P8             | GPIO channel 8                      | PB0          |
 +----------------+----------------+-------------------------------------+--------------+

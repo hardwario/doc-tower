@@ -18,20 +18,7 @@ About Sensor Module
         For example you can connect various external digital, analog or resistive sensors.
         Also, you can communicate with other devices on a 1-Wire bus.
 
-        The terminals are connected to the HARDWARIO TOWER header signals. A - P4/A4/DAC0, B - P5/A5/DAC1 and C - P7.
-
-.. .. |pic1| thumbnail:: ../_static/hardware/about-sensor/sensor-module.png
-..     :width: 300em
-..     :height: 300em
-..
-.. +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-.. | |pic1|                 | | The **Sensor Module** features **up-to four universal inputs or outputs** on a pluggable terminal block with **1-Wire bus master** support.    |
-.. |                        | | The terminals can be used as both analog and digital input/output.                                                                             |
-.. |                        | | For example you can connect various external digital, analog or resistive sensors.                                                             |
-.. |                        | | Also, you can communicate with other devices on a 1-Wire bus.                                                                                  |
-.. |                        | |                                                                                                                                                |
-.. |                        | | The two terminals - A on the left, B on the right - are connected to the HARDWARIO TOWER header signals P4/A4/DAC0 and P5/A5/DAC1.             |
-.. +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+        The terminals are connected to the HARDWARIO TOWER header signals. A - P4/A4/DAC0, B - P5/A5/DAC1 and C - P7/A6.
 
 .. tip::
 
