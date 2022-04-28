@@ -36,7 +36,7 @@ You will need some dependencies for the extension to work as intended:
 - **git** - for cloning submodules and firmwares
 - **Linux commands** - you will need commands like rm and mkdir
 
-You have to have all these things in the PATH for the extension to register it. If you don't have these already, you can download the HARDWARIO Code portable version and
+You have to have all these things in the PATH for the extension to register it. If you don't have these already, you can download the `HARDWARIO Code portable version <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ and
 you will find all the needed tools in the /data/tower/ folder. You will just have to add the correct folders to PATH.
 
 Folders to add to PATH (Windows):
@@ -67,7 +67,7 @@ This approach is good if you want to start developing quickly without setting up
 
 You will have to do just a few simple steps:
 
-- Download HARDWARIO Code
+- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for your target system
 - Unpack the ZIP wherever you want
 - Run the Code.exe (Windows) or code (Linux)
 - You should see HARDWARIO Logo on the side panel
