@@ -156,6 +156,8 @@ Where to Begin
    firmware/firmware-quick-start
    firmware/blank-start
    firmware/debugging
+   firmware/developement-hardwario-code
+   firmware/hardwario-code-tutorial
    firmware/advanced-firmware-information
    firmware/low-power-measurements-and-radio
    firmware/timing-and-scheduler

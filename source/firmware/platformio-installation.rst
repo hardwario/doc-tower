@@ -2,6 +2,10 @@
 PlatformIO Installation
 #######################
 
+.. attention::
+    We are migrating to our own **Visual Studio Code extension** and a portable version of Visual Studio Code. For more information on how to install and use it visit
+    :doc:`Developement with HARDWARIO Code <developement-hardwario-code>`.
+
 If you want to create your custom firmware or update some existing one to your needs you will need to install PlatformIO.
 
 .. tip::

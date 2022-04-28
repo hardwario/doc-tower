@@ -2,6 +2,11 @@
 Basic Overview
 ##############
 
+.. attention::
+    We are migrating to our own **Visual Studio Code extension** and a portable version of Visual Studio Code. For more information on how to install and use it visit
+    :doc:`Developement with HARDWARIO Code <developement-hardwario-code>`.
+
+
 This section will go over basic firmware development.
 
 After a first few of the next chapters you will be able to **build**, **upload** and **debug** your firmware on our :doc:`Core Module <../hardware/about-core-module>`.
