@@ -10,8 +10,8 @@ This extension makes it possible to simply develop, flash and debug firmware for
 
 It runs in two modes:
 
-- If you have some HARDWARIO Tower firmware
-- If you have anything else open
+- If you have anything else of nothing open (**Basic Mode**)
+- If you have some HARDWARIO Tower firmware open (**Firmware Mode**)
 
 In both modes you should see the HARDWARIO logo on the side panel.
 
@@ -90,4 +90,64 @@ This command will attach console to the selected device so you can view the log 
 Start Debugging
 ***************
 
-This command will try to connect with a connected JLink for advanced debugging.
+.. important::
+    You have to have ``arm-none-eabi-gdb`` and ``JLinkGDBServerCL`` in PATH for this to work if you are using extension in your installed VSCode.
+    If you are using our portable version you don't have to worry about anything and it will work just fine.
+
+This command will try to connect with a connected JLink for advanced debugging
+
+Debugging can be started multiple ways.
+
+Press F5 button with some \*.c or \*.h file in focus
+====================================================
+.. important::
+    There has to be no ``launch.json`` present in the ``.vscode`` folder.
+
+If you want to just run the debug and not change anything in the ``launch.json`` you can just press F5 and select HARDWARIO TOWER Debug.
+Debugging will start with no problem
+
+.. thumbnail:: ../_static/firmware/hardwario-code/debuggingWithF5.png
+    :width: 70%
+
+Go to **Run and Debug** and create launch.json
+==============================================
+If you want to have your custom ``launch.json`` you can go to the Run and Debug window on the side panel and click `create a launch.json file`
+or add this configuration to an existing one.
+
+.. code-block:: json
+
+    {
+        "name": "HARDWARIO TOWER Debug",
+        "request": "launch",
+        "type": "cortex-debug",
+        "preLaunchCommands": [
+            "make -j"
+        ],
+        "cwd": "${workspaceFolder}",
+        "device": "STM32L083CZ",
+        "servertype": "jlink",
+        "jlinkscript": "./sdk/tools/jlink/flash.jlink",
+        "interface": "swd",
+        "serverpath": "${command:hardwario-tower.locate_jlink}",
+        "svdFile": "./sdk/sys/svd/stm32l0x3.svd",
+        "MIMode": "gdb",
+        "logging": {
+            "engineLogging": true
+        },
+        "executable": "${workspaceFolder}\\out\\debug\\firmware.elf",
+        "miDebuggerPath": "${command:hardwario-tower.locate_toolchain}",
+        "serverLaunchTimeout": 10000,
+        "windows": {
+            "miDebuggerPath": "${command:hardwario-tower.locate_toolchain}.exe",
+            "serverpath": "${command:hardwario-tower.locate_jlink}.exe"
+        }
+    }
+
+
+Press Start Debugging in the HARDWARIO Extension command palette
+================================================================
+You can use this option if you don't want to worry about the launch.json or any other options mentioned before.
+Just select the HARDWARIO logo on the side panel and select **Start Debugging** option.
+
+.. thumbnail:: ../_static/firmware/hardwario-code/startDebugging.png
+    :width: 40%

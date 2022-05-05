@@ -21,8 +21,8 @@ To install the extension you will have to download the latest release from `GitH
 
 To install the downloaded .vsix extension file just go to the **Extensions tab**, click the **three dots** and **Install from VSIX.\.\.**
 
-.. |install-extension| thumbnail:: ../_static/firmware/hardwario-code/InstallGuide.png
-    :width: 50%
+.. thumbnail:: ../_static/firmware/hardwario-code/InstallGuide.png
+    :width: 70%
 
 Additional setup
 ****************
@@ -39,16 +39,16 @@ You will need some dependencies for the extension to work as intended:
 You have to have all these things in the PATH for the extension to register it. If you don't have these already, you can download the `HARDWARIO Code portable version <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ and
 you will find all the needed tools in the /data/tower/ folder. You will just have to add the correct folders to PATH.
 
-Folders to add to PATH (Windows):
+Folders to add to PATH:
 
-- python/
-- python/Scripts/
-- toolchain/make/bin/
-- toolchain/gcc/bin/
-- toolchain/gcc/arm-none-eabi/bin/
-- toolchain/git/cmd/
-- toolchain/git/usr/bin/
-- toolchain/git/mingw64/bin
+- ``python/``
+- ``python/Scripts/``
+- ``toolchain/make/bin/``
+- ``toolchain/gcc/bin/``
+- ``toolchain/gcc/arm-none-eabi/bin/``
+- ``toolchain/git/cmd/``
+- ``toolchain/git/usr/bin/``
+- ``toolchain/git/mingw64/bin``
 
 .. note::
     If you are using a Linux version you will have to install git and add it to PATH, we are not using portable version for Linux.
