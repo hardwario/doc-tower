@@ -9,6 +9,59 @@ Developement with HARDWARIO Code
 There are two ways how to develop with the new extension. You can use your own Visual Studio Code and install the extension into it
 or you can download the portable version of Visual Studio Code.
 
+**************************************
+Portable version of Visual Studio Code
+**************************************
+
+There is a possibility to use the whole Visual Studio Code on its own.
+
+This approach is good if you want to start developing quickly without setting up the environment.
+
+You will have to do just a few simple steps based on your operating system.
+
+Linux
+*****
+
+- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
+- Unpack the archive wherever you want
+- Run the **code** binary
+- You should see HARDWARIO Logo on the side panel
+
+.. warning::
+    If you don't have a **git** installed on your system, you will have to `install it <https://github.com/git-guides/install-git#install-git-on-linux>`_ for the extension to work fully.
+
+.. tip::
+    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
+
+Windows
+*******
+
+- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
+- Unpack the archive wherever you want
+- Run the **Code.exe**
+- You should see HARDWARIO Logo on the side panel
+
+.. tip::
+    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
+
+OSX
+***
+
+- Download `Hardwario Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for OSX
+- Unpack the archive wherever you want
+- The unpacked folder should be named ``code-portable-data``
+- Download `Visual studio code portable for Mac <https://code.visualstudio.com/download>`_
+- Unpack the Visual Studio Code.app next to the ``code-portable-data`` folder
+- Lift the default quarantine of the app by executing ``xattr -dr com.apple.quarantine Visual\ Studio\ Code.app`` in terminal
+- Run Visual Studio Code
+- You should see HARDWARIO Logo on the side panel
+
+.. tip::
+    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
+
 ***********************************************
 HARDWARIO Tower extension to Visual Studio Code
 ***********************************************
@@ -30,14 +83,40 @@ Additional setup
 You will need some dependencies for the extension to work as intended:
 
 - **make** - for compiling the firmware
+
+    - `Windows installation make <https://www.technewstoday.com/install-and-use-make-in-windows/>`_
+    - `Linux installation make <https://linuxhint.com/install-make-ubuntu/>`_
+    - `macOS installation make <https://formulae.brew.sh/formula/make>`_
+
 - **python** - our flashing and logging tool is made in python
-- **bcf** - our flashing and logging tool made in pythonK
+
+    - `Windows installation python <https://phoenixnap.com/kb/how-to-install-python-3-windows>`_
+    - `Linux installation python <https://www.scaler.com/topics/python/install-python-on-linux/>`_
+    - `macOS installation python <https://www.dataquest.io/blog/installing-python-on-mac/>`_
+
+- **bcf** - our flashing and logging tool made in python
+
+    - :doc:`Installation bcf with Python <../tools/hardwario-firmware-flashing-tool>`
+
 - **arm-none-eabi-gcc**
+
+    - `Windows installation arm-none-eabi-gcc <https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-windows>`_
+    - `Linux installation arm-none-eabi-gcc <https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-linux>`_
+    - `macOS installation arm-none-eabi-gcc <https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-mac-os-x>`_
+
 - **git** - for cloning submodules and firmwares
-- **Linux commands** - you will need commands like rm and mkdir
+
+    - `All installations git <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
+
+- **Linux commands** - you will need commands like ``rm`` and ``mkdir`` (*Windows only*)
+
+    - You have to install git to your machine and then add the ``\usr\bin\`` folder to PATH. The folder path should look something like ``C:\Program Files\Git\usr\bin\``
+
+.. tip::
+    The extension will warn you that you are missing some of those and provide you with a corresponding link.
 
 You have to have all these things in the PATH for the extension to register it. If you don't have these already, you can download the `HARDWARIO Code portable version <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ and
-you will find all the needed tools in the /data/tower/ folder. You will just have to add the correct folders to PATH.
+you will find all the needed tools in the ``/data/tower/`` folder. You will just have to add the correct folders to PATH.
 
 Folders to add to PATH:
 
@@ -51,26 +130,7 @@ Folders to add to PATH:
 - ``toolchain/git/mingw64/bin``
 
 .. note::
-    If you are using a Linux version you will have to install git and add it to PATH, we are not using portable version for Linux.
-
-.. tip::
-    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
-    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
-
-**************************************
-Portable version of Visual Studio Code
-**************************************
-
-There is a possibility to use the whole Visual Studio Code on its own.
-
-This approach is good if you want to start developing quickly without setting up the environment.
-
-You will have to do just a few simple steps:
-
-- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for your target system
-- Unpack the ZIP wherever you want
-- Run the Code.exe (Windows) or code (Linux)
-- You should see HARDWARIO Logo on the side panel
+    If you are using a Linux version you will have to install git, we are not using portable version for Linux.
 
 .. tip::
     You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
