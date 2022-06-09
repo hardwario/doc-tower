@@ -4,7 +4,7 @@ Firmware Quick Start
 
 .. attention::
     We are migrating to our own **Visual Studio Code extension** and a portable version of Visual Studio Code. For more information on how to install and use it visit
-    :doc:`Developement with HARDWARIO Code <developement-hardwario-code>`.
+    :doc:`Developement with HARDWARIO Code <hardwario-code-installation>`.
 
 You can easily edit or create your custom firmware for HARDWARIO TOWER Core Module on every major operating system
 

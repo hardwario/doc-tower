@@ -4,7 +4,7 @@ HARDWARIO Tower Visual Studio Code extension
 
 .. note::
     This tutorial expects that you have a running Visual Studio Code with our HARDWARIO Tower extension installed.
-    If you don't please visit the :doc:`Installation guide <developement-hardwario-code>`.
+    If you don't please visit the :doc:`Installation guide <hardwario-code-installation>`.
 
 This extension makes it possible to simply develop, flash and debug firmware for HARDWARIO Tower.
 
@@ -72,10 +72,13 @@ for the device to see the log messages.
 
 You can use this most of the times.
 
+.. tip::
+    To learn about debugging with the console you can visit :ref:`debugging with HARDWARIO Code <debug-hardwario-code>`.
+
 Build + Flash (Debugger)
 ************************
 
-.. important::
+.. warning::
     You have to have ``arm-none-eabi-gdb`` and ``JLinkGDBServerCL`` in PATH for this to work.
 
 This command will not attach the console like the previous one but will instead try to attach to JLink debugger for some advanced debugging.
@@ -109,6 +112,9 @@ Attach Console
 **************
 
 This command will attach console to the selected device so you can view the log messages.
+
+.. tip::
+    To learn about debugging with the console you can visit :ref:`debugging with HARDWARIO Code <debug-hardwario-code>`.
 
 Attach Debugger
 ***************

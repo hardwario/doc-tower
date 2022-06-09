@@ -1,6 +1,6 @@
-################################
-Developement with HARDWARIO Code
-################################
+###########################
+HARDWARIO Code Installation
+###########################
 
 .. attention::
     The extension is still in development and you might experience some issues with it. If you do, please let us know on `our forum <https://forum.hardwario.com>`_

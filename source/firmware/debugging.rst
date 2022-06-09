@@ -4,7 +4,7 @@ Debugging
 
 .. attention::
     We are migrating to our own **Visual Studio Code extension** and a portable version of Visual Studio Code. For more information on how to install and use it visit
-    :doc:`Developement with HARDWARIO Code <developement-hardwario-code>`.
+    :doc:`HARDWARIO Code Installation <hardwario-code-installation>`.
 
 ***************
 Starting simple
@@ -16,6 +16,10 @@ Wait the embedded system does not have any screen or printer connected.
 
 Well you are right, but there used to be a serial port.
 And if it is hopefully free to use and can be connected to real PC then you have your first **poor man's debugger**.
+
+.. tip::
+    This chapter is about debugging with the log messages.
+    If you are interested in advanced debugging with JLink, you can visit the :doc:`Advanced Debugging chapter <advanced-debugging>`.
 
 ***********
 Core Module
@@ -99,11 +103,78 @@ Example of output:
 
 For mapping number to event type have a look into `HARDWARIO SDK documentation for twr_button <https://sdk.hardwario.com/twr__button_8h_source.html#l00013>`_
 
+************
+Colored logs
+************
+
+You can colorized logs to 4 different colors as following commands down below.
+
+**Debug (purple)**
+
+.. code-block:: console
+
+    twr_log_debug("Log");
+
+.. thumbnail:: ../_static/firmware/debugging/debugColoredLog.png
+    :width: 10%
+
+**Info (green)**
+
+.. code-block:: console
+
+    twr_log_info("Log");
+
+.. thumbnail:: ../_static/firmware/debugging/infoColoredLog.png
+    :width: 10%
+
+**Warning (orange)**
+
+.. code-block:: console
+
+    twr_log_warning("Log");
+
+.. thumbnail:: ../_static/firmware/debugging/warningColoredLog.png
+    :width: 10%
+
+**Error (red)**
+
+.. code-block:: console
+
+    twr_log_error("Log");
+
+.. thumbnail:: ../_static/firmware/debugging/errorColoredLog.png
+    :width: 10%
+
+.. _debug-hardwario-code:
+
+*****************************
+Read logs with HARDWARIO Code
+*****************************
+
+.. important::
+    If you didn't already, you should :doc:`install HARDWARIO Code extension <hardwario-code-installation>`
+
+You can use our Visual Studio Code extension to attach console to the connected Core Module.
+
+You can use two commands in the extension to attach console:
+- **Build + Flash (Console)**
+- **Attach console**
+
+It is advised to use the first one. It will build the firmware so it includes all the changes that you did and flash it to the device.
+After the flashing is done the console will be attached and you can see all the logs.
+
+If you just want to attach the console to the running Core Module without building and flashing, you can use the **Attach console** command.
+
+Either way you should see the log messages in the console at the bottom of the Visual Studio Code.
+
+.. thumbnail:: ../_static/firmware/debugging/debuggingHardwarioCode.png
+    :width: 100%
+
 *************************
 Read logs with PlatformIO
 *************************
 
-If you want to easily read the logs from the device, you dont have to install any additional program.
+If you want to easily read the logs from the device, you don't have to install any additional program.
 You should read the :doc:`PlatformIO installation <platformio-installation>` to know how to install PlatformIO.
 
 After you installed the PlatformIO you can use it for reading the logs from the device.
@@ -122,45 +193,6 @@ There are two ways to do it:
 .. caution::
 
     The serial monitor button does not **build** nor **flash** the firmware into the device so keep that in mind.
-
-.. ************
-.. Colored logs
-.. ************
-..
-.. You can colorized your log output to highlight errors or warnings as you can see below:
-..
-..
-.. As you did debugging in previous chapter by command
-..
-.. .. code-block:: console
-..
-..     twr_log_info("Log");
-..
-.. You can colorized logs to 4 different colors as following commands down below. All colors you can see on screenshot in the beginning of this chapter.
-..
-.. **Debug (purple)**
-..
-.. .. code-block:: console
-..
-..     twr_log_debug("Log");
-..
-.. **Info (green)**
-..
-.. .. code-block:: console
-..
-..     twr_log_info("Log");
-..
-.. **Warning (orange)**
-..
-.. .. code-block:: console
-..
-..     twr_log_warning("Log");
-..
-.. **Error (red)**
-..
-.. .. code-block:: console
-..
-..     twr_log_error("Log");
 
 .. tip::
 
