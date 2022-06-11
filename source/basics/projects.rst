@@ -469,8 +469,8 @@ Projects
                         <td>
                                 <div>
                                         <p style="float: left;"><img src="../../_static/basics/projects/48.blob" width="70%"></p>
-                                        <h3><a href="https://www.hackster.io/vladimirm/soil-humidity-monitoring-using-lorawan-and-hardwario-d0ddbb">Soil humidity monitoring using LoRaWAN and Hardwario</a></h3>
-                                        <p>Using a Soil sensor with a Lora module from Hardwario I can control irrigation system in a greenhouse only when it's actually needed.</p>
+                                        <h3><a href="https://www.hackster.io/vladimirm/soil-humidity-monitoring-using-lorawan-and-hardwario-d0ddbb">Soil humidity monitoring using LoRaWAN and HARDWARIO</a></h3>
+                                        <p>Using a Soil sensor with a Lora module from HARDWARIO I can control irrigation system in a greenhouse only when it's actually needed.</p>
                                 </div>
                         </td>
                 </tr>
@@ -679,7 +679,7 @@ Projects
                         <td>
                                 <div>
                                         <p style="float: left;"><img src="../../_static/basics/projects/69.blob" width="70%"></p>
-                                        <h3><a href="https://www.hackster.io/jakub-smejkal/hardwario-non-invasive-heat-monitoring-with-infra-grid-2f1ea8">Hardwario non-invasive Heat Monitoring with Infra Grid</a></h3>
+                                        <h3><a href="https://www.hackster.io/jakub-smejkal/hardwario-non-invasive-heat-monitoring-with-infra-grid-2f1ea8">HARDWARIO non-invasive Heat Monitoring with Infra Grid</a></h3>
                                         <p>You can monitor heat on your production line or your air conditioning to detect overheating in your factory with the Infragrid module.</p>
                                 </div>
                         </td>

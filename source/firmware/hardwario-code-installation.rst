@@ -31,7 +31,7 @@ Linux
     If you don't have a **git** installed on your system, you will have to `install it <https://github.com/git-guides/install-git#install-git-on-linux>`_ for the extension to work fully.
 
 .. tip::
-    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
+    You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
 
 Windows
@@ -43,13 +43,13 @@ Windows
 - You should see HARDWARIO Logo on the side panel
 
 .. tip::
-    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
+    You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
 
 OSX
 ***
 
-- Download `Hardwario Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for OSX
+- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for macOS
 - Unpack the archive wherever you want
 - The unpacked folder should be named ``code-portable-data``
 - Download `Visual studio code portable for Mac <https://code.visualstudio.com/download>`_
@@ -59,11 +59,11 @@ OSX
 - You should see HARDWARIO Logo on the side panel
 
 .. tip::
-    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
+    You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
 
 ***********************************************
-HARDWARIO Tower extension to Visual Studio Code
+HARDWARIO TOWER extension to Visual Studio Code
 ***********************************************
 
 For the extension to work with the standalone version of Visual Studio Code, you will need to install the extension and set up the environment of your PC.
@@ -133,7 +133,7 @@ Folders to add to PATH:
     If you are using a Linux version you will have to install git, we are not using portable version for Linux.
 
 .. tip::
-    You can now start using the Visual Studio Code for developing HARDWARIO Tower Firmware.
+    You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
 
 ***************

@@ -38,7 +38,7 @@ Getting your first HARDWARIO TOWER firmware skeleton
 
     .. tip::
 
-        If you already have the HARDWARIO tower platform installed, you can also import the twr-skeleton by going into the PlatformIO extension in VSCode. In the extensions menu go to the
+        If you already have the HARDWARIO TOWER platform installed, you can also import the twr-skeleton by going into the PlatformIO extension in VSCode. In the extensions menu go to the
 
         ``Platforms -> Installed -> HARDWARIO TOWER - Industrial IoT Kit -> Examples -> twr-skeleton`` and then hit import.
 

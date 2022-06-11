@@ -2,9 +2,9 @@
 Connect to The Things Network
 =============================
 
-This guide provides step-by-step instructions for connecting Hardwario LoRa
+This guide provides step-by-step instructions for connecting HARDWARIO LoRa
 devices to The Things Network (TTN). It covers the installation of a LoRaWAN
-gateway, configuration of a Hardwario LoRa device for TTN, connecting the device
+gateway, configuration of a HARDWARIO LoRa device for TTN, connecting the device
 to TTN, and uploading a payload formatter to TTN.
 
 .. note::
@@ -30,11 +30,11 @@ location. The gateways within each cluster are organized into communities. A
 community is a group of volunteers in a specific region, e.g., city or country,
 who operate LoRa gateways.
 
-Hardwario LoRa Module
+HARDWARIO LoRa Module
 ---------------------
 
-The Hardwario `LoRa module <https://shop.hardwario.com/lora-module/>`_ is
-compatible with TTN. Thus, you can connect your Hardwario device to TTN and
+The HARDWARIO `LoRa module <https://shop.hardwario.com/lora-module/>`_ is
+compatible with TTN. Thus, you can connect your HARDWARIO device to TTN and
 access its measurements through any of the APIs and protocols supported by the
 network, including (but not limited to) HTTP push (webhooks), MQTT, AWS IoT,
 Azure IoT. If your LoRa devices are installed in an area that is already covered
@@ -105,13 +105,13 @@ select the appropriate frequency plan for your region in the dropdown "Frequency
 plan". Click on the button "Claim gateway" to complete the process. You should
 be then redirected to the overview page for the gateway.
 
-Connect Hardwario LoRa Device to TTN
+Connect HARDWARIO LoRa Device to TTN
 ====================================
 
-Connecting a Hardwario LoRa device to TTN consists of the following steps:
+Connecting a HARDWARIO LoRa device to TTN consists of the following steps:
 
 #. Create a TTN application (optional if you already have one)
-#. Configure Hardwario LoRa device for TTN
+#. Configure HARDWARIO LoRa device for TTN
 #. Register the device in TTN
 #. Execute the OTAA join operation on the device
 #. Upload a payload formatter to TTN (optional)
@@ -120,7 +120,7 @@ TTN-related steps are performed in the web-based `TTN console
 <https://console.cloud.thethings.network>`_. LoRa device configuration is
 performed via the `AT command interface
 <https://tower.hardwario.com/en/latest/tutorials/lora-at-commands-configuration/>`_
-provided by the Hardwario Core module over its USB-serial interface.
+provided by the HARDWARIO Core module over its USB-serial interface.
 
 Create TTN Application
 ----------------------
@@ -142,20 +142,20 @@ overview page for the newly created application that looks like this:
 .. thumbnail:: ../_static/tutorials/connect-to-ttn/application-overview.png
    :width: 90%
 
-Configure Hardwario LoRa Device for TTN
+Configure HARDWARIO LoRa Device for TTN
 ---------------------------------------
 
 Make sure you have a recent firmware with LoRa module support loaded in the
-device. If not, follow the instructions on the `Hardwario developer website
+device. If not, follow the instructions on the `HARDWARIO developer website
 <https://tower.hardwario.com/en/latest/>`_ to load the right firmware into the
 device.
 
 Connect to Device
 ~~~~~~~~~~~~~~~~~
 
-Connect the Hardwario device to your computer with a USB cable. We need to find
+Connect the HARDWARIO device to your computer with a USB cable. We need to find
 out the filename assigned to the device’s serial interface by the Linux kernel.
-There are several ways to do this. If you have the Hardwario `firmware flashing
+There are several ways to do this. If you have the HARDWARIO `firmware flashing
 tool
 <https://tower.hardwario.com/en/latest/tools/hardwario-firmware-flashing-tool/>`_
 installed, run ``bcf devices -v`` to see a list of all connected devices:
@@ -171,7 +171,7 @@ installed, run ``bcf devices -v`` to see a list of all connected devices:
         hwid: USB VID:PID=0403:6015 SER=2416968042 LOCATION=1-4
 
 Select the filename corresponding to your device’s serial number (SER=). In the
-above example, there is one Hardwario Core module with serial number 2416968042
+above example, there is one HARDWARIO Core module with serial number 2416968042
 and its filename is ``/dev/ttyUSB1``.
 
 Next, use `picocom <https://linux.die.net/man/8/picocom>`_, `minicom
@@ -186,7 +186,7 @@ delimiter. With picocom you can use the the following command line parameters:
     picocom -b 115200 --omap crcrlf --echo /dev/ttyUSB1
 
 In the following sections, we will be using the AT command interface supported
-by all Hardwario ``twr-lora`` firmware. If you are unfamiliar with AT commands,
+by all HARDWARIO ``twr-lora`` firmware. If you are unfamiliar with AT commands,
 please read the `guide to LoRa AT commands
 <https://tower.hardwario.com/en/latest/tutorials/lora-at-commands-configuration/>`_
 first.
@@ -200,7 +200,7 @@ Reset to Factory Defaults
     settings and state are a suprisingly common source of problems during device
     activation.
 
-The Hardwario LoRa module has persistent internal memory that is used to store
+The HARDWARIO LoRa module has persistent internal memory that is used to store
 modem settings. If you are unsure what state your LoRa module is in, e.g.,
 whether it has any previous saved settings or configuration, consider resetting
 the module to factory defaults.
@@ -218,7 +218,7 @@ reset the LoRa module to factory defaults. Once the module has responded with
 Configure LoRa Modem
 ~~~~~~~~~~~~~~~~~~~~
 
-Configure the Hardwario LoRa module for TTN. First, select the right frequency
+Configure the HARDWARIO LoRa module for TTN. First, select the right frequency
 band based on your region:
 
 .. code-block::
@@ -259,10 +259,10 @@ use. Send the following command to activate the OTAA mode:
     reboot. Thus, you should issue ``AT$MODE=1`` before every ``AT$JOIN``
     (discussed below).
 
-Register Hardwario LoRa Device in TTN
+Register HARDWARIO LoRa Device in TTN
 -------------------------------------
 
-First, use the AT command interface to obtain a few values from the Hardwario
+First, use the AT command interface to obtain a few values from the HARDWARIO
 LoRa module that will be needed to register the device in TTN:
 
 .. code-block::
@@ -294,7 +294,7 @@ screen:
    :width: 90%
 
 
-The Hardwario LoRa module is not included in the TTN LoRaWAN device repository.
+The HARDWARIO LoRa module is not included in the TTN LoRaWAN device repository.
 Thus, we need to register the device manually. Select the tab "Manually":
 
 .. thumbnail:: ../_static/tutorials/connect-to-ttn/register-device-manually.png
@@ -303,11 +303,11 @@ Thus, we need to register the device manually. Select the tab "Manually":
 In the dropdown "Frequency plan" select the appropriate frequency plan for your
 region. Most likely, this will be one of the plans marked with "(used by TTN)".
 The frequency plan must match the frequency plan that you configured in the
-Hardwario LoRa module with the command ``AT$BAND``.
+HARDWARIO LoRa module with the command ``AT$BAND``.
 
 In the dropdown "LoRaWAN version" select "MAC V1.0.2".
 Select "PHY v1.0.2 REV B" in the dropdown "Regional Parameters version".
-This is the most recent MAC version supported by the Hardwario LoRa module. 
+This is the most recent MAC version supported by the HARDWARIO LoRa module.
 
 Paste the DevEUI, AppEUI, and AppKey values obtained through the AT command
 interface earlier into the corresponding form fields. The completely filled out
@@ -346,13 +346,13 @@ reboot the device, and follow the configuration steps mentioned earlier.
     All LoRa module settings as well as the keys generated during OTAA join are
     stored in the internal flash memory **of the LoRa module**. If you replace
     the LoRa module, you will have to configure and join the device to TTN again.
-    
+
     Also, connecting a previously joined LoRa module to a new Core module with
     a different firmware can be problematic if the firmware uses an incompatible
     payload format. Since the identity of the device (from TTN point of view) is
     tied to the LoRa module and not to the Core module, TTN may apply incorrect
     (old) payload formatters to the new device.
-    
+
     For the above reasons, we recommend to always reset the LoRa module to
     factory defaults with ``AT$FRESET`` if the module is being replaced or
     reconnected to another Core module.
@@ -407,7 +407,7 @@ for example, the state of various sensors. The formatter function converts the
 binary payload into a JavaScript object and the object is returned in the
 property data.
 
-For firmware created by Hardwario, you can often find a default payload
+For firmware created by HARDWARIO, you can often find a default payload
 formatter implementation in the Github repository for the firmware. For example,
 a payload formatter for the firmware ``twr-lora-climate-monitor`` can be found
 `here

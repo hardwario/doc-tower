@@ -1,12 +1,12 @@
 ############################################
-HARDWARIO Tower Visual Studio Code extension
+HARDWARIO TOWER Visual Studio Code extension
 ############################################
 
 .. note::
-    This tutorial expects that you have a running Visual Studio Code with our HARDWARIO Tower extension installed.
+    This tutorial expects that you have a running Visual Studio Code with our HARDWARIO TOWER extension installed.
     If you don't please visit the :doc:`Installation guide <hardwario-code-installation>`.
 
-This extension makes it possible to simply develop, flash and debug firmware for HARDWARIO Tower.
+This extension makes it possible to simply develop, flash and debug firmware for HARDWARIO TOWER.
 
 It runs in two modes:
 
@@ -15,7 +15,7 @@ It runs in two modes:
     .. thumbnail:: ../_static/firmware/hardwario-code/basicMode.png
         :width: 30%
 
-- If you have some HARDWARIO Tower firmware open (**Firmware Mode**)
+- If you have some HARDWARIO TOWER firmware open (**Firmware Mode**)
 
     .. thumbnail:: ../_static/firmware/hardwario-code/firmwareMode.png
         :width: 30%
@@ -26,7 +26,7 @@ In both modes you should see the HARDWARIO logo on the side panel.
 Basic Mode
 **********
 
-If you didn't open folder with HARDWARIO Tower firmware the extension will activate but will provide fewer options.
+If you didn't open folder with HARDWARIO TOWER firmware the extension will activate but will provide fewer options.
 
 You will get access to some basic commands that will lead you to our websites and then two commands for cloning firmware from our GitHub.
 
