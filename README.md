@@ -75,4 +75,4 @@ This project is licensed under the [**Creative Commons Attribution-ShareAlike 4.
 
 ---
 
-Made with ❤️ by [**HARDWARIO s.r.o.**](https://www.hardwario.com/) in the heart of Europe.
+Made with ❤️ by [**HARDWARIO a.s.**](https://www.hardwario.com/) in the heart of Europe.
