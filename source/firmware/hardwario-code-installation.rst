@@ -136,15 +136,23 @@ Folders to add to PATH:
     You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
 
-***************
-Firmware update
-***************
+****************
+Firmware upgrade
+****************
 
-In this stat you might encounter the warning that you are using a deprecated firmware version. You will get a warning on the bottom right corner.
-In this case just click the Update button on the warning message and after a while the firmware should be updated and ready to use.
+.. important::
+    This feature makes it possible to upgrade the project from PlatformIO project to the new HARDWARIO Code project structure.
+
+In the start you might encounter the warning that you are using a deprecated firmware version. You will get a warning on the bottom right corner.
+In this case just click the Upgrade button on the warning message and after a while the firmware should be upgraded and ready to use.
+
+You can also use ``Upgrade Firmware Project`` button in the extension side panel if you missed the warning message.
+
+.. thumbnail:: ../_static/firmware/hardwario-code/upgradeFirmware.png
+    :width: 40%
 
 .. tip::
-    After the update you should reload the window for everything to work correctly.
+    After the upgrade you should reload the window for everything to work correctly.
 
 If you encounter problems with compiling and uploading the firmware you can check these things:
 
