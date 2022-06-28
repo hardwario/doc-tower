@@ -15,8 +15,7 @@ There is a little difference between installation with the Portable version and 
 Debugging with Portable Version
 *******************************
 
-If you downloaded our Portable version of Visual Studio Code.
-You should have all the required programs in the ``/data``(Windows/Linux) or ``code-portable-data``(macOS) folder.
+If you downloaded our Portable version of Visual Studio Code you should have all the required programs in the ``/data``(Windows/Linux) or ``code-portable-data``(macOS) folder.
 
 The only thing that you will need to install are JLink drivers if you don't have them already.
 

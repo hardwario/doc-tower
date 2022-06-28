@@ -79,7 +79,7 @@ Build + Flash (Debugger)
 ************************
 
 .. warning::
-    You have to have ``arm-none-eabi-gdb`` and ``JLinkGDBServerCL`` in PATH for this to work.
+    You have to have ``arm-none-eabi-gdb`` and ``JLinkGDBServerCL`` in PATH for this to work. If you are using our portable version you don't have to worry about that.
 
 This command will not attach the console like the previous one but will instead try to attach to JLink debugger for some advanced debugging.
 You can read more about JLink debugging in

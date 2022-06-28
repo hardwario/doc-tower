@@ -156,7 +156,7 @@ Where to Begin
    firmware/firmware-quick-start
    firmware/blank-start
    firmware/debugging
-   ..firmware/advanced-debugging
+   firmware/advanced-debugging
    firmware/hardwario-code-installation
    firmware/hardwario-code-tutorial
    firmware/advanced-firmware-information

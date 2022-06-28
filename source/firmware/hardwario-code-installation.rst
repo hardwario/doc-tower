@@ -49,13 +49,11 @@ Windows
 OSX
 ***
 
-- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for macOS
-- Unpack the archive wherever you want
-- The unpacked folder should be named ``code-portable-data``
-- Download `Visual studio code portable for Mac <https://code.visualstudio.com/download>`_
-- Unpack the Visual Studio Code.app next to the ``code-portable-data`` folder
-- Lift the default quarantine of the app by executing ``xattr -dr com.apple.quarantine Visual\ Studio\ Code.app`` in terminal
-- Run Visual Studio Code
+- Download `HARDWARIO Code installation package <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for macOS
+- Run the installer by double clicking it
+- Follow the installer instruction
+- You should see a HARDWARIO_Code folder in your Applications folder
+- Run ``HARDWARIO_Code/hardwario-code/Visual Studio Code``
 - You should see HARDWARIO Logo on the side panel
 
 .. tip::
@@ -157,7 +155,7 @@ You can also use ``Upgrade Firmware Project`` button in the extension side panel
 If you encounter problems with compiling and uploading the firmware you can check these things:
 
 - there is a **sdk** folder present and filled
-- Makefile in sdk folder has this line at the beggining: ``APP_DIR ?= src``
+- Makefile in sdk folder has this line at the begging: ``APP_DIR ?= src``
 - Makefile in the root folder looks something like this:
 
 .. code-block:: none
