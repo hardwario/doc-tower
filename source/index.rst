@@ -152,13 +152,13 @@ Where to Begin
    :hidden:
 
    firmware/basic-overview
-   firmware/platformio-installation
+   firmware/hardwario-code-installation
+   firmware/hardwario-code-tutorial
    firmware/firmware-quick-start
    firmware/blank-start
    firmware/debugging
+   firmware/hardwario-console
    firmware/advanced-debugging
-   firmware/hardwario-code-installation
-   firmware/hardwario-code-tutorial
    firmware/advanced-firmware-information
    firmware/low-power-measurements-and-radio
    firmware/timing-and-scheduler

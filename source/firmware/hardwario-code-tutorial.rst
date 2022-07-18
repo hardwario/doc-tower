@@ -10,17 +10,22 @@ This extension makes it possible to simply develop, flash and debug firmware for
 
 It runs in two modes:
 
-- If you have anything else or nothing open (**Basic Mode**)
+- If you have anything else or nothing open (:ref:`Basic Mode<basic-mode>`)
 
     .. thumbnail:: ../_static/firmware/hardwario-code/basicMode.png
         :width: 30%
 
-- If you have some HARDWARIO TOWER firmware open (**Firmware Mode**)
+- If you have some HARDWARIO TOWER firmware open (:ref:`Firmware Mode<firmware-mode>`)
 
     .. thumbnail:: ../_static/firmware/hardwario-code/firmwareMode.png
         :width: 30%
 
 In both modes you should see the HARDWARIO logo on the side panel.
+
+.. thumbnail:: ../_static/firmware/firmware-quick-start/hardwario-extension-icon.png
+        :width: 40%
+
+.. _basic-mode:
 
 **********
 Basic Mode
@@ -49,16 +54,21 @@ After you select the folder you can name your firmware folder so you don't have 
 
 After you clone the firmware the window will be reopened with the firmware.
 
+.. _firmware-mode:
+
 *************
 Firwmare Mode
 *************
 
 In this mode you will get some additional controls on the bottom panel and in the side panel.
 
-On the bottom panel there are some additional controls that you can use:
+On the bottom panel there are some important controls that you can quickly use so you can develop without the side panel:
 
-- **Device selection** - with this you will have to select device that you want to work with. If you have no HARDWARIO devices connected there will be a **No Device** prompt. If you have multiple devices connected, you can browse through them by clicking on the text.
-- **Firmware type selection** - you can choose if you want to build in **debug** or **release** mode. For normal development we recommend to use the default **debug** setting.
+.. thumbnail:: ../_static/firmware/hardwario-code/controls-panel.png
+    :width: 100%
+
+- **Device selection** - with this you will have to select device that you want to work with. If you have no HARDWARIO devices connected there will be a **No Device found!** prompt. If you have multiple devices connected, you can browse through them by clicking on the text.
+- **Firmware type selection** - you can choose if you want to build in **debug** or **release** mode. For normal development we recommend to use the default **debug** setting because it enables logging.
 - There are other symbols that you can use which will be described later, with the commands that they call.
 
 Build + Flash (Console) |debug-alt|
@@ -82,7 +92,7 @@ Build + Flash (Debugger)
     You have to have ``arm-none-eabi-gdb`` and ``JLinkGDBServerCL`` in PATH for this to work. If you are using our portable version you don't have to worry about that.
 
 This command will not attach the console like the previous one but will instead try to attach to JLink debugger for some advanced debugging.
-You can read more about JLink debugging in
+You can read more about JLink debugging in :doc:`Advanced Debugging chapter <advanced-debugging>`.
 
 Clean All Outputs |trash|
 *************************
@@ -98,7 +108,7 @@ Build Firmware |check|
 .. |check| thumbnail:: ../_static/firmware/hardwario-code/check.png
     :width: 4%
 
-This command runs **make** on the code. You can check if you have some errors or warnings in the code before you flash it into the device.
+This command runs **cmake** and **ninja** on the code. You can check if you have some errors or warnings in the code before you flash it into the device.
 
 Flash Firmware |up-arrow|
 *************************
@@ -116,6 +126,7 @@ This command will attach console to the selected device so you can view the log 
 .. tip::
     To learn about debugging with the console you can visit :ref:`debugging with HARDWARIO Code <debug-hardwario-code>`.
 
+
 Attach Debugger
 ***************
 
@@ -125,6 +136,8 @@ Attach Debugger
 This command will try to connect to a JLink for advanced debugging.
 
 Debugging can be started multiple ways.
+
+You can read more about JLink debugging in :doc:`Advanced Debugging chapter <advanced-debugging>`.
 
 Press F5 button with some \*.c or \*.h file in focus
 ====================================================

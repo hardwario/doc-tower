@@ -157,8 +157,9 @@ Read logs with HARDWARIO Code
 You can use our Visual Studio Code extension to attach console to the connected Core Module.
 
 You can use two commands in the extension to attach console:
-- **Build + Flash (Console)**
-- **Attach console**
+
+#. **Build + Flash (Console)**
+#. **Attach console**
 
 It is advised to use the first one. It will build the firmware so it includes all the changes that you did and flash it to the device.
 After the flashing is done the console will be attached and you can see all the logs.
@@ -167,32 +168,11 @@ If you just want to attach the console to the running Core Module without buildi
 
 Either way you should see the log messages in the console at the bottom of the Visual Studio Code.
 
+.. tip::
+    To learn more about this console you can visit :doc:`HARDWARIO Console chapter<hardwario-console>`.
+
 .. thumbnail:: ../_static/firmware/debugging/debuggingHardwarioCode.png
     :width: 100%
-
-*************************
-Read logs with PlatformIO
-*************************
-
-If you want to easily read the logs from the device, you don't have to install any additional program.
-You should read the :doc:`PlatformIO installation <platformio-installation>` to know how to install PlatformIO.
-
-After you installed the PlatformIO you can use it for reading the logs from the device.
-
-There are two ways to do it:
-
-* PlatformIO IDE
-
-    .. thumbnail:: ../_static/firmware/debugging/platformioIDE-serial-monitor.png
-* PlatformIO Core CLI
-
-    * ``pio device monitor`` in your favourite terminal if you have Platformio Core (CLI) installed
-
-.. thumbnail:: ../_static/firmware/debugging/output-example.png
-
-.. caution::
-
-    The serial monitor button does not **build** nor **flash** the firmware into the device so keep that in mind.
 
 .. tip::
 

@@ -3,51 +3,39 @@ Firmware Quick Start
 ####################
 
 .. attention::
-    We are migrating to our own **Visual Studio Code extension** and a portable version of Visual Studio Code. For more information on how to install and use it visit
+    We are migrating to our own **Visual Studio Code extension** and a **portable version of Visual Studio Code**. For more information on how to install and use it visit
     :doc:`Developement with HARDWARIO Code <hardwario-code-installation>`.
 
 You can easily edit or create your custom firmware for HARDWARIO TOWER Core Module on every major operating system
-
-HARDARIO TOWER uses `PlatformIO <https://platformio.org>`_ for **building**, **uploading** and **debugging** firmware so it is easy for all the users.
 
 ****************************************************
 Getting your first HARDWARIO TOWER firmware skeleton
 ****************************************************
 
-.. |open-with-code| thumbnail:: ../_static/firmware/firmware-quick-start/open-vscode.png
-        :width: 45%
-
-.. |open-folder| thumbnail:: ../_static/firmware/firmware-quick-start/open-folder.png
-        :width: 50%
-
 .. important::
 
-    This chapter assumes that you already have PlatformIO installed on you computer.
-    If not please visit :doc:`PlatformIO installation <platformio-installation>`.
+    This chapter assumes that you already have **HARDWARIO CODE** or **HARDWARIO TOWER extension** installed on you computer.
+    If not please visit :doc:`HARDWARIO CODE Installation chapter <hardwario-code-installation>`.
 
-#. Open VSCode and the PlatformIO icon on the left side bar
-#. Open the Command Palette by pressing ``Ctrl + Shift + P`` or ``F1`` (``Cmd + Shift + P`` on Mac)
-#. Type ``Git: Clone``, press Enter, paste following URL and hit Enter again
+.. tip::
+    If you are returning to the project use **Open folder** option in VSCode. Go to the ``File -> Open Folder...`` or use ``Ctrl + O``
 
-    .. code-block:: console
 
-        https://github.com/hardwario/twr-skeleton.git
+#. Open VSCode and the HARDWARIO icon on the left side bar
 
-    .. thumbnail:: ../_static/firmware/firmware-quick-start/git-clone-recursive.png
-        :width: 100%
+    .. thumbnail:: ../_static/firmware/firmware-quick-start/hardwario-extension-icon.png
+        :width: 40%
 
-    .. tip::
+#. In the section **Start New TOWER Firmware** select ``From Skeleton Project...``
 
-        If you already have the HARDWARIO TOWER platform installed, you can also import the twr-skeleton by going into the PlatformIO extension in VSCode. In the extensions menu go to the
+    .. thumbnail:: ../_static/firmware/firmware-quick-start/from-skeleton-project.png
+        :width: 40%
 
-        ``Platforms -> Installed -> HARDWARIO TOWER - Industrial IoT Kit -> Examples -> twr-skeleton`` and then hit import.
-
-        Your project will be opened after importing. It will put some numbers to the name but you can rename it later.
-
-#. | Click open in the down right corner of VSCode after the cloning is done
-   | If you are returning to the project use **Open folder** option in VSCode. Go to the ``File -> Open Folder...`` or use ``Ctrl + O``
-
-#. Connect the Core Module into the computer with USB cable and click the **Upload** button ``➜`` at the bottom of the VSCode window
+#. Select **folder** where the new firmware should be created
+#. You will be prompted to name the folder, default **twr-skeleton** is just fine for now
+#. Wait for the firmware to download
+#. Visual Studio Code will reopen with the new firmware opened
+#. Connect the Core Module into the computer with USB cable and click the **Upload** button ``↑`` at the blue bar on the bottom of the VSCode window
 
     .. tip::
 
@@ -67,7 +55,6 @@ If you are not sure how to do that, keep your **twr-skeleton** project open and 
 
 .. tip::
 
-    You can get even more examples by going to the installed platform.
-    How to get there is mentioned in the green tip bubble. You can find this tip in the third step of the list on this page.
+    You can get even more examples clicking on ``From Existing Project...`` in the second step and selecting the firmware that you like.
 
     All the examples are verified and should work without issues.

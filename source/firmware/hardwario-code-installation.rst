@@ -6,8 +6,10 @@ HARDWARIO Code Installation
     The extension is still in development and you might experience some issues with it. If you do, please let us know on `our forum <https://forum.hardwario.com>`_
     or directly on `GitHub <https://github.com/hardwario/hardwario-tower-vscode-extension/issues>`_.
 
-There are two ways how to develop with the new extension. You can use your own Visual Studio Code and install the extension into it
-or you can download the portable version of Visual Studio Code.
+There are two ways how to develop with the new extension. You can use your :ref:`own Visual Studio Code and install the extension <my-code>` into it
+or you can download the :ref:`portable version of Visual Studio Code <portable-code>`.
+
+.. _portable-code:
 
 **************************************
 Portable version of Visual Studio Code
@@ -32,7 +34,8 @@ Linux
 
 .. tip::
     You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
-    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
+    or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
 
 Windows
 *******
@@ -44,7 +47,8 @@ Windows
 
 .. tip::
     You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
-    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
+    or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
 
 OSX
 ***
@@ -58,7 +62,10 @@ OSX
 
 .. tip::
     You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
-    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
+    or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
+
+.. _my-code:
 
 ***********************************************
 HARDWARIO TOWER extension to Visual Studio Code
@@ -80,21 +87,14 @@ Additional setup
 
 You will need some dependencies for the extension to work as intended:
 
-- **make** - for compiling the firmware
+- **cmake**
 
-    - `Windows installation make <https://www.technewstoday.com/install-and-use-make-in-windows/>`_
-    - `Linux installation make <https://linuxhint.com/install-make-ubuntu/>`_
-    - `macOS installation make <https://formulae.brew.sh/formula/make>`_
+    - `Installation for all systems <https://cmake.org/install/>`_
 
-- **python** - our flashing and logging tool is made in python
+- **ninja** - used build system
 
-    - `Windows installation python <https://phoenixnap.com/kb/how-to-install-python-3-windows>`_
-    - `Linux installation python <https://www.scaler.com/topics/python/install-python-on-linux/>`_
-    - `macOS installation python <https://www.dataquest.io/blog/installing-python-on-mac/>`_
+    - `Installation for all systems <https://github.com/ninja-build/ninja/releases>`_
 
-- **bcf** - our flashing and logging tool made in python
-
-    - :doc:`Installation bcf with Python <../tools/hardwario-firmware-flashing-tool>`
 
 - **arm-none-eabi-gcc**
 
@@ -104,11 +104,18 @@ You will need some dependencies for the extension to work as intended:
 
 - **git** - for cloning submodules and firmwares
 
-    - `All installations git <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
+    - `All installations for git <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
+
 
 - **Linux commands** - you will need commands like ``rm`` and ``mkdir`` (*Windows only*)
 
     - You have to install git to your machine and then add the ``\usr\bin\`` folder to PATH. The folder path should look something like ``C:\Program Files\Git\usr\bin\``
+
+- **make** - for compiling the firmware (LEGACY)
+
+    - `Windows installation make <https://www.technewstoday.com/install-and-use-make-in-windows/>`_
+    - `Linux installation make <https://linuxhint.com/install-make-ubuntu/>`_
+    - `macOS installation make <https://formulae.brew.sh/formula/make>`_
 
 .. tip::
     The extension will warn you that you are missing some of those and provide you with a corresponding link.
@@ -118,8 +125,6 @@ you will find all the needed tools in the ``/data/tower/`` folder. You will just
 
 Folders to add to PATH:
 
-- ``python/``
-- ``python/Scripts/``
 - ``toolchain/make/bin/``
 - ``toolchain/gcc/bin/``
 - ``toolchain/gcc/arm-none-eabi/bin/``
@@ -128,11 +133,13 @@ Folders to add to PATH:
 - ``toolchain/git/mingw64/bin``
 
 .. note::
-    If you are using a Linux version you will have to install git, we are not using portable version for Linux.
+    If you are using a Linux version you will have to install git, we are not using portable version of git for Linux.
 
 .. tip::
     You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
-    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
+    or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
+
 
 ****************
 Firmware upgrade
@@ -155,29 +162,6 @@ You can also use ``Upgrade Firmware Project`` button in the extension side panel
 If you encounter problems with compiling and uploading the firmware you can check these things:
 
 - there is a **sdk** folder present and filled
-- Makefile in sdk folder has this line at the begging: ``APP_DIR ?= src``
-- Makefile in the root folder looks something like this:
-
-.. code-block:: none
-
-    SDK_DIR ?= sdk
-    VERSION ?= vdev
-
-    CFLAGS += -D'VERSION="${VERSION}"'
-
-    -include sdk/Makefile.mk
-
-    .PHONY: all
-    all: debug
-
-    .PHONY: sdk
-    sdk: sdk/Makefile.mk
-
-    .PHONY: update
-    update:
-        @git submodule update --remote --merge sdk
-
-    sdk/Makefile.mk:
-        @git submodule update --init sdk
-
+- There should be a CMakeLists.txt in the `root` folder and in the `src` folder
+- You can check if all the \*.c files are listed in the src/CMakeLists.txt on the first line
 
