@@ -36,8 +36,8 @@ Just copy the command below and replace **PATH_TO_HARDWARIO_CODE** with the actu
 You can unplug and plug the JLink and reboot your system after executing the command.
 After that you should be able to start debugging with JLink.
 
-OSX
-***
+macOS
+*****
 
 On macOS the JLink should be detected automatically so there is no additional steps needed.
 

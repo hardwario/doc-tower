@@ -21,6 +21,20 @@ This approach is good if you want to start developing quickly without setting up
 
 You will have to do just a few simple steps based on your operating system.
 
+Windows
+*******
+
+- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
+- Unpack the archive wherever you want
+- Run the **Code.exe**
+- You should see HARDWARIO Logo on the side panel
+
+.. tip::
+    You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
+    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
+    or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
+
+
 Linux
 *****
 
@@ -37,21 +51,9 @@ Linux
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
     or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
 
-Windows
-*******
 
-- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
-- Unpack the archive wherever you want
-- Run the **Code.exe**
-- You should see HARDWARIO Logo on the side panel
-
-.. tip::
-    You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
-    To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
-    or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
-
-OSX
-***
+macOS
+*****
 
 - Download `HARDWARIO Code installation package <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for macOS
 - Run the installer by double clicking it
@@ -94,6 +96,8 @@ You will need some dependencies for the extension to work as intended:
 - **ninja** - used build system
 
     - `Installation for all systems <https://github.com/ninja-build/ninja/releases>`_
+    - `Linux <https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages#linux>`_
+    - `macOS <https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages#mac>`_
 
 
 - **arm-none-eabi-gcc**
