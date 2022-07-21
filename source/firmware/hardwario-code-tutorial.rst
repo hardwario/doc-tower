@@ -71,6 +71,8 @@ On the bottom panel there are some important controls that you can quickly use s
 - **Firmware type selection** - you can choose if you want to build in **debug** or **release** mode. For normal development we recommend to use the default **debug** setting because it enables logging.
 - There are other symbols that you can use which will be described later, with the commands that they call.
 
+.. _build-flash-console:
+
 Build + Flash (Console) |debug-alt|
 ***********************************
 
@@ -117,6 +119,8 @@ Flash Firmware |up-arrow|
     :width: 3%
 
 This command will flash the firmware onto the selected device. It will also run build in case you didn't do that before or forgot to rebuild the changes.
+
+.. _attach-console:
 
 Attach Console
 **************

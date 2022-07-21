@@ -3,8 +3,9 @@ Firmware Quick Start
 ####################
 
 .. attention::
-    We are migrating to our own **Visual Studio Code extension** and a **portable version of Visual Studio Code**. For more information on how to install and use it visit
-    :doc:`Developement with HARDWARIO Code <hardwario-code-installation>`.
+
+    This document assumes that you already have portable :ref:`HARDWARIO CODE <portable-hardwario-code>` or :ref:`HARDWARIO TOWER extension <hardwario-tower-extension>` installed on you computer.
+
 
 You can easily edit or create your custom firmware for HARDWARIO TOWER Core Module on every major operating system
 
@@ -12,13 +13,9 @@ You can easily edit or create your custom firmware for HARDWARIO TOWER Core Modu
 Getting your first HARDWARIO TOWER firmware skeleton
 ****************************************************
 
-.. important::
-
-    This chapter assumes that you already have **HARDWARIO CODE** or **HARDWARIO TOWER extension** installed on you computer.
-    If not please visit :doc:`HARDWARIO CODE Installation chapter <hardwario-code-installation>`.
 
 .. tip::
-    If you are returning to the project use **Open folder** option in VSCode. Go to the ``File -> Open Folder...`` or use ``Ctrl + O``
+    If you are returning to the project use **Open folder** option in VSCode. Go to the ``File -> Open Folder...`` or use ``Ctrl + K`` then ``Ctrl + O``
 
 
 #. Open VSCode and the HARDWARIO icon on the left side bar
@@ -31,20 +28,20 @@ Getting your first HARDWARIO TOWER firmware skeleton
     .. thumbnail:: ../_static/firmware/firmware-quick-start/from-skeleton-project.png
         :width: 40%
 
-#. Select **folder** where the new firmware should be created
+#. Select **folder** where the new firmware project folder should be created
 #. You will be prompted to name the folder, default **twr-skeleton** is just fine for now
 #. Wait for the firmware to download
 #. Visual Studio Code will reopen with the new firmware opened
-#. Connect the Core Module into the computer with USB cable and click the **Upload** button ``↑`` at the blue bar on the bottom of the VSCode window
+#. Connect the Core Module into the computer with USB cable and click the **Flash firmware** button ``↑`` at the blue bar on the bottom of the VSCode window
+#. The Core Module is flashed. The red LED will turn on, when you press the button the LED toggles
 
-    .. tip::
+.. tip::
 
-        If you did some changes to the code in the ``src/application.c`` you don't have to click **Build** button every time,
-        the **Upload** button will detect the changes and compile all changed files before uploading to the device.
+    If you did some changes to the code in the ``src/application.c`` you don't have to click **Build** button every time,
+    the **Upload** button will detect the changes and compile all changed files before uploading to the device.
 
-.. note::
 
-    The Core Module is flashed. The red LED will turn on, when you press the button the LED toggles.
+
 
 *********
 Next step
@@ -56,5 +53,3 @@ If you are not sure how to do that, keep your **twr-skeleton** project open and 
 .. tip::
 
     You can get even more examples clicking on ``From Existing Project...`` in the second step and selecting the firmware that you like.
-
-    All the examples are verified and should work without issues.

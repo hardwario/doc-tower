@@ -11,8 +11,8 @@ explains the structure of the created project and the typical development cycle.
 
 .. warning::
 
-    This document assumes that you already have **HARDWARIO CODE** or **HARDWARIO TOWER extension** installed on you computer.
-    If not please visit :doc:`HARDWARIO CODE Installation chapter <hardwario-code-installation>`.
+    This document assumes that you already have portable :ref:`HARDWARIO CODE <portable-hardwario-code>` or :ref:`HARDWARIO TOWER extension <hardwario-tower-extension>` installed on you computer.
+
 
 ***********
 Hello World
@@ -75,10 +75,10 @@ Development Cycle
 
 Normally, the development cycle is the repetition of the following 4 steps:
 
-- Edit the file ``src/application.c``.
-- Build the project to check for the errors.
-- Upload the code into the **Core Module** or **Radio Dongle**.
+- Edit the file ``src/application.c`` and save changes ``Ctrl + S``.
+- Click on Build + Flash (Console) to compile, flash and open serial console for logging.
 - Test your firmware
+
 
     .. important::
         To see how to do these steps with HARDWARIO CODE, you can visit the :doc:`HARDWARIO CODE tutorial <hardwario-code-tutorial>`

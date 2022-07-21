@@ -6,10 +6,10 @@ HARDWARIO Code Installation
     The extension is still in development and you might experience some issues with it. If you do, please let us know on `our forum <https://forum.hardwario.com>`_
     or directly on `GitHub <https://github.com/hardwario/hardwario-tower-vscode-extension/issues>`_.
 
-There are two ways how to develop with the new extension. You can use your :ref:`own Visual Studio Code and install the extension <my-code>` into it
-or you can download the :ref:`portable version of Visual Studio Code <portable-code>`.
+There are two ways how to develop with the new extension. You can use your :ref:`own Visual Studio Code and install the extension <hardwario-tower-extension>` into it
+or you can download the :ref:`portable version of Visual Studio Code <portable-hardwario-code>`.
 
-.. _portable-code:
+.. _portable-hardwario-code:
 
 **************************************
 Portable version of Visual Studio Code
@@ -65,7 +65,7 @@ OSX
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
     or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
 
-.. _my-code:
+.. _hardwario-tower-extension:
 
 ***********************************************
 HARDWARIO TOWER extension to Visual Studio Code
