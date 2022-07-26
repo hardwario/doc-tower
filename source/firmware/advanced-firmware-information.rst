@@ -32,7 +32,7 @@ To your project, SDK is integrated as a **Git Submodule**. This has one advantag
 
 This makes sure that it will be possible to compile your firmware at any time in the future.
 
-But if you need to, the **SDK** can be updated to most recent version by simple ``make update`` command.
+But if you need to, the **SDK** can be updated to most recent version by clicking **Update SDK** command in the HARDWARIO extension menu.
 
 .. caution::
 

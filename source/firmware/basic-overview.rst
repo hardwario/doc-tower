@@ -13,8 +13,7 @@ After a first few of the next chapters you will be able to **build**, **upload**
 
 .. tip::
 
-    | If you just want to flash some already existing firmware we encourage you to use the :doc:`HARDWARIO Playground <../basics/hardwario-playground>`.
-    | It is more simple GUI tool that you can work with.
+    | If you just want to flash some already existing firmware we encourage you to use the :doc:`HARDWARIO Playground <../basics/hardwario-playground>` GUI tool.
 
 *********************
 Firmware developement

@@ -158,8 +158,8 @@ You can use our Visual Studio Code extension to attach console to the connected 
 
 You can use two commands in the extension to attach console:
 
-#. **Build + Flash (Console)**
-#. **Attach console**
+#. :ref:`Build + Flash (Console) <build-flash-console>`
+#. :ref:`Attach console <attach-console>`.
 
 It is advised to use the first one. It will build the firmware so it includes all the changes that you did and flash it to the device.
 After the flashing is done the console will be attached and you can see all the logs.
