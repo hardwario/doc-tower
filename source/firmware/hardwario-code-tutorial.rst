@@ -89,6 +89,7 @@ Build + Flash (Debugger)
 ************************
 
 .. warning::
+    You will need a `JLink Probe <https://www.segger.com/products/debug-probes/j-link/>`_ for this to work properly. This is for an advanced debugging.
     You have to have ``arm-none-eabi-gdb`` and ``JLinkGDBServerCL`` in PATH for this to work. If you are using our portable version you don't have to worry about that.
 
 This command will not attach the console like the previous one but will instead try to attach to JLink debugger for some advanced debugging.
@@ -131,6 +132,7 @@ Attach Debugger
 ***************
 
 .. important::
+    You will need a `JLink Probe <https://www.segger.com/products/debug-probes/j-link/>`_ for this to work properly. This is for an advanced debugging.
     You have to have ``arm-none-eabi-gdb`` and ``JLinkGDBServerCL`` in PATH for this to work.
 
 This command will try to connect to a JLink for advanced debugging.
