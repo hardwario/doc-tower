@@ -57,7 +57,7 @@ After you clone the firmware the window will be reopened with the firmware.
 .. _firmware-mode:
 
 *************
-Firwmare Mode
+Firmware Mode
 *************
 
 In this mode you will get some additional controls on the bottom panel and in the side panel.
