@@ -28,5 +28,6 @@ There are several buttons on the right side if you open the HARDWARIO TOWER Cons
         You can read more about mentioned commands in :doc:`HARDWARIO CODE tutorial <hardwario-code-tutorial>`.
 - **Scrool to bottom** - by default the console will scroll automatically with the messages. If you scroll to view some message autoscrool will turn off. To start it again, just click this button.
 - **Save Log** - this will save the displayed log.
+- **Allow Input** - this will allow to send input to the device. Usable for AT commands.
 - **Maximize window** - this will make the console bigger. It is a standard Visual Studio Code button available on most panels.
 - **Close panel** - this will close the whole panel, not just HARDWARIO TOWER Console.

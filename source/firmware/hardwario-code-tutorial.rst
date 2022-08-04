@@ -60,6 +60,9 @@ After you clone the firmware the window will be reopened with the firmware.
 Firmware Mode
 *************
 
+.. tip::
+    If you are using the standard firmware, the ``/src/application.c`` file should be opened.
+
 In this mode you will get some additional controls on the bottom panel and in the side panel.
 
 On the bottom panel there are some important controls that you can quickly use so you can develop without the side panel:
@@ -79,10 +82,12 @@ Build + Flash (Console) |debug-alt|
 .. |debug-alt| thumbnail:: ../_static/firmware/hardwario-code/debug-alt.png
     :width: 3%
 
-This command will do basically the whole cycle that you can use while developing. It will build the firmware, flash it to the selected device and then attach the console
+This command will do basically the whole cycle that you can use while developing.
+It will build the firmware, flash it to the selected device and then attach the console
 for the device to see the log messages.
 
-You can use this most of the times.
+.. note::
+    You can use this most of the times.
 
 .. tip::
     To learn about debugging with the console you can visit :ref:`debugging with HARDWARIO Code <debug-hardwario-code>`.

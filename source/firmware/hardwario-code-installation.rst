@@ -3,7 +3,7 @@ HARDWARIO Code Installation
 ###########################
 
 .. attention::
-    The extension is still in development and you might experience some issues with it. If you do, please let us know on `our forum <https://forum.hardwario.com>`_
+    If you experience some issues or difficulties with the extension or portable version, please let us know on `our forum <https://forum.hardwario.com>`_
     or directly on `GitHub <https://github.com/hardwario/hardwario-tower-vscode-extension/issues>`_.
 
 There are two ways how to develop with the new extension. You can use your :ref:`own Visual Studio Code and install the extension <hardwario-tower-extension>` into it
@@ -24,10 +24,11 @@ You will have to do just a few simple steps based on your operating system.
 Windows
 *******
 
-- Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
-- Unpack the archive wherever you want
-- Run the **Code.exe**
-- You should see HARDWARIO Logo on the side panel
+- Download `HARDWARIO Code installer for windows <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
+- Complete the installer
+- You should have **HARDWARIO Code** icon on the desktop
+- Wait for the program to open
+- You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
 
 .. tip::
     You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
@@ -39,9 +40,15 @@ Linux
 *****
 
 - Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
-- Unpack the archive wherever you want
-- Run the **code** binary
-- You should see HARDWARIO Logo on the side panel
+
+    - **.deb** package for the Debian and `its derivatives <https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based>`_
+    - **.rpm** package for `systems using RPM package manager <https://en.wikipedia.org/wiki/Category:RPM-based_Linux_distributions>`_
+    - **.tar.gz** for the rest
+
+- If you are using **.tar.gz** just unpack the archive wherever you want
+- If you are using the package, the **hardwario-code** folder will be created in the **/opt/** folder
+- Run the **code** binary from the terminal
+- You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
 
 .. warning::
     If you don't have a **git** installed on your system, you will have to `install it <https://github.com/git-guides/install-git#install-git-on-linux>`_ for the extension to work fully.
@@ -60,7 +67,7 @@ macOS
 - Follow the installer instruction
 - You should see a HARDWARIO_Code folder in your Applications folder
 - Run ``HARDWARIO_Code/hardwario-code/Visual Studio Code``
-- You should see HARDWARIO Logo on the side panel
+- You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
 
 .. tip::
     You can now start using the Visual Studio Code for developing HARDWARIO TOWER Firmware.
@@ -136,7 +143,7 @@ Folders to add to PATH:
 - ``toolchain/git/usr/bin/``
 - ``toolchain/git/mingw64/bin``
 
-.. note::
+.. warning::
     If you are using a Linux version you will have to install git, we are not using portable version of git for Linux.
 
 .. tip::
