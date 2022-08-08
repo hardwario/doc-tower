@@ -1,6 +1,6 @@
-#################
-HARDWARIO Console
-#################
+#############
+TOWER Console
+#############
 
 .. note::
     This tutorial expects that you have a running Visual Studio Code with our HARDWARIO TOWER extension installed.
@@ -25,7 +25,7 @@ There are several buttons on the right side if you open the HARDWARIO TOWER Cons
 - **Connect/Disconnect console** - this will attach console to the device that is selected on the bottom panel. If the console is already attached it will disconnect it. You don't have to use this button if you are using extension commands :ref:`Build + Flash (Console) <build-flash-console>` or :ref:`Attach console <attach-console>`.
 
     .. tip::
-        You can read more about mentioned commands in :doc:`HARDWARIO CODE tutorial <hardwario-code-tutorial>`.
+        You can read more about mentioned commands in :doc:`HARDWARIO Code tutorial <hardwario-code-tutorial>`.
 - **Scrool to bottom** - by default the console will scroll automatically with the messages. If you scroll to view some message autoscrool will turn off. To start it again, just click this button.
 - **Save Log** - this will save the displayed log.
 - **Allow Input** - this will allow to send input to the device. Usable for AT commands.

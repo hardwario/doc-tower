@@ -24,7 +24,7 @@ This setup along with some first few steps in firmware development is documented
 
 .. note::
 
-    To start with the setup you should go to the :doc:`HARDWARIO CODE Installation chapter <hardwario-code-installation>` and you will be guided from there.
+    To start with the setup you should go to the :doc:`HARDWARIO Code Installation chapter <hardwario-code-installation>` and you will be guided from there.
 
     At the end of each chapter you will be referred to the next one.
 

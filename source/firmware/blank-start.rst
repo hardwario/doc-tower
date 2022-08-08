@@ -11,7 +11,7 @@ explains the structure of the created project and the typical development cycle.
 
 .. warning::
 
-    This document assumes that you already have portable :ref:`HARDWARIO CODE <portable-hardwario-code>` or :ref:`HARDWARIO TOWER extension <hardwario-tower-extension>` installed on you computer.
+    This document assumes that you already have portable :ref:`HARDWARIO Code <portable-hardwario-code>` or :ref:`HARDWARIO TOWER extension <hardwario-tower-extension>` installed on you computer.
 
 
 ***********
@@ -81,7 +81,7 @@ Normally, the development cycle is the repetition of the following 4 steps:
 
 
     .. important::
-        To see how to do these steps with HARDWARIO CODE, you can visit the :doc:`HARDWARIO CODE tutorial <hardwario-code-tutorial>`
+        To see how to do these steps with HARDWARIO Code, you can visit the :doc:`HARDWARIO Code tutorial <hardwario-code-tutorial>`
 
     .. tip::
 

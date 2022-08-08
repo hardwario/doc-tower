@@ -169,7 +169,7 @@ If you just want to attach the console to the running Core Module without buildi
 Either way you should see the log messages in the console at the bottom of the Visual Studio Code.
 
 .. tip::
-    To learn more about this console you can visit :doc:`HARDWARIO Console chapter<hardwario-console>`.
+    To learn more about this console you can visit :doc:`TOWER Console chapter<hardwario-console>`.
 
 .. thumbnail:: ../_static/firmware/debugging/debuggingHardwarioCode.png
     :width: 100%

@@ -73,7 +73,7 @@ Example which flashes wireless-motion-detector firmware from `Radio Motion Detec
 Flashing Core Module R2
 ***********************
 
-To flash this version of Core module we are using HARDWARIO CODE or HARDWARIO Playground.
+To flash this version of Core module we are using HARDWARIO Code or HARDWARIO Playground.
 
 - :doc:`HARDWARIO Playground <../basics/hardwario-playground>`.
-- :doc:`HARDWARIO CODE <../firmware/hardwario-code-installation>`.
+- :doc:`HARDWARIO Code <../firmware/hardwario-code-installation>`.

@@ -4,7 +4,7 @@ Firmware Quick Start
 
 .. attention::
 
-    This document assumes that you already have portable :ref:`HARDWARIO CODE <portable-hardwario-code>` or :ref:`HARDWARIO TOWER extension <hardwario-tower-extension>` installed on you computer.
+    This document assumes that you already have portable :ref:`HARDWARIO Code <portable-hardwario-code>` or :ref:`HARDWARIO TOWER extension <hardwario-tower-extension>` installed on you computer.
 
 
 You can easily edit or create your custom firmware for HARDWARIO TOWER Core Module on every major operating system
