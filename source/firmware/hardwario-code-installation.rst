@@ -26,8 +26,12 @@ Windows
 
 - Download `HARDWARIO Code installer for windows <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
 - Complete the installer
+
+    .. note::
+        At the location selection we recommend to leave the **default path** that leads to your user **AppData**
+        (portable version of Visual Studio Code does not support multiple users installation)
 - You should have **HARDWARIO Code** icon on the desktop
-- Wait for the program to open
+- Wait for the **HARDWARIO Code** to open
 - You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
 
 .. tip::
@@ -35,19 +39,14 @@ Windows
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
     or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
 
-
 Linux
 *****
 
 - Download `HARDWARIO Code <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_
-
-    - **.deb** package for the Debian and `its derivatives <https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based>`_
-    - **.rpm** package for `systems using RPM package manager <https://en.wikipedia.org/wiki/Category:RPM-based_Linux_distributions>`_
-    - **.tar.gz** for the rest
-
-- If you are using **.tar.gz** just unpack the archive wherever you want
-- If you are using the package, the **hardwario-code** folder will be created in the **/opt/** folder
-- Run the **code** binary from the terminal
+- Unpack the archive wherever you want
+- If you want to have shortcut available and some additional drivers installed you can run ``install.sh`` script from the unpacked folder
+- Run the **code** binary from the terminal or find **HARDWARIO Code** with your search bar
+- Wait for the **HARDWARIO Code** to open
 - You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
 
 .. warning::
@@ -58,15 +57,15 @@ Linux
     To get some basic information on how to use the extension visit :doc:`HARWARIO Code tutorial <hardwario-code-tutorial>`
     or you can go straight to the :doc:`Firmware Quick Start chapter <firmware-quick-start>`.
 
-
 macOS
 *****
 
 - Download `HARDWARIO Code installation package <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for macOS
 - Run the installer by double clicking it
 - Follow the installer instruction
-- You should see a HARDWARIO_Code folder in your Applications folder
+- You should see a HARDWARIO_Code folder in your user's ~/Applications folder
 - Run ``HARDWARIO_Code/hardwario-code/Visual Studio Code``
+- Wait for the **HARDWARIO Code** to open
 - You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
 
 .. tip::
@@ -98,14 +97,11 @@ You will need some dependencies for the extension to work as intended:
 
 - **cmake**
 
-    - `Installation for all systems <https://cmake.org/install/>`_
+    - `Installation for all systems cmake <https://cmake.org/install/>`_
 
 - **ninja** - used build system
 
-    - `Installation for all systems <https://github.com/ninja-build/ninja/releases>`_
-    - `Linux <https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages#linux>`_
-    - `macOS <https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages#mac>`_
-
+    - `Installation for all systems ninja <https://github.com/ninja-build/ninja/releases>`_
 
 - **arm-none-eabi-gcc**
 
@@ -116,7 +112,6 @@ You will need some dependencies for the extension to work as intended:
 - **git** - for cloning submodules and firmwares
 
     - `All installations for git <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
-
 
 - **Linux commands** - you will need commands like ``rm`` and ``mkdir`` (*Windows only*)
 
@@ -129,7 +124,7 @@ You will need some dependencies for the extension to work as intended:
     - `macOS installation make <https://formulae.brew.sh/formula/make>`_
 
 .. tip::
-    The extension will warn you that you are missing some of those and provide you with a corresponding link.
+    The extension will warn you that you are missing some of those and provide you with a corresponding link in top bottom corner.
 
 You have to have all these things in the PATH for the extension to register it. If you don't have these already, you can download the `HARDWARIO Code portable version <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ and
 you will find all the needed tools in the ``/data/tower/`` folder. You will just have to add the correct folders to PATH.
@@ -137,6 +132,8 @@ you will find all the needed tools in the ``/data/tower/`` folder. You will just
 Folders to add to PATH:
 
 - ``toolchain/make/bin/``
+- ``toolchain/cmake/bin/``
+- ``toolchain/ninja/``
 - ``toolchain/gcc/bin/``
 - ``toolchain/gcc/arm-none-eabi/bin/``
 - ``toolchain/git/cmd/``
@@ -173,6 +170,6 @@ You can also use ``Upgrade Firmware Project`` button in the extension side panel
 If you encounter problems with compiling and uploading the firmware you can check these things:
 
 - there is a **sdk** folder present and filled
-- There should be a CMakeLists.txt in the `root` folder and in the `src` folder
-- You can check if all the \*.c files are listed in the src/CMakeLists.txt on the first line
+- There should be a ``CMakeLists.txt`` in the `root` folder and in the `src` folder
+- You can check if all the \*.c files are listed in the ``src/CMakeLists.txt`` on the first line
 

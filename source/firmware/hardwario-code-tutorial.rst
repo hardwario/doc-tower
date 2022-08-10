@@ -102,18 +102,18 @@ Build + Flash (Debugger)
 This command will not attach the console like the previous one but will instead try to attach to JLink debugger for some advanced debugging.
 You can read more about JLink debugging in :doc:`Advanced Debugging chapter <advanced-debugging>`.
 
-Clean All Outputs |trash|
-*************************
+Clean All Outputs |trash-icon|
+******************************
 
-.. |trash| thumbnail:: ../_static/firmware/hardwario-code/trash.png
+.. |trash-icon| thumbnail:: ../_static/firmware/hardwario-code/trash.png
     :width: 3%
 
 This command will clean all the outputs so you can recompile everything from scratch.
 
-Build Firmware |check|
+Build Firmware |tick|
 **********************
 
-.. |check| thumbnail:: ../_static/firmware/hardwario-code/check.png
+.. |tick| thumbnail:: ../_static/firmware/hardwario-code/check.png
     :width: 4%
 
 This command runs **cmake** and **ninja** on the code. You can check if you have some errors or warnings in the code before you flash it into the device.

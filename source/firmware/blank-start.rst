@@ -39,7 +39,7 @@ This is the file structure of your ``hello-world`` project. It is a Git-initiali
     ├── .git
     │   └── ...skipped
     ├── .github
-    │   └── ...skipped
+    │   └── CI files, you can put some workflow for GitHub Actions here
     ├── .vscode
     │   └── ...skipped
     ├── sdk
@@ -59,10 +59,12 @@ This project can be immediately compiled and flashed to the **Core Module**, **R
 
 The place where you should edit your code is in the ``src`` directory.
 
-Usually you will not need to modify other files than those..
+Usually you will not need to modify other files than those.
 
-Therefore your first step most likely will be to open the ``src/application.c``
-file.
+Therefore your first step most likely will be to open the ``src/application.c`` file.
+
+.. note::
+    If you are using :doc:`HARDWARIO Code <hardwario-code-installation>` `Visual Studio Code extension <hardwario-code-tutorial>` the ``src/application.c`` will be opened automatically.
 
 .. tip::
 

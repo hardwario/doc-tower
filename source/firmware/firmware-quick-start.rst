@@ -35,13 +35,13 @@ Getting your first HARDWARIO TOWER firmware skeleton
 #. Connect the Core Module into the computer with USB cable and click the **Flash firmware** button ``↑`` at the blue bar on the bottom of the VSCode window
 #. The Core Module is flashed. The red LED will turn on, when you press the button the LED toggles
 
+    .. note::
+        If there are any errors or warnings with the code, the output windows will open and you can check what went wrong.
+
 .. tip::
 
     If you did some changes to the code in the ``src/application.c`` you don't have to click **Build** button every time,
     the **Upload** button will detect the changes and compile all changed files before uploading to the device.
-
-
-
 
 *********
 Next step
