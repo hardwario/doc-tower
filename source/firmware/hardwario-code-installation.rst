@@ -63,8 +63,8 @@ macOS
 - Download `HARDWARIO Code installation package <https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt>`_ for macOS
 - Run the installer by double clicking it
 - Follow the installer instruction
-- You should see a HARDWARIO_Code folder in your user's ~/Applications folder
-- Run ``HARDWARIO_Code/hardwario-code/Visual Studio Code``
+- You should see a **hardwario-code** folder in your user's ~/Applications folder
+- Run ``~Applications/hardwario-code/Visual Studio Code``
 - Wait for the **HARDWARIO Code** to open
 - You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
 
